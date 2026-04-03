@@ -8,19 +8,19 @@
 ## Where Core Logic Lives
 - `character-sheet/character-sheet.html` is the source of truth for structure, styling, and behavior.
 - Character content is loaded at runtime from `character-sheet/data/*.json` via the `?data=` query parameter.
-- Each JSON currently includes: identity/vitals, `hitDice`, `stats`, `savingThrows`, rank-based `skills`, `attacks`, `spellSlots`, `equipment`, `spells`, and array-based `features`.
+- Each JSON currently includes: identity/vitals (`ac`, `init`, `speed`, `size`), `spellcasting`, `hitDice`, `stats`, `savingThrows`, rank-based `skills`, `attacks`, `inspiration`, `spellSlots`, `coins`, `proficiencies`, `equipment`, `spells`, and array-based `features`.
 - Runtime state now includes `tempHP`, `deathSaves`, `featureCounters`, `hitDiceSpent`, `rollHistory`, and the last-roll modal timer.
 
 ## Architecture and Data Flow
-- Startup path: `window.onload = init` -> `fetchSheetData()` loads the JSON -> `render()` paints stats, skills, saves, attacks, features, spells, equipment, and hit dice, then calls `load()`.
-- Persistence path: `load()` restores state from `localStorage`; `save()` writes current HP/temp HP/resource checks/feature checks/hit dice usage.
+- Startup path: `window.onload = init` -> `fetchSheetData()` loads the JSON -> `render()` paints vitals, stats, skills, saves, attacks, spellcasting, features, spells, equipment, coins, proficiencies, and hit dice, then calls `load()`.
+- Persistence path: `load()` restores state from `localStorage`; `save()` writes current HP/temp HP/AC/inspiration/coins/spell slots/feature checks/hit dice usage.
 - Interaction path:
   - HP actions call `adjustHP('dmg'|'heal'|'temp')`.
   - Feature counters call `tglFeature(this)`.
   - Hit dice bubbles call `toggleHitDie(this, event)`; the hit-dice label rolls healing separately.
   - Dice rolling flows through `showRollResult()` and updates both the history modal and the temporary last-roll modal.
   - `shortRest()` partially refills counters using each row's `data-short-rest` value.
-  - `longRest()` restores HP, clears temp HP, resets hit dice usage, and clears resource/feature counters.
+  - `longRest()` restores HP, resets AC to base AC, clears temp HP and inspiration, resets hit dice usage, and clears resource/feature counters.
 - Storage key convention: `dnd_${STORAGE_VERSION}_${sheetData.id}`; the current storage version is `v8`.
 
 ## Project-Specific Conventions
@@ -44,8 +44,8 @@
 
 ## Integration Points to Respect
 - External dependency: Google Fonts URL in `character-sheet/character-sheet.html`.
-- Browser API dependency: `localStorage` schema is currently `{ hp, thp, acCurrent, inspiration, spellSlots, featureChecked, hitDiceSpent }`.
-- `deathSaves`, roll history, and the temporary last-roll modal are runtime-only and are not persisted.
+- Browser API dependency: `localStorage` schema is currently `{ hp, thp, acCurrent, inspiration, coins, spellSlots, featureChecked, hitDiceSpent }`.
+- `deathSaves`, roll history, and the last-roll / feedback modal timers are runtime-only and are not persisted.
 - `hunbrew-ve-tools/hun-spell.json` is currently a reference source for spell metadata structure and terminology, not an active runtime dependency.
 - Responsive behavior relies on specific breakpoints and sticky vitals CSS; verify mobile (`<1024px`) and desktop layouts after edits.
 

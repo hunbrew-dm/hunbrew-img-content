@@ -31,14 +31,38 @@
         details.card { padding: 0; overflow: hidden; }
         .card-title { font-family: var(--font-display); color: var(--gold); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
         .card-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-        .collapsible-summary {
-            list-style: none; cursor: pointer; padding: 20px 20px 15px; margin-bottom: 0;
-            border-bottom: 1px solid var(--border);
+        .panel-tabs {
+            display: none; gap: 8px; margin-bottom: 14px; padding: 4px; border: 1px solid var(--border); border-radius: 999px;
+            background: rgba(255,255,255,0.03);
         }
-        .collapsible-summary::-webkit-details-marker { display: none; }
-        .collapsible-card > :not(summary) { padding-left: 20px; padding-right: 20px; }
-        .collapsible-card > :not(summary):first-of-type { padding-top: 18px; }
-        .collapsible-card > :not(summary):last-child { padding-bottom: 20px; }
+        .panel-tab {
+            flex: 1; border: 1px solid transparent; background: transparent; color: #9fb0ba; border-radius: 999px;
+            padding: 8px 12px; cursor: pointer; font-family: var(--font-display); font-size: 0.72rem; text-transform: uppercase;
+        }
+        .panel-tab.active { color: white; background: rgba(0,229,255,0.12); border-color: rgba(0,229,255,0.22); box-shadow: 0 0 0 1px rgba(0,229,255,0.06) inset; }
+        .panel-stack { display: flex; flex-direction: column; gap: 12px; }
+        .center-panel {
+            border: 1px solid var(--border); border-radius: 12px; background: rgba(255,255,255,0.02); overflow: hidden;
+        }
+        .center-panel[open] { border-color: rgba(0,229,255,0.24); box-shadow: 0 0 0 1px rgba(0,229,255,0.08) inset; }
+        .center-panel-summary {
+            list-style: none; cursor: pointer; display: none; align-items: center; justify-content: space-between; gap: 12px;
+            padding: 12px 14px; background: rgba(0,0,0,0.14); border-bottom: 1px solid var(--border);
+        }
+        .center-panel-summary::-webkit-details-marker { display: none; }
+        .center-panel-title { font-family: var(--font-display); color: var(--gold); font-size: 0.78rem; text-transform: uppercase; }
+        .center-panel-chevron { color: #8ea0ad; font-size: 0.9rem; transition: transform 0.2s ease, color 0.2s ease; }
+        .center-panel[open] .center-panel-chevron { transform: rotate(180deg); color: var(--accent); }
+        .center-panel-body { padding: 12px; }
+        .center-panel-shell.desktop-tabs .panel-tabs { display: flex; }
+        .center-panel-shell.desktop-tabs .center-panel-summary { display: none; }
+        .center-panel-shell.desktop-tabs .center-panel { display: none; }
+        .center-panel-shell.desktop-tabs .center-panel.active { display: block; }
+        @media (max-width: 1023px) {
+            .center-panel-shell.mobile-accordion .panel-tabs { display: none; }
+            .center-panel-shell.mobile-accordion .center-panel { display: block; }
+            .center-panel-shell.mobile-accordion .center-panel-summary { display: flex; }
+        }
         .clickable-roll { cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease; }
         .clickable-roll:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-dim), 0 0 18px rgba(0,229,255,0.14); transform: translateY(-1px); }
         .clickable-roll:active { transform: translateY(0); }
@@ -65,6 +89,9 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.45), 0 0 30px rgba(0,229,255,0.12);
             overflow: hidden;
         }
+        .roller-panel.roll-feedback {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.45), 0 0 0 1px rgba(0,229,255,0.22) inset, 0 0 24px rgba(0,229,255,0.08);
+        }
         .roller-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, rgba(0,229,255,0.08), rgba(0,0,0,0)); }
         .roller-title { font-family: var(--font-display); font-size: 0.8rem; color: var(--gold); text-transform: uppercase; }
         .roller-head-actions { display: flex; align-items: center; gap: 8px; }
@@ -76,11 +103,31 @@
             border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 0.72rem; min-width: 52px;
         }
         .quick-roll-btn:hover { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 14px rgba(0,229,255,0.12); }
+        .quick-roll-btn.rolling, .roller-chip.rolling {
+            opacity: 0.72;
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 0 0 0 1px rgba(0,229,255,0.16) inset, 0 0 14px rgba(0,229,255,0.1);
+            transition-duration: 0.12s;
+        }
         .roller-empty { color: #9aa7b1; font-size: 0.82rem; line-height: 1.4; }
-        .roller-result { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+        .roller-result {
+            display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+            position: relative; overflow: hidden;
+        }
         .roller-label { font-size: 0.78rem; color: #b9c3cb; }
         .roller-formula { font-family: var(--font-num); font-size: 0.8rem; color: var(--accent); }
         .roller-total { font-family: var(--font-num); font-size: 2.4rem; color: white; text-align: right; line-height: 1; text-shadow: 0 0 18px rgba(255,255,255,0.18); }
+        .roller-result.roll-anim::before {
+            content: '';
+            position: absolute;
+            inset: -20% -10%;
+            background: radial-gradient(circle at center, rgba(0,229,255,0.18), transparent 58%);
+            animation: roller-result-glow 1.6s ease-out forwards;
+            pointer-events: none;
+        }
+        .roller-result.roll-anim .roller-total {
+            animation: roller-result-pop 1.6s ease-out both;
+        }
         .roller-badge { display: inline-block; margin-top: 6px; padding: 2px 8px; border-radius: 999px; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.04em; }
         .roller-badge.crit { background: rgba(64,255,170,0.14); color: var(--hp-green); border: 1px solid rgba(64,255,170,0.4); }
         .roller-badge.fail { background: rgba(255,77,77,0.14); color: var(--hp-red); border: 1px solid rgba(255,77,77,0.4); }
@@ -88,6 +135,16 @@
         .roller-history { display: flex; flex-wrap: wrap; gap: 8px; }
         .roller-chip { border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text); border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 0.72rem; }
         .roller-chip strong { color: var(--accent); font-family: var(--font-num); margin-left: 4px; }
+        @keyframes roller-result-glow {
+            0% { opacity: 0; transform: scale(0.95); }
+            20% { opacity: 1; }
+            100% { opacity: 0; transform: scale(1.12); }
+        }
+        @keyframes roller-result-pop {
+            0% { transform: scale(0.92); color: white; text-shadow: 0 0 8px rgba(0,229,255,0.18); }
+            18% { transform: scale(1.08); color: var(--accent); text-shadow: 0 0 22px rgba(0,229,255,0.38); }
+            100% { transform: scale(1); color: white; text-shadow: 0 0 18px rgba(255,255,255,0.18); }
+        }
         .last-roll-modal {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 280;
             width: min(420px, calc(100vw - 40px)); background: rgba(21,26,34,0.98); border: 1px solid var(--accent);
@@ -190,7 +247,8 @@
             background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--accent);
             position: sticky; top: 10px; z-index: 100;
         }
-        @media (min-width: 640px) { .vitals-bar { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+        @media (min-width: 640px) { .vitals-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        @media (min-width: 900px) { .vitals-bar { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
         @media (min-width: 1024px) { .vitals-bar { position: static; min-width: 520px; } }
         .vital-item {
             min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
@@ -317,6 +375,7 @@
             border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); color: #d8e1e8;
         }
         .equipment-pill.kind { color: var(--gold); border-color: rgba(212,175,55,0.35); background: rgba(212,175,55,0.08); }
+        .equipment-pill.count { color: var(--hp-green); border-color: rgba(64,255,170,0.35); background: rgba(64,255,170,0.08); }
         .equipment-pill.weapon { color: var(--accent); border-color: rgba(0,229,255,0.35); background: rgba(0,229,255,0.08); }
         .equipment-chevron {
             flex-shrink: 0; color: #8ea0ad; font-size: 0.9rem; transition: transform 0.2s ease, color 0.2s ease;
@@ -338,6 +397,13 @@
             border-bottom: 1px solid var(--border);
         }
         .spell-slot-panel[hidden] { display: none; }
+        .spell-casting-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px; }
+        .spell-casting-box {
+            border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 8px 10px; background: rgba(255,255,255,0.02);
+            display: flex; flex-direction: column; gap: 4px; min-width: 0;
+        }
+        .spell-casting-label { font-size: 0.62rem; text-transform: uppercase; color: #8ea0ad; letter-spacing: 0.04em; }
+        .spell-casting-value { font-family: var(--font-num); font-size: 1.05rem; color: white; line-height: 1.1; }
         .spell-slot-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
         .spell-slot-copy { display: flex; flex-direction: column; gap: 2px; }
         .spell-slot-label { font-family: var(--font-display); font-size: 0.78rem; color: var(--gold); text-transform: uppercase; }
@@ -406,12 +472,12 @@
 
 <div class="dashboard">
     <header>
-        <div class="char-title"><h1 id="c-name">Név</h1><p id="c-meta" style="color:var(--gold)">Kaszt</p></div>
+        <div class="char-title"><h1 id="c-name" contenteditable="true">Név</h1><p id="c-meta" style="color:var(--gold)">Kaszt</p></div>
         <div class="vitals-bar">
             <div class="vital-item">
                 <div class="vital-label">Védettségi fok</div>
                 <div class="vital-ac-row">
-                    <input type="number" id="c-ac-current" class="vital-ac-input" value="10" min="0" step="1" inputmode="numeric" aria-label="Jelenlegi védettségi fok" oninput="normalizeCurrentAC(this)" onchange="save()">
+                    <input type="number" id="c-ac-current" class="vital-ac-input" value="10" min="0" step="1" inputmode="numeric" aria-label="Jelenlegi védettségi fok" oninput="normalizeCurrentAC(this, true)" onblur="normalizeCurrentAC(this); save()" onchange="save()">
                     <span class="vital-divider">/</span>
                     <span id="c-ac-base" class="vital-base">10</span>
                 </div>
@@ -428,21 +494,28 @@
                 <div class="vital-sub">Aktív / inaktív</div>
             </div>
             <div class="vital-item">
+                <div class="vital-label">Sebesség</div>
+                <div class="vital-val" id="c-speed">—</div>
+            </div>
+            <div class="vital-item">
+                <div class="vital-label">Termet</div>
+                <div class="vital-val" id="c-size">—</div>
+            </div>
+            <div class="vital-item">
                 <div class="vital-label">Jártassági bónusz</div>
                 <div class="vital-val" id="c-prof">+2</div>
-                <div class="vital-sub">Passzív érték</div>
             </div>
         </div>
     </header>
 
-    <aside class="stats-list" id="stat-container"></aside>
+        <aside class="stats-list" id="stat-container" aria-label="Tulajdonságok"></aside>
 
     <main>
         <div class="card">
                 <div class="card-title card-title-row"><span>Harcerőpont</span></div>
             <div class="hp-main-display">
                 <div id="hp-temp-badge" class="temp-hp-badge"></div>
-                <input type="number" id="hp-curr" class="hp-current-input" value="0" min="0" step="1" inputmode="numeric" oninput="normalizeCurrentHP(this)" onchange="save(); updateDeathSaveUI();">
+                <input type="number" id="hp-curr" class="hp-current-input" value="0" min="0" step="1" inputmode="numeric" oninput="normalizeCurrentHP(this, true)" onblur="normalizeCurrentHP(this); save(); updateDeathSaveUI();" onchange="save(); updateDeathSaveUI();">
                 <div class="hp-max-display">/ <span id="hp-max">0</span></div>
             </div>
 
@@ -451,7 +524,7 @@
                     <span style="font-size: 0.7rem; text-transform: uppercase;">Mennyiség</span>
                     <div class="mod-stepper">
                         <button type="button" class="mod-step-btn" aria-label="Mennyiség csökkentése" onclick="stepHPMod(-1)">−</button>
-                        <input type="number" id="hp-mod" class="mod-input" value="1" min="1" step="1" inputmode="numeric" oninput="normalizeHPMod(this)" onblur="normalizeHPMod(this)">
+                        <input type="number" id="hp-mod" class="mod-input" value="1" min="1" step="1" inputmode="numeric" oninput="normalizeHPMod(this, true)" onblur="normalizeHPMod(this)">
                         <button type="button" class="mod-step-btn" aria-label="Mennyiség növelése" onclick="stepHPMod(1)">+</button>
                     </div>
                 </div>
@@ -488,30 +561,52 @@
             <div class="skills-grid" id="skills-container"></div>
         </div>
 
-        <div class="card">
-            <div class="card-title">Mentődobások</div>
-            <div class="skills-grid" id="saves-container"></div>
-        </div>
+        <div class="card"><div class="card-title">Mentődobások</div><div id="saves-container" class="skills-grid"></div></div>
 
         <div class="card">
             <div class="card-title">Támadások</div>
             <table id="atk-table"><tbody></tbody></table>
         </div>
+
+        <div class="center-panel-shell mobile-accordion" id="center-panel-shell">
+            <div class="panel-tabs" id="center-panel-tabs" role="tablist" aria-label="Középső panelek"></div>
+
+            <details class="center-panel" data-panel="features" open>
+                <summary class="center-panel-summary">
+                    <span class="center-panel-title">Tulajdonságok</span>
+                    <span class="center-panel-chevron">⌄</span>
+                </summary>
+                <div class="center-panel-body">
+                    <div id="feat-list" class="feature-list"></div>
+                </div>
+            </details>
+
+            <details class="center-panel" data-panel="spells">
+                <summary class="center-panel-summary">
+                    <span class="center-panel-title">Varázslatok</span>
+                    <span class="center-panel-chevron">⌄</span>
+                </summary>
+                <div class="center-panel-body">
+                    <div id="spell-slot-panel" class="spell-slot-panel"></div>
+                    <div id="spell-list" class="spell-list"></div>
+                </div>
+            </details>
+
+            <details class="center-panel" data-panel="equipment">
+                <summary class="center-panel-summary">
+                    <span class="center-panel-title">Felszerelés</span>
+                    <span class="center-panel-chevron">⌄</span>
+                </summary>
+                <div class="center-panel-body">
+                    <div id="coin-box" class="coin-box"></div>
+                    <div id="equipment-list" class="equipment-list"></div>
+                </div>
+            </details>
+        </div>
     </main>
 
     <section>
         <div class="card"><div class="card-title">Jártasságok</div><div id="proficiency-list" class="proficiency-list"></div></div>
-        <div class="card"><div class="card-title">Tulajdonságok</div><div id="feat-list" class="feature-list"></div></div>
-        <details class="card collapsible-card" open>
-            <summary class="card-title card-title-row collapsible-summary"><span>Varázslatok</span></summary>
-            <div id="spell-slot-panel" class="spell-slot-panel"></div>
-            <div id="spell-list" class="spell-list"></div>
-        </details>
-        <details class="card collapsible-card" open>
-            <summary class="card-title card-title-row collapsible-summary"><span>Felszerelés</span></summary>
-            <div id="coin-box" class="coin-box"></div>
-            <div id="equipment-list" class="equipment-list"></div>
-        </details>
     </section>
 
     <div class="rest-actions">
@@ -535,12 +630,12 @@
         </div>
         <div class="roller-body">
             <div class="quick-rolls">
-                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(4)">d4</button>
-                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(6)">d6</button>
-                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(8)">d8</button>
-                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(10)">d10</button>
-                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(12)">d12</button>
-                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(20)">d20</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(4, event)">d4</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(6, event)">d6</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(8, event)">d8</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(10, event)">d10</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(12, event)">d12</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(20, event)">d20</button>
             </div>
             <div id="roller-empty" class="roller-empty">Kattints egy képességre, mentődobásra, támadásra vagy harcerő kockára a dobáshoz.</div>
             <div id="roller-current" hidden>
@@ -585,6 +680,8 @@
     let hitDiceSpent = [];
     let rollHistory = [];
     let lastRollTimer = null;
+    let rollFeedbackTimer = null;
+    let rollResultTimer = null;
     const STORAGE_VERSION = 'v8';
     const DEFAULT_DATA_PATH = 'data/valerius-v6.json';
 
@@ -734,12 +831,25 @@
         if (result.d20 === 20) badge = { text: 'Természetes 20', className: 'crit' };
         else if (result.d20 === 1) badge = { text: 'Természetes 1', className: 'fail' };
 
+        const resultEl = document.getElementById('roller-current');
         document.getElementById('roller-empty').hidden = true;
-        document.getElementById('roller-current').hidden = false;
+        resultEl.hidden = false;
         document.getElementById('roller-label').innerText = label;
         document.getElementById('roller-formula').innerText = result.normalized;
         document.getElementById('roller-total').innerText = result.total;
         document.getElementById('roller-breakdown').innerText = result.parts.join('  ');
+
+        if (rollResultTimer) {
+            clearTimeout(rollResultTimer);
+            rollResultTimer = null;
+        }
+        resultEl.classList.remove('roll-anim');
+        void resultEl.offsetWidth;
+        resultEl.classList.add('roll-anim');
+        rollResultTimer = setTimeout(() => {
+            resultEl.classList.remove('roll-anim');
+            rollResultTimer = null;
+        }, 1600);
 
         const badgeEl = document.getElementById('roller-badge');
         badgeEl.className = '';
@@ -761,13 +871,38 @@
         const historyEl = document.getElementById('roller-history');
         historyEl.innerHTML = '';
         rollHistory.forEach((entry, index) => {
-            historyEl.innerHTML += `<button type="button" class="roller-chip" onclick="rerollHistory(${index})">${entry.label}<strong>${entry.total}</strong></button>`;
+            historyEl.innerHTML += `<button type="button" class="roller-chip" onclick="rerollHistory(${index}, event)">${entry.label}<strong>${entry.total}</strong></button>`;
         });
     }
 
-    function rerollHistory(index) {
+    function clearRollFeedback() {
+        document.querySelectorAll('.quick-roll-btn.rolling, .roller-chip.rolling').forEach(el => el.classList.remove('rolling'));
+        const panel = document.getElementById('roller-panel');
+        if (panel) panel.classList.remove('roll-feedback');
+        if (rollFeedbackTimer) {
+            clearTimeout(rollFeedbackTimer);
+            rollFeedbackTimer = null;
+        }
+    }
+
+    function flashRollFeedback(controlEl) {
+        clearRollFeedback();
+        if (controlEl) controlEl.classList.add('rolling');
+        const panel = document.getElementById('roller-panel');
+        if (panel) panel.classList.add('roll-feedback');
+        rollFeedbackTimer = setTimeout(() => {
+            if (controlEl) controlEl.classList.remove('rolling');
+            if (panel) panel.classList.remove('roll-feedback');
+            rollFeedbackTimer = null;
+        }, 180);
+    }
+
+    function rerollHistory(index, event) {
         const entry = rollHistory[index];
-        if (entry) showRollResult(entry.label, entry.formula);
+        const controlEl = event?.currentTarget || event?.target?.closest('.roller-chip');
+        if (!entry) return;
+        flashRollFeedback(controlEl);
+        requestAnimationFrame(() => showRollResult(entry.label, entry.formula, { showLastModal: false }));
     }
 
     function clearRollHistory() {
@@ -777,10 +912,17 @@
         document.getElementById('roller-empty').hidden = false;
         document.getElementById('roller-badge').className = '';
         document.getElementById('roller-badge').innerHTML = '';
+        document.getElementById('roller-current').classList.remove('roll-anim');
+        if (rollResultTimer) {
+            clearTimeout(rollResultTimer);
+            rollResultTimer = null;
+        }
     }
 
-    function rollQuickDie(sides) {
-        showRollResult(`Gyors dobás d${sides}`, `1d${sides}`, { showLastModal: false });
+    function rollQuickDie(sides, event) {
+        const controlEl = event?.currentTarget || event?.target?.closest('.quick-roll-btn');
+        flashRollFeedback(controlEl);
+        requestAnimationFrame(() => showRollResult(`Gyors dobás d${sides}`, `1d${sides}`, { showLastModal: false }));
     }
 
     function openRollerModal() {
@@ -932,11 +1074,15 @@
     }
 
     function rollSpellAttack(label, formula, event) {
+        if (formula && typeof formula.preventDefault === 'function') {
+            event = formula;
+            formula = null;
+        }
         if (event) {
             event.preventDefault();
             event.stopPropagation();
         }
-        showRollResult(`${label} támadás`, buildD20Formula(formula));
+        showRollResult(`${label} támadás`, buildD20Formula(formula || getSpellcastingAttackBonus()));
     }
 
     function rollInlineDice(formula, label, event) {
@@ -974,15 +1120,31 @@
     function renderSpellSlots() {
         const wrap = document.getElementById('spell-slot-panel');
         const slots = Array.isArray(sheetData.spellSlots) ? sheetData.spellSlots : [];
+        const summary = `
+            <div class="spell-casting-summary">
+                <div class="spell-casting-box">
+                    <span class="spell-casting-label">Varázslási képesség</span>
+                    <span class="spell-casting-value">${escapeHtml(getSpellcastingAbilityLabel())}</span>
+                </div>
+                <div class="spell-casting-box">
+                    <span class="spell-casting-label">Mentő NF</span>
+                    <span class="spell-casting-value">${escapeHtml(getSpellcastingSaveDc())}</span>
+                </div>
+                <div class="spell-casting-box">
+                    <span class="spell-casting-label">Támadó bónusz</span>
+                    <span class="spell-casting-value">${escapeHtml(getSpellcastingAttackBonus())}</span>
+                </div>
+            </div>
+        `;
 
         if (!slots.length) {
-            wrap.hidden = true;
-            wrap.innerHTML = '';
+            wrap.hidden = false;
+            wrap.innerHTML = summary;
             return;
         }
 
         wrap.hidden = false;
-        wrap.innerHTML = '';
+        wrap.innerHTML = summary;
 
         slots.forEach((slot, rowIndex) => {
             const count = Number.isFinite(slot.count) ? slot.count : 0;
@@ -1007,10 +1169,56 @@
     function getEquipmentSummaryMeta(item) {
         const summaryMeta = [];
         if (item.kind) summaryMeta.push(`<span class="equipment-pill kind">${item.kind}</span>`);
+        if (Number.isFinite(item.count) && item.count > 1) summaryMeta.push(`<span class="equipment-pill count">×${item.count}</span>`);
         if (item.value) summaryMeta.push(`<span class="equipment-pill">Érték: ${item.value}</span>`);
         if (item.weight) summaryMeta.push(`<span class="equipment-pill">Súly: ${item.weight}</span>`);
         if (item.type) summaryMeta.push(`<span class="equipment-pill weapon">${item.type}</span>`);
         return summaryMeta.join('');
+    }
+
+    function getSpellcastingAbilityIndex() {
+        const casting = sheetData.spellcasting || {};
+        if (Number.isFinite(casting.abilityIndex)) return casting.abilityIndex;
+        if (Number.isFinite(casting.statIndex)) return casting.statIndex;
+        return 5;
+    }
+
+    function getSpellcastingStat() {
+        return sheetData.stats[getSpellcastingAbilityIndex()] || null;
+    }
+
+    function getSpellcastingAbilityLabel() {
+        const casting = sheetData.spellcasting || {};
+        if (casting.abilityLabel) return String(casting.abilityLabel);
+        const stat = getSpellcastingStat();
+        return stat ? stat.label : '—';
+    }
+
+    function getSpellcastingAttackBonus() {
+        const casting = sheetData.spellcasting || {};
+        if (casting.attackBonus !== undefined && casting.attackBonus !== null && casting.attackBonus !== '') {
+            return fmtSigned(parseSigned(casting.attackBonus));
+        }
+        const stat = getSpellcastingStat();
+        if (!stat) return '—';
+        return fmtSigned(parseSigned(stat.mod) + parseSigned(sheetData.prof));
+    }
+
+    function getSpellcastingSaveDc() {
+        const casting = sheetData.spellcasting || {};
+        if (casting.saveDc !== undefined && casting.saveDc !== null && casting.saveDc !== '') {
+            return String(casting.saveDc);
+        }
+        const stat = getSpellcastingStat();
+        if (!stat) return '—';
+        return String(8 + parseSigned(sheetData.prof) + parseSigned(stat.mod));
+    }
+
+    function getSpellMarkers(spell) {
+        const markers = [];
+        if (spell.atk !== undefined || spell.attack === true) markers.push('atk');
+        if (spell.dc !== undefined || spell.saveDc !== undefined || spell.save === true) markers.push('dc');
+        return markers;
     }
 
     function getCoinDefaults() {
@@ -1029,11 +1237,23 @@
         return Number.isFinite(parsed) && parsed >= 0 ? parsed : fallback;
     }
 
-    function normalizeCoinInput(input) {
-        const fallback = getCoinDefaults()[input.dataset.coin] || 0;
-        const value = normalizeCoinValue(input.value, fallback);
-        input.value = value;
+    function normalizeNumberInput(input, min, fallback, keepEmpty = false) {
+        const el = typeof input === 'string' ? document.getElementById(input) : input;
+        const raw = String(el.value).trim();
+
+        if (raw === '') {
+            el.value = keepEmpty ? '' : fallback;
+            return el.value;
+        }
+
+        let value = parseInt(raw, 10);
+        if (!Number.isFinite(value) || value < min) value = fallback;
+        el.value = value;
         return value;
+    }
+
+    function normalizeCoinInput(input, keepEmpty = false) {
+        return normalizeNumberInput(input, 0, 0, keepEmpty);
     }
 
     function renderCoins() {
@@ -1061,7 +1281,8 @@
                     value="${defaults[field.key]}"
                     aria-label="${field.full} érmék"
                     title="${field.full}"
-                    oninput="normalizeCoinInput(this)"
+                    oninput="normalizeCoinInput(this, true)"
+                    onblur="normalizeCoinInput(this); save()"
                     onchange="save()"
                 >
             </label>
@@ -1114,6 +1335,7 @@
 
     function getEquipmentFacts(item, itemIndex) {
         const facts = [];
+        if (Number.isFinite(item.count) && item.count > 1) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Darabszám</span><span class="equipment-fact-value">${item.count} db</span></div>`);
         if (item.value) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Érték</span><span class="equipment-fact-value">${item.value}</span></div>`);
         if (item.weight) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Súly</span><span class="equipment-fact-value">${item.weight}</span></div>`);
         if (item.attack) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Támadás</span><button type="button" class="equipment-fact-button clickable-roll" onclick="rollEquipment(${itemIndex}, 'attack', event)"><span class="equipment-fact-value">${item.attack}</span></button></div>`);
@@ -1178,8 +1400,9 @@
 
     function renderSpells() {
         const wrap = document.getElementById('spell-list');
-        wrap.innerHTML = '';
         const spells = Array.isArray(sheetData.spells) ? sheetData.spells : [];
+
+        wrap.innerHTML = '';
 
         if (!spells.length) {
             wrap.innerHTML = '<div class="spell-empty">Nincsenek megadott varázslatok.</div>';
@@ -1197,21 +1420,24 @@
             .map(Number)
             .sort((a, b) => a - b)
             .forEach(level => {
-                const spells = groups[level];
+                const levelSpells = groups[level];
                 wrap.innerHTML += `
                     <div class="spell-level-group">
                         <div class="spell-level-title">
                             <span>${level === 0 ? 'Varázstrükk' : `${level}. szintű varázslatok`}</span>
-                            <span class="spell-level-count">${spells.length} db</span>
+                            <span class="spell-level-count">${levelSpells.length} db</span>
                         </div>
                         <div class="spell-grid">
-                            ${spells.map(spell => {
+                            ${levelSpells.map(spell => {
                                 const meta = [];
                                 if (spell.school) meta.push(`<span class="spell-pill school">${spell.school}</span>`);
                                 if (spell.concentration) meta.push('<span class="spell-pill conc">Koncentráció</span>');
                                 if (spell.ritual) meta.push('<span class="spell-pill ritual">Rituálé</span>');
-                                if (spell.dc !== undefined) meta.push(`<span class="spell-pill dc">Mentő DC ${spell.dc}</span>`);
-                                if (spell.atk !== undefined) meta.push(`<button type="button" class="spell-pill atk rollable" data-label="${escapeAttr(spell.name || 'Varázslat')}" data-formula="${escapeAttr(String(spell.atk))}" onclick="rollSpellAttack(this.dataset.label, this.dataset.formula, event)">Támadás ${spell.atk}</button>`);
+                                getSpellMarkers(spell).forEach(marker => {
+                                    if (marker === 'atk') meta.push(`<button type="button" class="spell-pill atk rollable" data-label="${escapeAttr(spell.name || 'Varázslat')}" onclick="rollSpellAttack(this.dataset.label, event)">Támadó bónusz ${escapeHtml(getSpellcastingAttackBonus())}</button>`);
+                                    if (marker === 'dc') meta.push(`<span class="spell-pill dc">Mentő NF ${escapeHtml(getSpellcastingSaveDc())}</span>`);
+                                });
+
                                 return `
                                     <details class="spell-item">
                                         <summary class="spell-summary">
@@ -1249,6 +1475,8 @@
         document.getElementById('c-ac-base').innerText = getBaseAC();
         document.getElementById('c-ac-current').value = getDefaultCurrentAC();
         document.getElementById('c-init').innerText = sheetData.init;
+        document.getElementById('c-speed').innerText = sheetData.speed || '—';
+        document.getElementById('c-size').innerText = sheetData.size || '—';
         document.getElementById('c-prof').innerText = sheetData.prof;
         document.getElementById('c-inspiration').classList.toggle('active', !!sheetData.inspiration?.active);
         document.getElementById('hp-max').innerText = sheetData.hpMax;
@@ -1284,6 +1512,7 @@
         renderSpellSlots();
         renderSpells();
         renderHitDice();
+        syncCenterPanels();
 
         load();
     }
@@ -1357,12 +1586,8 @@
     }
 
 
-    function normalizeCurrentAC(input) {
-        const el = typeof input === 'string' ? document.getElementById(input) : input;
-        let value = parseInt(el.value, 10);
-        if (!Number.isFinite(value) || value < 0) value = getBaseAC();
-        el.value = value;
-        return value;
+    function normalizeCurrentAC(input, keepEmpty = false) {
+        return normalizeNumberInput(input, 0, 0, keepEmpty);
     }
 
     function toggleInspiration() {
@@ -1417,20 +1642,12 @@
         save();
     }
 
-    function normalizeCurrentHP(input) {
-        const el = typeof input === 'string' ? document.getElementById(input) : input;
-        let value = parseInt(el.value, 10);
-        if (!Number.isFinite(value) || value < 0) value = 0;
-        el.value = value;
-        return value;
+    function normalizeCurrentHP(input, keepEmpty = false) {
+        return normalizeNumberInput(input, 0, 0, keepEmpty);
     }
 
-    function normalizeHPMod(input) {
-        const el = typeof input === 'string' ? document.getElementById(input) : input;
-        let value = parseInt(el.value, 10);
-        if (!Number.isFinite(value) || value < 1) value = 1;
-        el.value = value;
-        return value;
+    function normalizeHPMod(input, keepEmpty = false) {
+        return normalizeNumberInput(input, 1, 1, keepEmpty);
     }
 
     function stepHPMod(delta) {
@@ -1565,6 +1782,70 @@
             save();
         }
     }
+
+    let centerPanelActive = 'features';
+
+    function isDesktopCenterLayout() {
+        return window.matchMedia('(min-width: 1024px)').matches;
+    }
+
+    function getCenterPanels() {
+        return Array.from(document.querySelectorAll('.center-panel'));
+    }
+
+    function setCenterPanelActive(panelName) {
+        centerPanelActive = panelName;
+        const tabs = document.querySelectorAll('.panel-tab');
+        const panels = getCenterPanels();
+
+        tabs.forEach(tab => {
+            const isActive = tab.dataset.panel === panelName;
+            tab.classList.toggle('active', isActive);
+            tab.setAttribute('aria-selected', String(isActive));
+            tab.tabIndex = isActive ? 0 : -1;
+        });
+
+        panels.forEach(panel => {
+            const isActive = panel.dataset.panel === panelName;
+            panel.classList.toggle('active', isDesktopCenterLayout() ? isActive : true);
+            if (isDesktopCenterLayout()) {
+                panel.open = isActive;
+            } else if (isActive) {
+                panel.open = true;
+            }
+        });
+    }
+
+    function syncCenterPanels() {
+        const shell = document.getElementById('center-panel-shell');
+        if (!shell) return;
+
+        shell.classList.toggle('desktop-tabs', isDesktopCenterLayout());
+        shell.classList.toggle('mobile-accordion', !isDesktopCenterLayout());
+
+        const tabsWrap = document.getElementById('center-panel-tabs');
+        const panels = getCenterPanels();
+        if (!tabsWrap || !panels.length) return;
+
+        if (!panels.some(panel => panel.dataset.panel === centerPanelActive)) {
+            centerPanelActive = panels[0].dataset.panel;
+        }
+
+        if (!tabsWrap.dataset.bound) {
+            tabsWrap.innerHTML = panels.map(panel => `
+                <button type="button" class="panel-tab" role="tab" aria-selected="false" aria-controls="panel-${panel.dataset.panel}" data-panel="${panel.dataset.panel}" onclick="setCenterPanelActive('${panel.dataset.panel}')">${panel.querySelector('.center-panel-title')?.innerText || panel.dataset.panel}</button>
+            `).join('');
+            tabsWrap.dataset.bound = '1';
+        }
+
+        panels.forEach(panel => {
+            panel.id = `panel-${panel.dataset.panel}`;
+        });
+
+        setCenterPanelActive(centerPanelActive);
+    }
+
+    window.addEventListener('resize', () => syncCenterPanels());
 
     async function init() {
         try {

@@ -7,6 +7,11 @@
     "current": 16
   },
   "init": "+3",
+  "speed": "9 m",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
   "prof": "+3",
   "hpMax": 42,
   "hitDice": {
@@ -94,7 +99,8 @@
       "damage": "1d4+3 [Szúró]",
       "range": "20 / 60 láb",
       "type": "Egyszerű",
-      "properties": "Könnyű, finom, hajító"
+      "properties": "Könnyű, finom, hajító",
+      "count": 2
     },
     {
       "name": "Komponens erszény",
@@ -122,7 +128,7 @@
       "components": "V, S",
       "concentration": false,
       "ritual": false,
-      "atk": "+7",
+      "atk": true,
       "desc": "Ropogó energiasugarat hozol létre. Találat esetén a célpont 1d10 energia sebzést szenved."
     },
     {
@@ -147,7 +153,7 @@
       "components": "S, M (egy kis smink)",
       "concentration": true,
       "ritual": false,
-      "dc": 15,
+      "dc": true,
       "desc": "A célpontnak Bölcsesség mentődobást kell dobnia, különben elbűvölt lesz a varázslat idejére."
     },
     {
