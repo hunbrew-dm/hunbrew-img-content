@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Dashboard v6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Metamorphous&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0b0e14;
+            --card: #151a22;
+            --border: #2a3341;
+            --accent: #00e5ff;
+            --accent-dim: rgba(0, 229, 255, 0.15);
+            --gold: #d4af37;
+            --hp-red: #ff4d4d;
+            --hp-green: #40ffaa;
+            --hp-blue: #44aaff;
+            --text: #e0e0e0;
+            --font-display: 'Cinzel Decorative', serif;
+            --font-num: 'Metamorphous', cursive;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; padding: 20px; }
+
+        .dashboard { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 1024px) { .dashboard { grid-template-columns: 180px 1fr 320px; align-items: start; } }
+
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 20px; }
+        .card-title { font-family: var(--font-display); color: var(--gold); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+
+        /* --- ENHANCED HP TRACKER v6 --- */
+        .hp-main-display {
+            display: flex; align-items: flex-end; justify-content: center; gap: 5px; margin-bottom: 20px; position: relative;
+        }
+
+        /* The main large number you edit */
+        .hp-current-input {
+            font-family: var(--font-num); font-size: 5.5rem; /* Massive size */
+            color: white; background: transparent; border: none; width: 160px; text-align: right;
+            text-shadow: 0 0 15px rgba(255,255,255,0.2);
+        }
+        .hp-current-input:focus { outline: none; border-bottom: 2px solid var(--accent); }
+
+        /* The max value, now clearly legible */
+        .hp-max-display {
+            font-family: var(--font-num); font-size: 2.2rem; /* Clearly legible */
+            color: #607d8b; /* Blue-grey for contrast */
+            padding-bottom: 12px; /* Align with bottom of input */
+        }
+
+        /* Stylized Temporary HP Badge */
+        .temp-hp-badge {
+            position: absolute; top: 0; right: 20px;
+            background-color: #0d2a45; border: 1px solid var(--hp-blue); color: var(--hp-blue);
+            font-family: var(--font-num); font-size: 1.1rem; font-weight: bold;
+            padding: 4px 12px; border-radius: 4px; box-shadow: 0 0 10px var(--hp-blue);
+            opacity: 0; transform: translateY(-10px); transition: 0.3s;
+        }
+        .temp-hp-badge.active { opacity: 1; transform: translateY(0); }
+
+        .hp-controls { display: flex; flex-direction: column; gap: 10px; align-items: center; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; }
+        .mod-input-wrap { display: flex; align-items: center; gap: 10px; }
+        .mod-stepper { display: flex; align-items: stretch; gap: 6px; }
+        .mod-step-btn {
+            width: 34px; min-width: 34px;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.04);
+            color: var(--accent);
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            line-height: 1;
+        }
+        .mod-step-btn:hover { background: rgba(0,229,255,0.15); border-color: var(--accent); }
+        .mod-input {
+            background: var(--bg); border: 1px solid var(--border); color: var(--accent);
+            font-family: var(--font-num); font-size: 1.5rem; width: 80px; text-align: center;
+            padding: 5px; border-radius: 4px;
+        }
+
+        .btn-group { display: flex; gap: 8px; width: 100%; justify-content: center; }
+        .hp-btn {
+            flex: 1; padding: 10px 5px; border: none; border-radius: 4px;
+            font-family: var(--font-display); font-size: 0.7rem; cursor: pointer;
+            transition: 0.2s; text-transform: uppercase; color: white;
+        }
+        .btn-dmg { background: #551111; border: 1px solid var(--hp-red); }
+        .btn-dmg:hover { background: var(--hp-red); }
+        .btn-heal { background: #114422; border: 1px solid var(--hp-green); }
+        .btn-heal:hover { background: var(--hp-green); color: black; }
+        .btn-temp { background: #113355; border: 1px solid var(--hp-blue); }
+        .btn-temp:hover { background: var(--hp-blue); }
+        .death-save-block { width: 100%; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 4px; }
+        .death-save-title { font-family: var(--font-display); font-size: 0.7rem; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+        .death-save-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+        .death-save-label { font-size: 0.7rem; text-transform: uppercase; color: #aaa; min-width: 72px; }
+        .death-save-tracks { display: flex; gap: 6px; }
+        .death-save-dot {
+            width: 18px; height: 18px; border-radius: 50%;
+            border: 2px solid var(--border); background: transparent; cursor: pointer;
+        }
+        .death-save-dot.success.filled { background: var(--hp-green); border-color: var(--hp-green); box-shadow: 0 0 8px var(--hp-green); }
+        .death-save-dot.fail.filled { background: var(--hp-red); border-color: var(--hp-red); box-shadow: 0 0 8px var(--hp-red); }
+        .death-save-block[hidden] { display: none; }
+
+        /* --- STATS, SKILLS, BUBBLES --- */
+        header { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 15px; }
+        @media (min-width: 768px) { header { flex-direction: row; justify-content: space-between; align-items: flex-end; } }
+        .vitals-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--accent); position: sticky; top: 10px; z-index: 100; }
+        @media (min-width: 1024px) { .vitals-bar { position: static; } }
+        .vital-val { font-family: var(--font-num); font-size: 1.4rem; color: var(--accent); text-align: center; }
+        .stats-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        @media (min-width: 1024px) { .stats-list { grid-template-columns: 1fr; } }
+        .stat-box { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
+        .stat-mod { font-family: var(--font-num); font-size: 1.8rem; color: var(--accent); display: block; }
+        .skills-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
+        @media (min-width: 600px) { .skills-grid { grid-template-columns: 1fr 1fr; } }
+        .skill-item { display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; padding: 4px 8px; background: rgba(255,255,255,0.02); }
+        .prof-dot { width: 6px; height: 6px; border: 1px solid var(--accent); border-radius: 50%; margin-right: 8px; }
+        .prof-dot.filled { background: var(--accent); box-shadow: 0 0 5px var(--accent); }
+        .bubble { width: 24px; height: 24px; border: 2px solid var(--border); border-radius: 4px; cursor: pointer; margin-left: 4px; }
+        .bubble.checked { background: var(--accent); border-color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        td { padding: 8px 4px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .rest-btn { grid-column: 1 / -1; background: linear-gradient(to right, #800, #400); color: white; border: none; padding: 15px; border-radius: 8px; font-family: var(--font-display); cursor: pointer; }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <header>
+        <div class="char-title"><h1 id="c-name">Name</h1><p id="c-meta" style="color:var(--gold)">Class</p></div>
+        <div class="vitals-bar">
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">AC</div><div class="vital-val" id="c-ac">10</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">INIT</div><div class="vital-val" id="c-init">+0</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">PROF</div><div class="vital-val" id="c-prof">+2</div></div>
+        </div>
+    </header>
+
+    <aside class="stats-list" id="stat-container"></aside>
+
+    <main>
+        <div class="card">
+            <div class="card-title">Hit Points</div>
+            <div class="hp-main-display">
+                <div id="hp-temp-badge" class="temp-hp-badge"></div>
+                <input type="number" id="hp-curr" class="hp-current-input" value="0" min="0" step="1" inputmode="numeric" oninput="normalizeCurrentHP(this)" onchange="save(); updateDeathSaveUI();">
+                <div class="hp-max-display">/ <span id="hp-max">0</span></div>
+            </div>
+
+            <div class="hp-controls">
+                <div class="mod-input-wrap">
+                    <span style="font-size: 0.7rem; text-transform: uppercase;">Amount</span>
+                    <div class="mod-stepper">
+                        <button type="button" class="mod-step-btn" aria-label="Decrease amount" onclick="stepHPMod(-1)">−</button>
+                        <input type="number" id="hp-mod" class="mod-input" value="1" min="1" step="1" inputmode="numeric" oninput="normalizeHPMod(this)" onblur="normalizeHPMod(this)">
+                        <button type="button" class="mod-step-btn" aria-label="Increase amount" onclick="stepHPMod(1)">+</button>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="hp-btn btn-dmg" onclick="adjustHP('dmg')">Damage</button>
+                    <button class="hp-btn btn-heal" onclick="adjustHP('heal')">Heal</button>
+                    <button class="hp-btn btn-temp" onclick="adjustHP('temp')">Temp</button>
+                </div>
+                <div id="death-save-block" class="death-save-block" hidden>
+                    <div class="death-save-title">Death Saving Throws</div>
+                    <div class="death-save-row">
+                        <span class="death-save-label">Success</span>
+                        <div class="death-save-tracks">
+                            <button type="button" class="death-save-dot success" data-kind="success" data-index="0" onclick="toggleDeathSave('success', 0)"></button>
+                            <button type="button" class="death-save-dot success" data-kind="success" data-index="1" onclick="toggleDeathSave('success', 1)"></button>
+                            <button type="button" class="death-save-dot success" data-kind="success" data-index="2" onclick="toggleDeathSave('success', 2)"></button>
+                        </div>
+                    </div>
+                    <div class="death-save-row" style="margin-bottom:0;">
+                        <span class="death-save-label">Failure</span>
+                        <div class="death-save-tracks">
+                            <button type="button" class="death-save-dot fail" data-kind="fail" data-index="0" onclick="toggleDeathSave('fail', 0)"></button>
+                            <button type="button" class="death-save-dot fail" data-kind="fail" data-index="1" onclick="toggleDeathSave('fail', 1)"></button>
+                            <button type="button" class="death-save-dot fail" data-kind="fail" data-index="2" onclick="toggleDeathSave('fail', 2)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Skills</div>
+            <div class="skills-grid" id="skills-container"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Attacks</div>
+            <table id="atk-table"><tbody></tbody></table>
+        </div>
+    </main>
+
+    <section>
+        <div class="card"><div class="card-title">Resources</div><div id="slot-container"></div></div>
+        <div class="card"><div class="card-title">Features</div><div id="feat-list" style="font-size:0.8rem; color:#aaa; white-space:pre-line;"></div></div>
+    </section>
+
+    <button class="rest-btn" onclick="longRest()">🔥 Long Rest</button>
+</div>
+
+<script>
+    const sheetData = {
+        id: "valerius_v6",
+        name: "Valerius Vexed",
+        raceClass: "Tiefling | Warlock 5",
+        ac: 16, init: "+3", prof: "+3", hpMax: 42,
+        stats: [
+            { label: "STR", val: 10, mod: "+0" }, { label: "DEX", val: 16, mod: "+3" },
+            { label: "CON", val: 14, mod: "+2" }, { label: "INT", val: 12, mod: "+1" },
+            { label: "WIS", val: 8,  mod: "-1" }, { label: "CHA", val: 18, mod: "+4" }
+        ],
+        skills: [
+            { n: "Acrobatics", b: "+3", p: false }, { n: "Arcana", b: "+4", p: true },
+            { n: "Deception", b: "+7", p: true }, { n: "History", b: "+1", p: false },
+            { n: "Insight", b: "+2", p: true }, { n: "Intimidation", b: "+7", p: true },
+            { n: "Investigation", b: "+4", p: true }, { n: "Perception", b: "-1", p: false },
+            { n: "Stealth", b: "+3", p: false }
+        ],
+        attacks: [
+            { n: "Eldritch Blast", b: "+7", d: "2d10 [F]" },
+            { n: "Dagger", b: "+6", d: "1d4+3 [P]" }
+        ],
+        resources: [{ label: "Spell Slots", count: 2 }, { label: "Inspiration", count: 1 }],
+        features: "• Dark One's Blessing: 9 Temp HP\n• Agonizing Blast: +4 dmg\n• Darkvision: 60ft"
+    };
+
+    let tempHP = 0;
+    let deathSaves = { success: [false, false, false], fail: [false, false, false] };
+    const KEY = `dnd_v6_${sheetData.id}`;
+
+    function render() {
+        document.getElementById('c-name').innerText = sheetData.name;
+        document.getElementById('c-meta').innerText = sheetData.raceClass;
+        document.getElementById('c-ac').innerText = sheetData.ac;
+        document.getElementById('c-init').innerText = sheetData.init;
+        document.getElementById('c-prof').innerText = sheetData.prof;
+        document.getElementById('hp-max').innerText = sheetData.hpMax;
+        document.getElementById('feat-list').innerText = sheetData.features;
+
+        const statWrap = document.getElementById('stat-container');
+        sheetData.stats.forEach(s => {
+            statWrap.innerHTML += `<div class="stat-box"><span class="stat-mod">${s.mod}</span><span style="font-size:0.55rem; color:var(--gold)">${s.label} (${s.val})</span></div>`;
+        });
+
+        const skillWrap = document.getElementById('skills-container');
+        sheetData.skills.forEach(s => {
+            skillWrap.innerHTML += `<div class="skill-item"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${s.n}</span></div><span style="color:var(--accent); font-family:var(--font-num)">${s.b}</span></div>`;
+        });
+
+        const atkWrap = document.querySelector('#atk-table tbody');
+        sheetData.attacks.forEach(a => {
+            atkWrap.innerHTML += `<tr><td style="font-weight:bold; color:white">${a.n}</td><td>${a.b}</td><td>${a.d}</td></tr>`;
+        });
+
+        const resWrap = document.getElementById('slot-container');
+        sheetData.resources.forEach((r, rIdx) => {
+            let bubbles = '';
+            for(let i=0; i<r.count; i++) bubbles += `<div class="bubble" data-r="${rIdx}" data-i="${i}" onclick="tgl(this)"></div>`;
+            resWrap.innerHTML += `<div style="display:flex; justify-content:space-between; margin-bottom:10px"><span>${r.label}</span><div style="display:flex">${bubbles}</div></div>`;
+        });
+
+        load();
+    }
+
+    function adjustHP(type) {
+        let curr = normalizeCurrentHP(document.getElementById('hp-curr'));
+        const modInput = document.getElementById('hp-mod');
+        const mod = normalizeHPMod(modInput);
+
+        if (type === 'heal') {
+            curr = Math.min(sheetData.hpMax, curr + mod);
+        } else if (type === 'dmg') {
+            if (tempHP > 0) {
+                if (mod <= tempHP) {
+                    tempHP -= mod;
+                } else {
+                    const remainder = mod - tempHP;
+                    tempHP = 0;
+                    curr -= remainder;
+                }
+            } else { curr -= mod; }
+        } else if (type === 'temp') {
+            tempHP = mod;
+        }
+
+        curr = Math.max(0, curr);
+        document.getElementById('hp-curr').value = curr;
+        document.getElementById('hp-mod').value = 1;
+        updateTempUI();
+        updateDeathSaveUI();
+        save();
+    }
+
+    function normalizeCurrentHP(input) {
+        const el = typeof input === 'string' ? document.getElementById(input) : input;
+        let value = parseInt(el.value, 10);
+        if (!Number.isFinite(value) || value < 0) value = 0;
+        el.value = value;
+        return value;
+    }
+
+    function normalizeHPMod(input) {
+        const el = typeof input === 'string' ? document.getElementById(input) : input;
+        let value = parseInt(el.value, 10);
+        if (!Number.isFinite(value) || value < 1) value = 1;
+        el.value = value;
+        return value;
+    }
+
+    function stepHPMod(delta) {
+        const el = document.getElementById('hp-mod');
+        const value = normalizeHPMod(el) + delta;
+        el.value = Math.max(1, value);
+        el.focus();
+    }
+
+    function toggleDeathSave(kind, index) {
+        deathSaves[kind][index] = !deathSaves[kind][index];
+        updateDeathSaveUI();
+    }
+
+    function resetDeathSaves() {
+        deathSaves = { success: [false, false, false], fail: [false, false, false] };
+    }
+
+    function updateDeathSaveUI() {
+        const block = document.getElementById('death-save-block');
+        const curr = normalizeCurrentHP(document.getElementById('hp-curr'));
+        const isDown = curr <= 0;
+
+        block.hidden = !isDown;
+        if (!isDown) {
+            resetDeathSaves();
+        }
+
+        document.querySelectorAll('.death-save-dot').forEach(dot => {
+            const kind = dot.dataset.kind;
+            const index = parseInt(dot.dataset.index, 10);
+            dot.classList.toggle('filled', isDown && deathSaves[kind][index]);
+        });
+    }
+
+    function updateTempUI() {
+        const badge = document.getElementById('hp-temp-badge');
+        if (tempHP > 0) {
+            badge.innerText = `+${tempHP} Temp`;
+            badge.classList.add('active');
+        } else {
+            badge.classList.remove('active');
+        }
+    }
+
+    function tgl(el) { el.classList.toggle('checked'); save(); }
+    function save() {
+        const checked = [];
+        document.querySelectorAll('.bubble.checked').forEach(b => checked.push({r: b.dataset.r, i: b.dataset.i}));
+        localStorage.setItem(KEY, JSON.stringify({ hp: normalizeCurrentHP(document.getElementById('hp-curr')), thp: tempHP, checked }));
+    }
+
+    function load() {
+        const saved = localStorage.getItem(KEY);
+        if(!saved) { document.getElementById('hp-curr').value = sheetData.hpMax; updateDeathSaveUI(); return; }
+        const state = JSON.parse(saved);
+        document.getElementById('hp-curr').value = Math.max(0, state.hp ?? sheetData.hpMax);
+        tempHP = state.thp || 0;
+        updateTempUI();
+        (state.checked || []).forEach(s => {
+            const el = document.querySelector(`.bubble[data-r="${s.r}"][data-i="${s.i}"]`);
+            if(el) el.classList.add('checked');
+        });
+        updateDeathSaveUI();
+    }
+
+    function longRest() {
+        if(confirm("Confirm Long Rest?")) {
+            document.getElementById('hp-curr').value = sheetData.hpMax;
+            tempHP = 0;
+            resetDeathSaves();
+            updateTempUI();
+            document.querySelectorAll('.bubble').forEach(b => b.classList.remove('checked'));
+            updateDeathSaveUI();
+            save();
+        }
+    }
+
+    window.onload = render;
+</script>
+</body>
+</html>
