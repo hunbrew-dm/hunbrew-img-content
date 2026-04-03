@@ -129,7 +129,15 @@
         .stat-score { font-family: var(--font-num); font-size: 0.9rem; color: #cfd8dc; line-height: 1; }
         .skills-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
         @media (min-width: 600px) { .skills-grid { grid-template-columns: 1fr 1fr; } }
-        .skill-item { display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; padding: 4px 8px; background: rgba(255,255,255,0.02); }
+        .skill-item, .save-item { display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; padding: 4px 8px; background: rgba(255,255,255,0.02); }
+        .skill-left { display: flex; align-items: center; gap: 8px; }
+        .skill-rank {
+            min-width: 28px; padding: 2px 5px; border-radius: 999px; font-size: 0.58rem; text-align: center;
+            border: 1px solid var(--border); color: #bbb; letter-spacing: 0.02em;
+        }
+        .skill-rank.rank-half { border-style: dashed; color: var(--accent); }
+        .skill-rank.rank-full { background: rgba(0,229,255,0.12); border-color: var(--accent); color: var(--accent); }
+        .skill-rank.rank-expert { background: rgba(212,175,55,0.16); border-color: var(--gold); color: var(--gold); box-shadow: 0 0 0 1px rgba(212,175,55,0.3) inset; }
         .prof-dot { width: 6px; height: 6px; border: 1px solid var(--accent); border-radius: 50%; margin-right: 8px; }
         .prof-dot.filled { background: var(--accent); box-shadow: 0 0 5px var(--accent); }
         .bubble { width: 24px; height: 24px; border: 2px solid var(--border); border-radius: 4px; cursor: pointer; margin-left: 4px; }
@@ -155,9 +163,9 @@
     <header>
         <div class="char-title"><h1 id="c-name">Név</h1><p id="c-meta" style="color:var(--gold)">Kaszt</p></div>
         <div class="vitals-bar">
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">VK</div><div class="vital-val" id="c-ac">10</div></div>
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">INI</div><div class="vital-val" id="c-init">+0</div></div>
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">JÁR</div><div class="vital-val" id="c-prof">+2</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">Védettségi Fok</div><div class="vital-val" id="c-ac">10</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">Kezdeményezés</div><div class="vital-val" id="c-init">+0</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">Jártassági bónusz</div><div class="vital-val" id="c-prof">+2</div></div>
         </div>
     </header>
 
@@ -215,6 +223,11 @@
         </div>
 
         <div class="card">
+            <div class="card-title">Mentődobások</div>
+            <div class="skills-grid" id="saves-container"></div>
+        </div>
+
+        <div class="card">
             <div class="card-title">Támadások</div>
             <table id="atk-table"><tbody></tbody></table>
         </div>
@@ -242,25 +255,33 @@
             { label: "ÁLLÓKÉPESSÉG", val: 14, mod: "+2" }, { label: "INTELLIGENCIA", val: 12, mod: "+1" },
             { label: "BÖLCSESSÉG", val: 8,  mod: "-1" }, { label: "KARIZMA", val: 18, mod: "+4" }
         ],
+        savingThrows: [
+            { statIndex: 0, p: false },
+            { statIndex: 1, p: false },
+            { statIndex: 2, p: false },
+            { statIndex: 3, p: false },
+            { statIndex: 4, p: true },
+            { statIndex: 5, p: true }
+        ],
         skills: [
-            { n: "Akrobatika", a: "ÜGY", b: "+3", p: false },
-            { n: "Atlétika", a: "ERŐ", b: "+0", p: false },
-            { n: "Előadásmód", a: "KAR", b: "+4", p: false },
-            { n: "Ember ismeret", a: "BÖL", b: "+2", p: true },
-            { n: "Észlelés", a: "BÖL", b: "-1", p: false },
-            { n: "Kézügyesség", a: "ÜGY", b: "+3", p: false },
-            { n: "Lopakodás", a: "ÜGY", b: "+3", p: false },
-            { n: "Mágia ismeret", a: "INT", b: "+4", p: true },
-            { n: "Megfélemlítés", a: "KAR", b: "+7", p: true },
-            { n: "Meggyőzés", a: "KAR", b: "+7", p: true },
-            { n: "Megtévesztés", a: "KAR", b: "+7", p: true },
-            { n: "Orvoslás", a: "BÖL", b: "-1", p: false },
-            { n: "Szelídítés", a: "BÖL", b: "-1", p: false },
-            { n: "Természetismeret", a: "INT", b: "+1", p: false },
-            { n: "Történelem", a: "INT", b: "+1", p: false },
-            { n: "Túlélés", a: "BÖL", b: "-1", p: false },
-            { n: "Vallás", a: "INT", b: "+1", p: false },
-            { n: "Vizsgálódás", a: "INT", b: "+4", p: true }
+            { n: "Akrobatika", a: "ÜGY", statIndex: 1, s: 1, p: false },
+            { n: "Atlétika", a: "ERŐ", statIndex: 0, s: 0.5, p: false },
+            { n: "Előadásmód", a: "KAR", statIndex: 5, s: 2, p: false },
+            { n: "Ember ismeret", a: "BÖL", statIndex: 4, s: 1, p: true },
+            { n: "Észlelés", a: "BÖL", statIndex: 4, s: 0, p: false },
+            { n: "Kézügyesség", a: "ÜGY", statIndex: 1, s: 1, p: false },
+            { n: "Lopakodás", a: "ÜGY", statIndex: 1, s: 1, p: false },
+            { n: "Mágia ismeret", a: "INT", statIndex: 3, s: 1, p: true },
+            { n: "Megfélemlítés", a: "KAR", statIndex: 5, s: 2, p: true },
+            { n: "Meggyőzés", a: "KAR", statIndex: 5, s: 1, p: true },
+            { n: "Megtévesztés", a: "KAR", statIndex: 5, s: 1, p: true },
+            { n: "Orvoslás", a: "BÖL", statIndex: 4, s: 0, p: false },
+            { n: "Szelídítés", a: "BÖL", statIndex: 4, s: 0.5, p: false },
+            { n: "Természetismeret", a: "INT", statIndex: 3, s: 0, p: false },
+            { n: "Történelem", a: "INT", statIndex: 3, s: 0, p: false },
+            { n: "Túlélés", a: "BÖL", statIndex: 4, s: 0.5, p: false },
+            { n: "Vallás", a: "INT", statIndex: 3, s: 0, p: false },
+            { n: "Vizsgálódás", a: "INT", statIndex: 3, s: 1, p: true }
         ],
         attacks: [
             { n: "Misztikus Sugár", b: "+7", d: "2d10 [F]" },
@@ -284,6 +305,40 @@
     let hitDiceSpent = [];
     const KEY = `dnd_v6_${sheetData.id}`;
 
+    function parseSigned(value) {
+        return parseInt(String(value).replace('+', ''), 10) || 0;
+    }
+
+    function fmtSigned(value) {
+        return value >= 0 ? `+${value}` : `${value}`;
+    }
+
+    function skillRankLabel(rank) {
+        if (rank === 0.5) return '½';
+        if (rank === 2) return '×2';
+        if (rank === 1) return 'JÁR';
+        return '—';
+    }
+
+    function skillRankClass(rank) {
+        if (rank === 0.5) return 'rank-half';
+        if (rank === 2) return 'rank-expert';
+        if (rank === 1) return 'rank-full';
+        return 'rank-none';
+    }
+
+    function calcSkillBonus(skill) {
+        const stat = sheetData.stats[skill.statIndex];
+        const base = parseSigned(stat ? stat.mod : 0);
+        const prof = parseSigned(sheetData.prof);
+        let mult = 0;
+        if (skill.s === 0.5) mult = 0.5;
+        else if (skill.s === 1) mult = 1;
+        else if (skill.s === 2) mult = 2;
+        const bonus = base + Math.floor(prof * mult);
+        return fmtSigned(bonus);
+    }
+
     function render() {
         document.getElementById('c-name').innerText = sheetData.name;
         document.getElementById('c-meta').innerText = sheetData.raceClass;
@@ -299,7 +354,16 @@
 
         const skillWrap = document.getElementById('skills-container');
         sheetData.skills.forEach(s => {
-            skillWrap.innerHTML += `<div class="skill-item"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${s.n} <span style="color:#aaa; font-size:0.65rem">(${s.a})</span></span></div><span style="color:var(--accent); font-family:var(--font-num)">${s.b}</span></div>`;
+            skillWrap.innerHTML += `<div class="skill-item"><div class="skill-left"><div class="skill-rank ${skillRankClass(s.s)}">${skillRankLabel(s.s)}</div><span>${s.n} <span style="color:#aaa; font-size:0.65rem">(${s.a})</span></span></div><span style="color:var(--accent); font-family:var(--font-num)">${calcSkillBonus(s)}</span></div>`;
+        });
+
+        const saveWrap = document.getElementById('saves-container');
+        const toSigned = n => (n >= 0 ? `+${n}` : `${n}`);
+        sheetData.savingThrows.forEach(s => {
+            const stat = sheetData.stats[s.statIndex];
+            const base = parseSigned((stat && stat.mod) || 0);
+            const prof = s.p ? parseSigned(sheetData.prof) : 0;
+            saveWrap.innerHTML += `<div class="save-item"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${stat.label}</span></div><span style="color:var(--accent); font-family:var(--font-num)">${toSigned(base + prof)}</span></div>`;
         });
 
         const atkWrap = document.querySelector('#atk-table tbody');
