@@ -29,6 +29,11 @@
 
         .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 20px; }
         .card-title { font-family: var(--font-display); color: var(--gold); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+        .card-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+        .hit-dice-row { width: 100%; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 2px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+        .hit-dice-label { font-family: var(--font-display); font-size: 0.72rem; text-transform: uppercase; color: var(--gold); }
+        .hit-dice-meta { font-family: var(--font-num); font-size: 0.75rem; color: var(--accent); white-space: nowrap; }
+        .hit-dice-track { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
 
         /* --- ENHANCED HP TRACKER v6 --- */
         .hp-main-display {
@@ -114,8 +119,14 @@
         .vital-val { font-family: var(--font-num); font-size: 1.4rem; color: var(--accent); text-align: center; }
         .stats-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
         @media (min-width: 1024px) { .stats-list { grid-template-columns: 1fr; } }
-        .stat-box { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
-        .stat-mod { font-family: var(--font-num); font-size: 1.8rem; color: var(--accent); display: block; }
+        .stat-box {
+            background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px;
+            padding: 10px 8px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 2px;
+            min-height: 92px;
+        }
+        .stat-name { font-family: var(--font-display); font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.04em; }
+        .stat-mod { font-family: var(--font-num); font-size: 2.1rem; color: var(--accent); display: block; line-height: 1; }
+        .stat-score { font-family: var(--font-num); font-size: 0.9rem; color: #cfd8dc; line-height: 1; }
         .skills-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
         @media (min-width: 600px) { .skills-grid { grid-template-columns: 1fr 1fr; } }
         .skill-item { display: flex; align-items: center; justify-content: space-between; font-size: 0.8rem; padding: 4px 8px; background: rgba(255,255,255,0.02); }
@@ -123,9 +134,18 @@
         .prof-dot.filled { background: var(--accent); box-shadow: 0 0 5px var(--accent); }
         .bubble { width: 24px; height: 24px; border: 2px solid var(--border); border-radius: 4px; cursor: pointer; margin-left: 4px; }
         .bubble.checked { background: var(--accent); border-color: var(--accent); }
+        .feature-list { display: flex; flex-direction: column; gap: 12px; }
+        .feature-item { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .feature-title { font-family: var(--font-display); font-size: 0.78rem; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
+        .feature-desc { font-size: 0.8rem; color: #aaa; white-space: pre-line; }
+        .feature-counter { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; }
+        .feature-counter-label { font-size: 0.65rem; text-transform: uppercase; color: #888; }
         table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
         td { padding: 8px 4px; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .rest-btn { grid-column: 1 / -1; background: linear-gradient(to right, #800, #400); color: white; border: none; padding: 15px; border-radius: 8px; font-family: var(--font-display); cursor: pointer; }
+        .rest-actions { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        @media (max-width: 600px) { .rest-actions { grid-template-columns: 1fr; } }
+        .rest-btn { background: linear-gradient(to right, #800, #400); color: white; border: none; padding: 15px; border-radius: 8px; font-family: var(--font-display); cursor: pointer; }
+        .short-rest-btn { background: linear-gradient(to right, #0d4d5c, #08313b); }
         input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
     </style>
 </head>
@@ -145,7 +165,7 @@
 
     <main>
         <div class="card">
-            <div class="card-title">Hit Points</div>
+                <div class="card-title card-title-row"><span>Hit Points</span></div>
             <div class="hp-main-display">
                 <div id="hp-temp-badge" class="temp-hp-badge"></div>
                 <input type="number" id="hp-curr" class="hp-current-input" value="0" min="0" step="1" inputmode="numeric" oninput="normalizeCurrentHP(this)" onchange="save(); updateDeathSaveUI();">
@@ -166,6 +186,7 @@
                     <button class="hp-btn btn-heal" onclick="adjustHP('heal')">Heal</button>
                     <button class="hp-btn btn-temp" onclick="adjustHP('temp')">Temp</button>
                 </div>
+                <div id="hit-dice-row" class="hit-dice-row"></div>
                 <div id="death-save-block" class="death-save-block" hidden>
                     <div class="death-save-title">Death Saving Throws</div>
                     <div class="death-save-row">
@@ -201,10 +222,13 @@
 
     <section>
         <div class="card"><div class="card-title">Resources</div><div id="slot-container"></div></div>
-        <div class="card"><div class="card-title">Features</div><div id="feat-list" style="font-size:0.8rem; color:#aaa; white-space:pre-line;"></div></div>
+        <div class="card"><div class="card-title">Features</div><div id="feat-list" class="feature-list"></div></div>
     </section>
 
-    <button class="rest-btn" onclick="longRest()">🔥 Long Rest</button>
+    <div class="rest-actions">
+        <button class="rest-btn short-rest-btn" onclick="shortRest()">🌙 Short Rest</button>
+        <button class="rest-btn" onclick="longRest()">🔥 Long Rest</button>
+    </div>
 </div>
 
 <script>
@@ -212,7 +236,7 @@
         id: "valerius_v6",
         name: "Valerius Vexed",
         raceClass: "Tiefling | Warlock 5",
-        ac: 16, init: "+3", prof: "+3", hpMax: 42,
+        ac: 16, init: "+3", prof: "+3", hpMax: 42, hitDice: { total: 5, die: "d8" },
         stats: [
             { label: "STR", val: 10, mod: "+0" }, { label: "DEX", val: 16, mod: "+3" },
             { label: "CON", val: 14, mod: "+2" }, { label: "INT", val: 12, mod: "+1" },
@@ -229,12 +253,22 @@
             { n: "Eldritch Blast", b: "+7", d: "2d10 [F]" },
             { n: "Dagger", b: "+6", d: "1d4+3 [P]" }
         ],
-        resources: [{ label: "Spell Slots", count: 2 }, { label: "Inspiration", count: 1 }],
-        features: "• Dark One's Blessing: 9 Temp HP\n• Agonizing Blast: +4 dmg\n• Darkvision: 60ft"
+        resources: [
+            { label: "Spell Slots", count: 2, shortRest: 2 },
+            { label: "Inspiration", count: 1, shortRest: 0 }
+        ],
+        features: [
+            { title: "Dark One's Blessing", description: "Gain 9 Temp HP when you reduce a hostile creature to 0 HP." },
+            { title: "Agonizing Blast", description: "+4 damage to Eldritch Blast." },
+            { title: "Darkvision", description: "See in darkness out to 60 ft." },
+            { title: "Hex Uses", description: "Track active Hex uses here.", count: 3, shortRest: 2 }
+        ]
     };
 
     let tempHP = 0;
     let deathSaves = { success: [false, false, false], fail: [false, false, false] };
+    let featureCounters = [];
+    let hitDiceSpent = [];
     const KEY = `dnd_v6_${sheetData.id}`;
 
     function render() {
@@ -244,11 +278,10 @@
         document.getElementById('c-init').innerText = sheetData.init;
         document.getElementById('c-prof').innerText = sheetData.prof;
         document.getElementById('hp-max').innerText = sheetData.hpMax;
-        document.getElementById('feat-list').innerText = sheetData.features;
 
         const statWrap = document.getElementById('stat-container');
         sheetData.stats.forEach(s => {
-            statWrap.innerHTML += `<div class="stat-box"><span class="stat-mod">${s.mod}</span><span style="font-size:0.55rem; color:var(--gold)">${s.label} (${s.val})</span></div>`;
+            statWrap.innerHTML += `<div class="stat-box"><span class="stat-name">${s.label}</span><span class="stat-mod">${s.mod}</span><span class="stat-score">${s.val}</span></div>`;
         });
 
         const skillWrap = document.getElementById('skills-container');
@@ -264,11 +297,90 @@
         const resWrap = document.getElementById('slot-container');
         sheetData.resources.forEach((r, rIdx) => {
             let bubbles = '';
-            for(let i=0; i<r.count; i++) bubbles += `<div class="bubble" data-r="${rIdx}" data-i="${i}" onclick="tgl(this)"></div>`;
-            resWrap.innerHTML += `<div style="display:flex; justify-content:space-between; margin-bottom:10px"><span>${r.label}</span><div style="display:flex">${bubbles}</div></div>`;
+            for(let i=0; i<r.count; i++) bubbles += `<div class="bubble resource-bubble" data-r="${rIdx}" data-i="${i}" onclick="tgl(this)"></div>`;
+            resWrap.innerHTML += `<div class="resource-item" data-short-rest="${Number.isFinite(r.shortRest) ? r.shortRest : 0}" data-count="${r.count}" style="display:flex; justify-content:space-between; margin-bottom:10px"><span>${r.label}</span><div style="display:flex">${bubbles}</div></div>`;
         });
 
+        renderFeatures();
+        renderHitDice();
+
         load();
+    }
+
+    function getHitDiceTotal() {
+        return Number.isFinite(sheetData.hitDice?.total) ? sheetData.hitDice.total : 0;
+    }
+
+    function renderHitDice() {
+        const row = document.getElementById('hit-dice-row');
+        const total = getHitDiceTotal();
+        hitDiceSpent = Array.from({ length: total }, (_, i) => hitDiceSpent[i] || false);
+
+        const bubbles = [];
+        for (let i = 0; i < total; i++) {
+            bubbles.push('<div class="bubble hit-dice-bubble" data-hd="' + i + '" onclick="toggleHitDie(this)"></div>');
+        }
+
+        row.innerHTML = '<span class="hit-dice-label">Hit Dice</span><span class="hit-dice-meta">' + total + (sheetData.hitDice?.die || '') + '</span><div class="hit-dice-track">' + bubbles.join('') + '</div>';
+        updateHitDiceUI();
+    }
+
+    function toggleHitDie(el) {
+        const index = parseInt(el.dataset.hd, 10);
+        hitDiceSpent[index] = !hitDiceSpent[index];
+        updateHitDiceUI();
+        save();
+    }
+
+    function updateHitDiceUI() {
+        document.querySelectorAll('.hit-dice-bubble').forEach(b => {
+            const index = parseInt(b.dataset.hd, 10);
+            b.classList.toggle('checked', !!hitDiceSpent[index]);
+        });
+    }
+
+    function renderFeatures() {
+        const featWrap = document.getElementById('feat-list');
+        featWrap.innerHTML = '';
+        featureCounters = [];
+
+        const features = Array.isArray(sheetData.features)
+            ? sheetData.features
+            : [{ title: 'Features', description: String(sheetData.features || '') }];
+
+        features.forEach((feature, fIdx) => {
+            const count = Number.isFinite(feature.count) ? feature.count : 0;
+            const counterMarkup = count > 0 ? renderFeatureCounter(fIdx, count) : '';
+
+            featWrap.innerHTML += `
+                <div class="feature-item" data-short-rest="${Number.isFinite(feature.shortRest) ? feature.shortRest : 0}" data-count="${count}">
+                    <div class="feature-title">${feature.title || `Feature ${fIdx + 1}`}</div>
+                    <div class="feature-desc">${feature.description || ''}</div>
+                    ${counterMarkup}
+                </div>
+            `;
+
+            if (count > 0 && !featureCounters[fIdx]) {
+                featureCounters[fIdx] = Array.from({ length: count }, () => false);
+            }
+        });
+    }
+
+    function renderFeatureCounter(featureIndex, count) {
+        const bubbles = [];
+        for (let i = 0; i < count; i++) {
+            bubbles.push('<div class="bubble feature-bubble" data-f="' + featureIndex + '" data-i="' + i + '" onclick="tglFeature(this)"></div>');
+        }
+        return '<div class="feature-counter"><span class="feature-counter-label">Counter</span><div style="display:flex">' + bubbles.join('') + '</div></div>';
+    }
+
+
+    function refillCounterRow(rowEl, amount, bubbleSelector) {
+        const checked = Array.from(rowEl.querySelectorAll(bubbleSelector + '.checked'));
+        const refill = Math.min(amount, checked.length);
+        for (let i = 0; i < refill; i++) {
+            checked[checked.length - 1 - i].classList.remove('checked');
+        }
     }
 
     function adjustHP(type) {
@@ -360,10 +472,19 @@
     }
 
     function tgl(el) { el.classList.toggle('checked'); save(); }
+    function tglFeature(el) {
+        const f = parseInt(el.dataset.f, 10);
+        const i = parseInt(el.dataset.i, 10);
+        featureCounters[f][i] = !featureCounters[f][i];
+        el.classList.toggle('checked');
+        save();
+    }
     function save() {
         const checked = [];
-        document.querySelectorAll('.bubble.checked').forEach(b => checked.push({r: b.dataset.r, i: b.dataset.i}));
-        localStorage.setItem(KEY, JSON.stringify({ hp: normalizeCurrentHP(document.getElementById('hp-curr')), thp: tempHP, checked }));
+        document.querySelectorAll('.resource-bubble.checked').forEach(b => checked.push({r: b.dataset.r, i: b.dataset.i}));
+        const featureChecked = [];
+        document.querySelectorAll('.feature-bubble.checked').forEach(b => featureChecked.push({ f: b.dataset.f, i: b.dataset.i }));
+        localStorage.setItem(KEY, JSON.stringify({ hp: normalizeCurrentHP(document.getElementById('hp-curr')), thp: tempHP, checked, featureChecked, hitDiceSpent }));
     }
 
     function load() {
@@ -374,10 +495,32 @@
         tempHP = state.thp || 0;
         updateTempUI();
         (state.checked || []).forEach(s => {
-            const el = document.querySelector(`.bubble[data-r="${s.r}"][data-i="${s.i}"]`);
+            const el = document.querySelector(`.resource-bubble[data-r="${s.r}"][data-i="${s.i}"]`);
             if(el) el.classList.add('checked');
         });
+        (state.featureChecked || []).forEach(s => {
+            const el = document.querySelector(`.feature-bubble[data-f="${s.f}"][data-i="${s.i}"]`);
+            if (el) {
+                el.classList.add('checked');
+                if (featureCounters[s.f]) featureCounters[s.f][s.i] = true;
+            }
+        });
+        hitDiceSpent = Array.from({ length: getHitDiceTotal() }, (_, i) => !!(state.hitDiceSpent || [])[i]);
+        updateHitDiceUI();
         updateDeathSaveUI();
+    }
+
+    function shortRest() {
+        document.querySelectorAll('.resource-item').forEach(row => {
+            const refill = parseInt(row.dataset.shortRest, 10) || 0;
+            if (refill > 0) refillCounterRow(row, refill, '.resource-bubble');
+        });
+        document.querySelectorAll('.feature-item').forEach(row => {
+            const refill = parseInt(row.dataset.shortRest, 10) || 0;
+            const count = parseInt(row.dataset.count, 10) || 0;
+            if (refill > 0 && count > 0) refillCounterRow(row, refill, '.feature-bubble');
+        });
+        save();
     }
 
     function longRest() {
@@ -385,8 +528,11 @@
             document.getElementById('hp-curr').value = sheetData.hpMax;
             tempHP = 0;
             resetDeathSaves();
+            hitDiceSpent = Array.from({ length: getHitDiceTotal() }, () => false);
             updateTempUI();
-            document.querySelectorAll('.bubble').forEach(b => b.classList.remove('checked'));
+            document.querySelectorAll('.resource-bubble, .feature-bubble').forEach(b => b.classList.remove('checked'));
+            featureCounters = featureCounters.map(arr => arr.map(() => false));
+            updateHitDiceUI();
             updateDeathSaveUI();
             save();
         }
