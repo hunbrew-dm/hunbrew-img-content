@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcane Dashboard v6</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Metamorphous&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Karakterlap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #0b0e14;
@@ -17,12 +17,12 @@
             --hp-green: #40ffaa;
             --hp-blue: #44aaff;
             --text: #e0e0e0;
-            --font-display: 'Cinzel Decorative', serif;
-            --font-num: 'Metamorphous', cursive;
+            --font-display: 'Noto Serif', serif;
+            --font-num: 'Noto Sans', sans-serif;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; padding: 20px; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Noto Sans', sans-serif; padding: 20px; }
 
         .dashboard { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 20px; }
         @media (min-width: 1024px) { .dashboard { grid-template-columns: 180px 1fr 320px; align-items: start; } }
@@ -153,11 +153,11 @@
 
 <div class="dashboard">
     <header>
-        <div class="char-title"><h1 id="c-name">Name</h1><p id="c-meta" style="color:var(--gold)">Class</p></div>
+        <div class="char-title"><h1 id="c-name">Név</h1><p id="c-meta" style="color:var(--gold)">Kaszt</p></div>
         <div class="vitals-bar">
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">AC</div><div class="vital-val" id="c-ac">10</div></div>
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">INIT</div><div class="vital-val" id="c-init">+0</div></div>
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">PROF</div><div class="vital-val" id="c-prof">+2</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">VK</div><div class="vital-val" id="c-ac">10</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">INI</div><div class="vital-val" id="c-init">+0</div></div>
+            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">JÁR</div><div class="vital-val" id="c-prof">+2</div></div>
         </div>
     </header>
 
@@ -165,7 +165,7 @@
 
     <main>
         <div class="card">
-                <div class="card-title card-title-row"><span>Hit Points</span></div>
+                <div class="card-title card-title-row"><span>Harcerőpont</span></div>
             <div class="hp-main-display">
                 <div id="hp-temp-badge" class="temp-hp-badge"></div>
                 <input type="number" id="hp-curr" class="hp-current-input" value="0" min="0" step="1" inputmode="numeric" oninput="normalizeCurrentHP(this)" onchange="save(); updateDeathSaveUI();">
@@ -174,23 +174,23 @@
 
             <div class="hp-controls">
                 <div class="mod-input-wrap">
-                    <span style="font-size: 0.7rem; text-transform: uppercase;">Amount</span>
+                    <span style="font-size: 0.7rem; text-transform: uppercase;">Mennyiség</span>
                     <div class="mod-stepper">
-                        <button type="button" class="mod-step-btn" aria-label="Decrease amount" onclick="stepHPMod(-1)">−</button>
+                        <button type="button" class="mod-step-btn" aria-label="Mennyiség csökkentése" onclick="stepHPMod(-1)">−</button>
                         <input type="number" id="hp-mod" class="mod-input" value="1" min="1" step="1" inputmode="numeric" oninput="normalizeHPMod(this)" onblur="normalizeHPMod(this)">
-                        <button type="button" class="mod-step-btn" aria-label="Increase amount" onclick="stepHPMod(1)">+</button>
+                        <button type="button" class="mod-step-btn" aria-label="Mennyiség növelése" onclick="stepHPMod(1)">+</button>
                     </div>
                 </div>
                 <div class="btn-group">
-                    <button class="hp-btn btn-dmg" onclick="adjustHP('dmg')">Damage</button>
-                    <button class="hp-btn btn-heal" onclick="adjustHP('heal')">Heal</button>
-                    <button class="hp-btn btn-temp" onclick="adjustHP('temp')">Temp</button>
+                    <button class="hp-btn btn-dmg" onclick="adjustHP('dmg')">Sebzés</button>
+                    <button class="hp-btn btn-heal" onclick="adjustHP('heal')">Gyógyítás</button>
+                    <button class="hp-btn btn-temp" onclick="adjustHP('temp')">Ideiglenes</button>
                 </div>
                 <div id="hit-dice-row" class="hit-dice-row"></div>
                 <div id="death-save-block" class="death-save-block" hidden>
-                    <div class="death-save-title">Death Saving Throws</div>
+                    <div class="death-save-title">Halálsikerek</div>
                     <div class="death-save-row">
-                        <span class="death-save-label">Success</span>
+                        <span class="death-save-label">Siker</span>
                         <div class="death-save-tracks">
                             <button type="button" class="death-save-dot success" data-kind="success" data-index="0" onclick="toggleDeathSave('success', 0)"></button>
                             <button type="button" class="death-save-dot success" data-kind="success" data-index="1" onclick="toggleDeathSave('success', 1)"></button>
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                     <div class="death-save-row" style="margin-bottom:0;">
-                        <span class="death-save-label">Failure</span>
+                        <span class="death-save-label">Kudarc</span>
                         <div class="death-save-tracks">
                             <button type="button" class="death-save-dot fail" data-kind="fail" data-index="0" onclick="toggleDeathSave('fail', 0)"></button>
                             <button type="button" class="death-save-dot fail" data-kind="fail" data-index="1" onclick="toggleDeathSave('fail', 1)"></button>
@@ -210,58 +210,71 @@
         </div>
 
         <div class="card">
-            <div class="card-title">Skills</div>
+            <div class="card-title">Képességek</div>
             <div class="skills-grid" id="skills-container"></div>
         </div>
 
         <div class="card">
-            <div class="card-title">Attacks</div>
+            <div class="card-title">Támadások</div>
             <table id="atk-table"><tbody></tbody></table>
         </div>
     </main>
 
     <section>
-        <div class="card"><div class="card-title">Resources</div><div id="slot-container"></div></div>
-        <div class="card"><div class="card-title">Features</div><div id="feat-list" class="feature-list"></div></div>
+        <div class="card"><div class="card-title">Erőforrások</div><div id="slot-container"></div></div>
+        <div class="card"><div class="card-title">Tulajdonságok</div><div id="feat-list" class="feature-list"></div></div>
     </section>
 
     <div class="rest-actions">
-        <button class="rest-btn short-rest-btn" onclick="shortRest()">🌙 Short Rest</button>
-        <button class="rest-btn" onclick="longRest()">🔥 Long Rest</button>
+        <button class="rest-btn short-rest-btn" onclick="shortRest()">🌙 Rövid Pihenő</button>
+        <button class="rest-btn" onclick="longRest()">🔥 Hosszú Pihenő</button>
     </div>
 </div>
 
 <script>
     const sheetData = {
         id: "valerius_v6",
-        name: "Valerius Vexed",
-        raceClass: "Tiefling | Warlock 5",
+        name: "Valerius Kínzott",
+        raceClass: "Tiefling | Boszorkánymester 5",
         ac: 16, init: "+3", prof: "+3", hpMax: 42, hitDice: { total: 5, die: "d8" },
         stats: [
-            { label: "STR", val: 10, mod: "+0" }, { label: "DEX", val: 16, mod: "+3" },
-            { label: "CON", val: 14, mod: "+2" }, { label: "INT", val: 12, mod: "+1" },
-            { label: "WIS", val: 8,  mod: "-1" }, { label: "CHA", val: 18, mod: "+4" }
+            { label: "ERŐ", val: 10, mod: "+0" }, { label: "ÜGYESSÉG", val: 16, mod: "+3" },
+            { label: "ÁLLÓKÉPESSÉG", val: 14, mod: "+2" }, { label: "INTELLIGENCIA", val: 12, mod: "+1" },
+            { label: "BÖLCSESSÉG", val: 8,  mod: "-1" }, { label: "KARIZMA", val: 18, mod: "+4" }
         ],
         skills: [
-            { n: "Acrobatics", b: "+3", p: false }, { n: "Arcana", b: "+4", p: true },
-            { n: "Deception", b: "+7", p: true }, { n: "History", b: "+1", p: false },
-            { n: "Insight", b: "+2", p: true }, { n: "Intimidation", b: "+7", p: true },
-            { n: "Investigation", b: "+4", p: true }, { n: "Perception", b: "-1", p: false },
-            { n: "Stealth", b: "+3", p: false }
+            { n: "Akrobatika", a: "ÜGY", b: "+3", p: false },
+            { n: "Atlétika", a: "ERŐ", b: "+0", p: false },
+            { n: "Előadásmód", a: "KAR", b: "+4", p: false },
+            { n: "Ember ismeret", a: "BÖL", b: "+2", p: true },
+            { n: "Észlelés", a: "BÖL", b: "-1", p: false },
+            { n: "Kézügyesség", a: "ÜGY", b: "+3", p: false },
+            { n: "Lopakodás", a: "ÜGY", b: "+3", p: false },
+            { n: "Mágia ismeret", a: "INT", b: "+4", p: true },
+            { n: "Megfélemlítés", a: "KAR", b: "+7", p: true },
+            { n: "Meggyőzés", a: "KAR", b: "+7", p: true },
+            { n: "Megtévesztés", a: "KAR", b: "+7", p: true },
+            { n: "Orvoslás", a: "BÖL", b: "-1", p: false },
+            { n: "Szelídítés", a: "BÖL", b: "-1", p: false },
+            { n: "Természetismeret", a: "INT", b: "+1", p: false },
+            { n: "Történelem", a: "INT", b: "+1", p: false },
+            { n: "Túlélés", a: "BÖL", b: "-1", p: false },
+            { n: "Vallás", a: "INT", b: "+1", p: false },
+            { n: "Vizsgálódás", a: "INT", b: "+4", p: true }
         ],
         attacks: [
-            { n: "Eldritch Blast", b: "+7", d: "2d10 [F]" },
-            { n: "Dagger", b: "+6", d: "1d4+3 [P]" }
+            { n: "Misztikus Sugár", b: "+7", d: "2d10 [F]" },
+            { n: "Tőr", b: "+6", d: "1d4+3 [P]" }
         ],
         resources: [
-            { label: "Spell Slots", count: 2, shortRest: 2 },
-            { label: "Inspiration", count: 1, shortRest: 0 }
+            { label: "Varázslat rekesz", count: 2, shortRest: 2 },
+            { label: "Inspiráció", count: 1, shortRest: 0 }
         ],
         features: [
-            { title: "Dark One's Blessing", description: "Gain 9 Temp HP when you reduce a hostile creature to 0 HP." },
-            { title: "Agonizing Blast", description: "+4 damage to Eldritch Blast." },
-            { title: "Darkvision", description: "See in darkness out to 60 ft." },
-            { title: "Hex Uses", description: "Track active Hex uses here.", count: 3, shortRest: 2 }
+            { title: "Sötét Úr Áldása", description: "Szerezz 9 ideiglenes ÉP-t, amikor egy ellenséges lényt 0 ÉP-re viszel." },
+            { title: "Gyötrő Sugár", description: "+4 sebzés a Misztikus Sugárhoz." },
+            { title: "Sötétlátás", description: "Lásd a sötétséget 18 méterig." },
+            { title: "Átokhasználatok", description: "Itt követheted az aktív átokhasználatokat.", count: 3, shortRest: 2 }
         ]
     };
 
@@ -286,7 +299,7 @@
 
         const skillWrap = document.getElementById('skills-container');
         sheetData.skills.forEach(s => {
-            skillWrap.innerHTML += `<div class="skill-item"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${s.n}</span></div><span style="color:var(--accent); font-family:var(--font-num)">${s.b}</span></div>`;
+            skillWrap.innerHTML += `<div class="skill-item"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${s.n} <span style="color:#aaa; font-size:0.65rem">(${s.a})</span></span></div><span style="color:var(--accent); font-family:var(--font-num)">${s.b}</span></div>`;
         });
 
         const atkWrap = document.querySelector('#atk-table tbody');
@@ -321,7 +334,7 @@
             bubbles.push('<div class="bubble hit-dice-bubble" data-hd="' + i + '" onclick="toggleHitDie(this)"></div>');
         }
 
-        row.innerHTML = '<span class="hit-dice-label">Hit Dice</span><span class="hit-dice-meta">' + total + (sheetData.hitDice?.die || '') + '</span><div class="hit-dice-track">' + bubbles.join('') + '</div>';
+        row.innerHTML = '<span class="hit-dice-label">Harcerő kocka</span><span class="hit-dice-meta">' + total + (sheetData.hitDice?.die || '') + '</span><div class="hit-dice-track">' + bubbles.join('') + '</div>';
         updateHitDiceUI();
     }
 
@@ -346,7 +359,7 @@
 
         const features = Array.isArray(sheetData.features)
             ? sheetData.features
-            : [{ title: 'Features', description: String(sheetData.features || '') }];
+            : [{ title: 'Tulajdonságok', description: String(sheetData.features || '') }];
 
         features.forEach((feature, fIdx) => {
             const count = Number.isFinite(feature.count) ? feature.count : 0;
@@ -371,7 +384,7 @@
         for (let i = 0; i < count; i++) {
             bubbles.push('<div class="bubble feature-bubble" data-f="' + featureIndex + '" data-i="' + i + '" onclick="tglFeature(this)"></div>');
         }
-        return '<div class="feature-counter"><span class="feature-counter-label">Counter</span><div style="display:flex">' + bubbles.join('') + '</div></div>';
+        return '<div class="feature-counter"><span class="feature-counter-label">Számláló</span><div style="display:flex">' + bubbles.join('') + '</div></div>';
     }
 
 
@@ -524,7 +537,7 @@
     }
 
     function longRest() {
-        if(confirm("Confirm Long Rest?")) {
+        if(confirm("Megerősíted a hosszú pihenőt?")) {
             document.getElementById('hp-curr').value = sheetData.hpMax;
             tempHP = 0;
             resetDeathSaves();
@@ -542,3 +555,5 @@
 </script>
 </body>
 </html>
+
+
