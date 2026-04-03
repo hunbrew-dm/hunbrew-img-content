@@ -30,10 +30,68 @@
         .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 20px; }
         .card-title { font-family: var(--font-display); color: var(--gold); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
         .card-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+        .clickable-roll { cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease; }
+        .clickable-roll:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-dim), 0 0 18px rgba(0,229,255,0.14); transform: translateY(-1px); }
+        .clickable-roll:active { transform: translateY(0); }
         .hit-dice-row { width: 100%; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 2px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+        .hit-dice-trigger { display: flex; align-items: center; gap: 8px; border: 1px solid transparent; padding: 4px 8px; border-radius: 8px; }
         .hit-dice-label { font-family: var(--font-display); font-size: 0.72rem; text-transform: uppercase; color: var(--gold); }
         .hit-dice-meta { font-family: var(--font-num); font-size: 0.75rem; color: var(--accent); white-space: nowrap; }
         .hit-dice-track { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+        .roller-fab {
+            position: fixed; left: 18px; bottom: 18px; z-index: 260;
+            width: 58px; height: 58px; border-radius: 50%; border: 1px solid var(--accent);
+            background: radial-gradient(circle at 30% 30%, rgba(0,229,255,0.28), rgba(11,14,20,0.96));
+            color: white; cursor: pointer; box-shadow: 0 16px 32px rgba(0,0,0,0.45), 0 0 24px rgba(0,229,255,0.18);
+            display: flex; align-items: center; justify-content: center; font-size: 1.4rem;
+        }
+        .roller-overlay {
+            position: fixed; inset: 0; z-index: 270; background: rgba(2,4,8,0.62); backdrop-filter: blur(6px);
+            display: flex; align-items: center; justify-content: center; padding: 20px;
+        }
+        .roller-overlay[hidden] { display: none; }
+        .roller-panel {
+            width: min(420px, calc(100vw - 40px));
+            background: rgba(21,26,34,0.98); border: 1px solid var(--accent); border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.45), 0 0 30px rgba(0,229,255,0.12);
+            overflow: hidden;
+        }
+        .roller-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, rgba(0,229,255,0.08), rgba(0,0,0,0)); }
+        .roller-title { font-family: var(--font-display); font-size: 0.8rem; color: var(--gold); text-transform: uppercase; }
+        .roller-head-actions { display: flex; align-items: center; gap: 8px; }
+        .roller-clear, .roller-close { border: 1px solid var(--border); background: rgba(255,255,255,0.04); color: var(--text); border-radius: 8px; padding: 4px 8px; cursor: pointer; }
+        .roller-body { padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+        .quick-rolls { display: flex; flex-wrap: wrap; gap: 8px; padding-bottom: 4px; }
+        .quick-roll-btn {
+            border: 1px solid var(--border); background: rgba(255,255,255,0.04); color: var(--text);
+            border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 0.72rem; min-width: 52px;
+        }
+        .quick-roll-btn:hover { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 14px rgba(0,229,255,0.12); }
+        .roller-empty { color: #9aa7b1; font-size: 0.82rem; line-height: 1.4; }
+        .roller-result { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+        .roller-label { font-size: 0.78rem; color: #b9c3cb; }
+        .roller-formula { font-family: var(--font-num); font-size: 0.8rem; color: var(--accent); }
+        .roller-total { font-family: var(--font-num); font-size: 2.4rem; color: white; text-align: right; line-height: 1; text-shadow: 0 0 18px rgba(255,255,255,0.18); }
+        .roller-badge { display: inline-block; margin-top: 6px; padding: 2px 8px; border-radius: 999px; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.04em; }
+        .roller-badge.crit { background: rgba(64,255,170,0.14); color: var(--hp-green); border: 1px solid rgba(64,255,170,0.4); }
+        .roller-badge.fail { background: rgba(255,77,77,0.14); color: var(--hp-red); border: 1px solid rgba(255,77,77,0.4); }
+        .roller-breakdown { font-size: 0.8rem; color: #c2ccd4; line-height: 1.45; }
+        .roller-history { display: flex; flex-wrap: wrap; gap: 8px; }
+        .roller-chip { border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text); border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 0.72rem; }
+        .roller-chip strong { color: var(--accent); font-family: var(--font-num); margin-left: 4px; }
+        .last-roll-modal {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 280;
+            width: min(420px, calc(100vw - 40px)); background: rgba(21,26,34,0.98); border: 1px solid var(--accent);
+            border-radius: 18px; box-shadow: 0 24px 44px rgba(0,0,0,0.48), 0 0 26px rgba(0,229,255,0.14);
+            padding: 18px; backdrop-filter: blur(12px);
+        }
+        .last-roll-modal[hidden] { display: none; }
+        .last-roll-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+        .last-roll-title { font-family: var(--font-display); font-size: 0.82rem; color: var(--gold); text-transform: uppercase; }
+        .last-roll-close { border: 1px solid var(--border); background: rgba(255,255,255,0.04); color: var(--text); border-radius: 8px; padding: 4px 8px; cursor: pointer; }
+        .last-roll-formula { font-family: var(--font-num); color: var(--accent); font-size: 0.84rem; }
+        .last-roll-total { font-family: var(--font-num); color: white; font-size: 3rem; line-height: 1; text-align: right; }
+        .last-roll-breakdown { margin-top: 10px; color: #c2ccd4; font-size: 0.82rem; line-height: 1.45; }
 
         /* --- ENHANCED HP TRACKER v6 --- */
         .hp-main-display {
@@ -148,6 +206,12 @@
         .feature-desc { font-size: 0.8rem; color: #aaa; white-space: pre-line; }
         .feature-counter { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; }
         .feature-counter-label { font-size: 0.65rem; text-transform: uppercase; color: #888; }
+        .attack-roll-btn, .attack-dmg-btn {
+            width: 100%; text-align: left; border: 1px solid transparent; background: rgba(255,255,255,0.02); color: inherit;
+            border-radius: 8px; padding: 8px 10px; cursor: pointer;
+        }
+        .attack-dmg-btn { text-align: center; color: var(--accent); font-family: var(--font-num); }
+        .attack-roll-btn strong { color: white; }
         table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
         td { padding: 8px 4px; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .rest-actions { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -244,6 +308,61 @@
     </div>
 </div>
 
+<button type="button" id="roller-fab" class="roller-fab" aria-label="Dobáspanel megnyitása" onclick="openRollerModal()">
+    🎲
+</button>
+
+<div id="roller-overlay" class="roller-overlay" hidden>
+    <aside id="roller-panel" class="roller-panel" aria-live="polite" aria-label="Dobáspanel">
+        <div class="roller-head">
+            <div class="roller-title">Misztikus Dobás</div>
+            <div class="roller-head-actions">
+                <button type="button" class="roller-clear" onclick="clearRollHistory()">Törlés</button>
+                <button type="button" class="roller-close" onclick="closeRollerModal()">Bezár</button>
+            </div>
+        </div>
+        <div class="roller-body">
+            <div class="quick-rolls">
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(4)">d4</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(6)">d6</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(8)">d8</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(10)">d10</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(12)">d12</button>
+                <button type="button" class="quick-roll-btn" onclick="rollQuickDie(20)">d20</button>
+            </div>
+            <div id="roller-empty" class="roller-empty">Kattints egy képességre, mentődobásra, támadásra vagy harcerő kockára a dobáshoz.</div>
+            <div id="roller-current" hidden>
+                <div class="roller-result">
+                    <div>
+                        <div id="roller-label" class="roller-label"></div>
+                        <div id="roller-formula" class="roller-formula"></div>
+                        <div id="roller-badge"></div>
+                    </div>
+                    <div id="roller-total" class="roller-total"></div>
+                </div>
+                <div id="roller-breakdown" class="roller-breakdown"></div>
+            </div>
+            <div id="roller-history" class="roller-history"></div>
+        </div>
+    </aside>
+</div>
+
+<div id="last-roll-modal" class="last-roll-modal" hidden>
+    <div class="last-roll-top">
+        <div>
+            <div class="last-roll-title">Utolsó dobás</div>
+            <div id="last-roll-label" class="roller-label"></div>
+            <div id="last-roll-formula" class="last-roll-formula"></div>
+            <div id="last-roll-badge"></div>
+        </div>
+        <div>
+            <button type="button" class="last-roll-close" onclick="hideLastRollModal()">Bezár</button>
+            <div id="last-roll-total" class="last-roll-total"></div>
+        </div>
+    </div>
+    <div id="last-roll-breakdown" class="last-roll-breakdown"></div>
+</div>
+
 <script>
     const sheetData = {
         id: "valerius_v6",
@@ -303,6 +422,8 @@
     let deathSaves = { success: [false, false, false], fail: [false, false, false] };
     let featureCounters = [];
     let hitDiceSpent = [];
+    let rollHistory = [];
+    let lastRollTimer = null;
     const KEY = `dnd_v6_${sheetData.id}`;
 
     function parseSigned(value) {
@@ -311,6 +432,25 @@
 
     function fmtSigned(value) {
         return value >= 0 ? `+${value}` : `${value}`;
+    }
+
+    function cleanRollFormula(formula) {
+        return String(formula || '')
+            .replace(/\[[^\]]*]/g, '')
+            .replace(/\s+/g, '')
+            .replace(/−/g, '-');
+    }
+
+    function buildD20Formula(modifier) {
+        const value = parseSigned(modifier);
+        return value === 0 ? '1d20' : `1d20${value > 0 ? '+' : ''}${value}`;
+    }
+
+    function getHitDiceFormula() {
+        const die = sheetData.hitDice?.die || 'd8';
+        const conMod = parseSigned(sheetData.stats[2]?.mod || 0);
+        const dieFormula = die.startsWith('d') ? `1${die}` : die;
+        return conMod === 0 ? dieFormula : `${dieFormula}${conMod > 0 ? '+' : ''}${conMod}`;
     }
 
     function skillRankLabel(rank) {
@@ -339,6 +479,169 @@
         return fmtSigned(bonus);
     }
 
+    function rollFormula(formula) {
+        const normalized = cleanRollFormula(formula);
+        const tokens = normalized.match(/[+-]?[^+-]+/g) || [];
+        let total = 0;
+        let d20 = null;
+        const parts = [];
+
+        tokens.forEach(token => {
+            const sign = token.startsWith('-') ? -1 : 1;
+            const body = token.replace(/^[+-]/, '');
+
+            if (/^\d*d\d+$/i.test(body)) {
+                const [countRaw, sidesRaw] = body.toLowerCase().split('d');
+                const count = parseInt(countRaw || '1', 10);
+                const sides = parseInt(sidesRaw, 10);
+                const rolls = Array.from({ length: count }, () => Math.floor(Math.random() * sides) + 1);
+                const subtotal = rolls.reduce((sum, roll) => sum + roll, 0) * sign;
+                if (count === 1 && sides === 20 && d20 === null) d20 = rolls[0];
+                total += subtotal;
+                parts.push(`${sign < 0 ? '-' : ''}${count}d${sides} [${rolls.join(', ')}]`);
+                return;
+            }
+
+            if (/^\d+$/.test(body)) {
+                const value = parseInt(body, 10) * sign;
+                total += value;
+                parts.push(`${value >= 0 ? '+' : ''}${value}`);
+            }
+        });
+
+        return { total, normalized, parts, d20 };
+    }
+
+    function showRollResult(label, formula, options = {}) {
+        const showLastModal = options.showLastModal !== false;
+        const result = rollFormula(formula);
+        const badge = result.d20 === 20
+            ? { text: 'Természetes 20', className: 'crit' }
+            : result.d20 === 1
+                ? { text: 'Természetes 1', className: 'fail' }
+                : null;
+
+        document.getElementById('roller-empty').hidden = true;
+        document.getElementById('roller-current').hidden = false;
+        document.getElementById('roller-label').innerText = label;
+        document.getElementById('roller-formula').innerText = result.normalized;
+        document.getElementById('roller-total').innerText = result.total;
+        document.getElementById('roller-breakdown').innerText = result.parts.join('  ');
+
+        const badgeEl = document.getElementById('roller-badge');
+        badgeEl.className = '';
+        badgeEl.innerHTML = '';
+        if (badge) {
+            badgeEl.className = `roller-badge ${badge.className}`;
+            badgeEl.innerText = badge.text;
+        }
+
+        rollHistory.unshift({ label, formula, total: result.total });
+        rollHistory = rollHistory.slice(0, 8);
+        renderRollHistory();
+        if (showLastModal) {
+            showLastRollModal(label, result.normalized, result.total, result.parts.join('  '), badge);
+        }
+    }
+
+    function renderRollHistory() {
+        const historyEl = document.getElementById('roller-history');
+        historyEl.innerHTML = '';
+        rollHistory.forEach((entry, index) => {
+            historyEl.innerHTML += `<button type="button" class="roller-chip" onclick="rerollHistory(${index})">${entry.label}<strong>${entry.total}</strong></button>`;
+        });
+    }
+
+    function rerollHistory(index) {
+        const entry = rollHistory[index];
+        if (entry) showRollResult(entry.label, entry.formula);
+    }
+
+    function clearRollHistory() {
+        rollHistory = [];
+        document.getElementById('roller-history').innerHTML = '';
+        document.getElementById('roller-current').hidden = true;
+        document.getElementById('roller-empty').hidden = false;
+        document.getElementById('roller-badge').className = '';
+        document.getElementById('roller-badge').innerHTML = '';
+    }
+
+    function rollQuickDie(sides) {
+        showRollResult(`Gyors dobás d${sides}`, `1d${sides}`, { showLastModal: false });
+    }
+
+    function openRollerModal() {
+        document.getElementById('roller-overlay').hidden = false;
+    }
+
+    function closeRollerModal() {
+        document.getElementById('roller-overlay').hidden = true;
+    }
+
+    function hideLastRollModal() {
+        document.getElementById('last-roll-modal').hidden = true;
+        if (lastRollTimer) {
+            clearTimeout(lastRollTimer);
+            lastRollTimer = null;
+        }
+    }
+
+    function showLastRollModal(label, formula, total, breakdown, badge) {
+        document.getElementById('last-roll-label').innerText = label;
+        document.getElementById('last-roll-formula').innerText = formula;
+        document.getElementById('last-roll-total').innerText = total;
+        document.getElementById('last-roll-breakdown').innerText = breakdown;
+
+        const badgeEl = document.getElementById('last-roll-badge');
+        badgeEl.className = '';
+        badgeEl.innerHTML = '';
+        if (badge) {
+            badgeEl.className = `roller-badge ${badge.className}`;
+            badgeEl.innerText = badge.text;
+        }
+
+        document.getElementById('last-roll-modal').hidden = false;
+        if (lastRollTimer) clearTimeout(lastRollTimer);
+        lastRollTimer = setTimeout(() => {
+            document.getElementById('last-roll-modal').hidden = true;
+            lastRollTimer = null;
+        }, 10000);
+    }
+
+    function rollStat(index) {
+        const stat = sheetData.stats[index];
+        if (!stat) return;
+        showRollResult(`${stat.label} próba`, buildD20Formula(stat.mod));
+    }
+
+    function rollSkill(index) {
+        const skill = sheetData.skills[index];
+        if (!skill) return;
+        showRollResult(`${skill.n} próba`, buildD20Formula(calcSkillBonus(skill)));
+    }
+
+    function rollSave(index) {
+        const save = sheetData.savingThrows[index];
+        const stat = save ? sheetData.stats[save.statIndex] : null;
+        if (!save || !stat) return;
+        const total = parseSigned(stat.mod) + (save.p ? parseSigned(sheetData.prof) : 0);
+        showRollResult(`${stat.label} mentődobás`, buildD20Formula(total));
+    }
+
+    function rollAttack(index, kind) {
+        const attack = sheetData.attacks[index];
+        if (!attack) return;
+        if (kind === 'damage') {
+            showRollResult(`${attack.n} sebzés`, attack.d);
+            return;
+        }
+        showRollResult(`${attack.n} támadás`, buildD20Formula(attack.b));
+    }
+
+    function rollHitDice() {
+        showRollResult('Harcerő kocka', getHitDiceFormula());
+    }
+
     function render() {
         document.getElementById('c-name').innerText = sheetData.name;
         document.getElementById('c-meta').innerText = sheetData.raceClass;
@@ -348,27 +651,27 @@
         document.getElementById('hp-max').innerText = sheetData.hpMax;
 
         const statWrap = document.getElementById('stat-container');
-        sheetData.stats.forEach(s => {
-            statWrap.innerHTML += `<div class="stat-box"><span class="stat-name">${s.label}</span><span class="stat-mod">${s.mod}</span><span class="stat-score">${s.val}</span></div>`;
+        sheetData.stats.forEach((s, index) => {
+            statWrap.innerHTML += `<div class="stat-box clickable-roll" role="button" tabindex="0" onclick="rollStat(${index})"><span class="stat-name">${s.label}</span><span class="stat-mod">${s.mod}</span><span class="stat-score">${s.val}</span></div>`;
         });
 
         const skillWrap = document.getElementById('skills-container');
-        sheetData.skills.forEach(s => {
-            skillWrap.innerHTML += `<div class="skill-item"><div class="skill-left"><div class="skill-rank ${skillRankClass(s.s)}">${skillRankLabel(s.s)}</div><span>${s.n} <span style="color:#aaa; font-size:0.65rem">(${s.a})</span></span></div><span style="color:var(--accent); font-family:var(--font-num)">${calcSkillBonus(s)}</span></div>`;
+        sheetData.skills.forEach((s, index) => {
+            skillWrap.innerHTML += `<div class="skill-item clickable-roll" role="button" tabindex="0" onclick="rollSkill(${index})"><div class="skill-left"><div class="skill-rank ${skillRankClass(s.s)}">${skillRankLabel(s.s)}</div><span>${s.n} <span style="color:#aaa; font-size:0.65rem">(${s.a})</span></span></div><span style="color:var(--accent); font-family:var(--font-num)">${calcSkillBonus(s)}</span></div>`;
         });
 
         const saveWrap = document.getElementById('saves-container');
         const toSigned = n => (n >= 0 ? `+${n}` : `${n}`);
-        sheetData.savingThrows.forEach(s => {
+        sheetData.savingThrows.forEach((s, index) => {
             const stat = sheetData.stats[s.statIndex];
             const base = parseSigned((stat && stat.mod) || 0);
             const prof = s.p ? parseSigned(sheetData.prof) : 0;
-            saveWrap.innerHTML += `<div class="save-item"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${stat.label}</span></div><span style="color:var(--accent); font-family:var(--font-num)">${toSigned(base + prof)}</span></div>`;
+            saveWrap.innerHTML += `<div class="save-item clickable-roll" role="button" tabindex="0" onclick="rollSave(${index})"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${stat.label}</span></div><span style="color:var(--accent); font-family:var(--font-num)">${toSigned(base + prof)}</span></div>`;
         });
 
         const atkWrap = document.querySelector('#atk-table tbody');
-        sheetData.attacks.forEach(a => {
-            atkWrap.innerHTML += `<tr><td style="font-weight:bold; color:white">${a.n}</td><td>${a.b}</td><td>${a.d}</td></tr>`;
+        sheetData.attacks.forEach((a, index) => {
+            atkWrap.innerHTML += `<tr><td><button type="button" class="attack-roll-btn clickable-roll" onclick="rollAttack(${index}, 'attack')"><strong>${a.n}</strong></button></td><td style="font-family:var(--font-num); color:var(--accent)">${a.b}</td><td><button type="button" class="attack-dmg-btn clickable-roll" onclick="rollAttack(${index}, 'damage')">${a.d}</button></td></tr>`;
         });
 
         const resWrap = document.getElementById('slot-container');
@@ -395,14 +698,15 @@
 
         const bubbles = [];
         for (let i = 0; i < total; i++) {
-            bubbles.push('<div class="bubble hit-dice-bubble" data-hd="' + i + '" onclick="toggleHitDie(this)"></div>');
+            bubbles.push('<div class="bubble hit-dice-bubble" data-hd="' + i + '" onclick="toggleHitDie(this, event)"></div>');
         }
 
-        row.innerHTML = '<span class="hit-dice-label">Harcerő kocka</span><span class="hit-dice-meta">' + total + (sheetData.hitDice?.die || '') + '</span><div class="hit-dice-track">' + bubbles.join('') + '</div>';
+        row.innerHTML = '<div class="hit-dice-trigger clickable-roll" role="button" tabindex="0" onclick="rollHitDice()"><span class="hit-dice-label">Harcerő kocka</span><span class="hit-dice-meta">' + total + (sheetData.hitDice?.die || '') + '</span></div><div class="hit-dice-track">' + bubbles.join('') + '</div>';
         updateHitDiceUI();
     }
 
-    function toggleHitDie(el) {
+    function toggleHitDie(el, event) {
+        if (event) event.stopPropagation();
         const index = parseInt(el.dataset.hd, 10);
         hitDiceSpent[index] = !hitDiceSpent[index];
         updateHitDiceUI();
