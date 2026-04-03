@@ -325,8 +325,8 @@
     </section>
 
     <div class="rest-actions">
-        <button class="rest-btn short-rest-btn" onclick="shortRest()">🌙 Rövid Pihenő</button>
-        <button class="rest-btn" onclick="longRest()">🔥 Hosszú Pihenő</button>
+        <button class="rest-btn short-rest-btn" onclick="shortRest()">⚡️ Rövid Pihenő</button>
+        <button class="rest-btn" onclick="longRest()">🌙 Hosszú Pihenő</button>
     </div>
 </div>
 
@@ -405,24 +405,24 @@
             { statIndex: 5, p: true }
         ],
         skills: [
-            { n: "Akrobatika", a: "ÜGY", statIndex: 1, s: 1, p: false },
-            { n: "Atlétika", a: "ERŐ", statIndex: 0, s: 0.5, p: false },
-            { n: "Előadásmód", a: "KAR", statIndex: 5, s: 2, p: false },
-            { n: "Ember ismeret", a: "BÖL", statIndex: 4, s: 1, p: true },
-            { n: "Észlelés", a: "BÖL", statIndex: 4, s: 0, p: false },
-            { n: "Kézügyesség", a: "ÜGY", statIndex: 1, s: 1, p: false },
-            { n: "Lopakodás", a: "ÜGY", statIndex: 1, s: 1, p: false },
-            { n: "Mágia ismeret", a: "INT", statIndex: 3, s: 1, p: true },
-            { n: "Megfélemlítés", a: "KAR", statIndex: 5, s: 2, p: true },
-            { n: "Meggyőzés", a: "KAR", statIndex: 5, s: 1, p: true },
-            { n: "Megtévesztés", a: "KAR", statIndex: 5, s: 1, p: true },
-            { n: "Orvoslás", a: "BÖL", statIndex: 4, s: 0, p: false },
-            { n: "Szelídítés", a: "BÖL", statIndex: 4, s: 0.5, p: false },
-            { n: "Természetismeret", a: "INT", statIndex: 3, s: 0, p: false },
-            { n: "Történelem", a: "INT", statIndex: 3, s: 0, p: false },
-            { n: "Túlélés", a: "BÖL", statIndex: 4, s: 0.5, p: false },
-            { n: "Vallás", a: "INT", statIndex: 3, s: 0, p: false },
-            { n: "Vizsgálódás", a: "INT", statIndex: 3, s: 1, p: true }
+            { n: "Akrobatika", a: "ÜGY", statIndex: 1, s: 1 },
+            { n: "Atlétika", a: "ERŐ", statIndex: 0, s: 0.5 },
+            { n: "Előadásmód", a: "KAR", statIndex: 5, s: 2 },
+            { n: "Ember ismeret", a: "BÖL", statIndex: 4, s: 1 },
+            { n: "Észlelés", a: "BÖL", statIndex: 4, s: 0 },
+            { n: "Kézügyesség", a: "ÜGY", statIndex: 1, s: 1 },
+            { n: "Lopakodás", a: "ÜGY", statIndex: 1, s: 1 },
+            { n: "Mágia ismeret", a: "INT", statIndex: 3, s: 1 },
+            { n: "Megfélemlítés", a: "KAR", statIndex: 5, s: 2 },
+            { n: "Meggyőzés", a: "KAR", statIndex: 5, s: 1 },
+            { n: "Megtévesztés", a: "KAR", statIndex: 5, s: 1 },
+            { n: "Orvoslás", a: "BÖL", statIndex: 4, s: 0 },
+            { n: "Szelídítés", a: "BÖL", statIndex: 4, s: 0.5 },
+            { n: "Természetismeret", a: "INT", statIndex: 3, s: 0 },
+            { n: "Történelem", a: "INT", statIndex: 3, s: 0 },
+            { n: "Túlélés", a: "BÖL", statIndex: 4, s: 0.5 },
+            { n: "Vallás", a: "INT", statIndex: 3, s: 0 },
+            { n: "Vizsgálódás", a: "INT", statIndex: 3, s: 1 }
         ],
         attacks: [
             { n: "Misztikus Sugár", b: "+7", d: "2d10 [F]" },
@@ -765,7 +765,7 @@
                 wrap.innerHTML += `
                     <div class="spell-level-group">
                         <div class="spell-level-title">
-                            <span>${level === 0 ? 'Cantrip' : `${level}. szintű varázslatok`}</span>
+                            <span>${level === 0 ? 'Varázstrükk' : `${level}. szintű varázslatok`}</span>
                             <span class="spell-level-count">${spells.length} db</span>
                         </div>
                         <div class="spell-grid">
@@ -787,7 +787,6 @@
                                             <div class="spell-fact"><span class="spell-fact-label">Hatóidő</span><span class="spell-fact-value">${spell.duration || '—'}</span></div>
                                             <div class="spell-fact"><span class="spell-fact-label">Varázslás ideje</span><span class="spell-fact-value">${spell.castTime || '—'}</span></div>
                                             <div class="spell-fact"><span class="spell-fact-label">Komponensek</span><span class="spell-fact-value">${spell.components || '—'}</span></div>
-                                            <div class="spell-fact"><span class="spell-fact-label">Szint</span><span class="spell-fact-value">${level === 0 ? 'Cantrip' : `${level}. szint`}</span></div>
                                         </div>
                                         <div class="spell-desc">${spell.desc || ''}</div>
                                     </div>
@@ -808,16 +807,19 @@
         document.getElementById('hp-max').innerText = sheetData.hpMax;
 
         const statWrap = document.getElementById('stat-container');
+        statWrap.innerHTML = '';
         sheetData.stats.forEach((s, index) => {
             statWrap.innerHTML += `<div class="stat-box clickable-roll" role="button" tabindex="0" onclick="rollStat(${index})"><span class="stat-name">${s.label}</span><span class="stat-mod">${s.mod}</span><span class="stat-score">${s.val}</span></div>`;
         });
 
         const skillWrap = document.getElementById('skills-container');
+        skillWrap.innerHTML = '';
         sheetData.skills.forEach((s, index) => {
             skillWrap.innerHTML += `<div class="skill-item clickable-roll" role="button" tabindex="0" onclick="rollSkill(${index})"><div class="skill-left"><div class="skill-rank ${skillRankClass(s.s)}">${skillRankLabel(s.s)}</div><span>${s.n} <span style="color:#aaa; font-size:0.65rem">(${s.a})</span></span></div><span style="color:var(--accent); font-family:var(--font-num)">${calcSkillBonus(s)}</span></div>`;
         });
 
         const saveWrap = document.getElementById('saves-container');
+        saveWrap.innerHTML = '';
         const toSigned = n => (n >= 0 ? `+${n}` : `${n}`);
         sheetData.savingThrows.forEach((s, index) => {
             const stat = sheetData.stats[s.statIndex];
@@ -827,11 +829,13 @@
         });
 
         const atkWrap = document.querySelector('#atk-table tbody');
+        atkWrap.innerHTML = '';
         sheetData.attacks.forEach((a, index) => {
             atkWrap.innerHTML += `<tr><td><button type="button" class="attack-roll-btn clickable-roll" onclick="rollAttack(${index}, 'attack')"><strong>${a.n}</strong></button></td><td style="font-family:var(--font-num); color:var(--accent)">${a.b}</td><td><button type="button" class="attack-dmg-btn clickable-roll" onclick="rollAttack(${index}, 'damage')">${a.d}</button></td></tr>`;
         });
 
         const resWrap = document.getElementById('slot-container');
+        resWrap.innerHTML = '';
         sheetData.resources.forEach((r, rIdx) => {
             let bubbles = '';
             for(let i=0; i<r.count; i++) bubbles += `<div class="bubble resource-bubble" data-r="${rIdx}" data-i="${i}" onclick="tgl(this)"></div>`;
