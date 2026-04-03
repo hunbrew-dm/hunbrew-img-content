@@ -58,6 +58,31 @@
   "spellSlots": [
     { "level": 3, "count": 2, "shortRest": 2 }
   ],
+  "coins": {
+    "pp": 0,
+    "gp": 187,
+    "ep": 0,
+    "sp": 14,
+    "cp": 23
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": ["Egyszerű fegyverek"]
+    },
+    {
+      "title": "Páncélok",
+      "items": ["Könnyű páncélok"]
+    },
+    {
+      "title": "Nyelvek",
+      "items": ["Közös", "Infernal"]
+    },
+    {
+      "title": "Eszközök",
+      "items": ["Álcakészlet"]
+    }
+  ],
   "equipment": [
     {
       "name": "Tőr",

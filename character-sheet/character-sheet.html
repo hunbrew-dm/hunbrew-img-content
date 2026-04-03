@@ -243,6 +243,40 @@
         .feature-desc { font-size: 0.8rem; color: #aaa; white-space: pre-line; }
         .feature-counter { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; }
         .feature-counter-label { font-size: 0.65rem; text-transform: uppercase; color: #888; }
+        .proficiency-list { display: flex; flex-direction: column; gap: 12px; }
+        .proficiency-group { padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .proficiency-group:last-child { border-bottom: none; padding-bottom: 0; }
+        .proficiency-group-title {
+            font-family: var(--font-display); font-size: 0.76rem; color: var(--gold); text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .proficiency-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .proficiency-tag {
+            display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); color: #d8e1e8;
+            font-size: 0.74rem;
+        }
+        .proficiency-empty { color: #9aa7b1; font-size: 0.82rem; line-height: 1.4; }
+        .coin-box {
+            display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;
+            margin-bottom: 16px; padding: 10px; border: 1px solid var(--border); border-radius: 12px;
+            background: rgba(255,255,255,0.02);
+        }
+        @media (min-width: 600px) { .coin-box { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+        .coin-box[hidden] { display: none; }
+        .coin-item {
+            min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 8px 6px;
+            border-radius: 10px; border: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.14);
+        }
+        .coin-label {
+            font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.1em; color: #9fb0ba; text-align: center;
+            line-height: 1;
+        }
+        .coin-input {
+            width: 100%; background: transparent; border: none; border-bottom: 1px solid transparent; color: white;
+            font-family: var(--font-num); font-size: 0.98rem; text-align: center; padding: 2px 0;
+        }
+        .coin-input:focus { outline: none; border-bottom-color: var(--accent); }
         .equipment-list { display: flex; flex-direction: column; gap: 10px; }
         .equipment-item {
             border: 1px solid var(--border); border-radius: 12px; background: rgba(255,255,255,0.02);
@@ -457,8 +491,9 @@
     </main>
 
     <section>
+        <div class="card"><div class="card-title">Jártasságok</div><div id="proficiency-list" class="proficiency-list"></div></div>
         <div class="card"><div class="card-title">Tulajdonságok</div><div id="feat-list" class="feature-list"></div></div>
-        <div class="card"><div class="card-title">Felszerelés</div><div id="equipment-list" class="equipment-list"></div></div>
+        <div class="card"><div class="card-title">Felszerelés</div><div id="coin-box" class="coin-box"></div><div id="equipment-list" class="equipment-list"></div></div>
         <div class="card"><div class="card-title">Varázslatok</div><div id="spell-slot-panel" class="spell-slot-panel"></div><div id="spell-list" class="spell-list"></div></div>
     </section>
 
@@ -961,6 +996,105 @@
         return summaryMeta.join('');
     }
 
+    function getCoinDefaults() {
+        const coins = sheetData?.coins || {};
+        return {
+            pp: Number.isFinite(coins.pp) ? coins.pp : 0,
+            gp: Number.isFinite(coins.gp) ? coins.gp : 0,
+            ep: Number.isFinite(coins.ep) ? coins.ep : 0,
+            sp: Number.isFinite(coins.sp) ? coins.sp : 0,
+            cp: Number.isFinite(coins.cp) ? coins.cp : 0
+        };
+    }
+
+    function normalizeCoinValue(value, fallback = 0) {
+        const parsed = parseInt(value, 10);
+        return Number.isFinite(parsed) && parsed >= 0 ? parsed : fallback;
+    }
+
+    function normalizeCoinInput(input) {
+        const fallback = getCoinDefaults()[input.dataset.coin] || 0;
+        const value = normalizeCoinValue(input.value, fallback);
+        input.value = value;
+        return value;
+    }
+
+    function renderCoins() {
+        const wrap = document.getElementById('coin-box');
+        const defaults = getCoinDefaults();
+        const fields = [
+            { key: 'pp', label: 'P', full: 'Platina' },
+            { key: 'gp', label: 'A', full: 'Arany' },
+            { key: 'ep', label: 'E', full: 'Elektrum' },
+            { key: 'sp', label: 'Ez', full: 'Ezüst' },
+            { key: 'cp', label: 'R', full: 'Réz' }
+        ];
+
+        wrap.hidden = false;
+        wrap.innerHTML = fields.map(field => `
+            <label class="coin-item">
+                <span class="coin-label" title="${field.full}">${field.label}</span>
+                <input
+                    type="number"
+                    min="0"
+                    step="1"
+                    inputmode="numeric"
+                    class="coin-input"
+                    data-coin="${field.key}"
+                    value="${defaults[field.key]}"
+                    aria-label="${field.full} érmék"
+                    title="${field.full}"
+                    oninput="normalizeCoinInput(this)"
+                    onchange="save()"
+                >
+            </label>
+        `).join('');
+    }
+
+    function getCoinsFromUI() {
+        const defaults = getCoinDefaults();
+        return Array.from(document.querySelectorAll('.coin-input')).reduce((acc, input) => {
+            acc[input.dataset.coin] = normalizeCoinValue(input.value, defaults[input.dataset.coin] || 0);
+            return acc;
+        }, { ...defaults });
+    }
+
+    function applyCoinsToUI(coins) {
+        document.querySelectorAll('.coin-input').forEach(input => {
+            const value = normalizeCoinValue(coins[input.dataset.coin], getCoinDefaults()[input.dataset.coin] || 0);
+            input.value = value;
+        });
+    }
+
+    function renderProficiencies() {
+        const wrap = document.getElementById('proficiency-list');
+        const groups = Array.isArray(sheetData?.proficiencies) ? sheetData.proficiencies : [];
+
+        wrap.innerHTML = '';
+        if (!groups.length) {
+            wrap.innerHTML = '<div class="proficiency-empty">Nincs megadott jártasság.</div>';
+            return;
+        }
+
+        groups.forEach(group => {
+            const items = Array.isArray(group.items) ? group.items : [];
+            if (!items.length) return;
+
+            wrap.innerHTML += `
+                <div class="proficiency-group">
+                    <div class="proficiency-group-title">${escapeHtml(group.title || 'Jártasság')}</div>
+                    <div class="proficiency-tags">
+                        ${items.map(item => `<span class="proficiency-tag">${escapeHtml(item)}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        });
+
+        if (!wrap.innerHTML) {
+            wrap.innerHTML = '<div class="proficiency-empty">Nincs megadott jártasság.</div>';
+        }
+    }
+
     function getEquipmentFacts(item, itemIndex) {
         const facts = [];
         if (item.value) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Érték</span><span class="equipment-fact-value">${item.value}</span></div>`);
@@ -1126,7 +1260,9 @@
 
         renderAttackRows();
 
+        renderProficiencies();
         renderFeatures();
+        renderCoins();
         renderEquipment();
         renderSpellSlots();
         renderSpells();
@@ -1342,6 +1478,7 @@
             thp: tempHP,
             acCurrent: normalizeCurrentAC(document.getElementById('c-ac-current')),
             inspiration: isInspired(),
+            coins: getCoinsFromUI(),
             spellSlots,
             featureChecked,
             hitDiceSpent
@@ -1363,6 +1500,7 @@
         document.getElementById('hp-curr').value = Math.max(0, state.hp ?? sheetData.hpMax);
         document.getElementById('c-ac-current').value = Math.max(0, state.acCurrent ?? getDefaultCurrentAC());
         document.getElementById('c-inspiration').classList.toggle('active', !!state.inspiration);
+        applyCoinsToUI(state.coins || getCoinDefaults());
         tempHP = state.thp || 0;
         updateTempUI();
         (state.spellSlots || []).forEach(s => {
