@@ -206,6 +206,27 @@
         .feature-desc { font-size: 0.8rem; color: #aaa; white-space: pre-line; }
         .feature-counter { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; }
         .feature-counter-label { font-size: 0.65rem; text-transform: uppercase; color: #888; }
+        .spell-list { display: flex; flex-direction: column; gap: 12px; }
+        .spell-level-group { border: 1px solid var(--border); border-radius: 12px; padding: 12px; background: rgba(255,255,255,0.02); }
+        .spell-level-title { font-family: var(--font-display); color: var(--gold); font-size: 0.72rem; text-transform: uppercase; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+        .spell-level-count { color: var(--accent); font-family: var(--font-num); font-size: 0.8rem; }
+        .spell-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+        .spell-box { border: 1px solid var(--border); border-radius: 10px; padding: 10px; background: rgba(0,0,0,0.16); }
+        .spell-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+        .spell-name { font-family: var(--font-display); color: white; font-size: 0.82rem; }
+        .spell-meta { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+        .spell-pill { font-family: var(--font-num); font-size: 0.68rem; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text); }
+        .spell-pill.school { color: var(--gold); border-color: rgba(212,175,55,0.35); background: rgba(212,175,55,0.08); }
+        .spell-pill.conc { color: var(--hp-blue); border-color: rgba(68,170,255,0.4); background: rgba(68,170,255,0.1); }
+        .spell-pill.ritual { color: #d7c7ff; border-color: rgba(180,140,255,0.4); background: rgba(180,140,255,0.1); }
+        .spell-pill.dc { color: var(--hp-green); border-color: rgba(64,255,170,0.4); background: rgba(64,255,170,0.08); }
+        .spell-pill.atk { color: var(--accent); border-color: rgba(0,229,255,0.4); background: rgba(0,229,255,0.08); }
+        .spell-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 8px 0 10px; }
+        .spell-fact { border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px; background: rgba(255,255,255,0.02); }
+        .spell-fact-label { display: block; font-size: 0.62rem; text-transform: uppercase; color: #8ea0ad; margin-bottom: 4px; }
+        .spell-fact-value { display: block; font-size: 0.78rem; color: #e6edf2; line-height: 1.35; }
+        .spell-desc { font-size: 0.8rem; color: #cfd8dc; white-space: pre-line; line-height: 1.45; }
+        .spell-empty { color: #9aa7b1; font-size: 0.82rem; line-height: 1.4; }
         .attack-roll-btn, .attack-dmg-btn {
             width: 100%; text-align: left; border: 1px solid transparent; background: rgba(255,255,255,0.02); color: inherit;
             border-radius: 8px; padding: 8px 10px; cursor: pointer;
@@ -300,6 +321,7 @@
     <section>
         <div class="card"><div class="card-title">Erőforrások</div><div id="slot-container"></div></div>
         <div class="card"><div class="card-title">Tulajdonságok</div><div id="feat-list" class="feature-list"></div></div>
+        <div class="card"><div class="card-title">Varázslatok</div><div id="spell-list" class="spell-list"></div></div>
     </section>
 
     <div class="rest-actions">
@@ -409,6 +431,82 @@
         resources: [
             { label: "Varázslat rekesz", count: 2, shortRest: 2 },
             { label: "Inspiráció", count: 1, shortRest: 0 }
+        ],
+        spells: [
+            {
+                level: 0,
+                name: "Vérfagyasztó sugár",
+                school: "Evokáció",
+                castTime: "1 akció",
+                range: "120 láb",
+                duration: "Azonnali",
+                components: "V, S",
+                concentration: false,
+                ritual: false,
+                atk: "+7",
+                desc: "Ropogó energiasugarat hozol létre. Találat esetén a célpont 1d10 energia sebzést szenved."
+            },
+            {
+                level: 0,
+                name: "Máguskéz",
+                school: "Idézés",
+                castTime: "1 akció",
+                range: "30 láb",
+                duration: "1 perc",
+                components: "V, S",
+                concentration: false,
+                ritual: false,
+                desc: "Egy lebegő szellemkéz jelenik meg a hatótávon belül, amely egyszerű tárgymozgatásra használható."
+            },
+            {
+                level: 0,
+                name: "Baráti bájolás",
+                school: "Ráolvasás",
+                castTime: "1 akció",
+                range: "10 láb",
+                duration: "1 perc",
+                components: "S, M (egy kis smink)",
+                concentration: true,
+                ritual: false,
+                dc: 15,
+                desc: "A célpontnak Bölcsesség mentődobást kell dobnia, különben elbűvölt lesz a varázslat idejére."
+            },
+            {
+                level: 1,
+                name: "Boszorkány átok",
+                school: "Ráolvasás",
+                castTime: "1 bónusz akció",
+                range: "90 láb",
+                duration: "1 óra",
+                components: "V, S, M (megkövesedett gőteszem)",
+                concentration: true,
+                ritual: false,
+                desc: "Átkot bocsátasz egy látott lényre; extra 1d6 nekrotikus sebzést okozol neki minden sikeres támadásoddal."
+            },
+            {
+                level: 1,
+                name: "Agathys vértje",
+                school: "Védővarázs",
+                castTime: "1 bónusz akció",
+                range: "Önmagad",
+                duration: "1 óra",
+                components: "V, S, M (egy kék üvegszilánk)",
+                concentration: false,
+                ritual: false,
+                desc: "Varázslatos jégpáncél ölel körül, ideiglenes harcerőponttal és visszacsapó fagysebzéssel."
+            },
+            {
+                level: 2,
+                name: "Varázsszáj",
+                school: "Illúzió",
+                castTime: "1 perc",
+                range: "30 láb",
+                duration: "Állandó (eloszlatásig)",
+                components: "V, S, M (lépesméz és jáde por)",
+                concentration: false,
+                ritual: true,
+                desc: "Üzenetet ültetsz egy tárgyba, amely egy meghatározott körülmény teljesülésekor hangzik el."
+            }
         ],
         features: [
             { title: "Sötét Úr Áldása", description: "Szerezz 9 ideiglenes ÉP-t, amikor egy ellenséges lényt 0 ÉP-re viszel." },
@@ -642,6 +740,65 @@
         showRollResult('Harcerő kocka', getHitDiceFormula());
     }
 
+    function renderSpells() {
+        const wrap = document.getElementById('spell-list');
+        wrap.innerHTML = '';
+        const spells = Array.isArray(sheetData.spells) ? sheetData.spells : [];
+
+        if (!spells.length) {
+            wrap.innerHTML = '<div class="spell-empty">Nincsenek megadott varázslatok.</div>';
+            return;
+        }
+
+        const groups = spells.reduce((acc, spell) => {
+            const level = Number.isFinite(spell.level) ? spell.level : 0;
+            if (!acc[level]) acc[level] = [];
+            acc[level].push(spell);
+            return acc;
+        }, {});
+
+        Object.keys(groups)
+            .map(Number)
+            .sort((a, b) => a - b)
+            .forEach(level => {
+                const spells = groups[level];
+                wrap.innerHTML += `
+                    <div class="spell-level-group">
+                        <div class="spell-level-title">
+                            <span>${level === 0 ? 'Cantrip' : `${level}. szintű varázslatok`}</span>
+                            <span class="spell-level-count">${spells.length} db</span>
+                        </div>
+                        <div class="spell-grid">
+                            ${spells.map(spell => {
+                                const meta = [];
+                                if (spell.school) meta.push(`<span class="spell-pill school">${spell.school}</span>`);
+                                if (spell.concentration) meta.push('<span class="spell-pill conc">Koncentráció</span>');
+                                if (spell.ritual) meta.push('<span class="spell-pill ritual">Rituálé</span>');
+                                if (spell.dc !== undefined) meta.push(`<span class="spell-pill dc">Mentő DC ${spell.dc}</span>`);
+                                if (spell.atk !== undefined) meta.push(`<span class="spell-pill atk">Támadás ${spell.atk}</span>`);
+                                return `
+                                    <div class="spell-box">
+                                        <div class="spell-head">
+                                            <div class="spell-name">${spell.name}</div>
+                                            <div class="spell-meta">${meta.join('')}</div>
+                                        </div>
+                                        <div class="spell-facts">
+                                            <div class="spell-fact"><span class="spell-fact-label">Hatótáv</span><span class="spell-fact-value">${spell.range || '—'}</span></div>
+                                            <div class="spell-fact"><span class="spell-fact-label">Hatóidő</span><span class="spell-fact-value">${spell.duration || '—'}</span></div>
+                                            <div class="spell-fact"><span class="spell-fact-label">Varázslás ideje</span><span class="spell-fact-value">${spell.castTime || '—'}</span></div>
+                                            <div class="spell-fact"><span class="spell-fact-label">Komponensek</span><span class="spell-fact-value">${spell.components || '—'}</span></div>
+                                            <div class="spell-fact"><span class="spell-fact-label">Szint</span><span class="spell-fact-value">${level === 0 ? 'Cantrip' : `${level}. szint`}</span></div>
+                                        </div>
+                                        <div class="spell-desc">${spell.desc || ''}</div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+    }
+
     function render() {
         document.getElementById('c-name').innerText = sheetData.name;
         document.getElementById('c-meta').innerText = sheetData.raceClass;
@@ -682,6 +839,7 @@
         });
 
         renderFeatures();
+        renderSpells();
         renderHitDice();
 
         load();
