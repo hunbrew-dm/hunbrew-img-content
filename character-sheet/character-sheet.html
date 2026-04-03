@@ -171,10 +171,43 @@
 
         /* --- STATS, SKILLS, BUBBLES --- */
         header { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 15px; }
-        @media (min-width: 768px) { header { flex-direction: row; justify-content: space-between; align-items: flex-end; } }
-        .vitals-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--accent); position: sticky; top: 10px; z-index: 100; }
-        @media (min-width: 1024px) { .vitals-bar { position: static; } }
+        @media (min-width: 768px) { header { flex-direction: row; justify-content: space-between; align-items: stretch; } }
+        .vitals-bar {
+            display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;
+            background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--accent);
+            position: sticky; top: 10px; z-index: 100;
+        }
+        @media (min-width: 640px) { .vitals-bar { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+        @media (min-width: 1024px) { .vitals-bar { position: static; min-width: 520px; } }
+        .vital-item {
+            min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+            padding: 12px 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.03);
+            text-align: center;
+        }
+        .vital-button {
+            appearance: none; width: 100%; color: inherit; font: inherit;
+        }
+        .vital-label { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; color: #9fb0ba; }
         .vital-val { font-family: var(--font-num); font-size: 1.4rem; color: var(--accent); text-align: center; }
+        .vital-sub { font-size: 0.66rem; color: #7f8f99; text-transform: uppercase; letter-spacing: 0.04em; }
+        .vital-ac-row { display: flex; align-items: baseline; justify-content: center; gap: 8px; }
+        .vital-ac-input {
+            width: 56px; background: transparent; border: none; border-bottom: 1px solid transparent;
+            color: white; font-family: var(--font-num); font-size: 1.6rem; text-align: right;
+        }
+        .vital-ac-input:focus { outline: none; border-bottom-color: var(--accent); }
+        .vital-divider { font-family: var(--font-num); font-size: 1.1rem; color: #607d8b; }
+        .vital-base { font-family: var(--font-num); font-size: 1.1rem; color: #8ea0ad; }
+        .inspiration-toggle {
+            width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border);
+            background: rgba(255,255,255,0.04); color: #73818a; cursor: pointer;
+            font-size: 1.1rem; transition: 0.2s ease;
+        }
+        .inspiration-toggle:hover { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 14px rgba(212,175,55,0.16); }
+        .inspiration-toggle.active {
+            border-color: var(--gold); color: var(--gold);
+            background: rgba(212,175,55,0.14); box-shadow: 0 0 0 1px rgba(212,175,55,0.28) inset, 0 0 18px rgba(212,175,55,0.12);
+        }
         .stats-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
         @media (min-width: 1024px) { .stats-list { grid-template-columns: 1fr; } }
         .stat-box {
@@ -206,6 +239,63 @@
         .feature-desc { font-size: 0.8rem; color: #aaa; white-space: pre-line; }
         .feature-counter { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 8px; }
         .feature-counter-label { font-size: 0.65rem; text-transform: uppercase; color: #888; }
+        .equipment-list { display: flex; flex-direction: column; gap: 10px; }
+        .equipment-item {
+            border: 1px solid var(--border); border-radius: 12px; background: rgba(255,255,255,0.02);
+            overflow: hidden;
+        }
+        .equipment-item[open] {
+            border-color: rgba(0,229,255,0.28);
+            box-shadow: 0 0 0 1px rgba(0,229,255,0.08) inset;
+        }
+        .equipment-summary {
+            list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+            gap: 12px; padding: 12px 14px; background: rgba(0,0,0,0.14);
+        }
+        .equipment-summary::-webkit-details-marker { display: none; }
+        .equipment-summary-main { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+        .equipment-summary-tail { display: flex; align-items: center; gap: 10px; }
+        .equipment-name { font-family: var(--font-display); color: white; font-size: 0.84rem; }
+        .equipment-summary-meta { display: flex; flex-wrap: wrap; gap: 6px; }
+        .equipment-roll-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
+        .equipment-roll-btn {
+            border: 1px solid var(--border); background: rgba(255,255,255,0.04); color: var(--text);
+            border-radius: 999px; padding: 5px 10px; cursor: pointer; font-size: 0.68rem;
+        }
+        .equipment-roll-btn:hover { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 12px rgba(0,229,255,0.12); }
+        .equipment-roll-btn.damage { color: var(--hp-green); border-color: rgba(64,255,170,0.24); }
+        .equipment-roll-btn.damage:hover { border-color: var(--hp-green); color: var(--hp-green); box-shadow: 0 0 12px rgba(64,255,170,0.12); }
+        .equipment-pill {
+            font-family: var(--font-num); font-size: 0.67rem; padding: 3px 8px; border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); color: #d8e1e8;
+        }
+        .equipment-pill.kind { color: var(--gold); border-color: rgba(212,175,55,0.35); background: rgba(212,175,55,0.08); }
+        .equipment-pill.weapon { color: var(--accent); border-color: rgba(0,229,255,0.35); background: rgba(0,229,255,0.08); }
+        .equipment-chevron {
+            flex-shrink: 0; color: #8ea0ad; font-size: 0.9rem; transition: transform 0.2s ease, color 0.2s ease;
+        }
+        .equipment-item[open] .equipment-chevron { transform: rotate(180deg); color: var(--accent); }
+        .equipment-body { padding: 0 14px 14px; display: flex; flex-direction: column; gap: 10px; }
+        .equipment-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+        .equipment-fact { border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px; background: rgba(255,255,255,0.02); }
+        .equipment-fact-label { display: block; font-size: 0.62rem; text-transform: uppercase; color: #8ea0ad; margin-bottom: 4px; }
+        .equipment-fact-value { display: block; font-size: 0.78rem; color: #e6edf2; line-height: 1.35; }
+        .equipment-fact-button {
+            width: 100%; text-align: left; border: 1px solid transparent; background: rgba(255,255,255,0.02); color: inherit;
+            border-radius: 8px; padding: 0; cursor: pointer;
+        }
+        .equipment-desc { font-size: 0.8rem; color: #cfd8dc; white-space: pre-line; line-height: 1.45; }
+        .equipment-empty { color: #9aa7b1; font-size: 0.82rem; line-height: 1.4; }
+        .spell-slot-panel {
+            display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; padding-bottom: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .spell-slot-panel[hidden] { display: none; }
+        .spell-slot-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        .spell-slot-copy { display: flex; flex-direction: column; gap: 2px; }
+        .spell-slot-label { font-family: var(--font-display); font-size: 0.78rem; color: var(--gold); text-transform: uppercase; }
+        .spell-slot-meta { font-size: 0.68rem; color: #8ea0ad; text-transform: uppercase; }
+        .spell-slot-track { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
         .spell-list { display: flex; flex-direction: column; gap: 12px; }
         .spell-level-group { border: 1px solid var(--border); border-radius: 12px; padding: 12px; background: rgba(255,255,255,0.02); }
         .spell-level-title { font-family: var(--font-display); color: var(--gold); font-size: 0.72rem; text-transform: uppercase; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
@@ -248,9 +338,30 @@
     <header>
         <div class="char-title"><h1 id="c-name">Név</h1><p id="c-meta" style="color:var(--gold)">Kaszt</p></div>
         <div class="vitals-bar">
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">Védettségi Fok</div><div class="vital-val" id="c-ac">10</div></div>
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">Kezdeményezés</div><div class="vital-val" id="c-init">+0</div></div>
-            <div class="vital-item"><div style="font-size:0.6rem; text-align:center">Jártassági bónusz</div><div class="vital-val" id="c-prof">+2</div></div>
+            <div class="vital-item">
+                <div class="vital-label">Védettségi fok</div>
+                <div class="vital-ac-row">
+                    <input type="number" id="c-ac-current" class="vital-ac-input" value="10" min="0" step="1" inputmode="numeric" aria-label="Jelenlegi védettségi fok" oninput="normalizeCurrentAC(this)" onchange="save()">
+                    <span class="vital-divider">/</span>
+                    <span id="c-ac-base" class="vital-base">10</span>
+                </div>
+                <div class="vital-sub">Jelenlegi / alap</div>
+            </div>
+            <button type="button" class="vital-item vital-button clickable-roll" onclick="rollInitiative()">
+                <span class="vital-label">Kezdeményezés</span>
+                <span class="vital-val" id="c-init">+0</span>
+                <span class="vital-sub">Dobás kattintásra</span>
+            </button>
+            <div class="vital-item">
+                <div class="vital-label">Inspiráció</div>
+                <button type="button" id="c-inspiration" class="inspiration-toggle" aria-label="Inspiráció váltása" onclick="toggleInspiration()">✦</button>
+                <div class="vital-sub">Aktív / inaktív</div>
+            </div>
+            <div class="vital-item">
+                <div class="vital-label">Jártassági bónusz</div>
+                <div class="vital-val" id="c-prof">+2</div>
+                <div class="vital-sub">Passzív érték</div>
+            </div>
         </div>
     </header>
 
@@ -319,9 +430,9 @@
     </main>
 
     <section>
-        <div class="card"><div class="card-title">Erőforrások</div><div id="slot-container"></div></div>
         <div class="card"><div class="card-title">Tulajdonságok</div><div id="feat-list" class="feature-list"></div></div>
-        <div class="card"><div class="card-title">Varázslatok</div><div id="spell-list" class="spell-list"></div></div>
+        <div class="card"><div class="card-title">Felszerelés</div><div id="equipment-list" class="equipment-list"></div></div>
+        <div class="card"><div class="card-title">Varázslatok</div><div id="spell-slot-panel" class="spell-slot-panel"></div><div id="spell-list" class="spell-list"></div></div>
     </section>
 
     <div class="rest-actions">
@@ -390,7 +501,7 @@
         id: "valerius_v6",
         name: "Valerius Kínzott",
         raceClass: "Tiefling | Boszorkánymester 5",
-        ac: 16, init: "+3", prof: "+3", hpMax: 42, hitDice: { total: 5, die: "d8" },
+        ac: { base: 16, current: 16 }, init: "+3", prof: "+3", hpMax: 42, hitDice: { total: 5, die: "d8" },
         stats: [
             { label: "ERŐ", val: 10, mod: "+0" }, { label: "ÜGYESSÉG", val: 16, mod: "+3" },
             { label: "ÁLLÓKÉPESSÉG", val: 14, mod: "+2" }, { label: "INTELLIGENCIA", val: 12, mod: "+1" },
@@ -428,9 +539,37 @@
             { n: "Misztikus Sugár", b: "+7", d: "2d10 [F]" },
             { n: "Tőr", b: "+6", d: "1d4+3 [P]" }
         ],
-        resources: [
-            { label: "Varázslat rekesz", count: 2, shortRest: 2 },
-            { label: "Inspiráció", count: 1, shortRest: 0 }
+        inspiration: { active: false },
+        spellSlots: [
+            { level: 3, count: 2, shortRest: 2 }
+        ],
+        equipment: [
+            {
+                name: "Tőr",
+                kind: "Fegyver",
+                description: "Karcsú penge közelharcra és hajításra. A ruházat alatt is könnyen elrejthető.",
+                value: "2 arany",
+                weight: "1 font",
+                attack: "+6",
+                damage: "1d4+3 [Szúró]",
+                range: "20 / 60 láb",
+                type: "Egyszerű",
+                properties: "Könnyű, finom, hajító"
+            },
+            {
+                name: "Komponens erszény",
+                kind: "Varázslói fókusz",
+                description: "Apró rekeszekbe rendezett alapanyagok, amelyek a legtöbb komponensigényű varázslathoz elegendőek.",
+                value: "25 arany",
+                weight: "2 font"
+            },
+            {
+                name: "Utazóköpeny",
+                kind: "Felszerelés",
+                description: "Sötét, kapucnis köpeny, amely védi viselőjét a hidegtől és segít beleolvadni a városi éjszakába.",
+                value: "1 arany",
+                weight: "4 font"
+            }
         ],
         spells: [
             {
@@ -522,7 +661,7 @@
     let hitDiceSpent = [];
     let rollHistory = [];
     let lastRollTimer = null;
-    const KEY = `dnd_v6_${sheetData.id}`;
+    const KEY = `dnd_v8_${sheetData.id}`;
 
     function parseSigned(value) {
         return parseInt(String(value).replace('+', ''), 10) || 0;
@@ -549,6 +688,16 @@
         const conMod = parseSigned(sheetData.stats[2]?.mod || 0);
         const dieFormula = die.startsWith('d') ? `1${die}` : die;
         return conMod === 0 ? dieFormula : `${dieFormula}${conMod > 0 ? '+' : ''}${conMod}`;
+    }
+
+    function getBaseAC() {
+        const base = sheetData.ac && typeof sheetData.ac === 'object' ? sheetData.ac.base : sheetData.ac;
+        return Number.isFinite(base) ? base : 10;
+    }
+
+    function getDefaultCurrentAC() {
+        const current = sheetData.ac && typeof sheetData.ac === 'object' ? sheetData.ac.current : sheetData.ac;
+        return Number.isFinite(current) ? current : getBaseAC();
     }
 
     function skillRankLabel(rank) {
@@ -740,6 +889,135 @@
         showRollResult('Harcerő kocka', getHitDiceFormula());
     }
 
+    function rollInitiative() {
+        showRollResult('Kezdeményezés', buildD20Formula(sheetData.init));
+    }
+
+    function rollEquipment(index, kind, event) {
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        const item = Array.isArray(sheetData.equipment) ? sheetData.equipment[index] : null;
+        if (!item) return;
+
+        if (kind === 'damage') {
+            if (!item.damage) return;
+            showRollResult(`${item.name} sebzés`, item.damage);
+            return;
+        }
+
+        if (!item.attack) return;
+        showRollResult(`${item.name} támadás`, buildD20Formula(item.attack));
+    }
+
+    function renderSpellSlots() {
+        const wrap = document.getElementById('spell-slot-panel');
+        const slots = Array.isArray(sheetData.spellSlots) ? sheetData.spellSlots : [];
+
+        if (!slots.length) {
+            wrap.hidden = true;
+            wrap.innerHTML = '';
+            return;
+        }
+
+        wrap.hidden = false;
+        wrap.innerHTML = '';
+
+        slots.forEach((slot, rowIndex) => {
+            const count = Number.isFinite(slot.count) ? slot.count : 0;
+            const levelLabel = Number.isFinite(slot.level) ? `${slot.level}. szintű` : 'Ismeretlen';
+            const bubbles = [];
+            for (let i = 0; i < count; i++) {
+                bubbles.push(`<div class="bubble spell-slot-bubble" data-row="${rowIndex}" data-i="${i}" onclick="toggleSpellSlot(this)"></div>`);
+            }
+
+            wrap.innerHTML += `
+                <div class="spell-slot-row" data-short-rest="${Number.isFinite(slot.shortRest) ? slot.shortRest : 0}" data-count="${count}">
+                    <div class="spell-slot-copy">
+                        <div class="spell-slot-label">Varázslat rekesz</div>
+                        <div class="spell-slot-meta">${levelLabel} • ${count} db</div>
+                    </div>
+                    <div class="spell-slot-track">${bubbles.join('')}</div>
+                </div>
+            `;
+        });
+    }
+
+    function getEquipmentSummaryMeta(item) {
+        const summaryMeta = [];
+        if (item.kind) summaryMeta.push(`<span class="equipment-pill kind">${item.kind}</span>`);
+        if (item.value) summaryMeta.push(`<span class="equipment-pill">Érték: ${item.value}</span>`);
+        if (item.weight) summaryMeta.push(`<span class="equipment-pill">Súly: ${item.weight}</span>`);
+        if (item.type) summaryMeta.push(`<span class="equipment-pill weapon">${item.type}</span>`);
+        return summaryMeta.join('');
+    }
+
+    function getEquipmentFacts(item, itemIndex) {
+        const facts = [];
+        if (item.value) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Érték</span><span class="equipment-fact-value">${item.value}</span></div>`);
+        if (item.weight) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Súly</span><span class="equipment-fact-value">${item.weight}</span></div>`);
+        if (item.attack) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Támadás</span><span class="equipment-fact-value">${item.attack}</span></div>`);
+        if (item.damage) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Sebzés</span><button type="button" class="equipment-fact-button clickable-roll" onclick="rollEquipment(${itemIndex}, 'damage', event)"><span class="equipment-fact-value">${item.damage}</span></button></div>`);
+        if (item.range) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Hatótáv</span><span class="equipment-fact-value">${item.range}</span></div>`);
+        if (item.type) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Fegyver típusa</span><span class="equipment-fact-value">${item.type}</span></div>`);
+        if (item.properties) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Jellemzők</span><span class="equipment-fact-value">${item.properties}</span></div>`);
+        return facts.join('');
+    }
+
+    function getEquipmentActions(item, itemIndex) {
+        if (item.kind !== 'Fegyver') return '';
+
+        const actions = [];
+        if (item.attack) {
+            actions.push(`<button type="button" class="equipment-roll-btn clickable-roll" onclick="rollEquipment(${itemIndex}, 'attack', event)">Támadás ${item.attack}</button>`);
+        }
+        if (item.damage) {
+            actions.push(`<button type="button" class="equipment-roll-btn damage clickable-roll" onclick="rollEquipment(${itemIndex}, 'damage', event)">Sebzés</button>`);
+        }
+
+        if (!actions.length) return '';
+        return `<div class="equipment-roll-actions">${actions.join('')}</div>`;
+    }
+
+    function renderEquipment() {
+        const wrap = document.getElementById('equipment-list');
+        const items = Array.isArray(sheetData.equipment) ? sheetData.equipment : [];
+
+        wrap.innerHTML = '';
+
+        if (!items.length) {
+            wrap.innerHTML = '<div class="equipment-empty">Nincs megadott felszerelés.</div>';
+            return;
+        }
+
+        items.forEach((item, itemIndex) => {
+            const summaryMeta = getEquipmentSummaryMeta(item);
+            const facts = getEquipmentFacts(item, itemIndex);
+            const weaponActions = getEquipmentActions(item, itemIndex);
+
+            wrap.innerHTML += `
+                <details class="equipment-item">
+                    <summary class="equipment-summary">
+                        <div class="equipment-summary-main">
+                            <div class="equipment-name">${item.name || 'Ismeretlen tárgy'}</div>
+                            <div class="equipment-summary-meta">${summaryMeta}</div>
+                        </div>
+                        <div class="equipment-summary-tail">
+                            ${weaponActions}
+                            <span class="equipment-chevron">⌄</span>
+                        </div>
+                    </summary>
+                    <div class="equipment-body">
+                        ${facts ? `<div class="equipment-facts">${facts}</div>` : ''}
+                        ${item.description ? `<div class="equipment-desc">${item.description}</div>` : ''}
+                    </div>
+                </details>
+            `;
+        });
+    }
+
     function renderSpells() {
         const wrap = document.getElementById('spell-list');
         wrap.innerHTML = '';
@@ -801,9 +1079,11 @@
     function render() {
         document.getElementById('c-name').innerText = sheetData.name;
         document.getElementById('c-meta').innerText = sheetData.raceClass;
-        document.getElementById('c-ac').innerText = sheetData.ac;
+        document.getElementById('c-ac-base').innerText = getBaseAC();
+        document.getElementById('c-ac-current').value = getDefaultCurrentAC();
         document.getElementById('c-init').innerText = sheetData.init;
         document.getElementById('c-prof').innerText = sheetData.prof;
+        document.getElementById('c-inspiration').classList.toggle('active', !!sheetData.inspiration?.active);
         document.getElementById('hp-max').innerText = sheetData.hpMax;
 
         const statWrap = document.getElementById('stat-container');
@@ -834,15 +1114,9 @@
             atkWrap.innerHTML += `<tr><td><button type="button" class="attack-roll-btn clickable-roll" onclick="rollAttack(${index}, 'attack')"><strong>${a.n}</strong></button></td><td style="font-family:var(--font-num); color:var(--accent)">${a.b}</td><td><button type="button" class="attack-dmg-btn clickable-roll" onclick="rollAttack(${index}, 'damage')">${a.d}</button></td></tr>`;
         });
 
-        const resWrap = document.getElementById('slot-container');
-        resWrap.innerHTML = '';
-        sheetData.resources.forEach((r, rIdx) => {
-            let bubbles = '';
-            for(let i=0; i<r.count; i++) bubbles += `<div class="bubble resource-bubble" data-r="${rIdx}" data-i="${i}" onclick="tgl(this)"></div>`;
-            resWrap.innerHTML += `<div class="resource-item" data-short-rest="${Number.isFinite(r.shortRest) ? r.shortRest : 0}" data-count="${r.count}" style="display:flex; justify-content:space-between; margin-bottom:10px"><span>${r.label}</span><div style="display:flex">${bubbles}</div></div>`;
-        });
-
         renderFeatures();
+        renderEquipment();
+        renderSpellSlots();
         renderSpells();
         renderHitDice();
 
@@ -915,6 +1189,29 @@
             bubbles.push('<div class="bubble feature-bubble" data-f="' + featureIndex + '" data-i="' + i + '" onclick="tglFeature(this)"></div>');
         }
         return '<div class="feature-counter"><span class="feature-counter-label">Számláló</span><div style="display:flex">' + bubbles.join('') + '</div></div>';
+    }
+
+
+    function normalizeCurrentAC(input) {
+        const el = typeof input === 'string' ? document.getElementById(input) : input;
+        let value = parseInt(el.value, 10);
+        if (!Number.isFinite(value) || value < 0) value = getBaseAC();
+        el.value = value;
+        return value;
+    }
+
+    function toggleInspiration() {
+        document.getElementById('c-inspiration').classList.toggle('active');
+        save();
+    }
+
+    function toggleSpellSlot(el) {
+        el.classList.toggle('checked');
+        save();
+    }
+
+    function isInspired() {
+        return document.getElementById('c-inspiration').classList.contains('active');
     }
 
 
@@ -1014,7 +1311,6 @@
         }
     }
 
-    function tgl(el) { el.classList.toggle('checked'); save(); }
     function tglFeature(el) {
         const f = parseInt(el.dataset.f, 10);
         const i = parseInt(el.dataset.i, 10);
@@ -1023,22 +1319,38 @@
         save();
     }
     function save() {
-        const checked = [];
-        document.querySelectorAll('.resource-bubble.checked').forEach(b => checked.push({r: b.dataset.r, i: b.dataset.i}));
+        const spellSlots = [];
+        document.querySelectorAll('.spell-slot-bubble.checked').forEach(b => spellSlots.push({ row: b.dataset.row, i: b.dataset.i }));
         const featureChecked = [];
         document.querySelectorAll('.feature-bubble.checked').forEach(b => featureChecked.push({ f: b.dataset.f, i: b.dataset.i }));
-        localStorage.setItem(KEY, JSON.stringify({ hp: normalizeCurrentHP(document.getElementById('hp-curr')), thp: tempHP, checked, featureChecked, hitDiceSpent }));
+        localStorage.setItem(KEY, JSON.stringify({
+            hp: normalizeCurrentHP(document.getElementById('hp-curr')),
+            thp: tempHP,
+            acCurrent: normalizeCurrentAC(document.getElementById('c-ac-current')),
+            inspiration: isInspired(),
+            spellSlots,
+            featureChecked,
+            hitDiceSpent
+        }));
     }
 
     function load() {
         const saved = localStorage.getItem(KEY);
-        if(!saved) { document.getElementById('hp-curr').value = sheetData.hpMax; updateDeathSaveUI(); return; }
+        if(!saved) {
+            document.getElementById('hp-curr').value = sheetData.hpMax;
+            document.getElementById('c-ac-current').value = getDefaultCurrentAC();
+            document.getElementById('c-inspiration').classList.toggle('active', !!sheetData.inspiration?.active);
+            updateDeathSaveUI();
+            return;
+        }
         const state = JSON.parse(saved);
         document.getElementById('hp-curr').value = Math.max(0, state.hp ?? sheetData.hpMax);
+        document.getElementById('c-ac-current').value = Math.max(0, state.acCurrent ?? getDefaultCurrentAC());
+        document.getElementById('c-inspiration').classList.toggle('active', !!state.inspiration);
         tempHP = state.thp || 0;
         updateTempUI();
-        (state.checked || []).forEach(s => {
-            const el = document.querySelector(`.resource-bubble[data-r="${s.r}"][data-i="${s.i}"]`);
+        (state.spellSlots || []).forEach(s => {
+            const el = document.querySelector(`.spell-slot-bubble[data-row="${s.row}"][data-i="${s.i}"]`);
             if(el) el.classList.add('checked');
         });
         (state.featureChecked || []).forEach(s => {
@@ -1054,9 +1366,9 @@
     }
 
     function shortRest() {
-        document.querySelectorAll('.resource-item').forEach(row => {
+        document.querySelectorAll('.spell-slot-row').forEach(row => {
             const refill = parseInt(row.dataset.shortRest, 10) || 0;
-            if (refill > 0) refillCounterRow(row, refill, '.resource-bubble');
+            if (refill > 0) refillCounterRow(row, refill, '.spell-slot-bubble');
         });
         document.querySelectorAll('.feature-item').forEach(row => {
             const refill = parseInt(row.dataset.shortRest, 10) || 0;
@@ -1069,11 +1381,13 @@
     function longRest() {
         if(confirm("Megerősíted a hosszú pihenőt?")) {
             document.getElementById('hp-curr').value = sheetData.hpMax;
+            document.getElementById('c-ac-current').value = getBaseAC();
+            document.getElementById('c-inspiration').classList.remove('active');
             tempHP = 0;
             resetDeathSaves();
             hitDiceSpent = Array.from({ length: getHitDiceTotal() }, () => false);
             updateTempUI();
-            document.querySelectorAll('.resource-bubble, .feature-bubble').forEach(b => b.classList.remove('checked'));
+            document.querySelectorAll('.spell-slot-bubble, .feature-bubble').forEach(b => b.classList.remove('checked'));
             featureCounters = featureCounters.map(arr => arr.map(() => false));
             updateHitDiceUI();
             updateDeathSaveUI();
