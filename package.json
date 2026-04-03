@@ -1,0 +1,9 @@
+{
+  "name": "hunbrew-img-content",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:pages": "node scripts/build-pages.mjs"
+  }
+}
+

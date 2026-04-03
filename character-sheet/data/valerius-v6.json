@@ -1,0 +1,186 @@
+{
+  "id": "valerius_v6",
+  "name": "Valerius Kínzott",
+  "raceClass": "Tiefling | Boszorkánymester 5",
+  "ac": {
+    "base": 16,
+    "current": 16
+  },
+  "init": "+3",
+  "prof": "+3",
+  "hpMax": 42,
+  "hitDice": {
+    "total": 5,
+    "die": "d8"
+  },
+  "stats": [
+    { "label": "ERŐ", "val": 10, "mod": "+0" },
+    { "label": "ÜGYESSÉG", "val": 16, "mod": "+3" },
+    { "label": "ÁLLÓKÉPESSÉG", "val": 14, "mod": "+2" },
+    { "label": "INTELLIGENCIA", "val": 12, "mod": "+1" },
+    { "label": "BÖLCSESSÉG", "val": 8, "mod": "-1" },
+    { "label": "KARIZMA", "val": 18, "mod": "+4" }
+  ],
+  "savingThrows": [
+    { "statIndex": 0, "p": false },
+    { "statIndex": 1, "p": false },
+    { "statIndex": 2, "p": false },
+    { "statIndex": 3, "p": false },
+    { "statIndex": 4, "p": true },
+    { "statIndex": 5, "p": true }
+  ],
+  "skills": [
+    { "n": "Akrobatika", "a": "ÜGY", "statIndex": 1, "s": 1 },
+    { "n": "Atlétika", "a": "ERŐ", "statIndex": 0, "s": 0.5 },
+    { "n": "Előadásmód", "a": "KAR", "statIndex": 5, "s": 2 },
+    { "n": "Ember ismeret", "a": "BÖL", "statIndex": 4, "s": 1 },
+    { "n": "Észlelés", "a": "BÖL", "statIndex": 4, "s": 0 },
+    { "n": "Kézügyesség", "a": "ÜGY", "statIndex": 1, "s": 1 },
+    { "n": "Lopakodás", "a": "ÜGY", "statIndex": 1, "s": 1 },
+    { "n": "Mágia ismeret", "a": "INT", "statIndex": 3, "s": 1 },
+    { "n": "Megfélemlítés", "a": "KAR", "statIndex": 5, "s": 2 },
+    { "n": "Meggyőzés", "a": "KAR", "statIndex": 5, "s": 1 },
+    { "n": "Megtévesztés", "a": "KAR", "statIndex": 5, "s": 1 },
+    { "n": "Orvoslás", "a": "BÖL", "statIndex": 4, "s": 0 },
+    { "n": "Szelídítés", "a": "BÖL", "statIndex": 4, "s": 0.5 },
+    { "n": "Természetismeret", "a": "INT", "statIndex": 3, "s": 0 },
+    { "n": "Történelem", "a": "INT", "statIndex": 3, "s": 0 },
+    { "n": "Túlélés", "a": "BÖL", "statIndex": 4, "s": 0.5 },
+    { "n": "Vallás", "a": "INT", "statIndex": 3, "s": 0 },
+    { "n": "Vizsgálódás", "a": "INT", "statIndex": 3, "s": 1 }
+  ],
+  "attacks": [
+    { "n": "Misztikus Sugár", "b": "+7", "d": "2d10 [F]" }
+  ],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    { "level": 3, "count": 2, "shortRest": 2 }
+  ],
+  "equipment": [
+    {
+      "name": "Tőr",
+      "kind": "Fegyver",
+      "description": "Karcsú penge közelharcra és hajításra. A ruházat alatt is könnyen elrejthető.",
+      "value": "2 arany",
+      "weight": "1 font",
+      "attack": "+6",
+      "damage": "1d4+3 [Szúró]",
+      "range": "20 / 60 láb",
+      "type": "Egyszerű",
+      "properties": "Könnyű, finom, hajító"
+    },
+    {
+      "name": "Komponens erszény",
+      "kind": "Varázslói fókusz",
+      "description": "Apró rekeszekbe rendezett alapanyagok, amelyek a legtöbb komponensigényű varázslathoz elegendőek.",
+      "value": "25 arany",
+      "weight": "2 font"
+    },
+    {
+      "name": "Utazóköpeny",
+      "kind": "Felszerelés",
+      "description": "Sötét, kapucnis köpeny, amely védi viselőjét a hidegtől és segít beleolvadni a városi éjszakába.",
+      "value": "1 arany",
+      "weight": "4 font"
+    }
+  ],
+  "spells": [
+    {
+      "level": 0,
+      "name": "Vérfagyasztó sugár",
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": "+7",
+      "desc": "Ropogó energiasugarat hozol létre. Találat esetén a célpont 1d10 energia sebzést szenved."
+    },
+    {
+      "level": 0,
+      "name": "Máguskéz",
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "30 láb",
+      "duration": "1 perc",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "desc": "Egy lebegő szellemkéz jelenik meg a hatótávon belül, amely egyszerű tárgymozgatásra használható."
+    },
+    {
+      "level": 0,
+      "name": "Baráti bájolás",
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "10 láb",
+      "duration": "1 perc",
+      "components": "S, M (egy kis smink)",
+      "concentration": true,
+      "ritual": false,
+      "dc": 15,
+      "desc": "A célpontnak Bölcsesség mentődobást kell dobnia, különben elbűvölt lesz a varázslat idejére."
+    },
+    {
+      "level": 1,
+      "name": "Boszorkány átok",
+      "school": "Ráolvasás",
+      "castTime": "1 bónusz akció",
+      "range": "90 láb",
+      "duration": "1 óra",
+      "components": "V, S, M (megkövesedett gőteszem)",
+      "concentration": true,
+      "ritual": false,
+      "desc": "Átkot bocsátasz egy látott lényre; extra 1d6 nekrotikus sebzést okozol neki minden sikeres támadásoddal."
+    },
+    {
+      "level": 1,
+      "name": "Agathys vértje",
+      "school": "Védővarázs",
+      "castTime": "1 bónusz akció",
+      "range": "Önmagad",
+      "duration": "1 óra",
+      "components": "V, S, M (egy kék üvegszilánk)",
+      "concentration": false,
+      "ritual": false,
+      "desc": "Varázslatos jégpáncél ölel körül, ideiglenes harcerőponttal és visszacsapó fagysebzéssel."
+    },
+    {
+      "level": 2,
+      "name": "Varázsszáj",
+      "school": "Illúzió",
+      "castTime": "1 perc",
+      "range": "30 láb",
+      "duration": "Állandó (eloszlatásig)",
+      "components": "V, S, M (lépesméz és jáde por)",
+      "concentration": false,
+      "ritual": true,
+      "desc": "Üzenetet ültetsz egy tárgyba, amely egy meghatározott körülmény teljesülésekor hangzik el."
+    }
+  ],
+  "features": [
+    {
+      "title": "Sötét Úr Áldása",
+      "description": "Szerezz 9 ideiglenes ÉP-t, amikor egy ellenséges lényt 0 ÉP-re viszel."
+    },
+    {
+      "title": "Gyötrő Sugár",
+      "description": "+4 sebzés a Misztikus Sugárhoz."
+    },
+    {
+      "title": "Sötétlátás",
+      "description": "Lásd a sötétséget 18 méterig."
+    },
+    {
+      "title": "Átokhasználatok",
+      "description": "Itt követheted az aktív átokhasználatokat.",
+      "count": 3,
+      "shortRest": 2
+    }
+  ]
+}
+
