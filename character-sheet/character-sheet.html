@@ -85,7 +85,11 @@
             border-radius: 18px; box-shadow: 0 24px 44px rgba(0,0,0,0.48), 0 0 26px rgba(0,229,255,0.14);
             padding: 18px; backdrop-filter: blur(12px);
         }
-        .last-roll-modal[hidden] { display: none; }
+        .last-roll-overlay {
+            position: fixed; inset: 0; z-index: 279; background: rgba(2,4,8,0.5); backdrop-filter: blur(6px);
+            display: flex; align-items: center; justify-content: center; padding: 20px;
+        }
+        .last-roll-overlay[hidden] { display: none; }
         .last-roll-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
         .last-roll-title { font-family: var(--font-display); font-size: 0.82rem; color: var(--gold); text-transform: uppercase; }
         .last-roll-close { border: 1px solid var(--border); background: rgba(255,255,255,0.04); color: var(--text); border-radius: 8px; padding: 4px 8px; cursor: pointer; }
@@ -301,21 +305,44 @@
         .spell-level-title { font-family: var(--font-display); color: var(--gold); font-size: 0.72rem; text-transform: uppercase; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
         .spell-level-count { color: var(--accent); font-family: var(--font-num); font-size: 0.8rem; }
         .spell-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
-        .spell-box { border: 1px solid var(--border); border-radius: 10px; padding: 10px; background: rgba(0,0,0,0.16); }
-        .spell-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+        .spell-item { border: 1px solid var(--border); border-radius: 10px; background: rgba(0,0,0,0.16); overflow: hidden; }
+        .spell-item[open] { border-color: rgba(0,229,255,0.28); box-shadow: 0 0 0 1px rgba(0,229,255,0.08) inset; }
+        .spell-summary {
+            list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+            gap: 12px; padding: 10px 10px 10px 12px; background: rgba(255,255,255,0.02);
+        }
+        .spell-summary::-webkit-details-marker { display: none; }
+        .spell-summary-main { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+        .spell-summary-tail { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+        .spell-chevron { flex-shrink: 0; color: #8ea0ad; font-size: 0.9rem; transition: transform 0.2s ease, color 0.2s ease; }
+        .spell-item[open] .spell-chevron { transform: rotate(180deg); color: var(--accent); }
+        .spell-body { padding: 0 10px 12px 12px; }
         .spell-name { font-family: var(--font-display); color: white; font-size: 0.82rem; }
         .spell-meta { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
-        .spell-pill { font-family: var(--font-num); font-size: 0.68rem; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text); }
+        .spell-pill {
+            font-family: var(--font-num); font-size: 0.68rem; padding: 3px 8px; border-radius: 999px;
+            border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text);
+        }
         .spell-pill.school { color: var(--gold); border-color: rgba(212,175,55,0.35); background: rgba(212,175,55,0.08); }
         .spell-pill.conc { color: var(--hp-blue); border-color: rgba(68,170,255,0.4); background: rgba(68,170,255,0.1); }
         .spell-pill.ritual { color: #d7c7ff; border-color: rgba(180,140,255,0.4); background: rgba(180,140,255,0.1); }
         .spell-pill.dc { color: var(--hp-green); border-color: rgba(64,255,170,0.4); background: rgba(64,255,170,0.08); }
         .spell-pill.atk { color: var(--accent); border-color: rgba(0,229,255,0.4); background: rgba(0,229,255,0.08); }
+        .spell-pill.rollable { cursor: pointer; }
+        .spell-pill.rollable:hover { border-color: var(--accent); box-shadow: 0 0 12px rgba(0,229,255,0.12); }
+        .spell-pill.atk.rollable:hover { color: var(--accent); }
         .spell-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 8px 0 10px; }
         .spell-fact { border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px; background: rgba(255,255,255,0.02); }
         .spell-fact-label { display: block; font-size: 0.62rem; text-transform: uppercase; color: #8ea0ad; margin-bottom: 4px; }
         .spell-fact-value { display: block; font-size: 0.78rem; color: #e6edf2; line-height: 1.35; }
         .spell-desc { font-size: 0.8rem; color: #cfd8dc; white-space: pre-line; line-height: 1.45; }
+        .inline-dice-link {
+            display: inline-flex; align-items: center; gap: 3px; border: 1px solid rgba(0,229,255,0.22);
+            background: rgba(0,229,255,0.08); color: var(--accent); border-radius: 999px; padding: 0 6px;
+            cursor: pointer; font: inherit; white-space: nowrap;
+        }
+        .inline-dice-link:hover { border-color: var(--accent); box-shadow: 0 0 10px rgba(0,229,255,0.12); }
+        .inline-dice-link::before { content: '🎲'; font-size: 0.72em; }
         .spell-empty { color: #9aa7b1; font-size: 0.82rem; line-height: 1.4; }
         .attack-roll-btn, .attack-dmg-btn {
             width: 100%; text-align: left; border: 1px solid transparent; background: rgba(255,255,255,0.02); color: inherit;
@@ -445,7 +472,7 @@
     🎲
 </button>
 
-<div id="roller-overlay" class="roller-overlay" hidden>
+<div id="roller-overlay" class="roller-overlay" hidden onclick="if (event.target === this) closeRollerModal()">
     <aside id="roller-panel" class="roller-panel" aria-live="polite" aria-label="Dobáspanel">
         <div class="roller-head">
             <div class="roller-title">Misztikus Dobás</div>
@@ -480,20 +507,22 @@
     </aside>
 </div>
 
-<div id="last-roll-modal" class="last-roll-modal" hidden>
-    <div class="last-roll-top">
-        <div>
-            <div class="last-roll-title">Utolsó dobás</div>
-            <div id="last-roll-label" class="roller-label"></div>
-            <div id="last-roll-formula" class="last-roll-formula"></div>
-            <div id="last-roll-badge"></div>
+<div id="last-roll-overlay" class="last-roll-overlay" hidden onclick="if (event.target === this) hideLastRollModal()">
+    <div id="last-roll-modal" class="last-roll-modal" role="dialog" aria-modal="true" aria-label="Utolsó dobás">
+        <div class="last-roll-top">
+            <div>
+                <div class="last-roll-title">Utolsó dobás</div>
+                <div id="last-roll-label" class="roller-label"></div>
+                <div id="last-roll-formula" class="last-roll-formula"></div>
+                <div id="last-roll-badge"></div>
+            </div>
+            <div>
+                <button type="button" class="last-roll-close" onclick="hideLastRollModal()">Bezár</button>
+                <div id="last-roll-total" class="last-roll-total"></div>
+            </div>
         </div>
-        <div>
-            <button type="button" class="last-roll-close" onclick="hideLastRollModal()">Bezár</button>
-            <div id="last-roll-total" class="last-roll-total"></div>
-        </div>
+        <div id="last-roll-breakdown" class="last-roll-breakdown"></div>
     </div>
-    <div id="last-roll-breakdown" class="last-roll-breakdown"></div>
 </div>
 
 <script>
@@ -536,8 +565,7 @@
             { n: "Vizsgálódás", a: "INT", statIndex: 3, s: 1 }
         ],
         attacks: [
-            { n: "Misztikus Sugár", b: "+7", d: "2d10 [F]" },
-            { n: "Tőr", b: "+6", d: "1d4+3 [P]" }
+            { n: "Misztikus Sugár", b: "+7", d: "2d10 [F]" }
         ],
         inspiration: { active: false },
         spellSlots: [
@@ -680,14 +708,16 @@
 
     function buildD20Formula(modifier) {
         const value = parseSigned(modifier);
-        return value === 0 ? '1d20' : `1d20${value > 0 ? '+' : ''}${value}`;
+        if (value === 0) return '1d20';
+        return `1d20${value > 0 ? '+' : ''}${value}`;
     }
 
     function getHitDiceFormula() {
         const die = sheetData.hitDice?.die || 'd8';
         const conMod = parseSigned(sheetData.stats[2]?.mod || 0);
         const dieFormula = die.startsWith('d') ? `1${die}` : die;
-        return conMod === 0 ? dieFormula : `${dieFormula}${conMod > 0 ? '+' : ''}${conMod}`;
+        if (conMod === 0) return dieFormula;
+        return `${dieFormula}${conMod > 0 ? '+' : ''}${conMod}`;
     }
 
     function getBaseAC() {
@@ -762,11 +792,9 @@
     function showRollResult(label, formula, options = {}) {
         const showLastModal = options.showLastModal !== false;
         const result = rollFormula(formula);
-        const badge = result.d20 === 20
-            ? { text: 'Természetes 20', className: 'crit' }
-            : result.d20 === 1
-                ? { text: 'Természetes 1', className: 'fail' }
-                : null;
+        let badge = null;
+        if (result.d20 === 20) badge = { text: 'Természetes 20', className: 'crit' };
+        else if (result.d20 === 1) badge = { text: 'Természetes 1', className: 'fail' };
 
         document.getElementById('roller-empty').hidden = true;
         document.getElementById('roller-current').hidden = false;
@@ -825,8 +853,16 @@
         document.getElementById('roller-overlay').hidden = true;
     }
 
+    function handleGlobalUiKeys(event) {
+        if (event.key !== 'Escape') return;
+        if (!document.getElementById('roller-overlay').hidden) closeRollerModal();
+        if (!document.getElementById('last-roll-overlay').hidden) hideLastRollModal();
+    }
+
+    document.addEventListener('keydown', handleGlobalUiKeys);
+
     function hideLastRollModal() {
-        document.getElementById('last-roll-modal').hidden = true;
+        document.getElementById('last-roll-overlay').hidden = true;
         if (lastRollTimer) {
             clearTimeout(lastRollTimer);
             lastRollTimer = null;
@@ -847,12 +883,12 @@
             badgeEl.innerText = badge.text;
         }
 
-        document.getElementById('last-roll-modal').hidden = false;
+        document.getElementById('last-roll-overlay').hidden = false;
         if (lastRollTimer) clearTimeout(lastRollTimer);
         lastRollTimer = setTimeout(() => {
-            document.getElementById('last-roll-modal').hidden = true;
+            document.getElementById('last-roll-overlay').hidden = true;
             lastRollTimer = null;
-        }, 10000);
+        }, 5000);
     }
 
     function rollStat(index) {
@@ -885,6 +921,51 @@
         showRollResult(`${attack.n} támadás`, buildD20Formula(attack.b));
     }
 
+    function getAttackRows() {
+        const rows = (Array.isArray(sheetData.attacks) ? sheetData.attacks : []).map((attack, index) => ({
+            kind: 'attack',
+            name: attack.n,
+            attackBonus: attack.b,
+            damage: attack.d,
+            index
+        }));
+
+        (Array.isArray(sheetData.equipment) ? sheetData.equipment : []).forEach((item, index) => {
+            if (item.kind !== 'Fegyver' || !item.attack || !item.damage) return;
+            rows.push({
+                kind: 'equipment',
+                name: item.name,
+                attackBonus: item.attack,
+                damage: item.damage,
+                index
+            });
+        });
+
+        return rows;
+    }
+
+    function renderAttackRows() {
+        const atkWrap = document.querySelector('#atk-table tbody');
+        const rows = getAttackRows();
+
+        atkWrap.innerHTML = '';
+        rows.forEach(row => {
+            const attackBtn = row.kind === 'equipment'
+                ? `<button type="button" class="attack-roll-btn clickable-roll" onclick="rollEquipment(${row.index}, 'attack', event)"><strong>${row.name}</strong></button>`
+                : `<button type="button" class="attack-roll-btn clickable-roll" onclick="rollAttack(${row.index}, 'attack')"><strong>${row.name}</strong></button>`;
+
+            const attackBonusBtn = row.kind === 'equipment'
+                ? `<button type="button" class="attack-dmg-btn clickable-roll" onclick="rollEquipment(${row.index}, 'attack', event)">${row.attackBonus}</button>`
+                : `<button type="button" class="attack-dmg-btn clickable-roll" onclick="rollAttack(${row.index}, 'attack')">${row.attackBonus}</button>`;
+
+            const dmgBtn = row.kind === 'equipment'
+                ? `<button type="button" class="attack-dmg-btn clickable-roll" onclick="rollEquipment(${row.index}, 'damage', event)">${row.damage}</button>`
+                : `<button type="button" class="attack-dmg-btn clickable-roll" onclick="rollAttack(${row.index}, 'damage')">${row.damage}</button>`;
+
+            atkWrap.innerHTML += `<tr><td>${attackBtn}</td><td>${attackBonusBtn}</td><td>${dmgBtn}</td></tr>`;
+        });
+    }
+
     function rollHitDice() {
         showRollResult('Harcerő kocka', getHitDiceFormula());
     }
@@ -910,6 +991,46 @@
 
         if (!item.attack) return;
         showRollResult(`${item.name} támadás`, buildD20Formula(item.attack));
+    }
+
+    function rollSpellAttack(label, formula, event) {
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        showRollResult(`${label} támadás`, buildD20Formula(formula));
+    }
+
+    function rollInlineDice(formula, label, event) {
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        showRollResult(label || formula, formula);
+    }
+
+    function escapeHtml(text) {
+        return String(text)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    function escapeAttr(text) {
+        return escapeHtml(text).replace(/`/g, '&#96;');
+    }
+
+    function renderInlineDiceLinks(text, label) {
+        const source = String(text || '');
+        const escaped = escapeHtml(source);
+        const dicePattern = /(^|[^\w/])(\d*d\d+(?:\s*[+-]\s*\d+)?)(?=$|[^\w/])/gi;
+        return escaped.replace(dicePattern, (match, prefix, formula) => {
+            const cleaned = formula.replace(/\s+/g, '').replace(/\+-/g, '-').replace(/-\+/g, '-');
+            const safeLabel = label || cleaned;
+            return `${prefix}<button type="button" class="inline-dice-link" data-formula="${escapeAttr(cleaned)}" data-label="${escapeAttr(safeLabel)}" onclick="rollInlineDice(this.dataset.formula, this.dataset.label, event)">${escapeHtml(formula.trim())}</button>`;
+        });
     }
 
     function renderSpellSlots() {
@@ -958,7 +1079,7 @@
         const facts = [];
         if (item.value) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Érték</span><span class="equipment-fact-value">${item.value}</span></div>`);
         if (item.weight) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Súly</span><span class="equipment-fact-value">${item.weight}</span></div>`);
-        if (item.attack) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Támadás</span><span class="equipment-fact-value">${item.attack}</span></div>`);
+        if (item.attack) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Támadás</span><button type="button" class="equipment-fact-button clickable-roll" onclick="rollEquipment(${itemIndex}, 'attack', event)"><span class="equipment-fact-value">${item.attack}</span></button></div>`);
         if (item.damage) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Sebzés</span><button type="button" class="equipment-fact-button clickable-roll" onclick="rollEquipment(${itemIndex}, 'damage', event)"><span class="equipment-fact-value">${item.damage}</span></button></div>`);
         if (item.range) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Hatótáv</span><span class="equipment-fact-value">${item.range}</span></div>`);
         if (item.type) facts.push(`<div class="equipment-fact"><span class="equipment-fact-label">Fegyver típusa</span><span class="equipment-fact-value">${item.type}</span></div>`);
@@ -1053,21 +1174,28 @@
                                 if (spell.concentration) meta.push('<span class="spell-pill conc">Koncentráció</span>');
                                 if (spell.ritual) meta.push('<span class="spell-pill ritual">Rituálé</span>');
                                 if (spell.dc !== undefined) meta.push(`<span class="spell-pill dc">Mentő DC ${spell.dc}</span>`);
-                                if (spell.atk !== undefined) meta.push(`<span class="spell-pill atk">Támadás ${spell.atk}</span>`);
+                                if (spell.atk !== undefined) meta.push(`<button type="button" class="spell-pill atk rollable" data-label="${escapeAttr(spell.name || 'Varázslat')}" data-formula="${escapeAttr(String(spell.atk))}" onclick="rollSpellAttack(this.dataset.label, this.dataset.formula, event)">Támadás ${spell.atk}</button>`);
                                 return `
-                                    <div class="spell-box">
-                                        <div class="spell-head">
-                                            <div class="spell-name">${spell.name}</div>
-                                            <div class="spell-meta">${meta.join('')}</div>
+                                    <details class="spell-item">
+                                        <summary class="spell-summary">
+                                            <div class="spell-summary-main">
+                                                <div class="spell-name">${escapeHtml(spell.name || 'Ismeretlen varázslat')}</div>
+                                            </div>
+                                            <div class="spell-summary-tail">
+                                                <div class="spell-meta">${meta.join('')}</div>
+                                                <span class="spell-chevron">⌄</span>
+                                            </div>
+                                        </summary>
+                                        <div class="spell-body">
+                                            <div class="spell-facts">
+                                                <div class="spell-fact"><span class="spell-fact-label">Hatótáv</span><span class="spell-fact-value">${escapeHtml(spell.range || '—')}</span></div>
+                                                <div class="spell-fact"><span class="spell-fact-label">Hatóidő</span><span class="spell-fact-value">${escapeHtml(spell.duration || '—')}</span></div>
+                                                <div class="spell-fact"><span class="spell-fact-label">Varázslás ideje</span><span class="spell-fact-value">${escapeHtml(spell.castTime || '—')}</span></div>
+                                                <div class="spell-fact"><span class="spell-fact-label">Komponensek</span><span class="spell-fact-value">${escapeHtml(spell.components || '—')}</span></div>
+                                            </div>
+                                            <div class="spell-desc">${renderInlineDiceLinks(spell.desc || '', spell.name || 'Varázslat')}</div>
                                         </div>
-                                        <div class="spell-facts">
-                                            <div class="spell-fact"><span class="spell-fact-label">Hatótáv</span><span class="spell-fact-value">${spell.range || '—'}</span></div>
-                                            <div class="spell-fact"><span class="spell-fact-label">Hatóidő</span><span class="spell-fact-value">${spell.duration || '—'}</span></div>
-                                            <div class="spell-fact"><span class="spell-fact-label">Varázslás ideje</span><span class="spell-fact-value">${spell.castTime || '—'}</span></div>
-                                            <div class="spell-fact"><span class="spell-fact-label">Komponensek</span><span class="spell-fact-value">${spell.components || '—'}</span></div>
-                                        </div>
-                                        <div class="spell-desc">${spell.desc || ''}</div>
-                                    </div>
+                                    </details>
                                 `;
                             }).join('')}
                         </div>
@@ -1108,11 +1236,7 @@
             saveWrap.innerHTML += `<div class="save-item clickable-roll" role="button" tabindex="0" onclick="rollSave(${index})"><div style="display:flex; align-items:center;"><div class="prof-dot ${s.p ? 'filled' : ''}"></div><span>${stat.label}</span></div><span style="color:var(--accent); font-family:var(--font-num)">${toSigned(base + prof)}</span></div>`;
         });
 
-        const atkWrap = document.querySelector('#atk-table tbody');
-        atkWrap.innerHTML = '';
-        sheetData.attacks.forEach((a, index) => {
-            atkWrap.innerHTML += `<tr><td><button type="button" class="attack-roll-btn clickable-roll" onclick="rollAttack(${index}, 'attack')"><strong>${a.n}</strong></button></td><td style="font-family:var(--font-num); color:var(--accent)">${a.b}</td><td><button type="button" class="attack-dmg-btn clickable-roll" onclick="rollAttack(${index}, 'damage')">${a.d}</button></td></tr>`;
-        });
+        renderAttackRows();
 
         renderFeatures();
         renderEquipment();
