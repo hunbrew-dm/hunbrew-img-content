@@ -28,8 +28,17 @@
         @media (min-width: 1024px) { .dashboard { grid-template-columns: 180px 1fr 320px; align-items: start; } }
 
         .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 20px; }
+        details.card { padding: 0; overflow: hidden; }
         .card-title { font-family: var(--font-display); color: var(--gold); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
         .card-title-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+        .collapsible-summary {
+            list-style: none; cursor: pointer; padding: 20px 20px 15px; margin-bottom: 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .collapsible-summary::-webkit-details-marker { display: none; }
+        .collapsible-card > :not(summary) { padding-left: 20px; padding-right: 20px; }
+        .collapsible-card > :not(summary):first-of-type { padding-top: 18px; }
+        .collapsible-card > :not(summary):last-child { padding-bottom: 20px; }
         .clickable-roll { cursor: pointer; transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease; }
         .clickable-roll:hover { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent-dim), 0 0 18px rgba(0,229,255,0.14); transform: translateY(-1px); }
         .clickable-roll:active { transform: translateY(0); }
@@ -493,8 +502,16 @@
     <section>
         <div class="card"><div class="card-title">Jártasságok</div><div id="proficiency-list" class="proficiency-list"></div></div>
         <div class="card"><div class="card-title">Tulajdonságok</div><div id="feat-list" class="feature-list"></div></div>
-        <div class="card"><div class="card-title">Felszerelés</div><div id="coin-box" class="coin-box"></div><div id="equipment-list" class="equipment-list"></div></div>
-        <div class="card"><div class="card-title">Varázslatok</div><div id="spell-slot-panel" class="spell-slot-panel"></div><div id="spell-list" class="spell-list"></div></div>
+        <details class="card collapsible-card" open>
+            <summary class="card-title card-title-row collapsible-summary"><span>Varázslatok</span></summary>
+            <div id="spell-slot-panel" class="spell-slot-panel"></div>
+            <div id="spell-list" class="spell-list"></div>
+        </details>
+        <details class="card collapsible-card" open>
+            <summary class="card-title card-title-row collapsible-summary"><span>Felszerelés</span></summary>
+            <div id="coin-box" class="coin-box"></div>
+            <div id="equipment-list" class="equipment-list"></div>
+        </details>
     </section>
 
     <div class="rest-actions">

@@ -1,0 +1,4026 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "HPHB",
+				"abbreviation": "HPHB",
+				"full": "HunBrew",
+				"authors": [
+					"hubrew-dm"
+				],
+				"convertedBy": [
+					"hubrew-dm"
+				],
+				"version": "1.0",
+				"color": "ed7c00"
+			}
+		],
+		"currencyConversions": {
+			"HU": [
+				{
+					"coin": "RP",
+					"mult": 1
+				},
+				{
+					"coin": "EP",
+					"mult": 0.1
+				},
+				{
+					"coin": "AP",
+					"mult": 0.01
+				}
+			]
+		},
+		"dateAdded": 1771064744662,
+		"dateLastModified": 1771064744662,
+		"edition": "one",
+		"dependencies": {
+			"baseitem": [
+				"XPHB",
+				"PHB",
+				"DMG",
+				"XDMG"
+			],
+			"item": [
+				"XPHB",
+				"PHB",
+				"DMG",
+				"XDMG"
+			],
+			"class": [
+				"barbarian",
+				"bard",
+				"cleric",
+				"druid",
+				"fighter",
+				"monk",
+				"mystic",
+				"paladin",
+				"ranger",
+				"rogue",
+				"sidekick",
+				"sorcerer",
+				"warlock",
+				"wizard"
+			]
+		}
+	},
+	"skill": [
+		{
+			"name": "Akrobatika",
+			"source": "HPHB",
+			"ability": "dex",
+			"entries": [
+				"Maradj talpon egy trükkös helyzetben, vagy hajts végre egy akrobatikus mutatványt."
+			]
+		},
+		{
+			"name": "Szelídítés",
+			"source": "HPHB",
+			"ability": "wis",
+			"entries": [
+				"Nyugtass meg vagy idomíts egy állatot, vagy érd el, hogy egy bizonyos módon viselkedjen."
+			]
+		},
+		{
+			"name": "Mágia ismeret",
+			"source": "HPHB",
+			"ability": "int",
+			"entries": [
+				"Idézz fel varázslatokkal, mágikus tárgyakkal vagy a létezés síkjaival kapcsolatos tudást."
+			]
+		},
+		{
+			"name": "Atlétika",
+			"source": "HPHB",
+			"ability": "str",
+			"entries": [
+				"Ugorj messzebbre a megszokottnál, maradj a víz felszínén viharos vízben, vagy törj össze valamit."
+			]
+		},
+		{
+			"name": "Megtévesztés",
+			"source": "HPHB",
+			"ability": "cha",
+			"entries": [
+				"Adj el egy meggyőző hazugságot, vagy viselj meggyőzően egy álruhát."
+			]
+		},
+		{
+			"name": "Történelem",
+			"source": "HPHB",
+			"ability": "int",
+			"entries": [
+				"Idézz fel tudást történelmi eseményekről, emberekről, nemzetekről és kultúrákról, vagy emlékezz vissza elködösült emlékekre."
+			]
+		},
+		{
+			"name": "Ember ismeret",
+			"source": "HPHB",
+			"ability": "wis",
+			"entries": [
+				"Mérd fel egy személy hangulatát és szándékait."
+			]
+		},
+		{
+			"name": "Megfélemlítés",
+			"source": "HPHB",
+			"ability": "cha",
+			"entries": [
+				"A tekintélyeddel vagy fenyegetéssel vegyél rá valakit, hogy azt tegye, amit szeretnél."
+			]
+		},
+		{
+			"name": "Vizsgálódás",
+			"source": "HPHB",
+			"ability": "int",
+			"entries": [
+				"Keress rejtett információkat könyvekben, vagy jöjj rá valaminek a működésére."
+			]
+		},
+		{
+			"name": "Orvoslás",
+			"source": "HPHB",
+			"ability": "wis",
+			"entries": [
+				"Diagnosztizálj egy betegséget, vagy állapítsd meg egy friss holttestről a halála okát ."
+			]
+		},
+		{
+			"name": "Természetismeret",
+			"source": "HPHB",
+			"ability": "int",
+			"entries": [
+				"Idézz fel terepviszonyokkal, növényekkel, állatokkal és időjárással kapcsolatos tudást."
+			]
+		},
+		{
+			"name": "Észlelés",
+			"source": "HPHB",
+			"ability": "wis",
+			"entries": [
+				"Az érzékszerveid segítségével vegyél észre valamit, ami könnyen elkerülheti a figyelmedet."
+			]
+		},
+		{
+			"name": "Előadásmód",
+			"source": "HPHB",
+			"ability": "cha",
+			"entries": [
+				"Színészkedj, mesélj egy történetet, adj elő zenét vagy táncolj."
+			]
+		},
+		{
+			"name": "Meggyőzés",
+			"source": "HPHB",
+			"ability": "cha",
+			"entries": [
+				"Őszinteséggel győzz meg valakit valamiről."
+			]
+		},
+		{
+			"name": "Vallás",
+			"source": "HPHB",
+			"ability": "int",
+			"entries": [
+				"Idézz fel tudást istenekről, vallási szertartásokról és szent szimbólumokról."
+			]
+		},
+		{
+			"name": "Kézügyesség",
+			"source": "HPHB",
+			"ability": "dex",
+			"entries": [
+				"Zsebelj ki valakit, rejts el egy tárgyat a kezedben, vagy hajts végre egy bűvészmutatványt."
+			]
+		},
+		{
+			"name": "Lopakodás",
+			"source": "HPHB",
+			"ability": "dex",
+			"entries": [
+				"Kerüld el, hogy észrevegyenek, csendben mozogva és tárgyak mögé rejtőzve."
+			]
+		},
+		{
+			"name": "Túlélée",
+			"source": "HPHB",
+			"ability": "wis",
+			"entries": [
+				"Kövesd a nyomokat, gyűjts élelmet, találj egy ösvényt, vagy kerüld el a természetes veszélyeket."
+			]
+		}
+	],
+	"sense": [
+		{
+			"name": "Sötétlátás",
+			"source": "HPHB",
+			"entries": [
+				"Sötétlátással képes vagy {@variantrule Dim Light|XPHB|Gyenge fényben} a hatótávolságon belül úgy látni, mintha {@variantrule Bright Light|XPHB|Erős fényben} lennél, és {@variantrule Darkness|XPHB|Sötétségben} úgy látni, mintha {@variantrule Dim Light|XPHB|Gyenge fényben} lennél. Azonban a {@variantrule Darkness|XPHB|Sötétségben} csak szürkeárnyalatokat látsz, nem színeket."
+			]
+		}
+	],
+	"itemType": [
+		{
+			"name": "Kézműves eszközök",
+			"abbreviation": "KE",
+			"source": "HPHB",
+			"entries": [
+				"A Kézműves szerszámok mindegyike egy-egy tárgy elkészítésére vagy egy mesterség űzésére összpontosít. Minden Kézműves szerszámtípushoz külön jártasság szükséges.",
+				"Ha jártas vagy egy eszköz használatában, add hozzá a {@variantrule Proficiency|XPHB|Jártasság bónuszodat}  minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, {@variantrule Advantage|XPHB|Előnyöd} van a próbára."
+			]
+		},
+		{
+			"name": "Szerszámok",
+			"abbreviation": "T",
+			"source": "HPHB",
+			"entries": [
+				"Ha jártas vagy egy eszköz használatában, add hozzá a {@variantrule Proficiency|XPHB|Jártasság bónuszodat}  minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, {@variantrule Advantage|XPHB|Előnyöd} van a próbára."
+			]
+		},
+		{
+			"name": "Szernecsejáték készlet",
+			"abbreviation": "GS",
+			"source": "HPHB",
+			"entries": [
+				"Ha jártas vagy egy eszköz használatában, add hozzá a {@variantrule Proficiency|XPHB|Jártasság bónuszodat}  minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, {@variantrule Advantage|XPHB|Előnyöd} van a próbára."
+			]
+		},
+		{
+			"name": "Hangszer",
+			"abbreviation": "INS",
+			"source": "HPHB",
+			"entries": [
+				"Ha jártas vagy egy eszköz használatában, add hozzá a {@variantrule Proficiency|XPHB|Jártasság bónuszodat}  minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, {@variantrule Advantage|XPHB|Előnyöd} van a próbára."
+			]
+		},
+		{
+			"name": "Távolsági fegyver",
+			"abbreviation": "R",
+			"source": "HPHB",
+			"page": 214,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Távolsági",
+					"entries": [
+						"Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, {@variantrule Disadvantage|XPHB|Hátrányod} van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl."
+					]
+				}
+			]
+		},
+		{
+			"name": "Közelharci fegyver",
+			"abbreviation": "M",
+			"source": "HPHB"
+		},
+		{
+			"name": "Kalandozó felszerelés",
+			"abbreviation": "G",
+			"source": "HPHB"
+		},
+		{
+			"name": "Nehéz Páncélzat",
+			"abbreviation": "HA",
+			"source": "HPHB"
+		},
+		{
+			"name": "Könnyű Páncélzat",
+			"abbreviation": "LA",
+			"source": "HPHB"
+		},
+		{
+			"name": "Közepes Páncélzat",
+			"abbreviation": "MA",
+			"source": "HPHB"
+		},
+		{
+			"name": "Pajzs",
+			"abbreviation": "S",
+			"source": "HPHB"
+		},
+		{
+			"name": "Lövedék",
+			"abbreviation": "A",
+			"source": "HPHB"
+		}
+	],
+	"baseitem": [
+		{
+			"name": "Kalligráfus eszközök",
+			"alias": [
+				"Calligrapher's Supplies"
+			],
+			"type": "KE|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Ügyesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Szöveg írása lenyűgöző díszítésekkel, ami véd a hamisítás ellen (NF 15)"
+							]
+						},
+						{
+							"name": "Készítés:",
+							"type": "item",
+							"entries": [
+								"{@item Tinta|HPHB}, {@item Spell Scroll|XDMG|Varázstekercs}"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Calligrapher's Supplies|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Ács Szerszámok",
+			"alias": [
+				"Carpenter's Tools"
+			],
+			"type": "KE|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Erő"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Ajtó vagy tároló lezárása vagy felfeszítése (NF 20)"
+							]
+						},
+						{
+							"name": "Készítés:",
+							"type": "item",
+							"entries": [
+								"{@item Club|XPHB|Bunkó}, {@item Greatclub|XPHB|Nagy bunkó}, {@item Quarterstaff|XPHB|Vándorbot}, {@item Barrel|XPHB|Hordó}, {@item Chest|XPHB|Láda}, {@item Ladder|XPHB|Létra}, {@item Pole|XPHB|Rúd}, {@item Portable Ram|XPHB|Hordozható faltörökos}, {@item Torch|XPHB|Fáklya}"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Carpenter's Tools|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Carpenter's Tools",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Ékszerész eszközök",
+			"alias": [
+				"Jeweler's Tools"
+			],
+			"type": "KE|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Intelligencia"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Drágakő értékének megállapítása (NF 15)"
+							]
+						},
+						{
+							"name": "Készítés:",
+							"type": "item",
+							"entries": [
+								"{@item Arcane Focus|XPHB|Varázs fókusz}, {@item Holy Symbol|XPHB|Szent szimbólum}"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Jeweler's Tools|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Jeweler's Tools",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Térképész készlet",
+			"alias": [
+				"Cartographer's Tools"
+			],
+			"type": "KE|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Bölcsesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Kis terület térképének vázlatos elkészítése (NF 15)"
+							]
+						},
+						{
+							"name": "Készítés:",
+							"type": "item",
+							"entries": [
+								"{@item Map|XPHB|Térkép}"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Cartographer's Tools|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Cartographer's Tools",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Dob",
+			"alias": [
+				"Drum"
+			],
+			"type": "INS|HPHB",
+			"source": "HPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 600,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Karizma"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Drum|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Furulya",
+			"alias": [
+				"Flute"
+			],
+			"type": "INS|HPHB",
+			"source": "HPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Karizma"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Flute|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Lant",
+			"alias": [
+				"Lute"
+			],
+			"type": "INS|HPHB",
+			"source": "HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 3500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Karizma"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Lute|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Pánsíp",
+			"alias": [
+				"Pan Flute"
+			],
+			"type": "INS|HPHB",
+			"source": "HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1200,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Karizma"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Pan Flute|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Számszeríj lövedék",
+			"alias": [
+				"Bolt"
+			],
+			"source": "HPHB",
+			"type": "A|HPHB",
+			"rarity": "none",
+			"weight": 0.075,
+			"value": 5,
+			"bolt": true,
+			"entries": [
+				"A Számszeríj lövedékeket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.",
+				"A vesszőket jellemzően {@item Crossbow Bolt Case|XPHB|Számszeríj-tegezben} tárolják (külön megvásárolható)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Bolt|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Számszeríj lövedékek (20)",
+			"alias": [
+				"Bolt (20)"
+			],
+			"source": "HPHB",
+			"type": "A|HPHB",
+			"rarity": "none",
+			"weight": 1.5,
+			"value": 100,
+			"bolt": true,
+			"entries": [
+				"A Számszeríj lövedékeket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.",
+				"A vesszőket jellemzően {@item Crossbow Bolt Case|XPHB|Számszeríj-tegezben} tárolják (külön megvásárolható)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Bolts (20)|XPHB}"
+					]
+				}
+			],
+			"packContents": [
+				{
+					"item": "Számszeríj lövedék|HPHB",
+					"quantity": 20
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Nyílvessző",
+			"alias": [
+				"Arrow"
+			],
+			"source": "HPHB",
+			"type": "A|HPHB",
+			"rarity": "none",
+			"weight": 0.05,
+			"value": 5,
+			"arrow": true,
+			"entries": [
+				"A Nyílvesszőket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.",
+				"A nyílvesszőket jellemzően {@item Quiver|XPHB|Tegezben} tárolják (külön megvásárolható)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Arrow|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Fúvócső-tű",
+			"alias": [
+				"Needle"
+			],
+			"source": "HPHB",
+			"type": "A|HPHB",
+			"rarity": "none",
+			"weight": 0.02,
+			"value": 2,
+			"needleBlowgun": true,
+			"entries": [
+				"A fúvócső-tűket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.",
+				"A tűket jellemzően {@item Pouch|XPHB|Erszényben} tárolják (külön megvásárolható)."
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Nyílvesszők (20)",
+			"alias": [
+				"Arrows (20)"
+			],
+			"source": "HPHB",
+			"type": "A|HPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 100,
+			"arrow": true,
+			"entries": [
+				"A Nyílvesszőket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.",
+				"A nyílvesszőket jellemzően {@item Quiver|XPHB|Tegezben} tárolják (külön megvásárolható)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Arrows (20)|XPHB}"
+					]
+				}
+			],
+			"packContents": [
+				{
+					"item": "Nyílvessző|HPHB",
+					"quantity": 20
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Bőrvért",
+			"alias": [
+				"Leather Armor"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Leather Armor.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "LA|HPHB",
+			"rarity": "none",
+			"weight": 10,
+			"value": 1000,
+			"ac": 11,
+			"armor": true,
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Leather Armor|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Félvért",
+			"alias": [
+				"Half Plate Armor"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Half Plate Armor.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "MA|HPHB",
+			"rarity": "none",
+			"weight": 40,
+			"value": 75000,
+			"ac": 15,
+			"armor": true,
+			"property": [
+			"S|HPHB"
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Half Plate Armor|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Láncing",
+			"alias": [
+				"Chain Shirt"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Chain Shirt.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "MA|HPHB",
+			"rarity": "none",
+			"weight": 20,
+			"value": 5000,
+			"ac": 13,
+			"armor": true,
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Chain Shirt|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Sodronypáncél",
+			"alias": [
+				"Chain Mail"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Chain Mail.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "HA|HPHB",
+			"rarity": "none",
+			"weight": 55,
+			"value": 7500,
+			"ac": 16,
+			"armor": true,
+			"customProperties": {
+				"minStrength": 13
+			},
+			"property": [
+				"S|HPHB",
+				"HA|HPHB"
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Chain Mail|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Mellvért",
+			"alias": [
+				"Breastplate"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Breastplate.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "MA|HPHB",
+			"rarity": "none",
+			"weight": 20,
+			"value": 40000,
+			"ac": 14,
+			"armor": true,
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Breastplate|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Szegecselt bőrpáncél",
+			"alias": [
+				"Studded Leather Armor"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Studded Leather Armor.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "LA|HPHB",
+			"rarity": "none",
+			"weight": 13,
+			"value": 4500,
+			"ac": 12,
+			"armor": true,
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Studded Leather Armor|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Szalagpáncél",
+			"alias": [
+				"Splint Armor"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Splint Armor.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "HA|HPHB",
+			"rarity": "none",
+			"weight": 60,
+			"value": 20000,
+			"ac": 17,
+			"armor": true,
+			"customProperties": {
+				"minStrength": 15
+			},
+			"property": [
+				"S|HPHB",
+				"HA|HPHB"
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Splint Armor|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Gyűrűpáncél",
+			"alias": [
+				"Ring Mail"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Ring Mail.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "HA|HPHB",
+			"rarity": "none",
+			"weight": 40,
+			"value": 3000,
+			"ac": 14,
+			"armor": true,
+			"property": [
+				"S|HPHB"
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Ring Mail|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Lemezvért",
+			"alias": [
+				"Plate Armor"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Plate Armor.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "HA|HPHB",
+			"rarity": "none",
+			"weight": 65,
+			"value": 150000,
+			"ac": 18,
+			"armor": true,
+			"property": [
+				"S|HPHB",
+				"HA|HPHB"
+			],
+			"customProperties": {
+				"minStrength": 15
+			},
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Plate Armor|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Fegyverkabát",
+			"alias": [
+				"Padded Armor"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Padded Armor.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "LA|HPHB",
+			"rarity": "none",
+			"weight": 8,
+			"value": 500,
+			"ac": 11,
+			"armor": true,
+			"property": [
+				"S|HPHB"
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Padded Armor|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Irhapáncél",
+			"alias": [
+				"Hide Armor"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Hide Armor.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "MA|HPHB",
+			"rarity": "none",
+			"weight": 12,
+			"value": 1000,
+			"ac": 12,
+			"armor": true,
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Hide Armor|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Pikkelypáncél",
+			"alias": [
+				"Scale Mail"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Scale Mail.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "MA|HPHB",
+			"rarity": "none",
+			"weight": 45,
+			"value": 5000,
+			"ac": 14,
+			"armor": true,
+			"property": [
+				"S|HPHB"
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Scale Mail|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Pajzs",
+			"alias": [
+				"Shield"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Shield.webp"
+						}
+					}
+				]
+			},
+			"source": "HPHB",
+			"type": "S|HPHB",
+			"rarity": "none",
+			"weight": 6,
+			"value": 1000,
+			"ac": 2,
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Shield|XPHB}"
+					]
+				}
+			],
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Husáng",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 10,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"L|HPHB"
+			],
+			"mastery": [
+				"Lassítás|HPHB"
+			],
+			"dmg1": "1d4",
+			"dmgType": "Zúzó",
+			"club": true,
+			"weapon": true,
+			"alias": [
+				"Club"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Club.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Tőr",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"F|HPHB",
+				"L|HPHB",
+				"T|HPHB"
+			],
+			"mastery": [
+				"Karcolás|HPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "Szúró",
+			"dagger": true,
+			"weapon": true,
+			"alias": [
+				"Dagger"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Dagger.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Dobónyíl",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"weight": 0.25,
+			"value": 5,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"F|HPHB",
+				"T|HPHB"
+			],
+			"mastery": [
+				"Megzavarás|HPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "Szúró",
+			"weapon": true,
+			"alias": [
+				"Dart"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Dart.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Kétkezes husáng",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 10,
+			"value": 20,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Eltaszítás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Zúzó",
+			"club": true,
+			"weapon": true,
+			"alias": [
+				"Greatclub"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Greatclub.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Balta",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"L|HPHB",
+				"T|HPHB"
+			],
+			"mastery": [
+				"Megzavarás|HPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "Vágó",
+			"axe": true,
+			"alias": [
+				"Handaxe"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Handaxe.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Gerely",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"T|HPHB"
+			],
+			"mastery": [
+				"Lassítás|HPHB"
+			],
+			"range": "30/120",
+			"dmg1": "1d6",
+			"dmgType": "Szúró",
+			"spear": true,
+			"weapon": true,
+			"alias": [
+				"Javelin"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Javelin.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Könnyű számszeríj",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"weight": 5,
+			"value": 2500,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"A|HPHB",
+				"LD|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Lassítás|HPHB"
+			],
+			"range": "80/320",
+			"dmg1": "1d8",
+			"dmgType": "Szúró",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "Számszeríj lövedék|HPHB",
+			"alias": [
+				"Light Crossbow"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Light Crossbow.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Könnyű kalapács",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 200,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"L|HPHB",
+				"T|HPHB"
+			],
+			"mastery": [
+				"Karcolás|HPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "Zúzó",
+			"hammer": true,
+			"weapon": true,
+			"alias": [
+				"Light Hammer"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Light Hammer.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Buzogány",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "egyszerű",
+			"mastery": [
+				"Elcsigázás|HPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "Zúzó",
+			"mace": true,
+			"weapon": true,
+			"alias": [
+				"Mace"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Mace.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Vándorbot",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 4,
+			"value": 20,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"V|HPHB"
+			],
+			"mastery": [
+				"Gáncsolás|HPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "Zúzó",
+			"dmg2": "1d8",
+			"weapon": true,
+			"alias": [
+				"Quarterstaff"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Quarterstaff.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Rövidíj",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"A|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Megzavarás|HPHB"
+			],
+			"range": "80/320",
+			"dmg1": "1d6",
+			"dmgType": "Szúró",
+			"bow": true,
+			"weapon": true,
+			"ammoType": "nyílvessző|hphb",
+			"alias": [
+				"Shortbow"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Shortbow.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Sarló",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 100,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"L|HPHB"
+			],
+			"mastery": [
+				"Karcolás|HPHB"
+			],
+			"dmg1": "1d4",
+			"dmgType": "Vágó",
+			"weapon": true,
+			"alias": [
+				"Sickle"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Sickle.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Parittya",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"value": 10,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"A|HPHB"
+			],
+			"mastery": [
+				"Lassítás|HPHB"
+			],
+			"range": "30/120",
+			"dmg1": "1d4",
+			"dmgType": "Zúzó",
+			"weapon": true,
+			"ammoType": "sling bullet|xphb",
+			"alias": [
+				"Sling"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Sling.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Lándzsa",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 100,
+			"weaponCategory": "egyszerű",
+			"property": [
+				"T|HPHB",
+				"V|HPHB"
+			],
+			"mastery": [
+				"Elcsigázás|HPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "Szúró",
+			"dmg2": "1d8",
+			"spear": true,
+			"weapon": true,
+			"alias": [
+				"Spear"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Spear.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Csatabárd",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 4,
+			"value": 1000,
+			"weaponCategory": "katonai",
+			"property": [
+				"V|HPHB"
+			],
+			"mastery": [
+				"Gáncsolás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Vágó",
+			"dmg2": "1d10",
+			"axe": true,
+			"weapon": true,
+			"alias": [
+				"Battleaxe"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Battleaxe.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Fúvócső",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"weaponCategory": "katonai",
+			"property": [
+				"A|HPHB",
+				"LD|HPHB"
+			],
+			"mastery": [
+				"Megzavarás|HPHB"
+			],
+			"range": "25/100",
+			"dmg1": "1",
+			"dmgType": "Szúró",
+			"weapon": true,
+			"ammoType": "fúvócső-tű|HPHB",
+			"alias": [
+				"Blowgun"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Blowgun.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Láncos buzogány",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"weaponCategory": "katonai",
+			"mastery": [
+				"Elcsigázás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Zúzó",
+			"weapon": true,
+			"alias": [
+				"Flail"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Flail.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Gléfe",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 6,
+			"value": 2000,
+			"weaponCategory": "katonai",
+			"property": [
+				"H|HPHB",
+				"R|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Horzsolás|HPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "Vágó",
+			"polearm": true,
+			"weapon": true,
+			"alias": [
+				"Glaive"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Glaive.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Kétkezes csatabárd",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 7,
+			"value": 3000,
+			"weaponCategory": "katonai",
+			"property": [
+				"H|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Kaszabolás|HPHB"
+			],
+			"dmg1": "1d12",
+			"dmgType": "Vágó",
+			"axe": true,
+			"weapon": true,
+			"alias": [
+				"Greataxe"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Greataxe.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Pallos",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 6,
+			"value": 5000,
+			"weaponCategory": "katonai",
+			"property": [
+				"H|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Horzsolás|HPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "Vágó",
+			"sword": true,
+			"weapon": true,
+			"alias": [
+				"Greatsword"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Greatsword.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Alabárd",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 6,
+			"value": 2000,
+			"weaponCategory": "katonai",
+			"property": [
+				"H|HPHB",
+				"R|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Kaszabolás|HPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "Vágó",
+			"polearm": true,
+			"weapon": true,
+			"alias": [
+				"Halberd"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Halberd.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Kézi számszeríj",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 7500,
+			"weaponCategory": "katonai",
+			"property": [
+				"A|HPHB",
+				"L|HPHB",
+				"LD|HPHB"
+			],
+			"mastery": [
+				"Megzavarás|HPHB"
+			],
+			"range": "30/120",
+			"dmg1": "1d6",
+			"dmgType": "Szúró",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "Számszeríj lövedék|HPHB",
+			"alias": [
+				"Hand Crossbow"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Hand Crossbow.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Nehéz számszeríj",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"weight": 18,
+			"value": 5000,
+			"weaponCategory": "katonai",
+			"property": [
+				"A|HPHB",
+				"H|HPHB",
+				"LD|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Eltaszítás|HPHB"
+			],
+			"range": "100/400",
+			"dmg1": "1d10",
+			"dmgType": "Szúró",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "Számszeríj lövedék|HPHB",
+			"alias": [
+				"Heavy Crossbow"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Heavy Crossbow.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Kopja",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 6,
+			"value": 1000,
+			"weaponCategory": "katonai",
+			"property": [
+				"H|HPHB",
+				"R|HPHB",
+				{
+					"uid": "2H|HPHB",
+					"note": "kivéve lóháton"
+				}
+			],
+			"mastery": [
+				"Gáncsolás|HPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "Szúró",
+			"lance": true,
+			"weapon": true,
+			"entries": [
+				"A Lance requires two hands to wield when you aren't mounted."
+			],
+			"alias": [
+				"Lance"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Lance.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Hosszúíj",
+			"source": "HPHB",
+			"type": "R|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 5000,
+			"weaponCategory": "katonai",
+			"property": [
+				"A|HPHB",
+				"H|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Lassítás|HPHB"
+			],
+			"range": "150/600",
+			"dmg1": "1d8",
+			"dmgType": "Szúró",
+			"bow": true,
+			"weapon": true,
+			"ammoType": "nyílvessző|hphb",
+			"alias": [
+				"Longbow"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Longbow.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Hosszúkard",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 1500,
+			"weaponCategory": "katonai",
+			"property": [
+				"V|HPHB"
+			],
+			"mastery": [
+				"Elcsigázás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Vágó",
+			"dmg2": "1d10",
+			"sword": true,
+			"weapon": true,
+			"alias": [
+				"Longsword"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Longsword.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Pöröly",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 10,
+			"value": 1000,
+			"weaponCategory": "katonai",
+			"property": [
+				"H|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Gáncsolás|HPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "Zúzó",
+			"hammer": true,
+			"weapon": true,
+			"alias": [
+				"Maul"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Maul.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Tüskés buzogány",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 4,
+			"value": 1500,
+			"weaponCategory": "katonai",
+			"mastery": [
+				"Elcsigázás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Szúró",
+			"mace": true,
+			"weapon": true,
+			"alias": [
+				"Morningstar"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Morningstar.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Pika",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 18,
+			"value": 500,
+			"weaponCategory": "katonai",
+			"property": [
+				"H|HPHB",
+				"R|HPHB",
+				"2H|HPHB"
+			],
+			"mastery": [
+				"Eltaszítás|HPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "Szúró",
+			"weapon": true,
+			"alias": [
+				"Pike"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Pike.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Vívótőr",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"weaponCategory": "katonai",
+			"property": [
+				"F|HPHB"
+			],
+			"mastery": [
+				"Megzavarás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Szúró",
+			"rapier": true,
+			"sword": true,
+			"weapon": true,
+			"alias": [
+				"Rapier"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Rapier.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Szablya",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 2500,
+			"weaponCategory": "katonai",
+			"property": [
+				"F|HPHB",
+				"L|HPHB"
+			],
+			"mastery": [
+				"Karcolás|HPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "Vágó",
+			"sword": true,
+			"weapon": true,
+			"alias": [
+				"Scimitar"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Scimitar.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Rövidkard",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"weaponCategory": "katonai",
+			"property": [
+				"F|HPHB",
+				"L|HPHB"
+			],
+			"mastery": [
+				"Megzavarás|HPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "Szúró",
+			"sword": true,
+			"weapon": true,
+			"alias": [
+				"Shortsword"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Shortsword.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Szigony",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "katonai",
+			"property": [
+				"T|HPHB",
+				"V|HPHB"
+			],
+			"mastery": [
+				"Gáncsolás|HPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d8",
+			"dmgType": "Szúró",
+			"dmg2": "1d10",
+			"weapon": true,
+			"alias": [
+				"Trident"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Trident.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Csákányfokos",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "katonai",
+			"property": [
+				"V|HPHB"
+			],
+			"mastery": [
+				"Elcsigázás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Szúró",
+			"dmg2": "1d10",
+			"weapon": true,
+			"alias": [
+				"War Pick"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/War Pick.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Harci kalapács",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 5,
+			"value": 1500,
+			"weaponCategory": "katonai",
+			"property": [
+				"V|HPHB"
+			],
+			"mastery": [
+				"Eltaszítás|HPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "Zúzó",
+			"dmg2": "1d10",
+			"hammer": true,
+			"weapon": true,
+			"alias": [
+				"Warhammer"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Warhammer.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Ostor",
+			"source": "HPHB",
+			"type": "M|HPHB",
+			"rarity": "none",
+			"weight": 3,
+			"value": 200,
+			"weaponCategory": "katonai",
+			"property": [
+				"F|HPHB",
+				"R|HPHB"
+			],
+			"mastery": [
+				"Lassítás|HPHB"
+			],
+			"dmg1": "1d4",
+			"dmgType": "Vágó",
+			"weapon": true,
+			"alias": [
+				"Whip"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/XPHB/Whip.webp"
+						}
+					}
+				]
+			},
+			"currencyConversion": "HU"
+		}
+	],
+	"item": [
+		{
+			"name": "Ásó",
+			"alias": [
+				"Shovel"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Az Ásóval 1 óra alatt egy 1,5 méter oldalú kocka alakú gödröt áshatsz."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Shovel|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Shovel",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Hátizsák",
+			"alias": [
+				"Backpack"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Hátizsák legfeljebb 30 font (13,6 kg) súlyt bír el kb. 28 literes térfogaton belül. Nyeregtáskaként is funkcionálhat."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Backpack|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Backpack",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Csapágygolyók",
+			"alias": [
+				"Ball Bearings"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Használat akcióként golyóbisokat szórhatsz ki az erszényükből. Egy 3 méteres négyzet alakú, sík területet fednek le tőled 3 méteren belül. Minden lénynek, amely egy körben először lép erre a területre, sikeres NF 10-es Ügyesség mentődobást kell tennie, különben Elterült állapotba kerül. A golyóbisok összeszedése 10 perc."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Ball Bearings|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Ball Bearings",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Hálózsák",
+			"alias": [
+				"Bedroll"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Hálózsák egy Kicsi vagy Közepes lény számára biztosít fehelyet. Amíg benne fekszel, automatikusan sikeres mentődobást teszel az extrém hideg ellen."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Bedroll|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Bedroll",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Csengő",
+			"alias": [
+				"Bell"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Ha Használat akcióként megkongatják, a Csengő hangja akár 18 méter távolságig is elhallatszik."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Bell|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Bell",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Takaró",
+			"alias": [
+				"Blanket"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Amíg Takaróba vagy bugyolálva, Előnyöd van az extrém hideg elleni mentődobásokra."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Blanket|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Blanket",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Könyv",
+			"alias": [
+				"Book"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Könyv tartalmazhat szépirodalmat vagy tényirodalmat. Ha egy hiteles szakkönyvben utánanézel egy témának, +5 bónuszt kapsz az adott témában tett Intelligencia (Arkána, Történelem, Természet vagy Vallás) próbáidra."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Book|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Book",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Vassúlyom",
+			"alias": [
+				"Caltrops"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Használat akcióként sulyomcsapdákat szórhatsz ki tőled 1,5 méteren belül egy 1,5 méteres négyzetre. Minden lénynek, amely egy körben először lép ide, sikeres NF 15-ös Ügyesség mentődobást kell tennie, különben 1 szúró sebzést kap, és a Sebessége 0-ra csökken a következő köre kezdetéig. Összeszedése 10 perc."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Caltrops|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Caltrops",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Gyertya",
+			"alias": [
+				"Candle"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Egy meggyújtott Gyertya 1 órán át Erős fényt áraszt 1,5 méter sugarú körben, és további 1,5 méteren Gyenge fényt."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Candle|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Candle",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Jelmez",
+			"alias": [
+				"Costume"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Amíg Jelmezt viselsz, Előnyöd van a megszemélyesítésre tett képességpróbákra."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Costume|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Costume",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Feszítővas",
+			"alias": [
+				"Crowbar"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Feszítővas használata Előnyt ad azokra az Erő próbákra, ahol az emelőereje érvényesülhet."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Crowbar|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Crowbar",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Előkelő ruházat",
+			"alias": [
+				"Fine Clothes"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Nemesi ruha drága szövetekből készült. Bizonyos eseményekre csak ilyen ruhában engedik be a karaktereket."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Fine Clothes|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Fine Clothes",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Gyógyító készlet",
+			"alias": [
+				"Healer's Kit"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Gyógyító készlet tíz alkalmas. Használat akcióként stabilizálhatsz vele egy Eszméletlen, 0 Harcerő Pontos lényt Bölcsesség (Orvoslás) próba nélkül."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Healer's Kit|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Healer's Kit",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Szentelt víz",
+			"alias": [
+				"Holy Water"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Támadás akció során az egyik támadást helyettesítheted Szenteltvíz dobásával egy 6 méteren belüli lényre. A célpontnak Ügyesség mentődobást kell tennie (NF = 8 + Ügyesség mód. + Jártasság bónusz), különben 2d8 sugárzó sebzést kap, ha Alvilági vagy Élőhalott."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Holy Water|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Holy Water",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Lámpás",
+			"alias": [
+				"Hooded Lantern"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Fedeles lámpás Erős fényt áraszt 9 méter sugarú körben, és további 9 méteren Gyenge fényt. Bónusz akcióként a fedelet leeresztve a fényt 1,5 méteres Gyenge fényre szűkítheted."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Hooded Lantern|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Hooded Lantern",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Tinta",
+			"alias": [
+				"Ink"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Tinta egy unciás (kb. 0,3 dl) üvegben van, ami kb. 500 oldalnyi íráshoz elég."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Ink|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Ink",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Penna",
+			"alias": [
+				"Ink Pen"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Toll írásra vagy rajzolásra szolgál (tintával együtt)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Ink Pen|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Ink Pen",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Vasedény",
+			"alias": [
+				"Iron Pot"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Egy Vasfazék kb. 3,8 liter folyadékot bír el."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Iron Pot|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Iron Pot",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Bilincs",
+			"alias": [
+				"Manacles"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Használat akcióként tőled 1,5 méteren belül megbilincselhetsz egy Megragadott, Cselekvésképtelen vagy Helyhez kötött lényt, ha sikeres NF 13-as Ügyesség (Kézügyesség) próbát teszel.",
+				"A Bilincsből való szabaduláshoz NF 20-as Ügyesség (Kézügyesség) próba, a szétfeszítéséhez NF 25-ös Erő (Atlétika) próba szükséges akcióként. Feltörése: NF 15-ös Ügyesség (Kézügyesség)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Manacles|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Manacles",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Tükör",
+			"alias": [
+				"Mirror"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A kézi acél Tükör tisztálkodáshoz, sarkok mögé nézéshez vagy fényjelek küldéséhez hasznos."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Mirror|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Mirror",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Olajos flaska",
+			"alias": [
+				"Oil"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Lény leöntése Olajjal: Támadás akció helyett dobhatod 6 méterig. A célpontnak Ügyesség mentőt kell tennie (NF = 8 + módosítók), különben olajos lesz. Égéskor plusz 5 Tűz sebzést kap.",
+				"Terület leöntése: Használat akcióval egy 1,5 méteres négyzetet önthetsz le. Meggyújtva 2 körig ég, és 5 Tűz sebzést okoz.",
+				"Üzemanyag: Egy üveg olaj 6 órán át ég a lámpásokban."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Oil|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Oil",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Pergamen",
+			"alias": [
+				"Parchment"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Egy ív Pergamenre kb. 250 szó fér rá."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Parchment|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Parchment",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Parfüm",
+			"alias": [
+				"Perfume"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Parfüm 4 unciás (kb. 1,2 dl) fiolában van. 1 órán át Előnyt ad a Karizma (Meggyőzés) próbákra 1,5 méteren belüli közömbös humanoidoknál."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Perfume|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Perfume",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Erszény",
+			"alias": [
+				"Pouch"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Az Erszény legfeljebb 6 fontot (2,7 kg) bír el kb. 5,6 literes térfogaton."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Pouch|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Pouch",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Tegez",
+			"alias": [
+				"Quiver"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Tegez 20 nyílvesszőt tárol."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Quiver|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Quiver",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Fejadag",
+			"alias": [
+				"Rations"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Az Úti élelem tartósított étel (szárított hús, aszalt gyümölcs, magvak)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Rations|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Rations",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Köpeny",
+			"alias": [
+				"Robe"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Köntös szertartási vagy hivatási öltözék. Bizonyos helyekre csak adott jelzésű köntösben léphetsz be."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Robe|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Robe",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Kötél",
+			"alias": [
+				"Rope"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Használat akcióval csomót köthetsz a Kötélre (NF 10-es Kézügyesség). Elszakítás: NF 20-as Erő (Atlétika). Kiszabadulás: NF 15-ös Ügyesség (Akrobatika)."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Rope|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Rope",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Sátor",
+			"alias": [
+				"Tent"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Sátorban két Kicsi vagy Közepes lény fér el."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Tent|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Tent",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Tűzszerszám",
+			"alias": [
+				"Tinderbox"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Tűzszerszám tűzgyújtásra szolgál. Fényforrás meggyújtása vele Bónusz akció."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Tinderbox|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Tinderbox",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Fáklya",
+			"alias": [
+				"Torch"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Fáklya 1 órán át ég, 6 méter sugarú körben Erős fényt adva. Ütésnél 1 Tűz sebzést okoz."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Torch|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Torch",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Utazó ruha",
+			"alias": [
+				"Traveler's Clothes"
+			],
+			"source": "HPHB",
+			"entries": [
+				"Az Utazóruha strapabíró öltözet minden környezetbe."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Traveler's Clothes|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Traveler's Clothes",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Vizestömlő",
+			"alias": [
+				"Waterskin"
+			],
+			"source": "HPHB",
+			"entries": [
+				"A Kulacs kb. 1,9 liter folyadékot tárol."
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Waterskin|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Waterskin",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU",
+			"type": "G|HPHB"
+		},
+		{
+			"name": "Tolvaj szerszám",
+			"alias": [
+				"Thieves' Tools"
+			],
+			"type": "T|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Ügyesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Zár feltörése (NF 15), vagy csapda hatástalanítása (NF 15)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Thieves' Tools|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Thieves' Tools",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Hamisító készlet",
+			"alias": [
+				"Forgery Kit"
+			],
+			"type": "T|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Ügyesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"10 vagy kevesebb szó utánzása valaki más kézírásával (NF 15), vagy egy viaszpecsét lemásolása (NF 20)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Forgery Kit|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Forgery Kit",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Gyógynövényes készlet",
+			"alias": [
+				"Herbalism Kit"
+			],
+			"type": "T|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Intelligencia"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Egy növény azonosítása (NF 10)"
+							]
+						},
+						{
+							"name": "Készítés:",
+							"type": "item",
+							"entries": [
+								"{@item Antitoxin|XPHB|Ellenméreg}, {@item Candle|XPHB|Gyertya}, {@item Healer's Kit|XPHB|Gyógyító készlet}, {@item Potion of Healing|XDMG|Gyógyital}"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Herbalism Kit|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Herbalism Kit",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Navigációs eszközök",
+			"alias": [
+				"Navigator's Tools"
+			],
+			"type": "T|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Bölcsesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Útvonal tervezése (NF 10), vagy helyzet meghatározása csillagok alapján (NF 15)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Navigator's Tools|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Navigator's Tools",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Kocka-játék",
+			"alias": [
+				"Dice Set"
+			],
+			"type": "GS|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Bölcsesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Megállapítani, hogy valaki csal-e (NF 10), vagy megnyerni a játékot (NF 20)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Dice Set|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Dice Set",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Sárkánysakk",
+			"alias": [
+				"Dragonchess Set"
+			],
+			"type": "GS|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Bölcsesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Megállapítani, hogy valaki csal-e (NF 10), vagy megnyerni a játékot (NF 20)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Dragonchess Set|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Dragonchess Set",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		},
+		{
+			"name": "Kártya pakli",
+			"alias": [
+				"Playing Cards"
+			],
+			"type": "GS|HPHB",
+			"source": "HPHB",
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"name": "Tulajdonság:",
+							"type": "item",
+							"entries": [
+								"Bölcsesség"
+							]
+						},
+						{
+							"name": "Használat:",
+							"type": "item",
+							"entries": [
+								"Megállapítani, hogy valaki csal-e (NF 10), vagy megnyerni a játékot (NF 20)"
+							]
+						}
+					]
+				}
+			],
+			"additionalEntries": [
+				{
+					"type": "entries",
+					"name": "Fordítás forrása",
+					"entries": [
+						"{@item Playing Cards|XPHB}"
+					]
+				}
+			],
+			"_copy": {
+				"name": "Playing Cards",
+				"source": "XPHB"
+			},
+			"currencyConversion": "HU"
+		}
+	],
+	"itemMastery": [
+		{
+			"name": "Kaszabolás",
+			"source": "HPHB",
+			"_comment": "Cleave",
+			"entries": [
+				"Körönként egyszer, sikeres közelharci találat esetén egy második célpontnak is sebzést okozol, ha az a hatótávodon belül van és az elsőtől legfeljebb 5 láb (1,5 méter) távolságra áll. A második sebzéshez a fegyver alapsebzését használd, de NE add hozzá a tulajdonság módosítódat (kivéve, ha negatív)."
+			]
+		},
+		{
+			"name": "Horzsolás",
+			"source": "HPHB",
+			"_comment": "Graze",
+			"entries": [
+				"Ha ezzel a fegyverrel sikretelen a támadó dobásod, még akkor is a dobáshoz használt képesség módosítódnak megfelelő értéket sebzel. Ez a sebzés azonos típusú a fegyver sebzésével, és kizárólag a képesség módosító növelésével együtt növelhető."
+			]
+		},
+		{
+			"name": "Karcolás",
+			"source": "HPHB",
+			"_comment": "Nick",
+			"entries": [
+				"Amikor a Könnyű tulajdonságú fegyver extra támadását használod, nem kell {@variantrule Bonus Action|XPHB|bónusz akciót} használnod hozzá, hanem a {@action Attack|XPHB|Támadás} akció részeként teheted meg. Ezt körönként egyszer alkalmazhatod."
+			]
+		},
+		{
+			"name": "Eltaszítás",
+			"source": "HPHB",
+			"_comment": "Push",
+			"entries": [
+				"Ha eltalálsz egy célpontot a fegyverrel, akkor 10 láb (3m) távolságra lökheted vele, feltéve hogy a lény legfeljebb Nagy termetű."
+			]
+		},
+		{
+			"name": "Elcsigázás",
+			"source": "HPHB",
+			"_comment": "Sap",
+			"entries": [
+				"Ha eltalálsz egy célpontot a fegyverrel, akkor a lény {@variantrule Disadvantage|XPHB|Hátránnyal} dobja a következő támadó dobását, a hatás a következő köröd kezdetéig tart."
+			]
+		},
+		{
+			"name": "Lassítás",
+			"source": "HPHB",
+			"_comment": "Slow",
+			"entries": [
+				"Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény {@variantrule Speed|XPHB|Sebessége} 10 lábbal csökken, a hatás a következő köröd kezdetéig tart. Ha a lényt többször is eltalálják olyan fegyverek, amiknek ez a tulajdonsága, a sebességcsökkenés nem haladhatja meg a 10 lábat."
+			]
+		},
+		{
+			"name": "Gáncsolás",
+			"source": "HPHB",
+			"_comment": "Topple",
+			"entries": [
+				"Találat esetén megpróbálhatod elgáncsolni a célpontot. A célpontnak Állóképesség (Constitution) mentődobást kell tennie (NF = 8 + {@variantrule Proficiency|XPHB|Jártasság Bónusz} + Támadás módosítód). Sikertelen mentő esetén a lény {@condition Prone|XPHB|Elterült} állapotba kerül."
+			]
+		},
+		{
+			"name": "Megzavarás",
+			"source": "HPHB",
+			"_comment": "Vex",
+			"entries": [
+				"Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást {@variantrule Advantage|XPHB|Előnnyel} dobhatod, a hatás a következő köröd kezdetéig tart."
+			]
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "2H",
+			"source": "HPHB",
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Kétkezes",
+					"entries": [
+						"Egy Kétkezes fegyver használatához mindkét kezedre szükséged van."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "HA",
+			"source": "HPHB",
+			"template": "{{prop_name}} ({{item.customProperties.minStrength}})",
+			"entriesTemplate": [
+				{
+					"type": "entries",
+					"name": "Nehéz páncélzat",
+					"entries": [
+						"Ha a viselő Erő tulajdonsága kisebb, mint {{item.customProperties.minStrength}}, akkor a sebessége 10 lábbal csökken."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "S",
+			"source": "HPHB",
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Nehezített lopakodás",
+					"entries": [
+						"A viselője {@variantrule Disadvantage|XPHB|Hátránnyal} dob minden Ügyesség ({@skill Lopakodás|HPHB}) próbát."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "A",
+			"source": "HPHB",
+			"template": "{{prop_name}} (Hatótáv {{item.range}} láb; {{item.ammoType}})",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Lőszer",
+					"entries": [
+						"A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "F",
+			"source": "HPHB",
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Kecses",
+					"entries": [
+						"Amikor Kecses fegyverrel támadsz, választhatsz az Erő vagy Ügyesség módosítód között a támadó- és sebzésdobásokhoz. Mindkét dobáshoz ugyanazt a módosítót kell használnod."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "H",
+			"source": "HPHB",
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Nehéz",
+					"entries": [
+						"{@variantrule Disadvantage|XPHB|Hátrányod} van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "L",
+			"source": "HPHB",
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Könnyű",
+					"entries": [
+						"Ha a {@action Attack|XPHB|Támadás} akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást {@variantrule Bonus Action|XPHB|Bónusz akcióként} ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív)."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "LD",
+			"source": "HPHB",
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Egylövetű",
+					"entries": [
+						"Csak egy lőszert lőhetsz ki akciónként, {@variantrule Bonus Action|XPHB|bónusz akciónként} vagy {@variantrule Reaction|XPHB|reakciónként}, függetlenül attól, hány támadásod van egyébként (pl. Extra Támadás képesség esetén is csak egyet)."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "R",
+			"source": "HPHB",
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Hosszú",
+					"entries": [
+						"Egy Hosszú fegyverrel plusz 5 láb távolságba elérhet a támadásod, ez érvényes az {@action Opportunity Attack|XPHB|Alkalmi támadásokra} is."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "T",
+			"source": "HPHB",
+			"template": "{{prop_name}} ({{item.range}} láb)",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Eldobható",
+					"entries": [
+						"A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "V",
+			"source": "HPHB",
+			"template": "{{prop_name}} ({{item.dmg2}})",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Másfélkezes",
+					"entries": [
+						"A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz."
+					]
+				}
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Barbár",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Barbarian",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Bárd",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Bard",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Pap",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Cleric",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Druida",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Druid",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Harcos",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Fighter",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Szerzetes",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Monk",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Lovag",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Paladin",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Vándor",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Ranger",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Zsivány",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Rogue",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Mágus",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Sorcerer",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Boszorkánymester",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Warlock",
+				"source": "XPHB"
+			}
+		},
+		{
+			"name": "Varázsló",
+			"source": "HPHB",
+			"_copy": {
+				"name": "Wizard",
+				"source": "XPHB"
+			}
+		}
+	]
+}
