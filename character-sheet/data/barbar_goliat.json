@@ -1,0 +1,286 @@
+{
+  "id": "barbar_goliat",
+  "name": "Barbár - Góliát",
+  "raceClass": "Góliát | Barbár 1",
+  "ac": {
+    "base": 13,
+    "current": 13
+  },
+  "init": "+1",
+  "speed": "35 láb",
+  "size": "Közepes",
+  "spellcasting": {},
+  "prof": "+2",
+  "hpMax": 14,
+  "hitDice": {
+    "total": 1,
+    "die": "d12"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 17,
+      "mod": "+3"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 8,
+      "mod": "-1"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": true
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": true
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 1
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [],
+  "coins": {
+    "pp": 0,
+    "gp": 29,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Kocka-játék"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Óriás",
+        "Goblin"
+      ]
+    }
+  ],
+  "equipment": [
+    "Kétkezes csatabárd",
+    {
+      "name": "Balta",
+      "count": 4
+    },
+    "Hátizsák",
+    "Hálózsák",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Lándzsa",
+    "Rövidíj",
+    {
+      "name": "Nyíl",
+      "count": 20
+    },
+    "Kocka-játék",
+    "Gyógyító készlet",
+    "Tegez",
+    "Utazó ruha"
+  ],
+  "spells": [],
+  "features": [
+    {
+      "title": "Erős csontozat",
+      "description": "- Előnnyel tudsz Megragadott állapotból szabadulni\n- Terhelhetőséged nagy termetnek megfelelő"
+    },
+    {
+      "title": "Őrjöngés",
+      "description": "(bónusz akció, ha nem viselsz nehéz páncélt; akció különben)\n- Ellenállás (-50% sebzés) Zúzó, Szúró, Vágó\n- Dühöngő sebzés +2 bónusz az ERŐ módosítóval adott sebzésekhez\n- ERŐ Előny ERŐ alapú próba és mentő dobásokat Előnnyel dobhatot\n- Dekoncentrált állapot Őrjöngés közben nem tudsz Összpontosítani vagy varázsolni.\n- Időtartam Alapvetően a következő kör végéig tart, korábban befejeződik, ha nehéz páncélt öltesz vagy Cselekvésképtelenné válsz. Ha a köröd elején aktív, meghosszabbíthatod még egy körig, ha:\n    - Megtámadsz egy ellenséget\n    - Mentődobásra kényszerítesz egy ellenséget\n    - Bónusz akciót használsz a hosszabbításra\nMax 10 percig (100 kör) tudod fenntartani hosszabbításokkal\nNapi kétszer használhatod, Rövid Pihenővel egy elhasználtat visszanyerhetsz. ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Kegyetlen támadó",
+      "description": "A kiképzésednek köszönhetően különösen pusztító csapásokra vagy képes. Körönként egyszer találat esetén a sebzést újra dobhatod és használható a magasabb értéket."
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Kaszabolás Körönként egyszer a sikeres közelharci találat, egy második célpontnak is sebzést okoz, ha a második célpont hatótávodban és az elsőtől max 5 láb távolságra van. A második sebzés a fegyver alap sebzése a képesség módosítód nélkül.\n- Megzavarás Találatkor és sebzéskor: Előny a következő támadásodra, max a következő köröd végéig.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Tűz óriás ősök Ha támadásoddal sebzést okozol, ahhoz extra 1d10 Tűz sebzést adhatsz.\nNapi 2-szer",
+      "description": "⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Páncél nélküli védelem",
+      "description": "Páncél nélkül a VF-ed 10 + ÜGY mód. + ÁLL mód. Pajzsot használhatsz emellett."
+    }
+  ]
+}

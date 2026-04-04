@@ -1,0 +1,280 @@
+{
+  "id": "bard_felszerzet",
+  "name": "Bárd - Félszerzet",
+  "raceClass": "Félszerzet | Bárd 1",
+  "ac": {
+    "base": 13,
+    "current": 13
+  },
+  "init": "+2",
+  "speed": "30 láb",
+  "size": "Kis",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
+  "prof": "+2",
+  "hpMax": 9,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 17,
+      "mod": "+3"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": true
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": true
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 1
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 34,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Hamisító készlet",
+        "furulya",
+        "lant",
+        "líra"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Félszerzet",
+        "Sárkány"
+      ]
+    }
+  ],
+  "equipment": [
+    "Bőrvért",
+    {
+      "name": "Tőr",
+      "count": 2
+    },
+    "Lant",
+    "Hátizsák",
+    "Hálózsák",
+    "Csengő",
+    "Lámpás",
+    {
+      "name": "Jelmez",
+      "count": 4
+    },
+    {
+      "name": "Olajos flaska",
+      "count": 8
+    },
+    {
+      "name": "Fejadag",
+      "count": 9
+    },
+    "Tűzszerszám",
+    "Vizestömlő",
+    "Hamisító készlet",
+    "Előkelő ruházat"
+  ],
+  "spells": [
+    "Táncoló fények",
+    "Ördögi gúny",
+    "Személy elbájolása",
+    "Színpompás permet",
+    "Gyógyítás szava",
+    "Disszonáns suttogás"
+  ],
+  "features": [
+    {
+      "title": "Bátorság",
+      "description": "A Rémültséggel szembeni mentő dobást Előnnyel dobhatod."
+    },
+    {
+      "title": "Inspiráló dalnok",
+      "description": "Bónusz akcióként adhatsz egy lénynek 60 lábon (kb. 18 méteren) belül egy \"Dalnok\"-kockát (d6). Amikor ez a lény elbukik egy d20 próbát, felhasználhatja és hozzáadhatja az ösztönzés-kocka eredményét a dobásához.\nNapi 3-szor: ⎕ ⎕ ⎕",
+      "count": 3
+    },
+    {
+      "title": "Szerencse",
+      "description": "Ha d20 dobással 1-et dobsz egyszer újradobhatod a kockát."
+    },
+    {
+      "title": "Félszerzet fürgeség & Természetes Lopakodás",
+      "description": "Az egy termettel nagyobb lények által elfoglalt területen is áthaladhatsz vagy Elrejtőzhetsz mögöttük."
+    }
+  ]
+}

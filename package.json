@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "import:sheet8": "node scripts/import-sheet8-csv.mjs",
     "build:pages": "node scripts/build-pages.mjs"
   }
 }

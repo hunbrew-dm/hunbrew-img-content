@@ -1,0 +1,285 @@
+{
+  "id": "boszorkanymester_ork",
+  "name": "Boszorkánymester - Ork",
+  "raceClass": "Ork | Boszorkánymester 1",
+  "ac": {
+    "base": 13,
+    "current": 13
+  },
+  "init": "+2",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
+  "prof": "+2",
+  "hpMax": 9,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 9,
+      "mod": "+0"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 17,
+      "mod": "+3"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": true
+    },
+    {
+      "statIndex": 5,
+      "p": true
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 1
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 44,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Sárkánysakk"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Elf",
+        "Ork"
+      ]
+    }
+  ],
+  "equipment": [
+    "Bőrvért",
+    "Sarló",
+    {
+      "name": "Tőr",
+      "count": 2
+    },
+    "Varázslat fókusz",
+    "Könyv (Okkult)",
+    "Hátizsák",
+    "Könyv",
+    "Tinta",
+    "Penna",
+    {
+      "name": "Olajos flaska",
+      "count": 10
+    },
+    "Lámpás",
+    {
+      "name": "Pergamen",
+      "count": 10
+    },
+    "Tűzszerszám",
+    "Sárkánysakk",
+    "Előkelő ruházat",
+    "Parfüm"
+  ],
+  "spells": [
+    "Vérfagyasztó sugár",
+    "Szemfényvesztés",
+    "Személy elbájolása",
+    "Boszorkány átok"
+  ],
+  "features": [
+    {
+      "title": "A Lánc Paktuma Mágia akcióként varázs rekesz nélkül varázsolhatod a Familiáris keresése varázslatot. A szokásos familiárisokon felül a következő formákat választhatod",
+      "description": "Kisördög, Álsárkány, Apró démon, Csontváz, Démon-lárva, Apró szfinx, Pixi, Mérges kígyó.\nA saját körödben helyetted támadhat a familiárisod, ekkor a reakcióját használja."
+    },
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Ellenállás",
+      "description": "Méreg"
+    },
+    {
+      "title": "Rendíthetetlen kitartás",
+      "description": "Amennyiben a Harcerő pontjaid 0-ra csökkennek, az utolsó tartalékaid felhasználva 1HP-re stabilizálhatod magad\nNapi 1-szer: ⎕",
+      "count": 1
+    },
+    {
+      "title": "Adrenalin Löket Bónusz akcióként használhatod a Roham akciót. Amikor így teszel, akkor 2 Ideiglenes HP-t kapsz.\nKétszer használhatod és minden Rövid vagy Hosszú pihenő után visszanyered az elhasználtakat",
+      "description": "⎕ ⎕",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "id": "boszorkanymester_arnyfatty",
+  "name": "Boszorkánymester - Árnyfatty",
+  "raceClass": "Árnyfatty | Boszorkánymester 1",
+  "ac": {
+    "base": 13,
+    "current": 13
+  },
+  "init": "+2",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
+  "prof": "+2",
+  "hpMax": 10,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 16,
+      "mod": "+3"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": true
+    },
+    {
+      "statIndex": 5,
+      "p": true
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 1
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 1
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 1
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 30,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Hamisító készlet"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Óriás",
+        "Sárkány"
+      ]
+    }
+  ],
+  "equipment": [
+    "Bőrvért",
+    "Sarló",
+    {
+      "name": "Tőr",
+      "count": 2
+    },
+    "Varázslat fókusz",
+    "Könyv (Okkult)",
+    "Hátizsák",
+    "Könyv",
+    "Tinta",
+    "Penna",
+    {
+      "name": "Olajos flaska",
+      "count": 10
+    },
+    "Lámpás",
+    {
+      "name": "Pergamen",
+      "count": 10
+    },
+    "Tűzszerszám",
+    "Hamisító készlet",
+    "Jelmez",
+    "Előkelő ruházat"
+  ],
+  "spells": [
+    "Taumaturgia",
+    "Méregpermet",
+    "Vérfagyasztó sugár",
+    "Szemfényvesztés",
+    "Személy elbájolása",
+    "Boszorkány átok"
+  ],
+  "features": [
+    {
+      "title": "A Vas Paktuma",
+      "description": "Bónusz akcióként meg tudsz idézni egy túlvilági fegyvert. A megidézett fegyverrel jártas vagy és varázslat fókuszként használhatod.\nA támadó és sebzés dobásaidhoz használhatod a KAR módosítódat; és választhatsz, hogy Nekrotikus, Pszichés, Ragyogó vagy a fegyver normál sebzés típusát használod.\nAz idézés véget ér, ha új fegyvert idézel meg, 1 percig 5 lábnál távolabb vagy a fegyvertől, vagy ha meghalsz. Ha az idézés véget ért a fegyver eltűnik."
+    },
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Ellenállás",
+      "description": "Méreg"
+    }
+  ]
+}

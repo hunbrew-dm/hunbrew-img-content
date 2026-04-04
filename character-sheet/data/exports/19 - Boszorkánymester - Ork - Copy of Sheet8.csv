@@ -1,0 +1,74 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+2,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,9,,,
+HARCERŐ KOCKA,1d8,,,
+VF,13,,,
+,score,mod,saving prof,
+ERŐ,10,0,FALSE,
+ÜGYESSÉG,14,2,FALSE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,9,0,FALSE,
+BÖLCSESSÉG,12,1,TRUE,
+KARIZMA,17,3,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+0,○,0,
+Előadásmód (KAR),+3,○,0,
+Ember ismeret (BÖL),+1,○,0,
+Észlelés (BÖL),+1,○,0,
+Kézügyesség (ÜGY),+2,○,0,
+Lopakodás (ÜGY),+2,○,0,
+Mágia ismeret (INT),+2,●,1,
+Megfélemlítés (KAR),+5,●,1,
+Meggyőzés (KAR),+5,●,1,
+Megtévesztés (KAR),+5,●,1,
+Orvoslás (BÖL),+1,○,0,
+Szelídítés (BÖL),+1,○,0,
+Természetismeret (INT),+2,●,1,
+Történelem (INT),+2,●,1,
+Túlélés (BÖL),+1,○,0,
+Vallás (INT),+0,○,0,
+Vizsgálódás (INT),+2,●,1,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,1,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,44,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+"A Lánc Paktuma Mágia akcióként varázs rekesz nélkül varázsolhatod a Familiáris keresése varázslatot. A szokásos familiárisokon felül a következő formákat választhatod: Kisördög, Álsárkány, Apró démon, Csontváz, Démon-lárva, Apró szfinx, Pixi, Mérges kígyó.
+A saját körödben helyetted támadhat a familiárisod, ekkor a reakcióját használja.",,Vérfagyasztó sugár,Fegyver: Egyszerű,Bőrvért
+Sötétlátás: 60 láb,,Szemfényvesztés,Páncél: Könnyű,Sarló
+Ellenállás:  Méreg,,Személy elbájolása,Eszköz: Sárkánysakk,Tőr (2)
+"Rendíthetetlen kitartás: Amennyiben a Harcerő pontjaid 0-ra csökkennek, az utolsó tartalékaid felhasználva 1HP-re stabilizálhatod magad
+Napi 1-szer: ⎕",,Boszorkány átok,"Nyelv: Közös, Elf, Ork",Varázslat fókusz
+"Adrenalin Löket Bónusz akcióként használhatod a Roham akciót. Amikor így teszel, akkor 2 Ideiglenes HP-t kapsz.
+Kétszer használhatod és minden Rövid vagy Hosszú pihenő után visszanyered az elhasználtakat: ⎕ ⎕",,,,Könyv (Okkult)
+,,,,Hátizsák
+,,,,Könyv
+,,,,Tinta
+,,,,Penna
+,,,,Olajos flaska (10)
+,,,,Lámpás
+,,,,Pergamen (10)
+,,,,Tűzszerszám
+,,,,Sárkánysakk
+,,,,Előkelő ruházat
+,,,,Parfüm

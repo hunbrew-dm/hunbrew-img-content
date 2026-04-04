@@ -1,0 +1,294 @@
+{
+  "id": "harcos_ember",
+  "name": "Harcos - Ember",
+  "raceClass": "Ember | Harcos 1",
+  "ac": {
+    "base": 16,
+    "current": 16
+  },
+  "init": "+3",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {},
+  "prof": "+2",
+  "hpMax": 14,
+  "hitDice": {
+    "total": 1,
+    "die": "d10"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 10,
+      "mod": "+0"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": true
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": true
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 1
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [],
+  "coins": {
+    "pp": 0,
+    "gp": 16,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "nehéz",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Kártya"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Törp",
+        "Elf"
+      ]
+    }
+  ],
+  "equipment": [
+    "Sodronypáncél",
+    "Pallos",
+    "Láncos buzogány",
+    {
+      "name": "Gerely",
+      "count": 8
+    },
+    "Hátizsák",
+    "Vassúlyom (caltrop)",
+    "Feszítővas",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    "Tűzszerszám",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Lándzsa",
+    "Könnyű számszeríj",
+    {
+      "name": "Számszeríj lövedék",
+      "count": 20
+    },
+    "Kártya pakli",
+    "Lámpás",
+    "Bilincs",
+    "Tegez, Utazó ruha"
+  ],
+  "spells": [],
+  "features": [
+    {
+      "title": "Találékony",
+      "description": "Hosszú pihenés végén Hősies Inspirációt kapsz."
+    },
+    {
+      "title": "Kezdeményezés csere",
+      "description": "Kezdeményezés dobás után cserélhetsz egy társaddal, ha ő is szeretné."
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Elcsigázás Találatkor a célpont következő támadására Hátrány, a következő köröd elejéig.\n- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.\n- Horzsolás Sikertelen támadó dobás után is sebzel a módosítódnak megfelelő értéket.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Szívósság",
+      "description": "Szintenként +2 HP-t kapsz."
+    },
+    {
+      "title": "Nehézfegyveres harcmodor",
+      "description": "Amikor kétkezes fegyverrel sebzést dobsz minden 1-es vagy 2-es dobást számolhatsz 3-nak"
+    },
+    {
+      "title": "Profi kezdeményező",
+      "description": "A kezdeményezésedhez hozzáadódik a Jártasság Bónuszod is."
+    },
+    {
+      "title": "Második menet",
+      "description": "Képes vagy felhasználni a tested és az elméd rejtett tartalékait. Bónusz akcióként 1d10+1-et gyógyulsz.\nNapi kétszer használhatod, Rövid Pihenővel egy elhasználtat visszanyerhetsz. ⎕ ⎕",
+      "count": 2
+    }
+  ]
+}

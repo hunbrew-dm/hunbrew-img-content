@@ -1,0 +1,70 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+1,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,11,,,
+HARCERŐ KOCKA,1d8,,,
+VF,16,,,
+,score,mod,saving prof,
+ERŐ,8,-1,FALSE,
+ÜGYESSÉG,12,1,FALSE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,10,0,FALSE,
+BÖLCSESSÉG,17,3,TRUE,
+KARIZMA,15,2,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),-1,○,0,
+Előadásmód (KAR),+2,○,0,
+Ember ismeret (BÖL),+5,●,1,
+Észlelés (BÖL),+3,○,0,
+Kézügyesség (ÜGY),+1,○,0,
+Lopakodás (ÜGY),+1,○,0,
+Mágia ismeret (INT),+3,○,0,
+Megfélemlítés (KAR),+2,○,0,
+Meggyőzés (KAR),+4,●,1,
+Megtévesztés (KAR),+2,○,0,
+Orvoslás (BÖL),+3,○,0,
+Szelídítés (BÖL),+3,○,0,
+Természetismeret (INT),+0,○,0,
+Történelem (INT),+2,●,1,
+Túlélés (BÖL),+3,○,0,
+Vallás (INT),+5,●,1,
+Vizsgálódás (INT),+0,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Bölcsesség,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,21,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,Szent láng,Fegyver: Egyszerű,Láncing
+"Szikla manó: 10 percet tölthetsz a Szemfényvesztés elmondásával, hogy készíts egy Apró szerkezetet (VF 5, 1 HP), pl. játékot, tűzgyújtót vagy zenedobozt. Készítéskor kiválaszthatod a Szemfényvesztés egy hatását; melyet a szerkezet akkor vált ki, ha valaki bónusz akcióval, érintéssel aktiválja. Ha a hatás több opciót is kínál, a készítés során kiválasztod ezek egyikét, pl. tüzet gyújt vagy olt; nem képes mindkettőre. Egyszerre legfeljebb három ilyen szerkezeted lehet, és mind darabjaira hullik a létrehozása után 8 órával, vagy ha érintéssel, Használat akcióként szétszereled.",,Kisebb illúzió ,"Páncél: Könnyű, közepes,",Pajzs
+Előny: INT/BÖL/KAR mentő dobásokon,,Fény ,pajzs,Buzogány
+Szívósság: Szintenként +2 HP-t kapsz.,,Javítás ,Eszköz: Kalligráfus eszközök,Szent Szimbólum
+,,Szemfényvesztés ,"Nyelv: Közös, Törp, Manó",Hátizsák
+,,Tündöklés szava,,Takaró
+,,Haldoklók megmentése,,Szentelt víz
+,,Sirató harang,,Lámpás
+,,Sebgyógyítás,,Fejadag (7)
+,,Irányzék,,Köpeny
+,,Sebfakasztás,,#REF!
+,,Hit pajzsa,,Tűzszerszám
+,,Gyógyítás szava,,Kalligráfus eszközök
+,,,,Imakönyv
+,,,,Pergamen (10)

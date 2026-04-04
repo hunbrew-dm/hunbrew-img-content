@@ -1,0 +1,71 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+1,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,7,,,
+HARCERŐ KOCKA,1d6,,,
+VF,11,,,
+,score,mod,saving prof,
+ERŐ,8,-1,FALSE,
+ÜGYESSÉG,12,1,FALSE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,16,3,TRUE,
+BÖLCSESSÉG,16,3,TRUE,
+KARIZMA,10,0,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),-1,○,0,
+Előadásmód (KAR),+0,○,0,
+Ember ismeret (BÖL),+5,●,1,
+Észlelés (BÖL),+5,●,1,
+Kézügyesség (ÜGY),+1,○,0,
+Lopakodás (ÜGY),+1,○,0,
+Mágia ismeret (INT),+5,●,1,
+Megfélemlítés (KAR),+0,○,0,
+Meggyőzés (KAR),+2,●,1,
+Megtévesztés (KAR),+0,○,0,
+Orvoslás (BÖL),+5,●,1,
+Szelídítés (BÖL),+3,○,0,
+Természetismeret (INT),+3,○,0,
+Történelem (INT),+5,●,1,
+Túlélés (BÖL),+3,○,0,
+Vallás (INT),+5,●,1,
+Vizsgálódás (INT),+5,●,1,
+,,,0,
+,,,,
+Varázslás képesség,Intelligencia,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,2,,,
+elektrum,,,,
+arany,14,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Találékony: Hosszú pihenés végén Hősies Inspirációt kapsz.,,Fény,Fegyver: Egyszerű,Tőr (2)
+"Mágikus regeneráció: A varázskönyved tanulmányozásával visszanyerheted a mágikus energiád egy részét.
+Amikor végzel egy Rövid Pihenővel visszakapsz egy elhasznált varázs rekeszt.
+Napi 1-szer: ⎕",,Máguskéz,Eszköz: Kalligráfus eszközök,Vándorbot
+"Beavatott Rituálé: Minden a varázskönyvedben lévő varázslatot, ami rituáléként is varázsolható elvégezhetsz rituális varázslással, akkor is ha a varázslat nincs előkészítve.",,Mentális tüske,"Nyelv: Közös, Sárkány, Elf",Köpeny
+,,Fagysugár,,Varázskönyv
+,,Tűzlövedék,,Hátizsák
+,,Máguspáncél,,Könyv
+,,Tollesés,,Tinta
+,,Varázslövedék,,Penna
+,,Mennydörgés,,Olajos flaska (10)
+,,Boszorkány sugár,,Lámpás
+,,Mágia érzékelése,,Pergamen (18)
+,,Familiáris idézése,,Tűzszerszám
+,,,,Kalligráfus eszközök
+,,,,Könyv (Történelmi)

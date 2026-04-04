@@ -1,0 +1,293 @@
+{
+  "id": "magus_sarkany_szerzet",
+  "name": "Mágus - Sárkány-szerzet",
+  "raceClass": "Sárkány-szerzet | Mágus 1",
+  "ac": {
+    "base": 12,
+    "current": 12
+  },
+  "init": "+2",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
+  "prof": "+2",
+  "hpMax": 8,
+  "hitDice": {
+    "total": 1,
+    "die": "d6"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 16,
+      "mod": "+3"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": true
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 1
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 44,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Tolvaj szerszám"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Sárkány",
+        "Goblin"
+      ]
+    }
+  ],
+  "equipment": [
+    "Lándzsa",
+    {
+      "name": "Tőr",
+      "count": 4
+    },
+    "Mágikus fókusz",
+    "Hátizsák",
+    "Vassúlyom (caltrop)",
+    "Feszítővas",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    "Tűzszerszám",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Tolvaj szerszám",
+    "Sárkánysakk",
+    "Hálózsák",
+    {
+      "name": "Erszény",
+      "count": 2
+    },
+    "Utazó ruha"
+  ],
+  "spells": [
+    "Fény",
+    "Szemfényvesztés",
+    "Sokkoló érintés",
+    "Bűbáj robbantás",
+    "Lángoló kezek",
+    "Mágia érzékelése"
+  ],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Szerencsés",
+      "description": "Természetes szerencséd révén választhatsz:\n- Előny: d20 próbát 1 pontért cserébe Előnnyel dobhatod\n- Hátrány: Ellened irányuló támadó dobást 1 pontért cserébe hátránnyal kell dobni\nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Ösztönös mágia",
+      "description": "Bónusz akcióként 1 percig aktiválhatod, ez alatt:\n- A varázslat NF-je +1\n- A varázslat támadó dobásaidat Előnnyel dobhatod.\nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Ellenálló",
+      "description": "Fagy"
+    },
+    {
+      "title": "Sárkánylehelet (Ezüst)",
+      "description": "15 láb élű kúp vagy 5 x 30 láb területű sávban minden lénynek ÜGY mentést kell dobnia, NF = 12. Sikertelen mentés esetén 1d10 Fagy sebzés, siker esetén a fele. \nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Bűbáj robbantás*",
+      "description": "választható sebzés típus: Sav, Fagy, Tűz, Villám, Méreg, Pszichés vagy Mennydörgés"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,-1,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,12,,,
+HARCERŐ KOCKA,1d10,,,
+VF,18,,,
+,score,mod,saving prof,
+ERŐ,17,3,FALSE,
+ÜGYESSÉG,8,-1,FALSE,
+ÁLLÓKÉPESSÉG,14,2,FALSE,
+INTELLIGENCIA,10,0,FALSE,
+BÖLCSESSÉG,12,1,TRUE,
+KARIZMA,14,2,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+5,●,1,
+Előadásmód (KAR),+2,○,0,
+Ember ismeret (BÖL),+3,●,1,
+Észlelés (BÖL),+1,○,0,
+Kézügyesség (ÜGY),-1,○,0,
+Lopakodás (ÜGY),-1,○,0,
+Mágia ismeret (INT),+0,○,0,
+Megfélemlítés (KAR),+4,●,1,
+Meggyőzés (KAR),+4,●,1,
+Megtévesztés (KAR),+2,○,0,
+Orvoslás (BÖL),+1,○,0,
+Szelídítés (BÖL),+1,○,0,
+Természetismeret (INT),+0,○,0,
+Történelem (INT),+0,○,0,
+Túlélés (BÖL),+1,○,0,
+Vallás (INT),+0,○,0,
+Vizsgálódás (INT),+0,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,23,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,Hősiesség,"Fegyver: Egyszerű, katonai",Sodronypáncél
+"Gyógyító kezek: Érintéssel 2d4 HP-t gyógyíthatsz.  
+Napi 1-szer: ⎕",,Isteni csapás,"Páncél: Könnyű, közepes,  ",Pajzs
+"Fegyvermester:
+- Elcsigázás  Találatkor a célpont következő támadására Hátrány, a következő köröd elejéig.
+- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.
+- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra.",,,"nehéz, pajzs",Hosszúkard
+Ellenállás:  Nekrotikus,,,Eszköz: Kocka-játék,Gerely (6)
+Ellenállás:  Ragyogó,,,"Nyelv: Közös, Égi, Elf",Szent Szimbólum
+"Kézrátétellel gyógyítás: Bónusz akcióval gyógyíthatsz a forrásból kölcsönzött HP-t vagy megszüntetheted a Mérgezett állapotot 5 HP felhasználásával.
+Forrás: napi 5HP ⎕ ⎕ ⎕ ⎕ ⎕",,,,Hátizsák
+Kegyetlen támadó: A kiképzésednek köszönhetően különösen pusztító csapásokra vagy képes. Körönként egyszer találat esetén a sebzést újra dobhatod és használható a magasabb értéket.,,,,Takaró
+,,,,Szentelt víz
+,,,,Lámpás
+,,,,Fejadag (7)
+,,,,Köpeny
+,,,,Tűzszerszám
+,,,,Lándzsa
+,,,,Rövidíj
+,,,,Nyíl (20)
+,,,,Kocka-játék
+,,,,Gyógyító készlet
+,,,,Tegez
+,,,,Utazó ruha

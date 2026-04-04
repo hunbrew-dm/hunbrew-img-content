@@ -1,0 +1,79 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+2,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,8,,,
+HARCERŐ KOCKA,1d6,,,
+VF,12,,,
+,score,mod,saving prof,
+ERŐ,10,0,FALSE,
+ÜGYESSÉG,14,2,FALSE,
+ÁLLÓKÉPESSÉG,14,2,TRUE,
+INTELLIGENCIA,8,-1,FALSE,
+BÖLCSESSÉG,13,1,FALSE,
+KARIZMA,16,3,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+0,○,0,
+Előadásmód (KAR),+3,○,0,
+Ember ismeret (BÖL),+3,●,1,
+Észlelés (BÖL),+1,○,0,
+Kézügyesség (ÜGY),+2,○,0,
+Lopakodás (ÜGY),+4,●,1,
+Mágia ismeret (INT),+1,●,1,
+Megfélemlítés (KAR),+5,●,1,
+Meggyőzés (KAR),+3,○,0,
+Megtévesztés (KAR),+3,○,0,
+Orvoslás (BÖL),+1,○,0,
+Szelídítés (BÖL),+1,○,0,
+Természetismeret (INT),-1,○,0,
+Történelem (INT),-1,○,0,
+Túlélés (BÖL),+1,○,0,
+Vallás (INT),-1,○,0,
+Vizsgálódás (INT),-1,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,44,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,Fény,Fegyver: Egyszerű,Lándzsa
+"Szerencsés: Természetes szerencséd révén választhatsz:
+- Előny: d20 próbát 1 pontért cserébe Előnnyel dobhatod
+- Hátrány: Ellened irányuló támadó dobást 1 pontért cserébe hátránnyal kell dobni
+Napi 2-szer: ⎕ ⎕",,Szemfényvesztés,Eszköz: Tolvaj szerszám,Tőr (4)
+"Ösztönös mágia: Bónusz akcióként 1 percig aktiválhatod, ez alatt:
+- A varázslat NF-je +1
+- A varázslat támadó dobásaidat Előnnyel dobhatod.
+Napi 2-szer: ⎕ ⎕",,Sokkoló érintés,"Nyelv: Közös, Sárkány, ",Mágikus fókusz
+Ellenálló: Fagy,,Bűbáj robbantás,Goblin,Hátizsák
+"Sárkánylehelet (Ezüst): 15 láb élű kúp vagy 5 x 30 láb területű sávban minden lénynek ÜGY mentést kell dobnia, NF = 12. Sikertelen mentés esetén 1d10 Fagy sebzés, siker esetén a fele. 
+Napi 2-szer: ⎕ ⎕",,Lángoló kezek,,Vassúlyom (caltrop)
+"Bűbáj robbantás*:  választható sebzés típus: Sav, Fagy, Tűz, Villám, Méreg, Pszichés vagy Mennydörgés",,Mágia érzékelése,,Feszítővas
+,,,,Olajos Flaska (2)
+,,,,Fejadag (10)
+,,,,Kötél
+,,,,Tűzszerszám
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Tolvaj szerszám
+,,,,Sárkánysakk
+,,,,Hálózsák
+,,,,Erszény (2)
+,,,,Utazó ruha

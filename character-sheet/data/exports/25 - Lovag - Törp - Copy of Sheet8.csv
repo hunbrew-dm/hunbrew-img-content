@@ -1,0 +1,75 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+0,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,12,,,
+HARCERŐ KOCKA,1d10,,,
+VF,18,,,
+,score,mod,saving prof,
+ERŐ,16,3,FALSE,
+ÜGYESSÉG,10,0,FALSE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,8,-1,FALSE,
+BÖLCSESSÉG,12,1,TRUE,
+KARIZMA,16,3,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+5,●,1,
+Előadásmód (KAR),+3,○,0,
+Ember ismeret (BÖL),+1,○,0,
+Észlelés (BÖL),+1,○,0,
+Kézügyesség (ÜGY),+0,○,0,
+Lopakodás (ÜGY),+0,○,0,
+Mágia ismeret (INT),-1,○,0,
+Megfélemlítés (KAR),+3,○,0,
+Meggyőzés (KAR),+5,●,1,
+Megtévesztés (KAR),+3,○,0,
+Orvoslás (BÖL),+1,○,0,
+Szelídítés (BÖL),+1,○,0,
+Természetismeret (INT),-1,○,0,
+Történelem (INT),+1,●,1,
+Túlélés (BÖL),+1,○,0,
+Vallás (INT),+1,●,1,
+Vizsgálódás (INT),-1,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,38,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 120 láb,,Hősiesség,"Fegyver: Egyszerű, katonai",Sodronypáncél
+"Kézrátétellel gyógyítás: Bónusz akcióval gyógyíthatsz a forrásból kölcsönzött HP-t vagy megszüntetheted a Mérgezett állapotot 5 HP felhasználásával.
+Forrás: napi 5HP ⎕ ⎕ ⎕ ⎕ ⎕",,Perzselő csapás,"Páncél: Könnyű, közepes,  ",Pajzs
+"Fegyvermester:
+- Elcsigázás  Találatkor a célpont következő támadására Hátrány, a következő köröd elejéig.
+- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.
+- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra.",,,"nehéz, pajzs",Hosszúkard
+Ellenállás:  Méreg,,,"Eszköz: Sárkánysakk, ",Gerely (6)
+Előny vs. Mérgezés,,,"Kőműves szerszámok,",Szent Szimbólum
+"Kősuttogás: bónusz akcióval megérinthetsz egy kő felületet, ilyenkor 60 láb közelben érzékelsz minden élőlényt és mozgást, ami a kövön történik.
+Napi 2-szer: ⎕ ⎕",,,"Fazekas szerszámok,",Hátizsák
+,,,Főzőkészlet,Takaró
+,,,,Szentelt víz
+,,,,Lámpás
+,,,,Fejadag (7)
+,,,,Köpeny
+,,,,Tűzszerszám
+,,,,Sárkánysakk
+,,,,Előkelő ruházat
+,,,,Parfüm

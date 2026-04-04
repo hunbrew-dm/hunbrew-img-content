@@ -1,0 +1,290 @@
+{
+  "id": "harcos_goliat",
+  "name": "Harcos - Góliát",
+  "raceClass": "Góliát | Harcos 1",
+  "ac": {
+    "base": 19,
+    "current": 19
+  },
+  "init": "+1",
+  "speed": "35 láb",
+  "size": "Közepes",
+  "spellcasting": {},
+  "prof": "+2",
+  "hpMax": 12,
+  "hitDice": {
+    "total": 1,
+    "die": "d10"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 17,
+      "mod": "+3"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 12,
+      "mod": "+1"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": true
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": true
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 1
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [],
+  "coins": {
+    "pp": 0,
+    "gp": 55,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "nehéz",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Kocka-játék"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Óriás",
+        "Manó"
+      ]
+    }
+  ],
+  "equipment": [
+    "Sodronypáncél",
+    "Pajzs",
+    "Csatabárd",
+    "Láncos buzogány",
+    {
+      "name": "Gerely",
+      "count": 8
+    },
+    "Hátizsák",
+    "Vassúlyom (caltrop)",
+    "Feszítővas",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    "Tűzszerszám",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Lándzsa",
+    "Könnyű számszeríj",
+    {
+      "name": "Számszeríj lövedék",
+      "count": 20
+    },
+    "Kártya pakli",
+    "Lámpás"
+  ],
+  "spells": [],
+  "features": [
+    {
+      "title": "Erős csontozat",
+      "description": "- Előnnyel tudsz Megragadott állapotból szabadulni\n- Terhelhetőséged nagy termetnek megfelelő"
+    },
+    {
+      "title": "Kegyetlen támadó",
+      "description": "A kiképzésednek köszönhetően különösen pusztító csapásokra vagy képes. Körönként egyszer találat esetén a sebzést újra dobhatod és használható a magasabb értéket."
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Elcsigázás Találatkor a célpont következő támadására Hátrány, a következő köröd elejéig.\n- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.\n- Gáncsolás Találat esetén megpróbálhatod elgáncsolni a célpontot. NF 13 ÁLL mentést kell dobnia.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Vihar óriás ősök Ha valaki 60 lábon belül sebzést okoz, reakció használatával 1d8 Mennydörgés sebzést okozol neki.\nNapi 2-szer",
+      "description": "⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Defenzív harcmodor",
+      "description": "Páncélzat viselésekor +1 VF-et kapsz."
+    },
+    {
+      "title": "Második menet",
+      "description": "Képes vagy felhasználni a tested és az elméd rejtett tartalékait. Bónusz akcióként 1d10+1-et gyógyulsz.\nNapi kétszer használhatod, Rövid Pihenővel egy elhasználtat visszanyerhetsz. ⎕ ⎕",
+      "count": 2
+    }
+  ]
+}

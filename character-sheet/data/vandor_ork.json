@@ -1,0 +1,297 @@
+{
+  "id": "vandor_ork",
+  "name": "Vándor - Ork",
+  "raceClass": "Ork | Vándor 1",
+  "ac": {
+    "base": 14,
+    "current": 14
+  },
+  "init": "+2",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 4
+  },
+  "prof": "+2",
+  "hpMax": 12,
+  "hitDice": {
+    "total": 1,
+    "die": "d10"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 10,
+      "mod": "+0"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": true
+    },
+    {
+      "statIndex": 1,
+      "p": true
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 1
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 24,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Gyógynövényes",
+        "készlet"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Ork",
+        "Elf"
+      ]
+    }
+  ],
+  "equipment": [
+    "Szegecselt bőrpáncél",
+    "Szablya",
+    "Rövidkard",
+    "Hosszúíj",
+    {
+      "name": "Nyíl",
+      "count": 20
+    },
+    "Tegez",
+    "Hátizsák",
+    "Hálózsák",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Vándorbot",
+    "Gyógynövényes készlet",
+    "Könyv (filozófia)",
+    "Lámpás",
+    {
+      "name": "Olajos flaska",
+      "count": 3
+    },
+    "Utazó ruha"
+  ],
+  "spells": [],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Karcolás Amikor könnyű fegyverrel extra támadást csinálsz nem kell bónusz akciót használnod hozzá.\n- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Rendíthetetlen kitartás",
+      "description": "Amennyiben a Harcerő pontjaid 0-ra csökkennek, az utolsó tartalékaid felhasználva 1HP-re stabilizálhatod magad\nNapi 1-szer: ⎕",
+      "count": 1
+    },
+    {
+      "title": "Felcser",
+      "description": "Gyógyító készlettel segíthetsz egy társadon, dobhatsz a Harcerő Kockájával és a dobott eredmény + 2 HP-t visszanyer a társad."
+    },
+    {
+      "title": "Adrenalin Löket",
+      "description": "Bónusz akcióként használhatod a Roham akciót. Amikor így teszel, akkor 2 Ideiglenes HP-t kapsz.\nKétszer használhatod és minden Rövid vagy Hosszú pihenő után visszanyered az elhasználtakat: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Szerencsés gyógyítás",
+      "description": "Minden gyógyításra használt dobást 1-es esetén újra dobhatsz."
+    }
+  ]
+}

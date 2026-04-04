@@ -1,0 +1,79 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+5,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Kis,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,10,,,
+HARCERŐ KOCKA,1d8,,,
+VF,14,,,
+,score,mod,saving prof,
+ERŐ,12,1,FALSE,
+ÜGYESSÉG,16,3,TRUE,
+ÁLLÓKÉPESSÉG,14,2,FALSE,
+INTELLIGENCIA,15,2,TRUE,
+BÖLCSESSÉG,10,0,FALSE,
+KARIZMA,8,-1,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+1,○,0,
+Előadásmód (KAR),-1,○,0,
+Ember ismeret (BÖL),+2,●,1,
+Észlelés (BÖL),+2,●,1,
+Kézügyesség (ÜGY),+7,◙,2,
+Lopakodás (ÜGY),+7,◙,2,
+Mágia ismeret (INT),+2,○,0,
+Megfélemlítés (KAR),-1,○,0,
+Meggyőzés (KAR),-1,○,0,
+Megtévesztés (KAR),+1,●,1,
+Orvoslás (BÖL),+0,○,0,
+Szelídítés (BÖL),+0,○,0,
+Természetismeret (INT),+2,○,0,
+Történelem (INT),+2,○,0,
+Túlélés (BÖL),+0,○,0,
+Vallás (INT),+2,○,0,
+Vizsgálódás (INT),+2,○,0,
+,,,0,
+,,,,
+Varázslás képesség,,,,
+spell slot level,slot count,,,
+1,—,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,51,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,KÉPESSÉGEK,JÁRTASSÁGOK,Felszerelés
+Bátorság: A Rémültséggel szembeni mentő dobást Előnnyel dobhatod.,,,"Fegyver: Egyszerű, kecses ",Bőrvért
+"Kezdeményezés csere: Kezdeményezés dobás után cserélhetsz egy társaddal, ha ő is szeretné.",,,vagy könnyű katonai,Tőr (4)
+"Fegyvermester:
+- Karcolás: Amikor könnyű fegyverrel extra támadást csinálsz nem kell bónusz akciót használnod hozzá.
+- Megzavarás: Találatkor és sebzéskor: Előny a következő támadásodra, max a következő köröd végéig.
+- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra.",,,Páncél: Könnyű,Rövidkard
+Szerencse: Ha d20 dobással 1-et dobsz egyszer újradobhatod a kockát.,,,"Eszköz: Tolvaj szerszám,",Rövidíj
+Félszerzet fürgeség & Természetes Lopakodás: Az egy termettel nagyobb lények által elfoglalt területen is áthaladhatsz vagy Elrejtőzhetsz mögöttük.,,,"Nyelv: Közös, Tolvajnyelv,",Nyíl (20)
+"Lesből támadás: Tudod hogy kell kihasználni, ha az ellenséget megzavarják és lesből lecsapni. Körönként egyszer extra 1d6 sebzést okozhatsz egy eltalált lénynek:
+- Ha támadásod Előnnyel dobtad vagy,
+- Ha egy társad 5 lábnál közelebb van a célponthoz feltéve, hogy a társad nem Cselekvőképtelen és nem dobsz Hátránnyal",,,"Félszerzet, Manó, Goblin",Tegez
+Profi kezdeményező: A kezdeményezésedhez hozzáadódik a Jártasság Bónuszod is.,,,,Tolvaj szerszám
+,,,,Hátizsák
+,,,,Csapágygolyók
+,,,,Csengő
+,,,,Gyertya (10)
+,,,,Feszítővas
+,,,,Lámpás
+,,,,Olajos flaska (7)
+,,,,Fejadag (5)
+,,,,Kötél
+,,,,Tűzszerszám
+,,,,Vizestömlő
+,,,,Utazó ruha

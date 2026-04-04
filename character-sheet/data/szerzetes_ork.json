@@ -1,0 +1,291 @@
+{
+  "id": "szerzetes_ork",
+  "name": "Szerzetes - Ork",
+  "raceClass": "Ork | Szerzetes 1",
+  "ac": {
+    "base": 15,
+    "current": 15
+  },
+  "init": "+3",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {},
+  "prof": "+2",
+  "hpMax": 9,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 17,
+      "mod": "+3"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 8,
+      "mod": "-1"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 1
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [],
+  "coins": {
+    "pp": 0,
+    "gp": 31,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "könnyű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Furulya",
+        "Navigációs",
+        "eszközök"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Ork",
+        "Goblin"
+      ]
+    }
+  ],
+  "equipment": [
+    "Lándzsa",
+    {
+      "name": "Tőr",
+      "count": 6
+    },
+    "Furulya",
+    "Hátizsák",
+    "Hálózsák",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Navigációs eszközök",
+    "Kötél",
+    "Utazó ruha"
+  ],
+  "spells": [],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Harcművész",
+      "description": "(folytatás)\n- Pusztakezes támadást Bónusz akcióként is végrehajthatsz.\n- Harcművész kocka. Ha olyan támadást indítasz, aminek mestere vagy, akkor használhatsz 1d6-ot a sebzéshez.\n- Ügyességi támadás. Használhatod az ÜGY módosítódat a támadó és sebző dobásokhoz, azoknál a támadásoknál, amiknek mestere vagy. Hasonlóan ha Megragadsz vagy Ellöksz valakit az NF számításhoz használhatsz ÜGY módosítót az ERŐ helyett."
+    },
+    {
+      "title": "Újradobás",
+      "description": "Amikor Pusztakezes támadás sebzésére 1-et dobsz, egyszer újra dobhatod az 1-es kockát."
+    },
+    {
+      "title": "Rendíthetetlen kitartás",
+      "description": "Amennyiben a Harcerő pontjaid 0-ra csökkennek, az utolsó tartalékaid felhasználva 1HP-re stabilizálhatod magad\nNapi 1-szer: ⎕",
+      "count": 1
+    },
+    {
+      "title": "Páncél nélküli védelem",
+      "description": "Amíg nem viselsz se páncélt, se pajzsot, addig a Védettségi fokod 10 + ÜGY mód. + BÖL mód."
+    },
+    {
+      "title": "Improvizált fegyverek",
+      "description": "Jártas vagy az improvizált fegyverek használatában (pl. asztal láb)."
+    },
+    {
+      "title": "Adrenalin Löket",
+      "description": "Bónusz akcióként használhatod a Roham akciót. Amikor így teszel, akkor 2 Ideiglenes HP-t kapsz.\nKétszer használhatod és minden Rövid vagy Hosszú pihenő után visszanyered az elhasználtakat: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Keménykezű ütés",
+      "description": "Pusztakezes támadásod 1d4+ERŐ értéket sebez."
+    },
+    {
+      "title": "Lökés",
+      "description": "Körönként egyszer Pusztakezes támadásoddal 5 láb messze ellökheted a célpontod."
+    },
+    {
+      "title": "Harcművész",
+      "description": "A szerzetesként töltött harcművész gyakorlatoknak köszönhetően mestere vagy a Pusztakezes harcnak, valamint az Egyszerű és Könnyű Katonai fegyvereknek."
+    }
+  ]
+}

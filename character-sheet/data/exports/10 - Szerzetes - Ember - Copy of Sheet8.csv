@@ -1,0 +1,70 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+3,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Kis,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,11,,,
+HARCERŐ KOCKA,1d8,,,
+VF,15,,,
+,score,mod,saving prof,
+ERŐ,12,1,TRUE,
+ÜGYESSÉG,17,3,TRUE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,10,0,FALSE,
+BÖLCSESSÉG,15,2,FALSE,
+KARIZMA,8,-1,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+3,●,1,
+Előadásmód (KAR),-1,○,0,
+Ember ismeret (BÖL),+4,●,1,
+Észlelés (BÖL),+4,●,1,
+Kézügyesség (ÜGY),+3,○,0,
+Lopakodás (ÜGY),+3,○,0,
+Mágia ismeret (INT),+0,○,0,
+Megfélemlítés (KAR),-1,○,0,
+Meggyőzés (KAR),+1,●,1,
+Megtévesztés (KAR),-1,○,0,
+Orvoslás (BÖL),+4,●,1,
+Szelídítés (BÖL),+2,○,0,
+Természetismeret (INT),+0,○,0,
+Történelem (INT),+0,○,0,
+Túlélés (BÖL),+2,○,0,
+Vallás (INT),+0,○,0,
+Vizsgálódás (INT),+2,●,1,
+,,,0,
+,,,,
+Varázslás képesség,,,,
+spell slot level,slot count,,,
+1,—,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,34,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,KÉPESSÉGEK,JÁRTASSÁGOK,Felszerelés
+Találékony: Hosszú pihenés végén Hősies Inspirációt kapsz.,,,"Fegyver: Egyszerű,",Lándzsa
+"Harcművész: A szerzetesként töltött harcművész gyakorlatoknak köszönhetően mestere vagy a Pusztakezes harcnak, valamint az Egyszerű és Könnyű Katonai fegyvereknek.",,,Könnyű katonai,Tőr (5)
+"Harcművész kocka: Ha olyan támadást indítasz, aminek mestere vagy, akkor használhatsz 1d6-ot a sebzéshez.",,,Eszköz: Kalligráfus ,Ács Szerszámok
+Szívósság:  Szintenként +2 HP-t kapsz. ,,,"eszközök,  Ács Szerszámok",Hátizsák
+"Páncél nélküli védelem: Amíg nem viselsz se páncélt, se pajzsot, addig a Védettségi fokod 10 + ÜGY mód. + BÖL mód.",,,"Nyelv: Közös, Goblin, Ork",Hálózsák
+Pusztakezes támadást Bónusz akcióként is végrehajthatsz.,,,,Olajos flaska (2)
+,,,,Fejadag (10)
+,,,,Kötél
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Kalligráfus eszközök
+,,,,Előkelő ruházat
+,,,,Lámpás
+,,,,Olajos flaska (3)
+,,,,Pergamen (12)

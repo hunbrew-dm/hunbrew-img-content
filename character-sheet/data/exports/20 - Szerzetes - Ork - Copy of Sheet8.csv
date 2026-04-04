@@ -1,0 +1,73 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+3,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,9,,,
+HARCERŐ KOCKA,1d8,,,
+VF,15,,,
+,score,mod,saving prof,
+ERŐ,12,1,FALSE,
+ÜGYESSÉG,17,3,FALSE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,10,0,FALSE,
+BÖLCSESSÉG,15,2,FALSE,
+KARIZMA,8,-1,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+1,○,0,
+Előadásmód (KAR),-1,○,0,
+Ember ismeret (BÖL),+4,●,1,
+Észlelés (BÖL),+4,●,1,
+Kézügyesség (ÜGY),+3,○,0,
+Lopakodás (ÜGY),+5,●,1,
+Mágia ismeret (INT),+0,○,0,
+Megfélemlítés (KAR),-1,○,0,
+Meggyőzés (KAR),-1,○,0,
+Megtévesztés (KAR),-1,○,0,
+Orvoslás (BÖL),+2,○,0,
+Szelídítés (BÖL),+2,○,0,
+Természetismeret (INT),+0,○,0,
+Történelem (INT),+0,○,0,
+Túlélés (BÖL),+2,○,0,
+Vallás (INT),+0,○,0,
+Vizsgálódás (INT),+0,○,0,
+,,,0,
+,,,,
+Varázslás képesség,,,,
+spell slot level,slot count,,,
+1,—,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,31,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,KÉPESSÉGEK,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,"Harcművész: (folytatás)
+- Pusztakezes támadást Bónusz akcióként is végrehajthatsz.
+- Harcművész kocka. Ha olyan támadást indítasz, aminek mestere vagy, akkor használhatsz 1d6-ot a sebzéshez.
+- Ügyességi támadás. Használhatod az ÜGY módosítódat a támadó és sebző dobásokhoz, azoknál a támadásoknál, amiknek mestere vagy. Hasonlóan ha Megragadsz vagy Ellöksz valakit az NF számításhoz használhatsz ÜGY módosítót az ERŐ helyett.","Fegyver: Egyszerű, könnyű ",Lándzsa
+"Újradobás: Amikor Pusztakezes támadás sebzésére 1-et dobsz, egyszer újra dobhatod az 1-es kockát.",,,katonai,Tőr (6)
+"Rendíthetetlen kitartás: Amennyiben a Harcerő pontjaid 0-ra csökkennek, az utolsó tartalékaid felhasználva 1HP-re stabilizálhatod magad
+Napi 1-szer: ⎕",,,"Eszköz: Furulya, Navigációs",Furulya
+"Páncél nélküli védelem: Amíg nem viselsz se páncélt, se pajzsot, addig a Védettségi fokod 10 + ÜGY mód. + BÖL mód.",,,eszközök,Hátizsák
+Improvizált fegyverek: Jártas vagy az improvizált fegyverek használatában (pl. asztal láb).,,,"Nyelv: Közös, Ork, Goblin",Hálózsák
+"Adrenalin Löket: Bónusz akcióként használhatod a Roham akciót. Amikor így teszel, akkor 2 Ideiglenes HP-t kapsz.
+Kétszer használhatod és minden Rövid vagy Hosszú pihenő után visszanyered az elhasználtakat: ⎕ ⎕",,,,Olajos flaska (2)
+Keménykezű ütés: Pusztakezes támadásod 1d4+ERŐ értéket sebez.,,,,Fejadag (10)
+Lökés: Körönként egyszer Pusztakezes támadásoddal 5 láb messze ellökheted a célpontod.,,,,Kötél
+"Harcművész: A szerzetesként töltött harcművész gyakorlatoknak köszönhetően mestere vagy a Pusztakezes harcnak, valamint az Egyszerű és Könnyű Katonai fegyvereknek.",,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Navigációs eszközök
+,,,,Kötél
+,,,,Utazó ruha

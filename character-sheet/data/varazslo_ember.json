@@ -1,0 +1,276 @@
+{
+  "id": "varazslo_ember",
+  "name": "Varázsló - Ember",
+  "raceClass": "Ember | Varázsló 1",
+  "ac": {
+    "base": 11,
+    "current": 11
+  },
+  "init": "+1",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 3
+  },
+  "prof": "+2",
+  "hpMax": 7,
+  "hitDice": {
+    "total": 1,
+    "die": "d6"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 10,
+      "mod": "+0"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": true
+    },
+    {
+      "statIndex": 4,
+      "p": true
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 14,
+    "ep": 0,
+    "sp": 2,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Kalligráfus eszközök"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Sárkány",
+        "Elf"
+      ]
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Tőr",
+      "count": 2
+    },
+    "Vándorbot",
+    "Köpeny",
+    "Varázskönyv",
+    "Hátizsák",
+    "Könyv",
+    "Tinta",
+    "Penna",
+    {
+      "name": "Olajos flaska",
+      "count": 10
+    },
+    "Lámpás",
+    {
+      "name": "Pergamen",
+      "count": 18
+    },
+    "Tűzszerszám",
+    "Kalligráfus eszközök",
+    "Könyv (Történelmi)"
+  ],
+  "spells": [
+    "Fény",
+    "Máguskéz",
+    "Mentális tüske",
+    "Fagysugár",
+    "Tűzlövedék",
+    "Máguspáncél",
+    "Tollesés",
+    "Varázslövedék",
+    "Mennydörgés",
+    "Boszorkány sugár",
+    "Mágia érzékelése",
+    "Familiáris idézése"
+  ],
+  "features": [
+    {
+      "title": "Találékony",
+      "description": "Hosszú pihenés végén Hősies Inspirációt kapsz."
+    },
+    {
+      "title": "Mágikus regeneráció",
+      "description": "A varázskönyved tanulmányozásával visszanyerheted a mágikus energiád egy részét.\nAmikor végzel egy Rövid Pihenővel visszakapsz egy elhasznált varázs rekeszt.\nNapi 1-szer: ⎕",
+      "count": 1
+    },
+    {
+      "title": "Beavatott Rituálé",
+      "description": "Minden a varázskönyvedben lévő varázslatot, ami rituáléként is varázsolható elvégezhetsz rituális varázslással, akkor is ha a varázslat nincs előkészítve."
+    }
+  ]
+}

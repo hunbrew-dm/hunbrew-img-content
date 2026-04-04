@@ -1,0 +1,76 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+2,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,11,,,
+HARCERŐ KOCKA,1d8,,,
+VF,13,,,
+,score,mod,saving prof,
+ERŐ,8,-1,FALSE,
+ÜGYESSÉG,14,2,FALSE,
+ÁLLÓKÉPESSÉG,14,2,FALSE,
+INTELLIGENCIA,10,0,FALSE,
+BÖLCSESSÉG,12,1,TRUE,
+KARIZMA,17,3,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),-1,○,0,
+Előadásmód (KAR),+3,○,0,
+Ember ismeret (BÖL),+1,○,0,
+Észlelés (BÖL),+1,○,0,
+Kézügyesség (ÜGY),+2,○,0,
+Lopakodás (ÜGY),+2,○,0,
+Mágia ismeret (INT),+0,○,0,
+Megfélemlítés (KAR),+5,●,1,
+Meggyőzés (KAR),+5,●,1,
+Megtévesztés (KAR),+5,●,1,
+Orvoslás (BÖL),+1,○,0,
+Szelídítés (BÖL),+3,●,1,
+Természetismeret (INT),+0,○,0,
+Történelem (INT),+0,○,0,
+Túlélés (BÖL),+1,○,0,
+Vallás (INT),+0,○,0,
+Vizsgálódás (INT),+0,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,1,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,37,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+"A Kódex Paktuma: Minden Rövid vagy Hosszú pihenő végén a kezedbe idézheted az Árnyak könyvét.
+Az Árnyak könyve csak általad olvasható és amikor megjelenik választhatsz 3 varázstrükköt és 2 rituáléként végezhető 1-es szintű varázslatot.",,Vérfagyasztó sugár,Fegyver: Egyszerű,Bőrvért
+Sötétlátás: 120 láb,,Szemfényvesztés,Páncél: Könnyű,Sarló
+Ellenállás:  Méreg,,Személy elbájolása,Eszköz: Navigációs eszközök,Tőr (2)
+Előny vs. Mérgezés,,Boszorkány átok,"Nyelv: Közös, Elf, Törp",Varázslat fókusz
+"Kősuttogás: bónusz akcióval megérinthetsz egy kő felületet, ilyenkor 60 láb közelben érzékelsz minden élőlényt és mozgást, ami a kövön történik.
+Napi 2-szer: ⎕ ⎕",,,,Könyv (Okkult)
+"Szerencsés: Természetes szerencséd révén választhatsz:
+- Előny: d20 próbát 1 pontért cserébe Előnnyel dobhatod
+- Hátrány: Ellened irányuló támadó dobást 1 pontért cserébe hátránnyal kell dobni
+Napi 2-szer: ⎕ ⎕",,,,Hátizsák
+,,,,Könyv
+,,,,Tinta
+,,,,Penna
+,,,,Olajos flaska (10)
+,,,,Lámpás
+,,,,Pergamen (10)
+,,,,Tűzszerszám
+,,,,Navigációs eszközök
+,,,,Erszény (2)
+,,,,Utazó ruha

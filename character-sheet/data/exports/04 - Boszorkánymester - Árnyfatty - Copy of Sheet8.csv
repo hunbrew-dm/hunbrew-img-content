@@ -1,0 +1,73 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+2,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,10,,,
+HARCERŐ KOCKA,1d8,,,
+VF,13,,,
+,score,mod,saving prof,
+ERŐ,8,-1,FALSE,
+ÜGYESSÉG,15,2,FALSE,
+ÁLLÓKÉPESSÉG,14,2,FALSE,
+INTELLIGENCIA,12,1,FALSE,
+BÖLCSESSÉG,10,0,TRUE,
+KARIZMA,16,3,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),-1,○,0,
+Előadásmód (KAR),+3,○,0,
+Ember ismeret (BÖL),+0,○,0,
+Észlelés (BÖL),+0,○,0,
+Kézügyesség (ÜGY),+4,●,1,
+Lopakodás (ÜGY),+4,●,1,
+Mágia ismeret (INT),+3,●,1,
+Megfélemlítés (KAR),+5,●,1,
+Meggyőzés (KAR),+5,●,1,
+Megtévesztés (KAR),+5,●,1,
+Orvoslás (BÖL),+0,○,0,
+Szelídítés (BÖL),+0,○,0,
+Természetismeret (INT),+1,○,0,
+Történelem (INT),+1,○,0,
+Túlélés (BÖL),+0,○,0,
+Vallás (INT),+3,●,1,
+Vizsgálódás (INT),+1,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,1,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,30,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+"A Vas Paktuma: Bónusz akcióként meg tudsz idézni egy túlvilági fegyvert. A megidézett fegyverrel jártas vagy és varázslat fókuszként használhatod.
+A támadó és sebzés dobásaidhoz használhatod a KAR módosítódat; és választhatsz, hogy Nekrotikus, Pszichés, Ragyogó vagy a fegyver normál sebzés típusát használod.
+Az idézés véget ér, ha új fegyvert idézel meg, 1 percig 5 lábnál távolabb vagy a fegyvertől, vagy ha meghalsz. Ha az idézés véget ért a fegyver eltűnik.",,Taumaturgia,Fegyver: Egyszerű,Bőrvért
+Sötétlátás: 60 láb,,Méregpermet,Páncél: Könnyű,Sarló
+Ellenállás:  Méreg,,Vérfagyasztó sugár,Eszköz: Hamisító készlet,Tőr (2)
+,,Szemfényvesztés,"Nyelv: Közös, Óriás, Sárkány",Varázslat fókusz
+,,Személy elbájolása,,Könyv (Okkult)
+,,Boszorkány átok,,Hátizsák
+,,,,Könyv
+,,,,Tinta
+,,,,Penna
+,,,,Olajos flaska (10)
+,,,,Lámpás
+,,,,Pergamen (10)
+,,,,Tűzszerszám
+,,,,Hamisító készlet
+,,,,Jelmez
+,,,,Előkelő ruházat

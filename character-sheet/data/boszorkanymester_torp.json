@@ -1,0 +1,292 @@
+{
+  "id": "boszorkanymester_torp",
+  "name": "Boszorkánymester - Törp",
+  "raceClass": "Törp | Boszorkánymester 1",
+  "ac": {
+    "base": 13,
+    "current": 13
+  },
+  "init": "+2",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
+  "prof": "+2",
+  "hpMax": 11,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 17,
+      "mod": "+3"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": true
+    },
+    {
+      "statIndex": 5,
+      "p": true
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 1
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 37,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Navigációs eszközök"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Elf",
+        "Törp"
+      ]
+    }
+  ],
+  "equipment": [
+    "Bőrvért",
+    "Sarló",
+    {
+      "name": "Tőr",
+      "count": 2
+    },
+    "Varázslat fókusz",
+    "Könyv (Okkult)",
+    "Hátizsák",
+    "Könyv",
+    "Tinta",
+    "Penna",
+    {
+      "name": "Olajos flaska",
+      "count": 10
+    },
+    "Lámpás",
+    {
+      "name": "Pergamen",
+      "count": 10
+    },
+    "Tűzszerszám",
+    "Navigációs eszközök",
+    {
+      "name": "Erszény",
+      "count": 2
+    },
+    "Utazó ruha"
+  ],
+  "spells": [
+    "Vérfagyasztó sugár",
+    "Szemfényvesztés",
+    "Személy elbájolása",
+    "Boszorkány átok"
+  ],
+  "features": [
+    {
+      "title": "A Kódex Paktuma",
+      "description": "Minden Rövid vagy Hosszú pihenő végén a kezedbe idézheted az Árnyak könyvét.\nAz Árnyak könyve csak általad olvasható és amikor megjelenik választhatsz 3 varázstrükköt és 2 rituáléként végezhető 1-es szintű varázslatot."
+    },
+    {
+      "title": "Sötétlátás",
+      "description": "120 láb"
+    },
+    {
+      "title": "Ellenállás",
+      "description": "Méreg"
+    },
+    {
+      "title": "Előny vs. Mérgezés",
+      "description": ""
+    },
+    {
+      "title": "Kősuttogás",
+      "description": "bónusz akcióval megérinthetsz egy kő felületet, ilyenkor 60 láb közelben érzékelsz minden élőlényt és mozgást, ami a kövön történik.\nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Szerencsés",
+      "description": "Természetes szerencséd révén választhatsz:\n- Előny: d20 próbát 1 pontért cserébe Előnnyel dobhatod\n- Hátrány: Ellened irányuló támadó dobást 1 pontért cserébe hátránnyal kell dobni\nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    }
+  ]
+}

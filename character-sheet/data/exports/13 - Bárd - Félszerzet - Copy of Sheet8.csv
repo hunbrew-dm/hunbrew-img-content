@@ -1,0 +1,70 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+2,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Kis,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,9,,,
+HARCERŐ KOCKA,1d8,,,
+VF,13,,,
+,score,mod,saving prof,
+ERŐ,10,0,FALSE,
+ÜGYESSÉG,15,2,TRUE,
+ÁLLÓKÉPESSÉG,12,1,FALSE,
+INTELLIGENCIA,13,1,FALSE,
+BÖLCSESSÉG,8,-1,FALSE,
+KARIZMA,17,3,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+0,○,0,
+Előadásmód (KAR),+5,●,1,
+Ember ismeret (BÖL),+1,●,1,
+Észlelés (BÖL),+1,●,1,
+Kézügyesség (ÜGY),+4,●,1,
+Lopakodás (ÜGY),+2,○,0,
+Mágia ismeret (INT),+1,○,0,
+Megfélemlítés (KAR),+3,○,0,
+Meggyőzés (KAR),+5,●,1,
+Megtévesztés (KAR),+5,●,1,
+Orvoslás (BÖL),-1,○,0,
+Szelídítés (BÖL),-1,○,0,
+Természetismeret (INT),+1,○,0,
+Történelem (INT),+3,●,1,
+Túlélés (BÖL),-1,○,0,
+Vallás (INT),+1,○,0,
+Vizsgálódás (INT),+1,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,34,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Bátorság: A Rémültséggel szembeni mentő dobást Előnnyel dobhatod.,,Táncoló fények,Fegyver: Egyszerű,Bőrvért
+"Inspiráló dalnok: Bónusz akcióként adhatsz egy lénynek 60 lábon (kb. 18 méteren) belül egy ""Dalnok""-kockát (d6). Amikor ez a lény elbukik egy d20 próbát, felhasználhatja és hozzáadhatja az ösztönzés-kocka eredményét a dobásához.
+Napi 3-szor: ⎕ ⎕ ⎕",,Ördögi gúny,"Eszköz: Hamisító készlet, ",Tőr (2)
+Szerencse: Ha d20 dobással 1-et dobsz egyszer újradobhatod a kockát.,,Személy elbájolása,"furulya, lant, líra",Lant
+Félszerzet fürgeség & Természetes Lopakodás: Az egy termettel nagyobb lények által elfoglalt területen is áthaladhatsz vagy Elrejtőzhetsz mögöttük.,,Színpompás permet,"Nyelv: Közös, Félszerzet,",Hátizsák
+,,Gyógyítás szava,Sárkány,Hálózsák
+,,Disszonáns suttogás,,Csengő
+,,,,Lámpás
+,,,,Jelmez (4)
+,,,,Olajos flaska (8)
+,,,,Fejadag (9)
+,,,,Tűzszerszám
+,,,,Vizestömlő
+,,,,Hamisító készlet
+,,,,Előkelő ruházat

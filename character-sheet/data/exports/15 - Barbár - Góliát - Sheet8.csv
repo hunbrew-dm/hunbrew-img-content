@@ -1,0 +1,87 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+1,,,
+SEBESESSÉG,35 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,14,,,
+HARCERŐ KOCKA,1d12,,,
+VF,13,,,
+,score,mod,saving prof,
+ERŐ,17,3,TRUE,
+ÜGYESSÉG,13,1,FALSE,
+ÁLLÓKÉPESSÉG,15,2,TRUE,
+INTELLIGENCIA,10,0,FALSE,
+BÖLCSESSÉG,12,1,FALSE,
+KARIZMA,8,-1,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+5,●,1,
+Előadásmód (KAR),-1,○,0,
+Ember ismeret (BÖL),+1,○,0,
+Észlelés (BÖL),+3,●,1,
+Kézügyesség (ÜGY),+1,○,0,
+Lopakodás (ÜGY),+1,○,0,
+Mágia ismeret (INT),+0,○,0,
+Megfélemlítés (KAR),+1,●,1,
+Meggyőzés (KAR),-1,○,0,
+Megtévesztés (KAR),-1,○,0,
+Orvoslás (BÖL),+1,○,0,
+Szelídítés (BÖL),+1,○,0,
+Természetismeret (INT),+0,○,0,
+Történelem (INT),+0,○,0,
+Túlélés (BÖL),+3,●,1,
+Vallás (INT),+0,○,0,
+Vizsgálódás (INT),+0,○,0,
+,,,0,
+,,,,
+Varázslás képesség,,,,
+spell slot level,slot count,,,
+1,—,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,29,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,KÉPESSÉGEK,JÁRTASSÁGOK,Felszerelés
+"Erős csontozat
+- Előnnyel tudsz Megragadott állapotból szabadulni
+- Terhelhetőséged nagy termetnek megfelelő",,"Őrjöngés: (bónusz akció, ha nem viselsz nehéz páncélt; akció különben)
+- Ellenállás (-50% sebzés) Zúzó, Szúró, Vágó
+- Dühöngő sebzés +2 bónusz az ERŐ módosítóval adott sebzésekhez
+- ERŐ Előny ERŐ alapú próba és mentő dobásokat Előnnyel dobhatot
+- Dekoncentrált állapot Őrjöngés közben nem tudsz Összpontosítani vagy varázsolni.
+- Időtartam Alapvetően a következő kör végéig tart, korábban befejeződik, ha nehéz páncélt öltesz vagy Cselekvésképtelenné válsz. Ha a köröd elején aktív, meghosszabbíthatod még egy körig, ha:
+    - Megtámadsz egy ellenséget
+    - Mentődobásra kényszerítesz egy ellenséget
+    - Bónusz akciót használsz a hosszabbításra
+Max 10 percig (100 kör) tudod fenntartani hosszabbításokkal
+Napi kétszer használhatod, Rövid Pihenővel egy elhasználtat visszanyerhetsz. ⎕ ⎕","Fegyver: Egyszerű, katonai",Kétkezes Csatabárd
+Kegyetlen támadó: A kiképzésednek köszönhetően különösen pusztító csapásokra vagy képes. Körönként egyszer találat esetén a sebzést újra dobhatod és használható a magasabb értéket.,,,"Páncél: Könnyű, közepes,",Balta (4)
+"Fegyvermester:
+- Kaszabolás Körönként egyszer a sikeres közelharci találat, egy második célpontnak is sebzést okoz, ha a második célpont hatótávodban és az elsőtől max 5 láb távolságra van. A második sebzés a fegyver alap sebzése a képesség módosítód nélkül.
+- Megzavarás Találatkor és sebzéskor: Előny a következő támadásodra, max a következő köröd végéig.
+- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra.",,,pajzs,Hátizsák
+"Tűz óriás ősök Ha támadásoddal sebzést okozol, ahhoz extra 1d10 Tűz sebzést adhatsz.
+Napi 2-szer: ⎕ ⎕",,,Eszköz: Kocka-játék,Hálózsák
+Páncél nélküli védelem: Páncél nélkül a VF-ed 10 + ÜGY mód. + ÁLL mód. Pajzsot használhatsz emellett.,,,"Nyelv: Közös, Óriás, Goblin",Olajos flaska (2)
+,,,,Fejadag (10)
+,,,,Kötél
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Lándzsa
+,,,,Rövidíj
+,,,,Nyíl (20)
+,,,,Kocka-játék
+,,,,Gyógyító készlet
+,,,,Tegez
+,,,,Utazó ruha

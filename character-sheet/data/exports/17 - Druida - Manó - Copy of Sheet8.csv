@@ -1,0 +1,71 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+1,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Kis,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,12,,,
+HARCERŐ KOCKA,1d8,,,
+VF,14,,,
+,score,mod,saving prof,
+ERŐ,10,0,FALSE,
+ÜGYESSÉG,13,1,FALSE,
+ÁLLÓKÉPESSÉG,15,2,FALSE,
+INTELLIGENCIA,12,1,TRUE,
+BÖLCSESSÉG,17,3,TRUE,
+KARIZMA,8,-1,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+0,○,0,
+Előadásmód (KAR),-1,○,0,
+Ember ismeret (BÖL),+5,●,1,
+Észlelés (BÖL),+5,●,1,
+Kézügyesség (ÜGY),+1,○,0,
+Lopakodás (ÜGY),+1,○,0,
+Mágia ismeret (INT),+1,○,0,
+Megfélemlítés (KAR),-1,○,0,
+Meggyőzés (KAR),-1,○,0,
+Megtévesztés (KAR),-1,○,0,
+Orvoslás (BÖL),+3,○,0,
+Szelídítés (BÖL),+5,●,1,
+Természetismeret (INT),+3,●,1,
+Történelem (INT),+1,○,0,
+Túlélés (BÖL),+3,○,0,
+Vallás (INT),+1,○,0,
+Vizsgálódás (INT),+1,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Bölcsesség,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,39,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,Kisebb illúzió ,Fegyver: Egyszerű,Bőrvért
+"Druida nyelv: Ismered a Druida nyelvet, ezzel titkos üzeneteket hagyhatsz, amit csak azok érthetnek, akik szintén beszélik a nyelvet. Az üzenetet NF 15 Vizsgálódással mások is megtalálhatják, de nem érthetik meg.",,Druidacsíny,"Páncél: Könnyű, pajzs",Pajzs
+Előny: INT/BÖL/KAR mentő dobásokon,,Láng teremtése,"Eszköz: Alkemista készlet,",Sarló (2)
+Szívósság: Szintenként +2 HP-t kapsz.,,Elemi varázslat,"Ács Szerszámok, Gyógynö-",Vándorbot
+,,Beszéd az állatokkal,vényes készlet,Gyógynövényes készlet
+,,Tündérfény,"Nyelv: Közös, Druida, Törp, ",Hátizsák
+,,Gyógybogyó,Manó,Hálózsák
+,,Gyógyítás szava,,Olajos flaska (2)
+,,Mennydörgés,,Fejadag (10)
+,,,,Kötél
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Ács Szerszámok
+,,,,Gyógyító készlet
+,,,,Vasedény
+,,,,Ásó

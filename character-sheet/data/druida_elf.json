@@ -1,0 +1,297 @@
+{
+  "id": "druida_elf",
+  "name": "Druida - Elf",
+  "raceClass": "Elf | Druida 1",
+  "ac": {
+    "base": 14,
+    "current": 14
+  },
+  "init": "+1",
+  "speed": "35 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 4
+  },
+  "prof": "+2",
+  "hpMax": 11,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 10,
+      "mod": "+0"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": true
+    },
+    {
+      "statIndex": 4,
+      "p": true
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 12,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Gyógynövényes",
+        "készlet",
+        "Térképész készlet"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Druida",
+        "Elf",
+        "Goblin"
+      ]
+    }
+  ],
+  "equipment": [
+    "Bőrvért",
+    "Pajzs",
+    "Sarló",
+    "Druida fókusz (bot)",
+    "Gyógynövényes készlet",
+    "Hátizsák",
+    "Hálózsák",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Rövidíj",
+    {
+      "name": "Nyíl",
+      "count": 20
+    },
+    "Térképész készlet",
+    "Hálózsák",
+    "Tegez",
+    "Sátor",
+    "Utazó ruha"
+  ],
+  "spells": [
+    "Druidacsíny",
+    "Láng teremtése",
+    "Haldoklók megmentése",
+    "Csillagtűz",
+    "Javítás",
+    "Méregpermet",
+    "Tündérfény",
+    "Sebgyógyítás",
+    "Beszéd az állatokkal",
+    "Állatok barátsága",
+    "Gyógybogyó"
+  ],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Druida nyelv",
+      "description": "Ismered a Druida nyelvet, ezzel titkos üzeneteket hagyhatsz, amit csak azok érthetnek, akik szintén beszélik a nyelvet. Az üzenetet NF 15 Vizsgálódással mások is megtalálhatják, de nem érthetik meg."
+    },
+    {
+      "title": "Előny",
+      "description": "Elbájolással szemben"
+    },
+    {
+      "title": "Transz",
+      "description": "Nincs szükség alvásra, hosszú pihenő 4 óra"
+    }
+  ]
+}

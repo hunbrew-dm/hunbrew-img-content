@@ -1,0 +1,72 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+0,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,9,,,
+HARCERŐ KOCKA,1d8,,,
+VF,16,,,
+,score,mod,saving prof,
+ERŐ,14,2,FALSE,
+ÜGYESSÉG,10,0,FALSE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,9,0,FALSE,
+BÖLCSESSÉG,17,3,TRUE,
+KARIZMA,12,1,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+2,○,0,
+Előadásmód (KAR),+1,○,0,
+Ember ismeret (BÖL),+5,●,1,
+Észlelés (BÖL),+5,●,1,
+Kézügyesség (ÜGY),+0,○,0,
+Lopakodás (ÜGY),+0,○,0,
+Mágia ismeret (INT),+0,○,0,
+Megfélemlítés (KAR),+1,○,0,
+Meggyőzés (KAR),+1,○,0,
+Megtévesztés (KAR),+1,○,0,
+Orvoslás (BÖL),+5,●,1,
+Szelídítés (BÖL),+5,●,1,
+Természetismeret (INT),+0,○,0,
+Történelem (INT),+2,●,1,
+Túlélés (BÖL),+3,○,0,
+Vallás (INT),+2,●,1,
+Vizsgálódás (INT),+2,●,1,
+,,,0,
+,,,,
+Varázslás képesség,Bölcsesség,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,30,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,Szent láng,"Fegyver: Egyszerű, katonai",Pikkelypáncél
+Ellenállás:  Nekrotikus,,Taumaturgia,"Páncél: Könnyű, közepes,  ",Pajzs
+Ellenállás:  Ragyogó,,Útmutatás,"nehéz, pajzs",Buzogány
+"Gyógyító kezek: Érintéssel 2d4 HP-t gyógyíthatsz.  
+Napi 1-szer: ⎕",,Irányzék,Eszköz: Kalligráfus eszközök,Szent Szimbólum
+,,Hit pajzsa,"Nyelv: Közös, Gnóm, Goblin",Hátizsák
+,,Áldás,,Takaró
+,,,,Szentelt víz
+,,,,Lámpás
+,,,,Fejadag (7)
+,,,,Köpeny
+,,,,Tűzszerszám
+,,,,Kalligráfus eszközök
+,,,,Előkelő ruházat
+,,,,Lámpás
+,,,,Olajos flaska (3)
+,,,,Pergamen (12)

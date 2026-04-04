@@ -1,0 +1,78 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+3,,,
+SEBESESSÉG,35 láb,,,
+TERMET,,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,11,,,
+HARCERŐ KOCKA,1d10,,,
+VF,15,,,
+,score,mod,saving prof,
+ERŐ,12,1,TRUE,
+ÜGYESSÉG,17,3,TRUE,
+ÁLLÓKÉPESSÉG,13,1,FALSE,
+INTELLIGENCIA,10,0,FALSE,
+BÖLCSESSÉG,15,2,FALSE,
+KARIZMA,8,-1,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+3,●,1,
+Előadásmód (KAR),-1,○,0,
+Ember ismeret (BÖL),+4,●,1,
+Észlelés (BÖL),+4,●,1,
+Kézügyesség (ÜGY),+3,○,0,
+Lopakodás (ÜGY),+5,●,1,
+Mágia ismeret (INT),+0,○,0,
+Megfélemlítés (KAR),-1,○,0,
+Meggyőzés (KAR),-1,○,0,
+Megtévesztés (KAR),-1,○,0,
+Orvoslás (BÖL),+2,○,0,
+Szelídítés (BÖL),+2,○,0,
+Természetismeret (INT),+2,●,1,
+Történelem (INT),+0,○,0,
+Túlélés (BÖL),+4,●,1,
+Vallás (INT),+0,○,0,
+Vizsgálódás (INT),+0,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Bölcsesség,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,23,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,Druidacsíny ,"Fegyver: Egyszerű, katonai",Szegecselt bőrpáncél
+"Szerencsés: Természetes szerencséd révén választhatsz:
+- Előny: d20 próbát 1 pontért cserébe Előnnyel dobhatod
+- Hátrány: Ellened irányuló támadó dobást 1 pontért cserébe hátránnyal kell dobni
+Napi 2-szer: ⎕ ⎕",,Célkereszt ,"Páncél: Könnyű, közepes,  ",Szablya
+"Fegyvermester:
+- Karcolás Amikor könnyű fegyverrel extra támadást csinálsz nem kell bónusz akciót használnod hozzá.
+- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.
+- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra.",,Sebgyógyítás,pajzs,Rövidkard
+Előny: Elbájolással szemben,,Indakötő csapás,Eszköz: Tolvaj szerszám,Hosszúíj
+"Transz: Nincs szükség alvásra, hosszú pihenő 4 óra",,,"Nyelv: Közös, Jelnyelv, Elf,",Nyíl (20)
+,,,Sárkány,Tegez
+,,,,Hátizsák
+,,,,Hálózsák (2)
+,,,,Olajos flaska (2)
+,,,,Fejadag (10)
+,,,,Kötél
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Tőr (2)
+,,,,Tolvaj szerszám
+,,,,Kocka-játék
+,,,,Utazó ruha

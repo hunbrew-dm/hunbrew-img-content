@@ -1,0 +1,79 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+2,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,12,,,
+HARCERŐ KOCKA,1d10,,,
+VF,14,,,
+,score,mod,saving prof,
+ERŐ,12,1,TRUE,
+ÜGYESSÉG,15,2,TRUE,
+ÁLLÓKÉPESSÉG,14,2,FALSE,
+INTELLIGENCIA,8,-1,FALSE,
+BÖLCSESSÉG,16,3,FALSE,
+KARIZMA,10,0,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+3,●,1,
+Előadásmód (KAR),+0,○,0,
+Ember ismeret (BÖL),+3,○,0,
+Észlelés (BÖL),+3,○,0,
+Kézügyesség (ÜGY),+2,○,0,
+Lopakodás (ÜGY),+2,○,0,
+Mágia ismeret (INT),-1,○,0,
+Megfélemlítés (KAR),+0,○,0,
+Meggyőzés (KAR),+0,○,0,
+Megtévesztés (KAR),+0,○,0,
+Orvoslás (BÖL),+5,●,1,
+Szelídítés (BÖL),+5,●,1,
+Természetismeret (INT),-1,○,0,
+Történelem (INT),-1,○,0,
+Túlélés (BÖL),+5,●,1,
+Vallás (INT),+1,●,1,
+Vizsgálódás (INT),-1,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Bölcsesség,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,24,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,KÉPESSÉGEK,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,,"Fegyver: Egyszerű, katonai ",Szegecselt bőrpáncél
+"Fegyvermester
+- Karcolás Amikor könnyű fegyverrel extra támadást csinálsz nem kell bónusz akciót használnod hozzá.
+- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.
+- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra.",,,katonai,Szablya
+"Rendíthetetlen kitartás: Amennyiben a Harcerő pontjaid 0-ra csökkennek, az utolsó tartalékaid felhasználva 1HP-re stabilizálhatod magad
+Napi 1-szer: ⎕",,,"Páncél: Könnyű, közepes,",Rövidkard
+"Felcser: Gyógyító készlettel segíthetsz egy társadon, dobhatsz a Harcerő Kockájával és a dobott eredmény + 2 HP-t visszanyer a társad.",,,pajzs,Hosszúíj
+"Adrenalin Löket: Bónusz akcióként használhatod a Roham akciót. Amikor így teszel, akkor 2 Ideiglenes HP-t kapsz.
+Kétszer használhatod és minden Rövid vagy Hosszú pihenő után visszanyered az elhasználtakat: ⎕ ⎕",,,Eszköz: Gyógynövényes,Nyíl (20)
+Szerencsés gyógyítás: Minden gyógyításra használt dobást 1-es esetén újra dobhatsz.,,,készlet,Tegez
+,,,"Nyelv: Közös, Ork, Elf",Hátizsák
+,,,,Hálózsák
+,,,,Olajos flaska (2)
+,,,,Fejadag (10)
+,,,,Kötél
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Vándorbot
+,,,,Gyógynövényes készlet
+,,,,Könyv (filozófia)
+,,,,Lámpás
+,,,,Olajos flaska (3)
+,,,,Utazó ruha

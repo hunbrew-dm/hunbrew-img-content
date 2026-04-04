@@ -1,0 +1,80 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+3,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,14,,,
+HARCERŐ KOCKA,1d10,,,
+VF,16,,,
+,score,mod,saving prof,
+ERŐ,16,3,TRUE,
+ÜGYESSÉG,13,1,FALSE,
+ÁLLÓKÉPESSÉG,14,2,TRUE,
+INTELLIGENCIA,8,-1,FALSE,
+BÖLCSESSÉG,14,2,FALSE,
+KARIZMA,10,0,FALSE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),+5,●,1,
+Előadásmód (KAR),+0,○,0,
+Ember ismeret (BÖL),+4,●,1,
+Észlelés (BÖL),+4,●,1,
+Kézügyesség (ÜGY),+1,○,0,
+Lopakodás (ÜGY),+1,○,0,
+Mágia ismeret (INT),-1,○,0,
+Megfélemlítés (KAR),+2,●,1,
+Meggyőzés (KAR),+0,○,0,
+Megtévesztés (KAR),+0,○,0,
+Orvoslás (BÖL),+2,○,0,
+Szelídítés (BÖL),+2,○,0,
+Természetismeret (INT),-1,○,0,
+Történelem (INT),-1,○,0,
+Túlélés (BÖL),+2,○,0,
+Vallás (INT),-1,○,0,
+Vizsgálódás (INT),+1,●,1,
+,,,0,
+,,,,
+Varázslás képesség,,,,
+spell slot level,slot count,,,
+1,—,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,16,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,KÉPESSÉGEK,JÁRTASSÁGOK,Felszerelés
+Találékony: Hosszú pihenés végén Hősies Inspirációt kapsz.,,,"Fegyver: Egyszerű, katonai",Sodronypáncél
+"Kezdeményezés csere: Kezdeményezés dobás után cserélhetsz egy társaddal, ha ő is szeretné.",,,"Páncél: Könnyű, közepes,",Pallos
+"Fegyvermester:
+- Elcsigázás Találatkor a célpont következő támadására Hátrány, a következő köröd elejéig.
+- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.
+- Horzsolás Sikertelen támadó dobás után is sebzel a módosítódnak megfelelő értéket.
+- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra.",,,"nehéz, pajzs",Láncos buzogány
+Szívósság:  Szintenként +2 HP-t kapsz. ,,,Eszköz: Kártya,Gerely (8)
+Nehézfegyveres harcmodor: Amikor kétkezes fegyverrel sebzést dobsz minden 1-es vagy 2-es dobást számolhatsz 3-nak,,,"Nyelv: Közös, Törp, Elf",Hátizsák
+Profi kezdeményező: A kezdeményezésedhez hozzáadódik a Jártasság Bónuszod is.,,,,Vassúlyom (caltrop)
+"Második menet: Képes vagy felhasználni a tested és az elméd rejtett tartalékait. Bónusz akcióként 1d10+1-et gyógyulsz.
+Napi kétszer használhatod, Rövid Pihenővel egy elhasználtat visszanyerhetsz. ⎕ ⎕",,,,Feszítővas
+,,,,Olajos Flaska (2)
+,,,,Fejadag (10)
+,,,,Kötél
+,,,,Tűzszerszám
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Lándzsa
+,,,,Könnyű számszeríj
+,,,,Számszeríj lövedék (20)
+,,,,Kártya pakli
+,,,,Lámpás
+,,,,Bilincs
+,,,,"Tegez, Utazó ruha"

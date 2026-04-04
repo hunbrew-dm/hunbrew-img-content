@@ -1,0 +1,282 @@
+{
+  "id": "lovag_torp",
+  "name": "Lovag - Törp",
+  "raceClass": "Törp | Lovag 1",
+  "ac": {
+    "base": 18,
+    "current": 18
+  },
+  "init": "+0",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
+  "prof": "+2",
+  "hpMax": 12,
+  "hitDice": {
+    "total": 1,
+    "die": "d10"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 16,
+      "mod": "+3"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": true
+    },
+    {
+      "statIndex": 5,
+      "p": true
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 1
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 38,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "nehéz",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Sárkánysakk",
+        "Kőműves szerszámok",
+        "Fazekas szerszámok",
+        "Főzőkészlet"
+      ]
+    }
+  ],
+  "equipment": [
+    "Sodronypáncél",
+    "Pajzs",
+    "Hosszúkard",
+    {
+      "name": "Gerely",
+      "count": 6
+    },
+    "Szent Szimbólum",
+    "Hátizsák",
+    "Takaró",
+    "Szentelt víz",
+    "Lámpás",
+    {
+      "name": "Fejadag",
+      "count": 7
+    },
+    "Köpeny",
+    "Tűzszerszám",
+    "Sárkánysakk",
+    "Előkelő ruházat",
+    "Parfüm"
+  ],
+  "spells": [
+    "Hősiesség",
+    "Perzselő csapás"
+  ],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "120 láb"
+    },
+    {
+      "title": "Kézrátétellel gyógyítás",
+      "description": "Bónusz akcióval gyógyíthatsz a forrásból kölcsönzött HP-t vagy megszüntetheted a Mérgezett állapotot 5 HP felhasználásával.\nForrás: napi 5HP ⎕ ⎕ ⎕ ⎕ ⎕",
+      "count": 5
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Elcsigázás  Találatkor a célpont következő támadására Hátrány, a következő köröd elejéig.\n- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Ellenállás",
+      "description": "Méreg"
+    },
+    {
+      "title": "Előny vs. Mérgezés",
+      "description": ""
+    },
+    {
+      "title": "Kősuttogás",
+      "description": "bónusz akcióval megérinthetsz egy kő felületet, ilyenkor 60 láb közelben érzékelsz minden élőlényt és mozgást, ami a kövön történik.\nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "id": "zsivany_felszerzet",
+  "name": "Zsivány - Félszerzet",
+  "raceClass": "Félszerzet | Zsivány 1",
+  "ac": {
+    "base": 14,
+    "current": 14
+  },
+  "init": "+5",
+  "speed": "30 láb",
+  "size": "Kis",
+  "spellcasting": {},
+  "prof": "+2",
+  "hpMax": 10,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 8,
+      "mod": "-1"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": true
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": true
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 2
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 2
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [],
+  "coins": {
+    "pp": 0,
+    "gp": 51,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "kecses",
+        "vagy könnyű katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Tolvaj szerszám"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Tolvajnyelv",
+        "Félszerzet",
+        "Manó",
+        "Goblin"
+      ]
+    }
+  ],
+  "equipment": [
+    "Bőrvért",
+    {
+      "name": "Tőr",
+      "count": 4
+    },
+    "Rövidkard",
+    "Rövidíj",
+    {
+      "name": "Nyíl",
+      "count": 20
+    },
+    "Tegez",
+    "Tolvaj szerszám",
+    "Hátizsák",
+    "Csapágygolyók",
+    "Csengő",
+    {
+      "name": "Gyertya",
+      "count": 10
+    },
+    "Feszítővas",
+    "Lámpás",
+    {
+      "name": "Olajos flaska",
+      "count": 7
+    },
+    {
+      "name": "Fejadag",
+      "count": 5
+    },
+    "Kötél",
+    "Tűzszerszám",
+    "Vizestömlő",
+    "Utazó ruha"
+  ],
+  "spells": [],
+  "features": [
+    {
+      "title": "Bátorság",
+      "description": "A Rémültséggel szembeni mentő dobást Előnnyel dobhatod."
+    },
+    {
+      "title": "Kezdeményezés csere",
+      "description": "Kezdeményezés dobás után cserélhetsz egy társaddal, ha ő is szeretné."
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Karcolás: Amikor könnyű fegyverrel extra támadást csinálsz nem kell bónusz akciót használnod hozzá.\n- Megzavarás: Találatkor és sebzéskor: Előny a következő támadásodra, max a következő köröd végéig.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Szerencse",
+      "description": "Ha d20 dobással 1-et dobsz egyszer újradobhatod a kockát."
+    },
+    {
+      "title": "Félszerzet fürgeség & Természetes Lopakodás",
+      "description": "Az egy termettel nagyobb lények által elfoglalt területen is áthaladhatsz vagy Elrejtőzhetsz mögöttük."
+    },
+    {
+      "title": "Lesből támadás",
+      "description": "Tudod hogy kell kihasználni, ha az ellenséget megzavarják és lesből lecsapni. Körönként egyszer extra 1d6 sebzést okozhatsz egy eltalált lénynek:\n- Ha támadásod Előnnyel dobtad vagy,\n- Ha egy társad 5 lábnál közelebb van a célponthoz feltéve, hogy a társad nem Cselekvőképtelen és nem dobsz Hátránnyal"
+    },
+    {
+      "title": "Profi kezdeményező",
+      "description": "A kezdeményezésedhez hozzáadódik a Jártasság Bónuszod is."
+    }
+  ]
+}

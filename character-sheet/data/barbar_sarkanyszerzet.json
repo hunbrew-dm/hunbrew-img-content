@@ -1,0 +1,296 @@
+{
+  "id": "barbar_sarkanyszerzet",
+  "name": "Barbár - Sárkányszerzet",
+  "raceClass": "Sárkányszerzet | Barbár 1",
+  "ac": {
+    "base": 14,
+    "current": 14
+  },
+  "init": "+2",
+  "speed": "30 láb",
+  "size": "Közepes",
+  "spellcasting": {},
+  "prof": "+2",
+  "hpMax": 14,
+  "hitDice": {
+    "total": 1,
+    "die": "d12"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 14,
+      "mod": "+2"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 12,
+      "mod": "+1"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": true
+    },
+    {
+      "statIndex": 1,
+      "p": false
+    },
+    {
+      "statIndex": 2,
+      "p": true
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 1
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [],
+  "coins": {
+    "pp": 0,
+    "gp": 35,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Navigációs eszközök"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Sárkány",
+        "Ork"
+      ]
+    }
+  ],
+  "equipment": [
+    "Kétkezes csatabárd",
+    {
+      "name": "Balta",
+      "count": 4
+    },
+    "Hátizsák",
+    "Hálózsák",
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    "Tőr",
+    "Navigációs eszközök",
+    "Kötél",
+    "Utazó ruha"
+  ],
+  "spells": [],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Őrjöngés",
+      "description": "(bónusz akció, ha nem viselsz nehéz páncélt; akció különben)\n- Ellenállás (-50% sebzés) Zúzó, Szúró, Vágó\n- Dühöngő sebzés +2 bónusz az ERŐ módosítóval adott sebzésekhez\n- ERŐ Előny ERŐ alapú próba és mentő dobásokat Előnnyel dobhatot\n- Dekoncentrált állapot Őrjöngés közben nem tudsz Összpontosítani vagy varázsolni.\n- Időtartam Alapvetően a következő kör végéig tart, korábban befejeződik, ha nehéz páncélt öltesz vagy Cselekvésképtelenné válsz. Ha a köröd elején aktív, meghosszabbíthatod még egy körig, ha:\n    - Megtámadsz egy ellenséget\n    - Mentődobásra kényszerítesz egy ellenséget\n    - Bónusz akciót használsz a hosszabbításra\nMax 10 percig (100 kör) tudod fenntartani hosszabbításokkal\nNapi kétszer használhatod, Rövid Pihenővel egy elhasználtat visszanyerhetsz. ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Keménykezű ütés",
+      "description": "Pusztakezes támadásod 1d4+ERŐ értéket sebez."
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Kaszabolás Körönként egyszer a sikeres közelharci találat, egy második célpontnak is sebzést okoz, ha a második célpont hatótávodban és az elsőtől max 5 láb távolságra van. A második sebzés a fegyver alap sebzése a képesség módosítód nélkül.\n- Megzavarás Találatkor és sebzéskor: Előny a következő támadásodra, max a következő köröd végéig.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Ellenálló",
+      "description": "Fagy"
+    },
+    {
+      "title": "Sárkánylehelet (Ezüst)",
+      "description": "15 láb élű kúp vagy 5 x 30 láb területű sávban minden lénynek ÜGY mentést kell dobnia, NF = 12. Sikertelen mentés esetén 1d10 Fagy sebzés, siker esetén a fele. \nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Újradobás",
+      "description": "Amikor Pusztakezes támadás sebzésére 1-et dobsz, egyszer újra dobhatod az 1-es kockát."
+    },
+    {
+      "title": "Páncél nélküli védelem",
+      "description": "Páncél nélkül a VF-ed 10 + ÜGY mód. + ÁLL mód. Pajzsot használhatsz emellett."
+    },
+    {
+      "title": "Improvizált fegyverek",
+      "description": "Jártas vagy az improvizált fegyverek használatában (pl. asztal láb)."
+    },
+    {
+      "title": "Lökés",
+      "description": "Körönként egyszer Pusztakezes támadásoddal 5 láb messze ellökheted a célpontod."
+    }
+  ]
+}

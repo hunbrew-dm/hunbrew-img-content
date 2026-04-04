@@ -1,0 +1,298 @@
+{
+  "id": "vandor_elf",
+  "name": "Vándor - Elf",
+  "raceClass": "Elf | Vándor 1",
+  "ac": {
+    "base": 15,
+    "current": 15
+  },
+  "init": "+3",
+  "speed": "35 láb",
+  "size": "",
+  "spellcasting": {
+    "abilityIndex": 4
+  },
+  "prof": "+2",
+  "hpMax": 11,
+  "hitDice": {
+    "total": 1,
+    "die": "d10"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 17,
+      "mod": "+3"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 15,
+      "mod": "+2"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 8,
+      "mod": "-1"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": true
+    },
+    {
+      "statIndex": 1,
+      "p": true
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": false
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 1
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 1
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 1
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 23,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű",
+        "katonai"
+      ]
+    },
+    {
+      "title": "Páncélok",
+      "items": [
+        "Könnyű",
+        "közepes",
+        "pajzs"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Tolvaj szerszám"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Jelnyelv",
+        "Elf",
+        "Sárkány"
+      ]
+    }
+  ],
+  "equipment": [
+    "Szegecselt bőrpáncél",
+    "Szablya",
+    "Rövidkard",
+    "Hosszúíj",
+    {
+      "name": "Nyíl",
+      "count": 20
+    },
+    "Tegez",
+    "Hátizsák",
+    {
+      "name": "Hálózsák",
+      "count": 2
+    },
+    {
+      "name": "Olajos flaska",
+      "count": 2
+    },
+    {
+      "name": "Fejadag",
+      "count": 10
+    },
+    "Kötél",
+    {
+      "name": "Fáklya",
+      "count": 10
+    },
+    "Vizestömlő",
+    {
+      "name": "Tőr",
+      "count": 2
+    },
+    "Tolvaj szerszám",
+    "Kocka-játék",
+    "Utazó ruha"
+  ],
+  "spells": [
+    "Druidacsíny",
+    "Célkereszt",
+    "Sebgyógyítás",
+    "Indakötő csapás"
+  ],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Szerencsés",
+      "description": "Természetes szerencséd révén választhatsz:\n- Előny: d20 próbát 1 pontért cserébe Előnnyel dobhatod\n- Hátrány: Ellened irányuló támadó dobást 1 pontért cserébe hátránnyal kell dobni\nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Fegyvermester",
+      "description": "- Karcolás Amikor könnyű fegyverrel extra támadást csinálsz nem kell bónusz akciót használnod hozzá.\n- Lassítás Találatkor a célpontnak -10 láb Sebesség a következő köröd elejéig.\n- Hosszú pihenő végén egy fegyvernemet lecserélhetsz másra."
+    },
+    {
+      "title": "Előny",
+      "description": "Elbájolással szemben"
+    },
+    {
+      "title": "Transz",
+      "description": "Nincs szükség alvásra, hosszú pihenő 4 óra"
+    }
+  ]
+}

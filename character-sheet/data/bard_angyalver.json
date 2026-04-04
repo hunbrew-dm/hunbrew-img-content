@@ -1,0 +1,295 @@
+{
+  "id": "bard_angyalver",
+  "name": "Bárd - Angyalvér",
+  "raceClass": "Angyalvér | Bárd 1",
+  "ac": {
+    "base": 14,
+    "current": 14
+  },
+  "init": "+3",
+  "speed": "30 láb",
+  "size": "Kis",
+  "spellcasting": {
+    "abilityIndex": 5
+  },
+  "prof": "+2",
+  "hpMax": 9,
+  "hitDice": {
+    "total": 1,
+    "die": "d8"
+  },
+  "stats": [
+    {
+      "label": "ERŐ",
+      "val": 8,
+      "mod": "-1"
+    },
+    {
+      "label": "ÜGYESSÉG",
+      "val": 16,
+      "mod": "+3"
+    },
+    {
+      "label": "ÁLLÓKÉPESSÉG",
+      "val": 12,
+      "mod": "+1"
+    },
+    {
+      "label": "INTELLIGENCIA",
+      "val": 13,
+      "mod": "+1"
+    },
+    {
+      "label": "BÖLCSESSÉG",
+      "val": 10,
+      "mod": "+0"
+    },
+    {
+      "label": "KARIZMA",
+      "val": 16,
+      "mod": "+3"
+    }
+  ],
+  "savingThrows": [
+    {
+      "statIndex": 0,
+      "p": false
+    },
+    {
+      "statIndex": 1,
+      "p": true
+    },
+    {
+      "statIndex": 2,
+      "p": false
+    },
+    {
+      "statIndex": 3,
+      "p": false
+    },
+    {
+      "statIndex": 4,
+      "p": false
+    },
+    {
+      "statIndex": 5,
+      "p": true
+    }
+  ],
+  "skills": [
+    {
+      "n": "Atlétika",
+      "a": "ERŐ",
+      "statIndex": 0,
+      "s": 0
+    },
+    {
+      "n": "Előadásmód",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Ember ismeret",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Észlelés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Kézügyesség",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Lopakodás",
+      "a": "ÜGY",
+      "statIndex": 1,
+      "s": 0
+    },
+    {
+      "n": "Mágia ismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Megfélemlítés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 0
+    },
+    {
+      "n": "Meggyőzés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Megtévesztés",
+      "a": "KAR",
+      "statIndex": 5,
+      "s": 1
+    },
+    {
+      "n": "Orvoslás",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Szelídítés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Természetismeret",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Történelem",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 1
+    },
+    {
+      "n": "Túlélés",
+      "a": "BÖL",
+      "statIndex": 4,
+      "s": 0
+    },
+    {
+      "n": "Vallás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    },
+    {
+      "n": "Vizsgálódás",
+      "a": "INT",
+      "statIndex": 3,
+      "s": 0
+    }
+  ],
+  "attacks": [],
+  "inspiration": {
+    "active": false
+  },
+  "spellSlots": [
+    {
+      "level": 1,
+      "count": 2
+    }
+  ],
+  "coins": {
+    "pp": 0,
+    "gp": 35,
+    "ep": 0,
+    "sp": 0,
+    "cp": 0
+  },
+  "proficiencies": [
+    {
+      "title": "Fegyverek",
+      "items": [
+        "Egyszerű"
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "items": [
+        "Pánsíp",
+        "dob",
+        "lant",
+        "hegedű",
+        "duda",
+        "cimbalom",
+        "kürt"
+      ]
+    },
+    {
+      "title": "Nyelvek",
+      "items": [
+        "Közös",
+        "Törp",
+        "Elf"
+      ]
+    }
+  ],
+  "equipment": [
+    "Bőrvért",
+    {
+      "name": "Tőr",
+      "count": 2
+    },
+    "Pánsíp",
+    "Hátizsák",
+    "Hálózsák",
+    "Csengő",
+    "Lámpás",
+    {
+      "name": "Jelmez",
+      "count": 5
+    },
+    {
+      "name": "Olajos flaska",
+      "count": 8
+    },
+    {
+      "name": "Fejadag",
+      "count": 9
+    },
+    "Tűzszerszám",
+    "Vizestömlő",
+    "Tükör",
+    "Dob",
+    "Parfüm",
+    "Utazó ruha"
+  ],
+  "spells": [
+    "Táncoló fények",
+    "Ördögi gúny",
+    "Fény",
+    "Személy elbájolása",
+    "Mágia érzékelése",
+    "Gyógyítás szava",
+    "Mennydörgés"
+  ],
+  "features": [
+    {
+      "title": "Sötétlátás",
+      "description": "60 láb"
+    },
+    {
+      "title": "Inspiráló dalnok",
+      "description": "Bónusz akcióként adhatsz egy lénynek 60 lábon (kb. 18 méteren) belül egy \"Dalnok\"-kockát (d6). Amikor ez a lény elbukik egy d20 próbát, felhasználhatja és hozzáadhatja az ösztönzés-kocka eredményét a dobásához.\nNapi 2-szer: ⎕ ⎕",
+      "count": 2
+    },
+    {
+      "title": "Ellenállás",
+      "description": "Nekrotikus"
+    },
+    {
+      "title": "Ellenállás",
+      "description": "Ragyogó"
+    },
+    {
+      "title": "Zenész",
+      "description": "A Rövid és Hosszú pihenő végén ha jártas vagy a hangszerrel, akkor zenéléssel Hősies Inspirációt adhatsz 2 társadnak."
+    },
+    {
+      "title": "Gyógyító kezek",
+      "description": "Érintéssel 2d4 HP-t gyógyíthatsz.  \nNapi 1-szer: ⎕",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+Summary,,,,
+KEZDEMÉNYEZÉS,+1,,,
+SEBESESSÉG,30 láb,,,
+TERMET,Közepes,,,
+JÁRTASSÁG BÓNUSZ,+2,,,
+HARCERŐ,8,,,
+HARCERŐ KOCKA,1d6,,,
+VF,11,,,
+,score,mod,saving prof,
+ERŐ,8,-1,FALSE,
+ÜGYESSÉG,13,1,FALSE,
+ÁLLÓKÉPESSÉG,15,2,TRUE,
+INTELLIGENCIA,12,1,FALSE,
+BÖLCSESSÉG,10,0,FALSE,
+KARIZMA,17,3,TRUE,
+,,,,
+,,,prof multiplier,
+Atlétika (ERŐ),-1,○,0,
+Előadásmód (KAR),+3,○,0,
+Ember ismeret (BÖL),+0,○,0,
+Észlelés (BÖL),+0,○,0,
+Kézügyesség (ÜGY),+1,○,0,
+Lopakodás (ÜGY),+1,○,0,
+Mágia ismeret (INT),+3,●,1,
+Megfélemlítés (KAR),+5,●,1,
+Meggyőzés (KAR),+3,○,0,
+Megtévesztés (KAR),+3,○,0,
+Orvoslás (BÖL),+2,●,1,
+Szelídítés (BÖL),+0,○,0,
+Természetismeret (INT),+1,○,0,
+Történelem (INT),+1,○,0,
+Túlélés (BÖL),+0,○,0,
+Vallás (INT),+3,●,1,
+Vizsgálódás (INT),+1,○,0,
+,,,0,
+,,,,
+Varázslás képesség,Karizma,,,
+spell slot level,slot count,,,
+1,2,,,
+2,—,,,
+3,—,,,
+4,—,,,
+5,—,,,
+6,—,,,
+7,—,,,
+8,—,,,
+9,—,,,
+,,,,
+réz,,,,
+ezüst,,,,
+elektrum,,,,
+arany,44,,,
+platina,,,,
+,,,,
+KÉPESSÉGEK,KÉPESSÉGEK & EGYÉB,Varázslatok,JÁRTASSÁGOK,Felszerelés
+Sötétlátás: 60 láb,,Jeges érintés,Fegyver: Egyszerű,Lándzsa
+Szerencsés gyógyítás: Minden gyógyításra használt dobást 1-es esetén újra dobhatsz.,,Taumaturgia ,Eszköz: Gyógynövényes ,Tőr (2)
+"Ösztönös mágia: Bónusz akcióként 1 percig aktiválhatod, ez alatt:
+- A varázslataid NF-je 1-gyel nő.
+- A varázslat támadó dobásaidat Előnnyel dobhatod.
+Napi 2-szer: ⎕ ⎕",,Fény,készlet,Mágikus fókusz (Kristály)
+Ellenállás:  Nekrotikus,,Szemfényvesztés,"Nyelv: Közös, Sárkány, Elf",Hátizsák
+"Felcser: Gyógyító készlettel segíthetsz egy társadon, dobhatsz a Harcerő Kockájával és a dobott eredmény + 2 HP-t visszanyer a társad.",,Sokkoló érintés,,Vassúlyom (caltrop)
+"Bűbáj robbantás*:  választható sebzés típus: Sav, Fagy, Tűz, Villám, Méreg, Pszichés vagy Mennydörgés",,Bűbáj robbantás,,Feszítővas
+,,Máguspáncél,,Olajos Flaska (5)
+,,Varázslövedék,,Fejadag (10)
+,,,,Kötél
+,,,,Tűzszerszám
+,,,,Fáklya (10)
+,,,,Vizestömlő
+,,,,Vándorbot
+,,,,Gyógynövényes készlet
+,,,,Könyv (filozófia)
+,,,,Lámpás
+,,,,Utazó ruha
