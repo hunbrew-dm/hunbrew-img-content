@@ -1,0 +1,1412 @@
+{
+  "generatedAt": "2026-04-04T00:00:00.000Z",
+  "source": "hunbrew-ve-tools/export/items.md",
+  "count": 122,
+  "items": {
+    "Ács Szerszámok": {
+      "name": "Ács Szerszámok",
+      "aliases": [
+        "Carpenter's Tools"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Erő - Használat: Ajtó vagy tároló lezárása vagy felfeszítése (NF 20) - Készítés: Bunkó, Nagy bunkó, Vándorbot, Hordó, Láda, Létra, Rúd, Hordozható faltörökos, Fáklya\n\nA Kézműves szerszámok mindegyike egy-egy tárgy elkészítésére vagy egy mesterség űzésére összpontosít. Minden Kézműves szerszámtípushoz külön jártasság szükséges.\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "8 arany",
+      "weight": "6 font"
+    },
+    "Alabárd": {
+      "name": "Alabárd",
+      "kind": "Fegyver",
+      "description": "Nehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nHosszú. Egy Hosszú fegyverrel plusz 5 láb távolságba elérhet a támadásod, ez érvényes az Alkalmi támadásokra is.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Kaszabolás. Körönként egyszer, sikeres közelharci találat esetén egy második célpontnak is sebzést okozol, ha az a hatótávodon belül van és az elsőtől legfeljebb 5 láb (1,5 méter) távolságra áll. A második sebzéshez a fegyver alapsebzését használd, de NE add hozzá a tulajdonság módosítódat (kivéve, ha negatív).",
+      "value": "20 arany",
+      "weight": "6 font",
+      "type": "Katonai",
+      "properties": "Hosszú, Kétkezes, Nehéz, Mastery: Kaszabolás",
+      "damage": "1d10 [Vágó]"
+    },
+    "Ásó": {
+      "name": "Ásó",
+      "aliases": [
+        "Shovel"
+      ],
+      "kind": "Felszerelés",
+      "description": "Az Ásóval 1 óra alatt egy 1,5 méter oldalú kocka alakú gödröt áshatsz.",
+      "value": "2 arany",
+      "weight": "5 font"
+    },
+    "Balta": {
+      "name": "Balta",
+      "kind": "Fegyver",
+      "description": "Könnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nEldobható. A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál.\n\nMastery: Megzavarás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást Előnnyel dobhatod, a hatás a következő köröd kezdetéig tart.",
+      "value": "5 arany",
+      "weight": "2 font",
+      "type": "Egyszerű",
+      "properties": "Eldobható (20/60 láb), Könnyű, Mastery: Megzavarás",
+      "range": "20 / 60 láb",
+      "damage": "1d6 [Vágó]"
+    },
+    "Bilincs": {
+      "name": "Bilincs",
+      "aliases": [
+        "Manacles"
+      ],
+      "kind": "Felszerelés",
+      "description": "Használat akcióként tőled 1,5 méteren belül megbilincselhetsz egy Megragadott, Cselekvésképtelen vagy Helyhez kötött lényt, ha sikeres NF 13-as Ügyesség (Kézügyesség) próbát teszel.\n\nA Bilincsből való szabaduláshoz NF 20-as Ügyesség (Kézügyesség) próba, a szétfeszítéséhez NF 25-ös Erő (Atlétika) próba szükséges akcióként. Feltörése: NF 15-ös Ügyesség (Kézügyesség).",
+      "value": "2 arany",
+      "weight": "6 font"
+    },
+    "Bőrvért": {
+      "name": "Bőrvért",
+      "kind": "Páncél",
+      "value": "10 arany",
+      "weight": "10 font",
+      "type": "Könnyű Páncélzat",
+      "ac": "AC 11 + Dex"
+    },
+    "Bőrvért Barding": {
+      "name": "Bőrvért Barding",
+      "aliases": [
+        "Leather Armor"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+      "value": "40 arany",
+      "weight": "20 font",
+      "ac": "AC 11 + Dex"
+    },
+    "Buzogány": {
+      "name": "Buzogány",
+      "kind": "Fegyver",
+      "description": "Mastery: Elcsigázás. Ha eltalálsz egy célpontot a fegyverrel, akkor a lény Hátránnyal dobja a következő támadó dobását, a hatás a következő köröd kezdetéig tart.",
+      "value": "5 arany",
+      "weight": "4 font",
+      "type": "Egyszerű",
+      "properties": "Mastery: Elcsigázás",
+      "damage": "1d6 [Zúzó]"
+    },
+    "Csákányfokos": {
+      "name": "Csákányfokos",
+      "kind": "Fegyver",
+      "description": "Másfélkezes. A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz.\n\nMastery: Elcsigázás. Ha eltalálsz egy célpontot a fegyverrel, akkor a lény Hátránnyal dobja a következő támadó dobását, a hatás a következő köröd kezdetéig tart.",
+      "value": "5 arany",
+      "weight": "2 font",
+      "type": "Katonai",
+      "properties": "Másfélkezes (1d10), Mastery: Elcsigázás",
+      "damage": "1d8 [Szúró]"
+    },
+    "Csapágygolyók": {
+      "name": "Csapágygolyók",
+      "aliases": [
+        "Ball Bearings"
+      ],
+      "kind": "Felszerelés",
+      "description": "Használat akcióként golyóbisokat szórhatsz ki az erszényükből. Egy 3 méteres négyzet alakú, sík területet fednek le tőled 3 méteren belül. Minden lénynek, amely egy körben először lép erre a területre, sikeres NF 10-es Ügyesség mentődobást kell tennie, különben Elterült állapotba kerül. A golyóbisok összeszedése 10 perc.",
+      "value": "1 arany",
+      "weight": "2 font"
+    },
+    "Csatabárd": {
+      "name": "Csatabárd",
+      "kind": "Fegyver",
+      "description": "Másfélkezes. A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz.\n\nMastery: Gáncsolás. Találat esetén megpróbálhatod elgáncsolni a célpontot. A célpontnak Állóképesség (Constitution) mentődobást kell tennie (NF = 8 + Jártasság Bónusz + Támadás módosítód). Sikertelen mentő esetén a lény Elterült állapotba kerül.",
+      "value": "10 arany",
+      "weight": "4 font",
+      "type": "Katonai",
+      "properties": "Másfélkezes (1d10), Mastery: Gáncsolás",
+      "damage": "1d8 [Vágó]"
+    },
+    "Csengő": {
+      "name": "Csengő",
+      "aliases": [
+        "Bell"
+      ],
+      "kind": "Felszerelés",
+      "description": "Ha Használat akcióként megkongatják, a Csengő hangja akár 18 méter távolságig is elhallatszik.",
+      "value": "1 arany"
+    },
+    "Dob": {
+      "name": "Dob",
+      "aliases": [
+        "Drum"
+      ],
+      "kind": "Hangszer",
+      "description": "- Tulajdonság: Karizma - Használat: Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "6 arany",
+      "weight": "3 font"
+    },
+    "Dobónyíl": {
+      "name": "Dobónyíl",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nKecses. Amikor Kecses fegyverrel támadsz, választhatsz az Erő vagy Ügyesség módosítód között a támadó- és sebzésdobásokhoz. Mindkét dobáshoz ugyanazt a módosítót kell használnod.\n\nEldobható. A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál.\n\nMastery: Megzavarás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást Előnnyel dobhatod, a hatás a következő köröd kezdetéig tart.\n\n\\pagebreak",
+      "value": "5 réz",
+      "type": "Egyszerű",
+      "properties": "Eldobható (20/60 láb), Kecses, Mastery: Megzavarás",
+      "range": "20 / 60 láb",
+      "damage": "1d4 [Szúró]"
+    },
+    "Dynamite": {
+      "name": "Dynamite",
+      "kind": "Felszerelés",
+      "description": "This bundle of explosives can be lit and thrown up to 30 feet as an action. It explodes at the start of your next turn. Creatures and objects within 20 feet of it must make a DC 12 Dexterity saving throw, taking 6d6 fire damage on a failed save, or half as much damage on a successful one.",
+      "properties": "range 30 ft.",
+      "damage": "6d6 [Fire]"
+    },
+    "Ékszerész eszközök": {
+      "name": "Ékszerész eszközök",
+      "aliases": [
+        "Jeweler's Tools"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Intelligencia - Használat: Drágakő értékének megállapítása (NF 15) - Készítés: Varázs fókusz, Szent szimbólum\n\nA Kézműves szerszámok mindegyike egy-egy tárgy elkészítésére vagy egy mesterség űzésére összpontosít. Minden Kézműves szerszámtípushoz külön jártasság szükséges.\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "25 arany",
+      "weight": "2 font"
+    },
+    "Előkelő ruházat": {
+      "name": "Előkelő ruházat",
+      "aliases": [
+        "Fine Clothes"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Nemesi ruha drága szövetekből készült. Bizonyos eseményekre csak ilyen ruhában engedik be a karaktereket.",
+      "value": "15 arany",
+      "weight": "6 font"
+    },
+    "Erszény": {
+      "name": "Erszény",
+      "aliases": [
+        "Pouch"
+      ],
+      "kind": "Felszerelés",
+      "description": "Az Erszény legfeljebb 6 fontot (2,7 kg) bír el kb. 5,6 literes térfogaton.",
+      "value": "5 ezüst",
+      "weight": "1 font"
+    },
+    "Fáklya": {
+      "name": "Fáklya",
+      "aliases": [
+        "Torch"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Fáklya 1 órán át ég, 6 méter sugarú körben Erős fényt adva. Ütésnél 1 Tűz sebzést okoz.",
+      "value": "1 réz",
+      "weight": "1 font"
+    },
+    "Fegyverkabát": {
+      "name": "Fegyverkabát",
+      "aliases": [
+        "Padded Armor"
+      ],
+      "kind": "Páncél",
+      "description": "Nehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "5 arany",
+      "weight": "8 font",
+      "type": "Könnyű Páncélzat",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 11 + Dex"
+    },
+    "Fegyverkabát Barding": {
+      "name": "Fegyverkabát Barding",
+      "aliases": [
+        "Padded Armor"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.\n\nNehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "20 arany",
+      "weight": "16 font",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 11 + Dex"
+    },
+    "Fejadag": {
+      "name": "Fejadag",
+      "aliases": [
+        "Rations"
+      ],
+      "kind": "Felszerelés",
+      "description": "Az Úti élelem tartósított étel (szárított hús, aszalt gyümölcs, magvak).",
+      "value": "5 ezüst",
+      "weight": "2 font"
+    },
+    "Félvért": {
+      "name": "Félvért",
+      "aliases": [
+        "Half Plate Armor"
+      ],
+      "kind": "Páncél",
+      "description": "Nehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "750 arany",
+      "weight": "40 font",
+      "type": "Közepes Páncélzat",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 15 + Dex (max 2)"
+    },
+    "Félvért Barding": {
+      "name": "Félvért Barding",
+      "aliases": [
+        "Half Plate Armor"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.\n\nNehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "3.000 arany",
+      "weight": "80 font",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 15 + Dex (max 2)"
+    },
+    "Feszítővas": {
+      "name": "Feszítővas",
+      "aliases": [
+        "Crowbar"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Feszítővas használata Előnyt ad azokra az Erő próbákra, ahol az emelőereje érvényesülhet.",
+      "value": "2 arany",
+      "weight": "5 font"
+    },
+    "Furulya": {
+      "name": "Furulya",
+      "aliases": [
+        "Flute"
+      ],
+      "kind": "Hangszer",
+      "description": "- Tulajdonság: Karizma - Használat: Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "2 arany",
+      "weight": "1 font"
+    },
+    "Fúvócső": {
+      "name": "Fúvócső",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nLőszer. A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nEgylövetű. Csak egy lőszert lőhetsz ki akciónként, bónusz akciónként vagy reakciónként, függetlenül attól, hány támadásod van egyébként (pl. Extra Támadás képesség esetén is csak egyet).\n\nMastery: Megzavarás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást Előnnyel dobhatod, a hatás a következő köröd kezdetéig tart.",
+      "value": "10 arany",
+      "weight": "1 font",
+      "type": "Katonai",
+      "properties": "1 Szúró, Egylövetű, Lőszer (Hatótáv 25/100 láb; Fúvócső-Tű), Mastery: Megzavarás",
+      "range": "25 / 100 láb"
+    },
+    "Fúvócső-tű": {
+      "name": "Fúvócső-tű",
+      "kind": "Felszerelés",
+      "description": "A fúvócső-tűket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nA tűket jellemzően Erszényben tárolják (külön megvásárolható).",
+      "value": "2 réz"
+    },
+    "Gerely": {
+      "name": "Gerely",
+      "kind": "Fegyver",
+      "description": "Eldobható. A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál.\n\nMastery: Lassítás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény Sebessége 10 lábbal csökken, a hatás a következő köröd kezdetéig tart. Ha a lényt többször is eltalálják olyan fegyverek, amiknek ez a tulajdonsága, a sebességcsökkenés nem haladhatja meg a 10 lábat.\n\n\\pagebreak",
+      "value": "5 ezüst",
+      "weight": "2 font",
+      "type": "Egyszerű",
+      "properties": "Eldobható (30/120 láb), Mastery: Lassítás",
+      "range": "30 / 120 láb",
+      "damage": "1d6 [Szúró]"
+    },
+    "Gléfe": {
+      "name": "Gléfe",
+      "kind": "Fegyver",
+      "description": "Nehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nHosszú. Egy Hosszú fegyverrel plusz 5 láb távolságba elérhet a támadásod, ez érvényes az Alkalmi támadásokra is.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Horzsolás. Ha ezzel a fegyverrel sikretelen a támadó dobásod, még akkor is a dobáshoz használt képesség módosítódnak megfelelő értéket sebzel. Ez a sebzés azonos típusú a fegyver sebzésével, és kizárólag a képesség módosító növelésével együtt növelhető.",
+      "value": "20 arany",
+      "weight": "6 font",
+      "type": "Katonai",
+      "properties": "Hosszú, Kétkezes, Nehéz, Mastery: Horzsolás",
+      "damage": "1d10 [Vágó]"
+    },
+    "Gluebomb": {
+      "name": "Gluebomb",
+      "kind": "Felszerelés",
+      "description": "This unique explosive can be primed and thrown up to 30 feet as an action. It explodes on impact. Creatures within 20 feet of it must make a DC 12 Dexterity saving throw or be restrained for 1 minute. A restrained creature can make a DC 12 Strength check as an action, escaping on a success.",
+      "properties": "range 30 ft."
+    },
+    "Gyertya": {
+      "name": "Gyertya",
+      "aliases": [
+        "Candle"
+      ],
+      "kind": "Felszerelés",
+      "description": "Egy meggyújtott Gyertya 1 órán át Erős fényt áraszt 1,5 méter sugarú körben, és további 1,5 méteren Gyenge fényt.",
+      "value": "1 réz"
+    },
+    "Gyógyító készlet": {
+      "name": "Gyógyító készlet",
+      "aliases": [
+        "Healer's Kit"
+      ],
+      "kind": "Eszköz",
+      "description": "A Gyógyító készlet tíz alkalmas. Használat akcióként stabilizálhatsz vele egy Eszméletlen, 0 Harcerő Pontos lényt Bölcsesség (Orvoslás) próba nélkül.",
+      "value": "5 arany",
+      "weight": "3 font"
+    },
+    "Gyógynövényes készlet": {
+      "name": "Gyógynövényes készlet",
+      "aliases": [
+        "Herbalism Kit"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Intelligencia - Használat: Egy növény azonosítása (NF 10) - Készítés: Ellenméreg, Gyertya, Gyógyító készlet, Gyógyital\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "5 arany",
+      "weight": "3 font"
+    },
+    "Gyűrűpáncél": {
+      "name": "Gyűrűpáncél",
+      "aliases": [
+        "Ring Mail"
+      ],
+      "kind": "Páncél",
+      "description": "Nehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "30 arany",
+      "weight": "40 font",
+      "type": "Nehéz Páncélzat",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 14"
+    },
+    "Gyűrűpáncél Barding": {
+      "name": "Gyűrűpáncél Barding",
+      "aliases": [
+        "Ring Mail"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.\n\nNehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "120 arany",
+      "weight": "80 font",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 14"
+    },
+    "Hálózsák": {
+      "name": "Hálózsák",
+      "aliases": [
+        "Bedroll"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Hálózsák egy Kicsi vagy Közepes lény számára biztosít fehelyet. Amíg benne fekszel, automatikusan sikeres mentődobást teszel az extrém hideg ellen.",
+      "value": "1 arany",
+      "weight": "7 font"
+    },
+    "Hamisító készlet": {
+      "name": "Hamisító készlet",
+      "aliases": [
+        "Forgery Kit"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Ügyesség - Használat: 10 vagy kevesebb szó utánzása valaki más kézírásával (NF 15), vagy egy viaszpecsét lemásolása (NF 20)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "15 arany",
+      "weight": "5 font"
+    },
+    "Harci kalapács": {
+      "name": "Harci kalapács",
+      "kind": "Fegyver",
+      "description": "Másfélkezes. A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz.\n\nMastery: Eltaszítás. Ha eltalálsz egy célpontot a fegyverrel, akkor 10 láb (3m) távolságra lökheted vele, feltéve hogy a lény legfeljebb Nagy termetű.",
+      "value": "15 arany",
+      "weight": "5 font",
+      "type": "Katonai",
+      "properties": "Másfélkezes (1d10), Mastery: Eltaszítás",
+      "damage": "1d8 [Zúzó]"
+    },
+    "Hátizsák": {
+      "name": "Hátizsák",
+      "aliases": [
+        "Backpack"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Hátizsák legfeljebb 30 font (13,6 kg) súlyt bír el kb. 28 literes térfogaton belül. Nyeregtáskaként is funkcionálhat.",
+      "value": "2 arany",
+      "weight": "5 font"
+    },
+    "Hosszúíj": {
+      "name": "Hosszúíj",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nLőszer. A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nNehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Lassítás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény Sebessége 10 lábbal csökken, a hatás a következő köröd kezdetéig tart. Ha a lényt többször is eltalálják olyan fegyverek, amiknek ez a tulajdonsága, a sebességcsökkenés nem haladhatja meg a 10 lábat.\n\n\\pagebreak",
+      "value": "50 arany",
+      "weight": "2 font",
+      "type": "Katonai",
+      "properties": "Kétkezes, Lőszer (Hatótáv 150/600 láb; Nyílvessző), Nehéz, Mastery: Lassítás",
+      "range": "150 / 600 láb",
+      "damage": "1d8 [Szúró]"
+    },
+    "Hosszúkard": {
+      "name": "Hosszúkard",
+      "kind": "Fegyver",
+      "description": "Másfélkezes. A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz.\n\nMastery: Elcsigázás. Ha eltalálsz egy célpontot a fegyverrel, akkor a lény Hátránnyal dobja a következő támadó dobását, a hatás a következő köröd kezdetéig tart.",
+      "value": "15 arany",
+      "weight": "3 font",
+      "type": "Katonai",
+      "properties": "Másfélkezes (1d10), Mastery: Elcsigázás",
+      "damage": "1d8 [Vágó]"
+    },
+    "Husáng": {
+      "name": "Husáng",
+      "kind": "Fegyver",
+      "description": "Könnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nMastery: Lassítás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény Sebessége 10 lábbal csökken, a hatás a következő köröd kezdetéig tart. Ha a lényt többször is eltalálják olyan fegyverek, amiknek ez a tulajdonsága, a sebességcsökkenés nem haladhatja meg a 10 lábat.",
+      "value": "1 ezüst",
+      "weight": "2 font",
+      "type": "Egyszerű",
+      "properties": "Könnyű, Mastery: Lassítás",
+      "damage": "1d4 [Zúzó]"
+    },
+    "Irhapáncél": {
+      "name": "Irhapáncél",
+      "kind": "Páncél",
+      "value": "10 arany",
+      "weight": "12 font",
+      "type": "Közepes Páncélzat",
+      "ac": "AC 12 + Dex (max 2)"
+    },
+    "Irhapáncél Barding": {
+      "name": "Irhapáncél Barding",
+      "aliases": [
+        "Hide Armor"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+      "value": "40 arany",
+      "weight": "24 font",
+      "ac": "AC 12 + Dex (max 2)"
+    },
+    "Jelmez": {
+      "name": "Jelmez",
+      "aliases": [
+        "Costume"
+      ],
+      "kind": "Felszerelés",
+      "description": "Amíg Jelmezt viselsz, Előnyöd van a megszemélyesítésre tett képességpróbákra.",
+      "value": "5 arany",
+      "weight": "4 font"
+    },
+    "Kalligráfus eszközök": {
+      "name": "Kalligráfus eszközök",
+      "aliases": [
+        "Calligrapher's Supplies"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Ügyesség - Használat: Szöveg írása lenyűgöző díszítésekkel, ami véd a hamisítás ellen (NF 15) - Készítés: Tinta, Varázstekercs\n\nA Kézműves szerszámok mindegyike egy-egy tárgy elkészítésére vagy egy mesterség űzésére összpontosít. Minden Kézműves szerszámtípushoz külön jártasság szükséges.\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára."
+    },
+    "Kártya pakli": {
+      "name": "Kártya pakli",
+      "aliases": [
+        "Playing Cards"
+      ],
+      "kind": "Felszerelés",
+      "description": "- Tulajdonság: Bölcsesség - Használat: Megállapítani, hogy valaki csal-e (NF 10), vagy megnyerni a játékot (NF 20)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "5 ezüst"
+    },
+    "Kétkezes csatabárd": {
+      "name": "Kétkezes csatabárd",
+      "kind": "Fegyver",
+      "description": "Nehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Kaszabolás. Körönként egyszer, sikeres közelharci találat esetén egy második célpontnak is sebzést okozol, ha az a hatótávodon belül van és az elsőtől legfeljebb 5 láb (1,5 méter) távolságra áll. A második sebzéshez a fegyver alapsebzését használd, de NE add hozzá a tulajdonság módosítódat (kivéve, ha negatív).",
+      "value": "30 arany",
+      "weight": "7 font",
+      "type": "Katonai",
+      "properties": "Kétkezes, Nehéz, Mastery: Kaszabolás",
+      "damage": "1d12 [Vágó]"
+    },
+    "Kétkezes husáng": {
+      "name": "Kétkezes husáng",
+      "kind": "Fegyver",
+      "description": "Kétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Eltaszítás. Ha eltalálsz egy célpontot a fegyverrel, akkor 10 láb (3m) távolságra lökheted vele, feltéve hogy a lény legfeljebb Nagy termetű.",
+      "value": "2 ezüst",
+      "weight": "10 font",
+      "type": "Egyszerű",
+      "properties": "Kétkezes, Mastery: Eltaszítás",
+      "damage": "1d8 [Zúzó]"
+    },
+    "Kézi számszeríj": {
+      "name": "Kézi számszeríj",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nLőszer. A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nKönnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nEgylövetű. Csak egy lőszert lőhetsz ki akciónként, bónusz akciónként vagy reakciónként, függetlenül attól, hány támadásod van egyébként (pl. Extra Támadás képesség esetén is csak egyet).\n\nMastery: Megzavarás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást Előnnyel dobhatod, a hatás a következő köröd kezdetéig tart.\n\n\\pagebreak",
+      "value": "75 arany",
+      "weight": "3 font",
+      "type": "Katonai",
+      "properties": "Egylövetű, Könnyű, Lőszer (Hatótáv 30/120 láb; Számszeríj Lövedék), Mastery: Megzavarás",
+      "range": "30 / 120 láb",
+      "damage": "1d6 [Szúró]"
+    },
+    "Kocka-játék": {
+      "name": "Kocka-játék",
+      "aliases": [
+        "Dice Set"
+      ],
+      "kind": "Felszerelés",
+      "description": "- Tulajdonság: Bölcsesség - Használat: Megállapítani, hogy valaki csal-e (NF 10), vagy megnyerni a játékot (NF 20)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "1 ezüst"
+    },
+    "Komponens erszény": {
+      "name": "Komponens erszény",
+      "aliases": [
+        "Component Pouch"
+      ],
+      "kind": "Varázslói fókusz",
+      "description": "Apró rekeszekbe rendezett alapanyagok, amelyek a legtöbb komponensigényű varázslathoz elegendőek.",
+      "value": "25 arany",
+      "weight": "2 font"
+    },
+    "Könnyű kalapács": {
+      "name": "Könnyű kalapács",
+      "kind": "Fegyver",
+      "description": "Könnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nEldobható. A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál.\n\nMastery: Karcolás. Amikor a Könnyű tulajdonságú fegyver extra támadását használod, nem kell bónusz akciót használnod hozzá, hanem a Támadás akció részeként teheted meg. Ezt körönként egyszer alkalmazhatod.",
+      "value": "2 arany",
+      "weight": "2 font",
+      "type": "Egyszerű",
+      "properties": "Eldobható (20/60 láb), Könnyű, Mastery: Karcolás",
+      "range": "20 / 60 láb",
+      "damage": "1d4 [Zúzó]"
+    },
+    "Könnyű számszeríj": {
+      "name": "Könnyű számszeríj",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nLőszer. A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nEgylövetű. Csak egy lőszert lőhetsz ki akciónként, bónusz akciónként vagy reakciónként, függetlenül attól, hány támadásod van egyébként (pl. Extra Támadás képesség esetén is csak egyet).\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Lassítás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény Sebessége 10 lábbal csökken, a hatás a következő köröd kezdetéig tart. Ha a lényt többször is eltalálják olyan fegyverek, amiknek ez a tulajdonsága, a sebességcsökkenés nem haladhatja meg a 10 lábat.",
+      "value": "25 arany",
+      "weight": "5 font",
+      "type": "Egyszerű",
+      "properties": "Egylövetű, Kétkezes, Lőszer (Hatótáv 80/320 láb; Számszeríj Lövedék), Mastery: Lassítás",
+      "range": "80 / 320 láb",
+      "damage": "1d8 [Szúró]"
+    },
+    "Könyv": {
+      "name": "Könyv",
+      "aliases": [
+        "Book"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Könyv tartalmazhat szépirodalmat vagy tényirodalmat. Ha egy hiteles szakkönyvben utánanézel egy témának, +5 bónuszt kapsz az adott témában tett Intelligencia (Arkána, Történelem, Természet vagy Vallás) próbáidra.",
+      "value": "25 arany",
+      "weight": "5 font"
+    },
+    "Köpeny": {
+      "name": "Köpeny",
+      "aliases": [
+        "Robe"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Köntös szertartási vagy hivatási öltözék. Bizonyos helyekre csak adott jelzésű köntösben léphetsz be.",
+      "value": "1 arany",
+      "weight": "4 font"
+    },
+    "Kopja": {
+      "name": "Kopja",
+      "kind": "Fegyver",
+      "description": "A Lance requires two hands to wield when you aren't mounted.\n\nNehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nHosszú. Egy Hosszú fegyverrel plusz 5 láb távolságba elérhet a támadásod, ez érvényes az Alkalmi támadásokra is.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Gáncsolás. Találat esetén megpróbálhatod elgáncsolni a célpontot. A célpontnak Állóképesség (Constitution) mentődobást kell tennie (NF = 8 + Jártasság Bónusz + Támadás módosítód). Sikertelen mentő esetén a lény Elterült állapotba kerül.",
+      "value": "10 arany",
+      "weight": "6 font",
+      "type": "Katonai",
+      "properties": "Hosszú, Kétkezes (kivéve lóháton), Nehéz, Mastery: Gáncsolás",
+      "damage": "1d10 [Szúró]"
+    },
+    "Kötél": {
+      "name": "Kötél",
+      "aliases": [
+        "Rope"
+      ],
+      "kind": "Felszerelés",
+      "description": "Használat akcióval csomót köthetsz a Kötélre (NF 10-es Kézügyesség). Elszakítás: NF 20-as Erő (Atlétika). Kiszabadulás: NF 15-ös Ügyesség (Akrobatika).",
+      "value": "1 arany",
+      "weight": "5 font"
+    },
+    "Lámpás": {
+      "name": "Lámpás",
+      "aliases": [
+        "Hooded Lantern"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Fedeles lámpás Erős fényt áraszt 9 méter sugarú körben, és további 9 méteren Gyenge fényt. Bónusz akcióként a fedelet leeresztve a fényt 1,5 méteres Gyenge fényre szűkítheted.",
+      "value": "5 arany",
+      "weight": "2 font"
+    },
+    "Láncing": {
+      "name": "Láncing",
+      "kind": "Páncél",
+      "value": "50 arany",
+      "weight": "20 font",
+      "type": "Közepes Páncélzat",
+      "ac": "AC 13 + Dex (max 2)"
+    },
+    "Láncing Barding": {
+      "name": "Láncing Barding",
+      "aliases": [
+        "Chain Shirt"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+      "value": "200 arany",
+      "weight": "40 font",
+      "ac": "AC 13 + Dex (max 2)"
+    },
+    "Láncos buzogány": {
+      "name": "Láncos buzogány",
+      "kind": "Fegyver",
+      "description": "Mastery: Elcsigázás. Ha eltalálsz egy célpontot a fegyverrel, akkor a lény Hátránnyal dobja a következő támadó dobását, a hatás a következő köröd kezdetéig tart.\n\n\\pagebreak",
+      "value": "10 arany",
+      "weight": "2 font",
+      "type": "Katonai",
+      "properties": "Mastery: Elcsigázás",
+      "damage": "1d8 [Zúzó]"
+    },
+    "Lándzsa": {
+      "name": "Lándzsa",
+      "kind": "Fegyver",
+      "description": "Eldobható. A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál.\n\nMásfélkezes. A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz.\n\nMastery: Elcsigázás. Ha eltalálsz egy célpontot a fegyverrel, akkor a lény Hátránnyal dobja a következő támadó dobását, a hatás a következő köröd kezdetéig tart.",
+      "value": "1 arany",
+      "weight": "3 font",
+      "type": "Egyszerű",
+      "properties": "Eldobható (20/60 láb), Másfélkezes (1d8), Mastery: Elcsigázás",
+      "range": "20 / 60 láb",
+      "damage": "1d6 [Szúró]"
+    },
+    "Lant": {
+      "name": "Lant",
+      "aliases": [
+        "Lute"
+      ],
+      "kind": "Hangszer",
+      "description": "- Tulajdonság: Karizma - Használat: Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "35 arany",
+      "weight": "2 font"
+    },
+    "Lemezvért": {
+      "name": "Lemezvért",
+      "aliases": [
+        "Plate Armor"
+      ],
+      "kind": "Páncél",
+      "description": "Nehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.\n\nNehéz páncélzat. Ha a viselő Erő tulajdonsága kisebb, mint 15, akkor a sebessége 10 lábbal csökken.",
+      "value": "1.500 arany",
+      "weight": "65 font",
+      "type": "Nehéz Páncélzat",
+      "properties": "Nehezített lopakodás, Nehéz páncélzat (15)",
+      "ac": "AC 18"
+    },
+    "Lemezvért Barding": {
+      "name": "Lemezvért Barding",
+      "aliases": [
+        "Plate Armor"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.\n\nNehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.\n\nNehéz páncélzat. Ha a viselő Erő tulajdonsága kisebb, mint 15, akkor a sebessége 10 lábbal csökken.",
+      "value": "6.000 arany",
+      "weight": "130 font",
+      "properties": "Nehezített lopakodás, Nehéz páncélzat (15)",
+      "ac": "AC 18"
+    },
+    "Mellvért": {
+      "name": "Mellvért",
+      "kind": "Páncél",
+      "value": "400 arany",
+      "weight": "20 font",
+      "type": "Közepes Páncélzat",
+      "ac": "AC 14 + Dex (max 2)"
+    },
+    "Mellvért Barding": {
+      "name": "Mellvért Barding",
+      "aliases": [
+        "Breastplate"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+      "value": "1.600 arany",
+      "weight": "40 font",
+      "ac": "AC 14 + Dex (max 2)"
+    },
+    "Navigációs eszközök": {
+      "name": "Navigációs eszközök",
+      "aliases": [
+        "Navigator's Tools"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Bölcsesség - Használat: Útvonal tervezése (NF 10), vagy helyzet meghatározása csillagok alapján (NF 15)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "25 arany",
+      "weight": "2 font"
+    },
+    "Nehéz számszeríj": {
+      "name": "Nehéz számszeríj",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nLőszer. A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nNehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nEgylövetű. Csak egy lőszert lőhetsz ki akciónként, bónusz akciónként vagy reakciónként, függetlenül attól, hány támadásod van egyébként (pl. Extra Támadás képesség esetén is csak egyet).\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Eltaszítás. Ha eltalálsz egy célpontot a fegyverrel, akkor 10 láb (3m) távolságra lökheted vele, feltéve hogy a lény legfeljebb Nagy termetű.",
+      "value": "50 arany",
+      "weight": "18 font",
+      "type": "Katonai",
+      "properties": "Egylövetű, Kétkezes, Lőszer (Hatótáv 100/400 láb; Számszeríj Lövedék), Nehéz, Mastery: Eltaszítás",
+      "range": "100 / 400 láb",
+      "damage": "1d10 [Szúró]"
+    },
+    "Nyílvessző": {
+      "name": "Nyílvessző",
+      "aliases": [
+        "Arrow"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Nyílvesszőket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nA nyílvesszőket jellemzően Tegezben tárolják (külön megvásárolható).",
+      "value": "5 réz"
+    },
+    "Nyílvesszők (20)": {
+      "name": "Nyílvesszők (20)",
+      "aliases": [
+        "Arrows (20)"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Nyílvesszőket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nA nyílvesszőket jellemzően Tegezben tárolják (külön megvásárolható).",
+      "value": "1 arany",
+      "weight": "1 font"
+    },
+    "Olajos flaska": {
+      "name": "Olajos flaska",
+      "aliases": [
+        "Oil"
+      ],
+      "kind": "Felszerelés",
+      "description": "Lény leöntése Olajjal: Támadás akció helyett dobhatod 6 méterig. A célpontnak Ügyesség mentőt kell tennie (NF = 8 + módosítók), különben olajos lesz. Égéskor plusz 5 Tűz sebzést kap.\n\nTerület leöntése: Használat akcióval egy 1,5 méteres négyzetet önthetsz le. Meggyújtva 2 körig ég, és 5 Tűz sebzést okoz.\n\nÜzemanyag: Egy üveg olaj 6 órán át ég a lámpásokban.",
+      "value": "1 ezüst",
+      "weight": "1 font"
+    },
+    "Oloore Root Teabag": {
+      "name": "Oloore Root Teabag",
+      "kind": "Felszerelés",
+      "description": "This root is typically sold in teabags for 100 gp per dose. It was originally a ritualistic tool used by the followers of many gods, but now sees more recreational use. Oracles used it to enhance their divinations, for it helped them leave their physical bodies behind and become closer to gods and spirits. Drinking tea brewed from the root causes intense hallucinations, which feel like they have granted perfect clarity of mind to the imbiber.\n\nAfter drinking oloore tea as an action, you must succeed on a DC 19 Constitution saving throw or experience vivid hallucinations for 1d4 hours. During this time, you have disadvantage on attack rolls and ability checks. If you fail the saving throw by 10 or more, your hallucinations become horrific visions and you gain a level of exhaustion. On a success, you gain preternatural clarity, allowing you to cast the scrying spell once within the next 1d4 hours.\n\nThis item is an illegal drug; see Illegal Drugs for more information.\n\n\\pagebreak"
+    },
+    "Ostor": {
+      "name": "Ostor",
+      "kind": "Fegyver",
+      "description": "Kecses. Amikor Kecses fegyverrel támadsz, választhatsz az Erő vagy Ügyesség módosítód között a támadó- és sebzésdobásokhoz. Mindkét dobáshoz ugyanazt a módosítót kell használnod.\n\nHosszú. Egy Hosszú fegyverrel plusz 5 láb távolságba elérhet a támadásod, ez érvényes az Alkalmi támadásokra is.\n\nMastery: Lassítás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény Sebessége 10 lábbal csökken, a hatás a következő köröd kezdetéig tart. Ha a lényt többször is eltalálják olyan fegyverek, amiknek ez a tulajdonsága, a sebességcsökkenés nem haladhatja meg a 10 lábat.",
+      "value": "2 arany",
+      "weight": "3 font",
+      "type": "Katonai",
+      "properties": "Hosszú, Kecses, Mastery: Lassítás",
+      "damage": "1d4 [Vágó]"
+    },
+    "Pajzs": {
+      "name": "Pajzs",
+      "kind": "Páncél",
+      "value": "10 arany",
+      "weight": "6 font",
+      "ac": "AC +2"
+    },
+    "Pallos": {
+      "name": "Pallos",
+      "kind": "Fegyver",
+      "description": "Nehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Horzsolás. Ha ezzel a fegyverrel sikretelen a támadó dobásod, még akkor is a dobáshoz használt képesség módosítódnak megfelelő értéket sebzel. Ez a sebzés azonos típusú a fegyver sebzésével, és kizárólag a képesség módosító növelésével együtt növelhető.",
+      "value": "50 arany",
+      "weight": "6 font",
+      "type": "Katonai",
+      "properties": "Kétkezes, Nehéz, Mastery: Horzsolás",
+      "damage": "2d6 [Vágó]"
+    },
+    "Pánsíp": {
+      "name": "Pánsíp",
+      "aliases": [
+        "Pan Flute"
+      ],
+      "kind": "Hangszer",
+      "description": "- Tulajdonság: Karizma - Használat: Ismert dallam lejátszása (NF 10), vagy egy dal improvizálása (NF 15)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.\n\n\\pagebreak",
+      "value": "12 arany",
+      "weight": "2 font"
+    },
+    "Parfüm": {
+      "name": "Parfüm",
+      "aliases": [
+        "Perfume"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Parfüm 4 unciás (kb. 1,2 dl) fiolában van. 1 órán át Előnyt ad a Karizma (Meggyőzés) próbákra 1,5 méteren belüli közömbös humanoidoknál.",
+      "value": "5 arany"
+    },
+    "Parittya": {
+      "name": "Parittya",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nLőszer. A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nMastery: Lassítás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény Sebessége 10 lábbal csökken, a hatás a következő köröd kezdetéig tart. Ha a lényt többször is eltalálják olyan fegyverek, amiknek ez a tulajdonsága, a sebességcsökkenés nem haladhatja meg a 10 lábat.",
+      "value": "1 ezüst",
+      "type": "Egyszerű",
+      "properties": "Lőszer (Hatótáv 30/120 láb; Sling Bullet), Mastery: Lassítás",
+      "range": "30 / 120 láb",
+      "damage": "1d4 [Zúzó]"
+    },
+    "Penna": {
+      "name": "Penna",
+      "aliases": [
+        "Ink Pen"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Toll írásra vagy rajzolásra szolgál (tintával együtt).",
+      "value": "2 réz"
+    },
+    "Pergamen": {
+      "name": "Pergamen",
+      "aliases": [
+        "Parchment"
+      ],
+      "kind": "Felszerelés",
+      "description": "Egy ív Pergamenre kb. 250 szó fér rá.",
+      "value": "1 ezüst"
+    },
+    "Pika": {
+      "name": "Pika",
+      "kind": "Fegyver",
+      "description": "Nehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nHosszú. Egy Hosszú fegyverrel plusz 5 láb távolságba elérhet a támadásod, ez érvényes az Alkalmi támadásokra is.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Eltaszítás. Ha eltalálsz egy célpontot a fegyverrel, akkor 10 láb (3m) távolságra lökheted vele, feltéve hogy a lény legfeljebb Nagy termetű.",
+      "value": "5 arany",
+      "weight": "18 font",
+      "type": "Katonai",
+      "properties": "Hosszú, Kétkezes, Nehéz, Mastery: Eltaszítás",
+      "damage": "1d10 [Szúró]"
+    },
+    "Pikkelypáncél": {
+      "name": "Pikkelypáncél",
+      "aliases": [
+        "Scale Mail"
+      ],
+      "kind": "Páncél",
+      "description": "Nehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "50 arany",
+      "weight": "45 font",
+      "type": "Közepes Páncélzat",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 14 + Dex (max 2)"
+    },
+    "Pikkelypáncél Barding": {
+      "name": "Pikkelypáncél Barding",
+      "aliases": [
+        "Scale Mail"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.\n\nNehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.",
+      "value": "200 arany",
+      "weight": "90 font",
+      "properties": "Nehezített lopakodás",
+      "ac": "AC 14 + Dex (max 2)"
+    },
+    "Plainscow": {
+      "name": "Plainscow",
+      "kind": "Felszerelés",
+      "description": "The hulking plainscow is an exceptionally sturdy beast of burden native to the Dividing Plains and used by the people of central Tal'Dorei for centuries. Though many wild herds still roam the plains, domesticated plainscows are more common, used as mounts, pack animals, and livestock. Plainscows are unusually empathetic for beasts, and often bond with a rider for life. They stand 6 feet tall, weigh about two tons, and live for 70 years.\n\nMarket Value. Plainscows can be bought in Westruun for 200 gp. A plainscow has a carrying capacity of 1,500 pounds.",
+      "properties": "Speed: 40, Carrying Capacity: 1500 lb."
+    },
+    "Pöröly": {
+      "name": "Pöröly",
+      "kind": "Fegyver",
+      "description": "Nehéz. Hátrányod van a támadódobásokra egy Nehéz fegyverrel, ha Közelharci fegyver esetén az Erőd nem éri el a 13-at, vagy Távolsági fegyver esetén az Ügyességed nem éri el a 13-at.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Gáncsolás. Találat esetén megpróbálhatod elgáncsolni a célpontot. A célpontnak Állóképesség (Constitution) mentődobást kell tennie (NF = 8 + Jártasság Bónusz + Támadás módosítód). Sikertelen mentő esetén a lény Elterült állapotba kerül.",
+      "value": "10 arany",
+      "weight": "10 font",
+      "type": "Katonai",
+      "properties": "Kétkezes, Nehéz, Mastery: Gáncsolás",
+      "damage": "2d6 [Zúzó]"
+    },
+    "Rövidíj": {
+      "name": "Rövidíj",
+      "kind": "Fegyver",
+      "description": "Távolsági. Egy távolsági fegyver hatótávja zárójelben látható a Lőszer vagy Dobás tulajdonság után. A hatótáv két számot tartalmaz, az első a fegyver normál hatótávolsága lábban, a második a maximális hatótávolság. Amikor egy célpontot a normál hatótávolságon túl támadsz, Hátrányod van a támadási dobásodon. Nem támadhatsz egy célpontot a maximális hatótávolságon túl.\n\nLőszer. A Lőszer tulajdonsággal rendelkező fegyverekkel távolsági támadást csak a megfelelő lőszer birtokában hajthatsz végre. A lőszer típusát a fegyver határozza meg. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nKétkezes. Egy Kétkezes fegyver használatához mindkét kezedre szükséged van.\n\nMastery: Megzavarás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást Előnnyel dobhatod, a hatás a következő köröd kezdetéig tart.",
+      "value": "25 arany",
+      "weight": "2 font",
+      "type": "Egyszerű",
+      "properties": "Kétkezes, Lőszer (Hatótáv 80/320 láb; Nyílvessző), Mastery: Megzavarás",
+      "range": "80 / 320 láb",
+      "damage": "1d6 [Szúró]"
+    },
+    "Rövidkard": {
+      "name": "Rövidkard",
+      "kind": "Fegyver",
+      "description": "Kecses. Amikor Kecses fegyverrel támadsz, választhatsz az Erő vagy Ügyesség módosítód között a támadó- és sebzésdobásokhoz. Mindkét dobáshoz ugyanazt a módosítót kell használnod.\n\nKönnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nMastery: Megzavarás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást Előnnyel dobhatod, a hatás a következő köröd kezdetéig tart.",
+      "value": "10 arany",
+      "weight": "2 font",
+      "type": "Katonai",
+      "properties": "Kecses, Könnyű, Mastery: Megzavarás",
+      "damage": "1d6 [Szúró]"
+    },
+    "Sárkánysakk": {
+      "name": "Sárkánysakk",
+      "aliases": [
+        "Dragonchess Set"
+      ],
+      "kind": "Felszerelés",
+      "description": "- Tulajdonság: Bölcsesség - Használat: Megállapítani, hogy valaki csal-e (NF 10), vagy megnyerni a játékot (NF 20)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "1 arany"
+    },
+    "Sarló": {
+      "name": "Sarló",
+      "kind": "Fegyver",
+      "description": "Könnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nMastery: Karcolás. Amikor a Könnyű tulajdonságú fegyver extra támadását használod, nem kell bónusz akciót használnod hozzá, hanem a Támadás akció részeként teheted meg. Ezt körönként egyszer alkalmazhatod.",
+      "value": "1 arany",
+      "weight": "2 font",
+      "type": "Egyszerű",
+      "properties": "Könnyű, Mastery: Karcolás",
+      "damage": "1d4 [Vágó]"
+    },
+    "Sátor": {
+      "name": "Sátor",
+      "aliases": [
+        "Tent"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Sátorban két Kicsi vagy Közepes lény fér el.",
+      "value": "2 arany",
+      "weight": "20 font"
+    },
+    "Skyship": {
+      "name": "Skyship",
+      "kind": "Felszerelés",
+      "description": "Purchasing a skyship costs 100,000 gp, and requires a personal connection with the Alsfarin Union in Ank'Harel. A skyship travels at a top speed of 10 miles per hour, can carry total cargo of 10 tons, and requires a crew of six to ten humanoids to operate at peak performance. Most skyships have maximum accommodations for up to 30 passengers. Most skyships only travel between existing skyports (see \"Emon Skyport,\"), and charge a fee of 2 gp per mile for a passenger ticket. Chartering a skyship to a destination off the standard sky routes costs 15 gp per mile, if the captain is available and willing to undertake the journey. Shipping cargo costs 1 gp per mile per 100 pounds of cargo along normal sky routes, and twice that to other destinations.\n\nCrew. A ship needs a crew of skilled hirelings to function. As per the Player's Handbook, one skilled hireling costs at least 2 gp per day. The minimum number of skilled hirelings needed to crew a ship depends on the type of vessel.\n\nYou can track the loyalty of individual crew members or the crew as a whole using the optional loyalty rules in chapter 4 of the Dungeon Master's Guide. If at least half the crew becomes disloyal during a voyage, the crew turns hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return.\n\nPassengers. This indicates the number of Small and Medium passengers the ship can accommodate.\n\nAccommodations consist of shared hammocks in tight quarters. A ship outfitted with private accommodations can carry one-fifth as many passengers.\n\nA passenger is usually expected to pay 5 sp per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 gp per day.\n\nCargo. The maximum tonnage the ship can carry.\n\nDamage Threshold. If a ship has a Damage Threshold, it has immunity to all damage unless it takes an amount of damage equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the damage threshold is considered superficial and doesn't reduce the ship's hit points.\n\nShip Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 hit point of damage requires 1 day and costs 20 gp for materials and labor.\n\n\\pagebreak",
+      "properties": "Speed: 10 mph, Carrying Capacity: 10 tons cargo, 30 passengers, Personal Travel Cost: 2 gp per mile per passenger, Shipping Cost: 1 gp per 100 pounds per mile, Crew 6-10"
+    },
+    "Sodronypáncél": {
+      "name": "Sodronypáncél",
+      "aliases": [
+        "Chain Mail"
+      ],
+      "kind": "Páncél",
+      "description": "Nehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.\n\nNehéz páncélzat. Ha a viselő Erő tulajdonsága kisebb, mint 13, akkor a sebessége 10 lábbal csökken.",
+      "value": "75 arany",
+      "weight": "55 font",
+      "type": "Nehéz Páncélzat",
+      "properties": "Nehezített lopakodás, Nehéz páncélzat (13)",
+      "ac": "AC 16"
+    },
+    "Sodronypáncél Barding": {
+      "name": "Sodronypáncél Barding",
+      "aliases": [
+        "Chain Mail"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.\n\nNehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.\n\nNehéz páncélzat. Ha a viselő Erő tulajdonsága kisebb, mint 13, akkor a sebessége 10 lábbal csökken.",
+      "value": "300 arany",
+      "weight": "110 font",
+      "properties": "Nehezített lopakodás, Nehéz páncélzat (13)",
+      "ac": "AC 16"
+    },
+    "Stink Bomb": {
+      "name": "Stink Bomb",
+      "kind": "Felszerelés",
+      "description": "This smelly explosive can be primed and thrown up to 30 feet as an action. It explodes at the start of your next turn. Creatures within 20 feet of it must make a DC 12 Constitution saving throw or be poisoned for 1 minute. A creature can repeat this save at the end of each of its turns, ending the effect on itself on a success.",
+      "properties": "range 30 ft."
+    },
+    "Szablya": {
+      "name": "Szablya",
+      "kind": "Fegyver",
+      "description": "Kecses. Amikor Kecses fegyverrel támadsz, választhatsz az Erő vagy Ügyesség módosítód között a támadó- és sebzésdobásokhoz. Mindkét dobáshoz ugyanazt a módosítót kell használnod.\n\nKönnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nMastery: Karcolás. Amikor a Könnyű tulajdonságú fegyver extra támadását használod, nem kell bónusz akciót használnod hozzá, hanem a Támadás akció részeként teheted meg. Ezt körönként egyszer alkalmazhatod.",
+      "value": "25 arany",
+      "weight": "3 font",
+      "type": "Katonai",
+      "properties": "Kecses, Könnyű, Mastery: Karcolás",
+      "damage": "1d6 [Vágó]"
+    },
+    "Szalagpáncél": {
+      "name": "Szalagpáncél",
+      "aliases": [
+        "Splint Armor"
+      ],
+      "kind": "Páncél",
+      "description": "Nehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.\n\nNehéz páncélzat. Ha a viselő Erő tulajdonsága kisebb, mint 15, akkor a sebessége 10 lábbal csökken.",
+      "value": "200 arany",
+      "weight": "60 font",
+      "type": "Nehéz Páncélzat",
+      "properties": "Nehezített lopakodás, Nehéz páncélzat (15)",
+      "ac": "AC 17"
+    },
+    "Szalagpáncél Barding": {
+      "name": "Szalagpáncél Barding",
+      "aliases": [
+        "Splint Armor"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.\n\nNehezített lopakodás. A viselője Hátránnyal dob minden Ügyesség (Lopakodás) próbát.\n\nNehéz páncélzat. Ha a viselő Erő tulajdonsága kisebb, mint 15, akkor a sebessége 10 lábbal csökken.",
+      "value": "800 arany",
+      "weight": "120 font",
+      "properties": "Nehezített lopakodás, Nehéz páncélzat (15)",
+      "ac": "AC 17"
+    },
+    "Számszeríj lövedék": {
+      "name": "Számszeríj lövedék",
+      "aliases": [
+        "Bolt"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Számszeríj lövedékeket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nA vesszőket jellemzően Számszeríj-tegezben tárolják (külön megvásárolható).\n\n\\pagebreak",
+      "value": "5 réz"
+    },
+    "Számszeríj lövedékek (20)": {
+      "name": "Számszeríj lövedékek (20)",
+      "aliases": [
+        "Bolts (20)"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Számszeríj lövedékeket olyan fegyverekhez használják, amelyek rendelkeznek a Lőszer tulajdonsággal távolsági támadás végrehajtásához. Minden alkalommal, amikor támadsz a fegyverrel, elhasználsz egy darab lőszert. A lőszer elővétele a tegezből, tokból vagy más tárolóból a támadás része (szükséged van egy szabad kézre az egykezes fegyver betöltéséhez). A harc végén a csatatér átkutatásával egy perc alatt visszaszerezheted az elhasznált lőszer felét.\n\nA vesszőket jellemzően Számszeríj-tegezben tárolják (külön megvásárolható).",
+      "value": "1 arany"
+    },
+    "Szegecselt bőrpáncél": {
+      "name": "Szegecselt bőrpáncél",
+      "kind": "Páncél",
+      "value": "45 arany",
+      "weight": "13 font",
+      "type": "Könnyű Páncélzat",
+      "ac": "AC 12 + Dex"
+    },
+    "Szegecselt bőrpáncél Barding": {
+      "name": "Szegecselt bőrpáncél Barding",
+      "aliases": [
+        "Studded Leather Armor"
+      ],
+      "kind": "Felszerelés",
+      "description": "Barding is armor designed to protect an animal's head, neck, chest, and body. Any type of armor shown on the Armor table in this chapter can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.",
+      "value": "180 arany",
+      "weight": "26 font",
+      "ac": "AC 12 + Dex"
+    },
+    "Szentelt víz": {
+      "name": "Szentelt víz",
+      "aliases": [
+        "Holy Water"
+      ],
+      "kind": "Felszerelés",
+      "description": "Támadás akció során az egyik támadást helyettesítheted Szenteltvíz dobásával egy 6 méteren belüli lényre. A célpontnak Ügyesség mentődobást kell tennie (NF = 8 + Ügyesség mód. + Jártasság bónusz), különben 2d8 sugárzó sebzést kap, ha Alvilági vagy Élőhalott.",
+      "value": "25 arany",
+      "weight": "1 font"
+    },
+    "Szigony": {
+      "name": "Szigony",
+      "kind": "Fegyver",
+      "description": "Eldobható. A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál.\n\nMásfélkezes. A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz.\n\nMastery: Gáncsolás. Találat esetén megpróbálhatod elgáncsolni a célpontot. A célpontnak Állóképesség (Constitution) mentődobást kell tennie (NF = 8 + Jártasság Bónusz + Támadás módosítód). Sikertelen mentő esetén a lény Elterült állapotba kerül.",
+      "value": "5 arany",
+      "weight": "4 font",
+      "type": "Katonai",
+      "properties": "Eldobható (20/60 láb), Másfélkezes (1d10), Mastery: Gáncsolás",
+      "range": "20 / 60 láb",
+      "damage": "1d8 [Szúró]"
+    },
+    "Takaró": {
+      "name": "Takaró",
+      "aliases": [
+        "Blanket"
+      ],
+      "kind": "Felszerelés",
+      "description": "Amíg Takaróba vagy bugyolálva, Előnyöd van az extrém hideg elleni mentődobásokra.",
+      "value": "5 ezüst",
+      "weight": "3 font"
+    },
+    "Tegez": {
+      "name": "Tegez",
+      "aliases": [
+        "Quiver"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Tegez 20 nyílvesszőt tárol.",
+      "value": "1 arany",
+      "weight": "1 font"
+    },
+    "Térképész készlet": {
+      "name": "Térképész készlet",
+      "aliases": [
+        "Cartographer's Tools"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Bölcsesség - Használat: Kis terület térképének vázlatos elkészítése (NF 15) - Készítés: Térkép\n\nA Kézműves szerszámok mindegyike egy-egy tárgy elkészítésére vagy egy mesterség űzésére összpontosít. Minden Kézműves szerszámtípushoz külön jártasság szükséges.\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "15 arany",
+      "weight": "6 font"
+    },
+    "Tinta": {
+      "name": "Tinta",
+      "aliases": [
+        "Ink"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Tinta egy unciás (kb. 0,3 dl) üvegben van, ami kb. 500 oldalnyi íráshoz elég.",
+      "value": "10 arany"
+    },
+    "Tolvaj szerszám": {
+      "name": "Tolvaj szerszám",
+      "aliases": [
+        "Thieves' Tools"
+      ],
+      "kind": "Eszköz",
+      "description": "- Tulajdonság: Ügyesség - Használat: Zár feltörése (NF 15), vagy csapda hatástalanítása (NF 15)\n\nHa jártas vagy egy eszköz használatában, add hozzá a Jártasság bónuszodat minden olyan tulajdonságpróbához, amely az eszközt használja. Ha jártas vagy egy olyan képzettségben is, amelyet a próbához használsz, Előnyöd van a próbára.",
+      "value": "25 arany",
+      "weight": "1 font"
+    },
+    "Tőr": {
+      "name": "Tőr",
+      "kind": "Fegyver",
+      "description": "Kecses. Amikor Kecses fegyverrel támadsz, választhatsz az Erő vagy Ügyesség módosítód között a támadó- és sebzésdobásokhoz. Mindkét dobáshoz ugyanazt a módosítót kell használnod.\n\nKönnyű. Ha a Támadás akcióban Könnyű fegyverrel támadsz, tehetsz egy extra támadást Bónusz akcióként ugyanabban a körben. Az extra támadást egy másik Könnyű fegyverrel kell végrehajtanod és a bónusz támadáshoz nem adhatod hozzá a tulajdonság módosítódat a sebzéshez (kivéve, ha az negatív).\n\nEldobható. A fegyver eldobható távolsági támadáshoz, az elővétele a támadás részének tekinthető. Ha a fegyver közelharci, ugyanazt a tulajdonság módosítót (pl. Erő) használd a dobáshoz és sebzéshez, amit közelharcban használnál.\n\nMastery: Karcolás. Amikor a Könnyű tulajdonságú fegyver extra támadását használod, nem kell bónusz akciót használnod hozzá, hanem a Támadás akció részeként teheted meg. Ezt körönként egyszer alkalmazhatod.",
+      "value": "2 arany",
+      "weight": "1 font",
+      "type": "Egyszerű",
+      "properties": "Eldobható (20/60 láb), Kecses, Könnyű, Mastery: Karcolás",
+      "range": "20 / 60 láb",
+      "damage": "1d4 [Szúró]"
+    },
+    "Tükör": {
+      "name": "Tükör",
+      "aliases": [
+        "Mirror"
+      ],
+      "kind": "Felszerelés",
+      "description": "A kézi acél Tükör tisztálkodáshoz, sarkok mögé nézéshez vagy fényjelek küldéséhez hasznos.",
+      "value": "5 arany"
+    },
+    "Tüskés buzogány": {
+      "name": "Tüskés buzogány",
+      "kind": "Fegyver",
+      "description": "Mastery: Elcsigázás. Ha eltalálsz egy célpontot a fegyverrel, akkor a lény Hátránnyal dobja a következő támadó dobását, a hatás a következő köröd kezdetéig tart.",
+      "value": "15 arany",
+      "weight": "4 font",
+      "type": "Katonai",
+      "properties": "Mastery: Elcsigázás",
+      "damage": "1d8 [Szúró]"
+    },
+    "Tűzszerszám": {
+      "name": "Tűzszerszám",
+      "aliases": [
+        "Tinderbox"
+      ],
+      "kind": "Eszköz",
+      "description": "A Tűzszerszám tűzgyújtásra szolgál. Fényforrás meggyújtása vele Bónusz akció.",
+      "value": "5 ezüst",
+      "weight": "1 font"
+    },
+    "Utazó ruha": {
+      "name": "Utazó ruha",
+      "aliases": [
+        "Traveler's Clothes"
+      ],
+      "kind": "Felszerelés",
+      "description": "Az Utazóruha strapabíró öltözet minden környezetbe.",
+      "value": "2 arany",
+      "weight": "4 font"
+    },
+    "Utazóköpeny": {
+      "name": "Utazóköpeny",
+      "aliases": [
+        "Travel Cloak"
+      ],
+      "kind": "Felszerelés",
+      "description": "Sötét, kapucnis köpeny, amely védi viselőjét a hidegtől és segít beleolvadni a városi éjszakába.",
+      "value": "1 arany",
+      "weight": "4 font"
+    },
+    "Vándorbot": {
+      "name": "Vándorbot",
+      "kind": "Fegyver",
+      "description": "Másfélkezes. A fegyver egy vagy két kézzel is használható. A tulajdonság mellett zárójelben egy sebzésérték látható (pl. 1d10). A fegyver ezt a (magasabb) sebzést okozza, ha két kézzel használják közelharci támadáshoz.\n\nMastery: Gáncsolás. Találat esetén megpróbálhatod elgáncsolni a célpontot. A célpontnak Állóképesség (Constitution) mentődobást kell tennie (NF = 8 + Jártasság Bónusz + Támadás módosítód). Sikertelen mentő esetén a lény Elterült állapotba kerül.\n\n\\pagebreak",
+      "value": "2 ezüst",
+      "weight": "4 font",
+      "type": "Egyszerű",
+      "properties": "Másfélkezes (1d8), Mastery: Gáncsolás",
+      "damage": "1d6 [Zúzó]"
+    },
+    "Vasedény": {
+      "name": "Vasedény",
+      "aliases": [
+        "Iron Pot"
+      ],
+      "kind": "Felszerelés",
+      "description": "Egy Vasfazék kb. 3,8 liter folyadékot bír el.",
+      "value": "2 arany",
+      "weight": "10 font"
+    },
+    "Vassúlyom": {
+      "name": "Vassúlyom",
+      "aliases": [
+        "Caltrops"
+      ],
+      "kind": "Felszerelés",
+      "description": "Használat akcióként sulyomcsapdákat szórhatsz ki tőled 1,5 méteren belül egy 1,5 méteres négyzetre. Minden lénynek, amely egy körben először lép ide, sikeres NF 15-ös Ügyesség mentődobást kell tennie, különben 1 szúró sebzést kap, és a Sebessége 0-ra csökken a következő köre kezdetéig. Összeszedése 10 perc.",
+      "value": "1 arany",
+      "weight": "2 font"
+    },
+    "Vívótőr": {
+      "name": "Vívótőr",
+      "kind": "Fegyver",
+      "description": "Kecses. Amikor Kecses fegyverrel támadsz, választhatsz az Erő vagy Ügyesség módosítód között a támadó- és sebzésdobásokhoz. Mindkét dobáshoz ugyanazt a módosítót kell használnod.\n\nMastery: Megzavarás. Amikor a fegyverrel eltelálsz és megsebzel egy lényt, akkor a lény elleni következő támadó dobást Előnnyel dobhatod, a hatás a következő köröd kezdetéig tart.",
+      "value": "25 arany",
+      "weight": "2 font",
+      "type": "Katonai",
+      "properties": "Kecses, Mastery: Megzavarás",
+      "damage": "1d8 [Szúró]"
+    },
+    "Vizestömlő": {
+      "name": "Vizestömlő",
+      "aliases": [
+        "Waterskin"
+      ],
+      "kind": "Felszerelés",
+      "description": "A Kulacs kb. 1,9 liter folyadékot tárol.",
+      "value": "2 ezüst",
+      "weight": "5 font"
+    }
+  },
+  "lookup": {
+    "acs szerszamok": "Ács Szerszámok",
+    "alabard": "Alabárd",
+    "arrow": "Nyílvessző",
+    "arrows 20": "Nyílvesszők (20)",
+    "aso": "Ásó",
+    "backpack": "Hátizsák",
+    "ball bearings": "Csapágygolyók",
+    "balta": "Balta",
+    "bedroll": "Hálózsák",
+    "bell": "Csengő",
+    "bilincs": "Bilincs",
+    "blanket": "Takaró",
+    "bolt": "Számszeríj lövedék",
+    "bolts 20": "Számszeríj lövedékek (20)",
+    "book": "Könyv",
+    "borvert": "Bőrvért",
+    "borvert barding": "Bőrvért Barding",
+    "breastplate": "Mellvért Barding",
+    "buzogany": "Buzogány",
+    "calligrapher s supplies": "Kalligráfus eszközök",
+    "caltrops": "Vassúlyom",
+    "candle": "Gyertya",
+    "carpenter s tools": "Ács Szerszámok",
+    "cartographer s tools": "Térképész készlet",
+    "chain mail": "Sodronypáncél",
+    "chain shirt": "Láncing Barding",
+    "component pouch": "Komponens erszény",
+    "costume": "Jelmez",
+    "crowbar": "Feszítővas",
+    "csakanyfokos": "Csákányfokos",
+    "csapagygolyok": "Csapágygolyók",
+    "csatabard": "Csatabárd",
+    "csengo": "Csengő",
+    "dice set": "Kocka-játék",
+    "dob": "Dob",
+    "dobonyil": "Dobónyíl",
+    "dragonchess set": "Sárkánysakk",
+    "drum": "Dob",
+    "dynamite": "Dynamite",
+    "ekszeresz eszkozok": "Ékszerész eszközök",
+    "elokelo ruhazat": "Előkelő ruházat",
+    "erszeny": "Erszény",
+    "faklya": "Fáklya",
+    "fegyverkabat": "Fegyverkabát",
+    "fegyverkabat barding": "Fegyverkabát Barding",
+    "fejadag": "Fejadag",
+    "felvert": "Félvért",
+    "felvert barding": "Félvért Barding",
+    "feszitovas": "Feszítővas",
+    "fine clothes": "Előkelő ruházat",
+    "flute": "Furulya",
+    "forgery kit": "Hamisító készlet",
+    "furulya": "Furulya",
+    "fuvocso": "Fúvócső",
+    "fuvocso tu": "Fúvócső-tű",
+    "gerely": "Gerely",
+    "glefe": "Gléfe",
+    "gluebomb": "Gluebomb",
+    "gyertya": "Gyertya",
+    "gyogyito keszlet": "Gyógyító készlet",
+    "gyogynovenyes keszlet": "Gyógynövényes készlet",
+    "gyurupancel": "Gyűrűpáncél",
+    "gyurupancel barding": "Gyűrűpáncél Barding",
+    "half plate armor": "Félvért",
+    "halozsak": "Hálózsák",
+    "hamisito keszlet": "Hamisító készlet",
+    "harci kalapacs": "Harci kalapács",
+    "hatizsak": "Hátizsák",
+    "healer s kit": "Gyógyító készlet",
+    "herbalism kit": "Gyógynövényes készlet",
+    "hide armor": "Irhapáncél Barding",
+    "holy water": "Szentelt víz",
+    "hooded lantern": "Lámpás",
+    "hosszuij": "Hosszúíj",
+    "hosszukard": "Hosszúkard",
+    "husang": "Husáng",
+    "ink": "Tinta",
+    "ink pen": "Penna",
+    "irhapancel": "Irhapáncél",
+    "irhapancel barding": "Irhapáncél Barding",
+    "iron pot": "Vasedény",
+    "jelmez": "Jelmez",
+    "jeweler s tools": "Ékszerész eszközök",
+    "kalligrafus eszkozok": "Kalligráfus eszközök",
+    "kartya pakli": "Kártya pakli",
+    "ketkezes csatabard": "Kétkezes csatabárd",
+    "ketkezes husang": "Kétkezes husáng",
+    "kezi szamszerij": "Kézi számszeríj",
+    "kocka jatek": "Kocka-játék",
+    "komponens erszeny": "Komponens erszény",
+    "konnyu kalapacs": "Könnyű kalapács",
+    "konnyu szamszerij": "Könnyű számszeríj",
+    "konyv": "Könyv",
+    "kopeny": "Köpeny",
+    "kopja": "Kopja",
+    "kotel": "Kötél",
+    "lampas": "Lámpás",
+    "lancing": "Láncing",
+    "lancing barding": "Láncing Barding",
+    "lancos buzogany": "Láncos buzogány",
+    "landzsa": "Lándzsa",
+    "lant": "Lant",
+    "leather armor": "Bőrvért Barding",
+    "lemezvert": "Lemezvért",
+    "lemezvert barding": "Lemezvért Barding",
+    "lute": "Lant",
+    "manacles": "Bilincs",
+    "mellvert": "Mellvért",
+    "mellvert barding": "Mellvért Barding",
+    "mirror": "Tükör",
+    "navigacios eszkozok": "Navigációs eszközök",
+    "navigator s tools": "Navigációs eszközök",
+    "nehez szamszerij": "Nehéz számszeríj",
+    "nyilvesszo": "Nyílvessző",
+    "nyilvesszok 20": "Nyílvesszők (20)",
+    "oil": "Olajos flaska",
+    "olajos flaska": "Olajos flaska",
+    "oloore root teabag": "Oloore Root Teabag",
+    "ostor": "Ostor",
+    "padded armor": "Fegyverkabát",
+    "pajzs": "Pajzs",
+    "pallos": "Pallos",
+    "pan flute": "Pánsíp",
+    "pansip": "Pánsíp",
+    "parchment": "Pergamen",
+    "parfum": "Parfüm",
+    "parittya": "Parittya",
+    "penna": "Penna",
+    "perfume": "Parfüm",
+    "pergamen": "Pergamen",
+    "pika": "Pika",
+    "pikkelypancel": "Pikkelypáncél",
+    "pikkelypancel barding": "Pikkelypáncél Barding",
+    "plainscow": "Plainscow",
+    "plate armor": "Lemezvért",
+    "playing cards": "Kártya pakli",
+    "poroly": "Pöröly",
+    "pouch": "Erszény",
+    "quiver": "Tegez",
+    "rations": "Fejadag",
+    "ring mail": "Gyűrűpáncél",
+    "robe": "Köpeny",
+    "rope": "Kötél",
+    "rovidij": "Rövidíj",
+    "rovidkard": "Rövidkard",
+    "sarkanysakk": "Sárkánysakk",
+    "sarlo": "Sarló",
+    "sator": "Sátor",
+    "scale mail": "Pikkelypáncél",
+    "shovel": "Ásó",
+    "skyship": "Skyship",
+    "sodronypancel": "Sodronypáncél",
+    "sodronypancel barding": "Sodronypáncél Barding",
+    "splint armor": "Szalagpáncél",
+    "stink bomb": "Stink Bomb",
+    "studded leather armor": "Szegecselt bőrpáncél Barding",
+    "szablya": "Szablya",
+    "szalagpancel": "Szalagpáncél",
+    "szalagpancel barding": "Szalagpáncél Barding",
+    "szamszerij lovedek": "Számszeríj lövedék",
+    "szamszerij lovedekek 20": "Számszeríj lövedékek (20)",
+    "szegecselt borpancel": "Szegecselt bőrpáncél",
+    "szegecselt borpancel barding": "Szegecselt bőrpáncél Barding",
+    "szentelt viz": "Szentelt víz",
+    "szigony": "Szigony",
+    "takaro": "Takaró",
+    "tegez": "Tegez",
+    "tent": "Sátor",
+    "terkepesz keszlet": "Térképész készlet",
+    "thieves tools": "Tolvaj szerszám",
+    "tinderbox": "Tűzszerszám",
+    "tinta": "Tinta",
+    "tolvaj szerszam": "Tolvaj szerszám",
+    "tor": "Tőr",
+    "torch": "Fáklya",
+    "travel cloak": "Utazóköpeny",
+    "traveler s clothes": "Utazó ruha",
+    "tukor": "Tükör",
+    "tuskes buzogany": "Tüskés buzogány",
+    "tuzszerszam": "Tűzszerszám",
+    "utazo ruha": "Utazó ruha",
+    "utazokopeny": "Utazóköpeny",
+    "vandorbot": "Vándorbot",
+    "vasedeny": "Vasedény",
+    "vassulyom": "Vassúlyom",
+    "vivotor": "Vívótőr",
+    "vizestomlo": "Vizestömlő",
+    "waterskin": "Vizestömlő"
+  }
+}

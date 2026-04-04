@@ -91,31 +91,10 @@
   "equipment": [
     {
       "name": "Tőr",
-      "kind": "Fegyver",
-      "description": "Karcsú penge közelharcra és hajításra. A ruházat alatt is könnyen elrejthető.",
-      "value": "2 arany",
-      "weight": "1 font",
-      "attack": "+6",
-      "damage": "1d4+3 [Szúró]",
-      "range": "20 / 60 láb",
-      "type": "Egyszerű",
-      "properties": "Könnyű, finom, hajító",
       "count": 2
     },
-    {
-      "name": "Komponens erszény",
-      "kind": "Varázslói fókusz",
-      "description": "Apró rekeszekbe rendezett alapanyagok, amelyek a legtöbb komponensigényű varázslathoz elegendőek.",
-      "value": "25 arany",
-      "weight": "2 font"
-    },
-    {
-      "name": "Utazóköpeny",
-      "kind": "Felszerelés",
-      "description": "Sötét, kapucnis köpeny, amely védi viselőjét a hidegtől és segít beleolvadni a városi éjszakába.",
-      "value": "1 arany",
-      "weight": "4 font"
-    }
+    "Komponens erszény",
+    "Utazóköpeny"
   ],
   "spells": [
     "Vérfagyasztó sugár",

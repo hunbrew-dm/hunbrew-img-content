@@ -679,12 +679,14 @@
     let featureCounters = [];
     let hitDiceSpent = [];
     let rollHistory = [];
+    let itemCompendium = { items: {}, lookup: {} };
     let spellCompendium = { spells: {}, lookup: {} };
     let lastRollTimer = null;
     let rollFeedbackTimer = null;
     let rollResultTimer = null;
     const STORAGE_VERSION = 'v8';
     const DEFAULT_DATA_PATH = 'data/valerius-v6.json';
+    const ITEM_COMPENDIUM_PATH = 'data/compendium/items.json';
     const SPELL_COMPENDIUM_PATH = 'data/compendium/spells.json';
 
     function getRequestedDataPath() {
@@ -716,13 +718,30 @@
         return data;
     }
 
-    function normalizeSpellLookupKey(value) {
+    function normalizeLookupKey(value) {
         return String(value || '')
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '')
             .toLowerCase()
             .replace(/[^a-z0-9]+/g, ' ')
             .trim();
+    }
+
+    async function fetchItemCompendium() {
+        const response = await fetch(new URL(ITEM_COMPENDIUM_PATH, window.location.href));
+        if (!response.ok) {
+            throw new Error(`Nem sikerült betölteni az item kompendiumot (${response.status}).`);
+        }
+
+        const data = await response.json();
+        if (!data || typeof data !== 'object' || !data.items || typeof data.items !== 'object') {
+            throw new Error('Az item kompendium JSON hibás vagy hiányos.');
+        }
+
+        return {
+            items: data.items,
+            lookup: data.lookup && typeof data.lookup === 'object' ? data.lookup : {}
+        };
     }
 
     async function fetchSpellCompendium() {
@@ -760,9 +779,49 @@
     function getSpellFromCompendium(name) {
         if (!name) return null;
         const exactName = spellCompendium.spells[name] ? name : null;
-        const lookupName = spellCompendium.lookup[normalizeSpellLookupKey(name)] || null;
+        const lookupName = spellCompendium.lookup[normalizeLookupKey(name)] || null;
         const canonicalName = exactName || lookupName;
         return canonicalName ? spellCompendium.spells[canonicalName] || null : null;
+    }
+
+    function createMissingItemRecord(name) {
+        return {
+            name: String(name || 'Ismeretlen tárgy'),
+            kind: 'Felszerelés',
+            description: 'A tárgy leírása nem található az item kompendiumban.'
+        };
+    }
+
+    function getItemFromCompendium(name) {
+        if (!name) return null;
+        const exactName = itemCompendium.items[name] ? name : null;
+        const lookupName = itemCompendium.lookup[normalizeLookupKey(name)] || null;
+        const canonicalName = exactName || lookupName;
+        return canonicalName ? itemCompendium.items[canonicalName] || null : null;
+    }
+
+    function resolveSheetEquipment(items) {
+        if (!Array.isArray(items)) return [];
+
+        return items.map(item => {
+            if (typeof item === 'string') {
+                return getItemFromCompendium(item) || createMissingItemRecord(item);
+            }
+
+            if (!item || typeof item !== 'object') return null;
+
+            const lookupName = item.lookup || item.ref || item.name;
+            const compendiumItem = getItemFromCompendium(lookupName);
+            if (compendiumItem) {
+                return {
+                    ...compendiumItem,
+                    ...item,
+                    name: item.name || compendiumItem.name
+                };
+            }
+
+            return item.name ? { ...createMissingItemRecord(item.name), ...item } : null;
+        }).filter(Boolean);
     }
 
     function resolveSheetSpells(spells) {
@@ -1921,17 +1980,23 @@
 
     async function init() {
         try {
-            const [data, compendium] = await Promise.all([
+            const [data, spells, items] = await Promise.all([
                 fetchSheetData(),
                 fetchSpellCompendium().catch(error => {
                     console.warn(error);
                     return { spells: {}, lookup: {} };
+                }),
+                fetchItemCompendium().catch(error => {
+                    console.warn(error);
+                    return { items: {}, lookup: {} };
                 })
             ]);
 
-            spellCompendium = compendium;
+            spellCompendium = spells;
+            itemCompendium = items;
             sheetData = data;
             sheetData.spells = resolveSheetSpells(sheetData.spells);
+            sheetData.equipment = resolveSheetEquipment(sheetData.equipment);
             render();
         } catch (error) {
             console.error(error);
