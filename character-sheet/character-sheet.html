@@ -679,11 +679,13 @@
     let featureCounters = [];
     let hitDiceSpent = [];
     let rollHistory = [];
+    let spellCompendium = { spells: {}, lookup: {} };
     let lastRollTimer = null;
     let rollFeedbackTimer = null;
     let rollResultTimer = null;
     const STORAGE_VERSION = 'v8';
     const DEFAULT_DATA_PATH = 'data/valerius-v6.json';
+    const SPELL_COMPENDIUM_PATH = 'data/compendium/spells.json';
 
     function getRequestedDataPath() {
         const params = new URLSearchParams(window.location.search);
@@ -712,6 +714,74 @@
         }
 
         return data;
+    }
+
+    function normalizeSpellLookupKey(value) {
+        return String(value || '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, ' ')
+            .trim();
+    }
+
+    async function fetchSpellCompendium() {
+        const response = await fetch(new URL(SPELL_COMPENDIUM_PATH, window.location.href));
+        if (!response.ok) {
+            throw new Error(`Nem sikerült betölteni a spell kompendiumot (${response.status}).`);
+        }
+
+        const data = await response.json();
+        if (!data || typeof data !== 'object' || !data.spells || typeof data.spells !== 'object') {
+            throw new Error('A spell kompendium JSON hibás vagy hiányos.');
+        }
+
+        return {
+            spells: data.spells,
+            lookup: data.lookup && typeof data.lookup === 'object' ? data.lookup : {}
+        };
+    }
+
+    function createMissingSpellRecord(name) {
+        return {
+            level: 0,
+            name: String(name || 'Ismeretlen varázslat'),
+            school: '—',
+            castTime: '—',
+            range: '—',
+            duration: '—',
+            components: '—',
+            concentration: false,
+            ritual: false,
+            desc: 'A varázslat leírása nem található a spell kompendiumban.'
+        };
+    }
+
+    function getSpellFromCompendium(name) {
+        if (!name) return null;
+        const exactName = spellCompendium.spells[name] ? name : null;
+        const lookupName = spellCompendium.lookup[normalizeSpellLookupKey(name)] || null;
+        const canonicalName = exactName || lookupName;
+        return canonicalName ? spellCompendium.spells[canonicalName] || null : null;
+    }
+
+    function resolveSheetSpells(spells) {
+        if (!Array.isArray(spells)) return [];
+
+        return spells.map(spell => {
+            if (typeof spell === 'string') {
+                return getSpellFromCompendium(spell) || createMissingSpellRecord(spell);
+            }
+
+            if (!spell || typeof spell !== 'object') return null;
+
+            const compendiumSpell = getSpellFromCompendium(spell.name);
+            if (compendiumSpell) {
+                return { ...compendiumSpell, ...spell, name: spell.name || compendiumSpell.name };
+            }
+
+            return spell.name ? { ...createMissingSpellRecord(spell.name), ...spell } : null;
+        }).filter(Boolean);
     }
 
     function getStorageKey() {
@@ -1216,8 +1286,10 @@
 
     function getSpellMarkers(spell) {
         const markers = [];
-        if (spell.atk !== undefined || spell.attack === true) markers.push('atk');
-        if (spell.dc !== undefined || spell.saveDc !== undefined || spell.save === true) markers.push('dc');
+        const hasAttackMarker = spell.atk === true || (spell.atk !== false && spell.atk !== undefined && spell.atk !== null && spell.atk !== '') || spell.attack === true;
+        const hasSaveMarker = spell.dc === true || (spell.dc !== false && spell.dc !== undefined && spell.dc !== null && spell.dc !== '') || (spell.saveDc !== undefined && spell.saveDc !== null && spell.saveDc !== '') || spell.save === true;
+        if (hasAttackMarker) markers.push('atk');
+        if (hasSaveMarker) markers.push('dc');
         return markers;
     }
 
@@ -1849,7 +1921,17 @@
 
     async function init() {
         try {
-            sheetData = await fetchSheetData();
+            const [data, compendium] = await Promise.all([
+                fetchSheetData(),
+                fetchSpellCompendium().catch(error => {
+                    console.warn(error);
+                    return { spells: {}, lookup: {} };
+                })
+            ]);
+
+            spellCompendium = compendium;
+            sheetData = data;
+            sheetData.spells = resolveSheetSpells(sheetData.spells);
             render();
         } catch (error) {
             console.error(error);

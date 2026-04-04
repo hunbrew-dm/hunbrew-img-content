@@ -1,0 +1,2764 @@
+{
+  "generatedAt": "2026-04-04T10:13:11.094Z",
+  "source": "hunbrew-ve-tools/hun-spell.json",
+  "count": 145,
+  "spells": {
+    "Agathys vértje": {
+      "name": "Agathys vértje",
+      "aliases": [
+        "Armor of Agathys"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 bónusz akció",
+      "range": "Önmagad",
+      "duration": "1 óra",
+      "components": "V, S, M (egy kék üvegszilánk)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Varázslatos jégpáncel ölel körül. Kapsz **5** ideiglenes harcerőpontot. Ha egy lény közelharci csapással eltalál téged, a támadó **5** Fagy sebzést szenved. A varázslat megszűnik, ha az ideiglenes harcerőpontjaid elfogynak.\n\nMagasabb szinteken:\nAz ideiglenes harcerőpontok és a visszavert sebzés is **5**-tel nő minden 1. szint feletti varázslatrekesz után, amiből a varázslatot elmondtad."
+    },
+    "Áldás": {
+      "name": "Áldás",
+      "aliases": [
+        "Bless"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (legalább 5 arany értékű szent szimbólum)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megáldasz legfeljebb három lényt a varázslat hatótávján belül! Amikor a célpont támadó- vagy mentődobást dob, 1d4-et hozzáadhat a dobott értékhez a varázslat hatóideje alatt.\n\nMagasabb szinteken:\nTovábbi 1 lényt áldhatsz meg minden 1. szint feletti varázslatrekesz után."
+    },
+    "Állatok barátsága": {
+      "name": "Állatok barátsága",
+      "aliases": [
+        "Animal Friendship"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "24 óra",
+      "components": "V, S, M (egy falat étel)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Célozz meg egy Vadállatot a hatótávon belül! A célpontnak sikeres Bölcsesség mentődobást kell dobnia, különben Elbályolt állapotba kerül a varázslat hatóidejére. Ha te vagy egy szövetségesed sebzést okoz a célpontnak, a varázslat véget ér.\n\nMagasabb szinteken:\nEgy tovább vadállatot is elbájolhatsz minden 1. szint feletti varázslatrekesz után."
+    },
+    "Állatok és növények bemérése": {
+      "name": "Állatok és növények bemérése",
+      "aliases": [
+        "Locate Animals or Plants"
+      ],
+      "level": 2,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Azonnali",
+      "components": "V, S, M (egy kis szőr egy vérebtől)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Írj le vagy nevezz meg egy bizonyos fajtájú vadállatot vagy növényt! Ha 5 mérföldön belül található ilyen lény vagy növény, akkor a varázslat megmutatja az irányt és a távolságot a legközelebb lévőhöz példányhoz."
+    },
+    "Altatás": {
+      "name": "Altatás",
+      "aliases": [
+        "Sleep"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (csipetnyi homok vagy rózsaszirmok)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Minden általad választott lénynek egy hatótávon belüli pontot körülvevő 5 láb sugarú körben Bölcsesség mentődobást kell dobnia. Kudarc esetén Cselekvésképtelen állapotba kerülnek a következő körük végéig, amikor meg kell ismételjék a mentődobást. Ha a célpont másodjára is sikeretlen dobást dob, akkor a célpont Eszméletlen állapotba kerül a varázslat hatóidejére. A varázslat véget ér, ha a célpont sebzést szenved vagy valaki 5 lábon belül egy akció felhasználásával felrázza őt.\n\nLények akiknek nincs szükségük alvásra (pl. Elfek), vagy akik Immunisak a Kimerültség állapotra, automatikusan sikeresek ezen varázslat ellen."
+    },
+    "Átok": {
+      "name": "Átok",
+      "aliases": [
+        "Bane"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (egy csepp vér)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Legfeljebb három általad választott lénynek, akit a hatótávon belül látsz, Karizma mentődobást kell dobnia (mindegyiknek). Sikertelen dobás esetén ha a célpont a varázslat hatóideje alatt támadást vagy mentődobást dob, 1d4-et ki kell vonnia a támadásdobásból vagy a mentődobásból.\n\nMagasabb szinteken:\nEgy további lényt célozhatsz meg minden 1. szint feletti rekesz felhasználása után."
+    },
+    "Azonosítás": {
+      "name": "Azonosítás",
+      "aliases": [
+        "Identify"
+      ],
+      "level": 1,
+      "school": "Divináció",
+      "castTime": "1 perc",
+      "range": "Érintés",
+      "duration": "Azonnali",
+      "components": "V, S, M (legalább 100 arany értékű igazgyöngy)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslás ideje alatt érintkezésben kell lenned egy tárggyal! Ha a tárgy egy varázstárgy, esetleg valamilyen mágia járja át, felismered a mágia jellemzőit, a használata módját, hogy ehhez szükséges-e Ráhangolódni, és hogy hány töltet van benne (amennyiben ez releváns). Megtudod, hogy a tárgy valamilyen folyamatban lévő varázslat hatása alatt áll-e, és ha igen, az micsoda. Ha a tárgyat varázslattal hozták létre, felismered, hogy melyik varázslat volt az.\n\nA tárgy helyett a varázslás során egy lényt is megérinthetsz. Ekkor azt tudod meg, hogy milyen folyamatban lévő varázslatok (amennyiben van ilyen) hatása alatt áll."
+    },
+    "Baráti bájolás": {
+      "name": "Baráti bájolás",
+      "aliases": [
+        "Friends"
+      ],
+      "level": 0,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "10 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "S, M (egy kis smink)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Varázslattal barátságos érzést sugárzol egy általad látott lény felé a hatótávon belül. A célpontnak sikeres Bölcsesség mentődobást kell dobnia, különben Elbűvölt lesz a varázslat időtartama alatt. A célpont automatikusan sikerrel jár, ha nem Humanoid, ha harcoltok egymással, vagy ha az elmúlt 24 órában már alkalmaztad rá ezt a varázslatot.\n\nA varázslat idő előtt véget ér, ha a célpont sebzést szenved, vagy ha támadást hajtasz végre, sebzést okozol, vagy bárkit mentődobásra kényszerítesz. Amikor a varázslat véget ér, a célpont tudja, hogy miattad lett Elbűvölt."
+    },
+    "Behálózás": {
+      "name": "Behálózás",
+      "aliases": [
+        "Entangle"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "90 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Futónövények sarjadnak a földből egy 20 láb élű négyzetben a hatótávon belül. A növények a területet a varázslat hatóideje alatt nehéz tereppé változtatják. A növények eltűnnek a varázslat végeztével.\n\nMinden lénynek (kivéve téged), amely a területen tartózkodik, Erő mentődobást kell dobnia, különben Helyhezkötötté válik. A helyhezkötött lény felhasználhatja akcióját hogy Erő (Atlétika) próbát tegyen a varázslatod elleni mentő NF értékével szemben. Ha sikeres, kiszabadítja magát a növények közül és a továbbiakban nem lesz helyhezkötött."
+    },
+    "Beszéd az állatokkal": {
+      "name": "Beszéd az állatokkal",
+      "aliases": [
+        "Speak with Animals"
+      ],
+      "level": 1,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "10 perc",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat ideje alatt képes vagy megérteni az állatok beszédét és szóban kommunikálni velük, valamint használhatod Befolyásolás akció lehetőségeit rajtuk.\n\nA legtöbb vadállatot kevéssé érdeklik a túlélésen vagy társaikon kívül eső dolgok, de biztosan képesek információt adni a közeli helyszínekről és szörnyekről, beleértve mindent amit észleltek az elmúlt 1 napon."
+    },
+    "Boszorkány átok": {
+      "name": "Boszorkány átok",
+      "aliases": [
+        "Hex"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 bónusz akció",
+      "range": "90 Láb",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V, S, M (egy megkövesedett gőteszem)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Átkot bocsátsz egy hatótávon belüli lényre, akit látsz. Amíg a varázslat hat, extra 1d6 Nekrotikus sebzést okozol a célpontnak minden sikeres támadásoddal. Emellett válassz egy Képességet (Erő, Ügyesség, Kitartás, Intelligencia, Bölcsesség vagy Karizma) amikor elmondod a varázslatot. A célpont minden képességpróbáját Hátránnyal dobja a kiválasztott képességből.\n\nHa a célpont harcerőpontja 0-ra csökken a varázslat letelte előtt, akkor bónusz akció felhasználásával egy új célpontot választhatsz a hatótávon belül.\n\nMagasabb szinteken:\nA koncentrációd hosszabb ideig is fentarthatod magasabb szintű rekeszek felhasználásával,\n2.szintű rekesszel 4 órán át, 3-4. szintű rekesszel 8 órán át,\n5. vagy magasabb szintű rekesszel pedig 24 órán át."
+    },
+    "Boszorkány sugár": {
+      "name": "Boszorkány sugár",
+      "aliases": [
+        "Witch Bolt"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (villám sújtotta gally)",
+      "concentration": true,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Egy dörgő energiasugár csapódik egy hatótávon belüli lény felé, és folyamatos villámívet hoz létre közted és a célpont között. Dobj távolsági varázstámadást a célpontra! Találat esetén a célpont 2d12 Villám sebzést szenved.\n\nA következő köreidben minden alkalommal bónusz akcióval automatikusan okozhatsz 1d12 Villám sebzést a célpontnak, akkor is, ha az első támadásod elhibázta.\n\nA varázslat véget ér, ha a célpont kikerül a hatótávból, vagy ha teljes fedezékbe kerül veled szemben.\n\nMagasabb szinteken:\nA kezdeti sebzés nagysága 1d12-tal nő minden 1. szint feletti rekesz után."
+    },
+    "Bűbáj robbantás": {
+      "name": "Bűbáj robbantás",
+      "aliases": [
+        "Sorcerous Burst"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Mágikus energiát sugárzol egy hatótávon belüli lény vagy objektum felé. Dobj távolsági varázstámadást a célpont ellen. Találat esetén 1d8 sebzést okozol általad választott típusban: Sav, Fagy, Tűz, Villám, Méreg, Pszichés vagy Mennydörgés.\n\nHa 8-ast dobsz a d8-cal, akkor dobhatsz még 1d8-at és hozzáadhatod a sebzéshez. Ily módon legfeljebb a varázslási képességed módosítójának megfelelő számú extra d8-at dobhatsz.\n\nMagasabb szinteken:\nA varázslat sebzése 1d8-cal nő, amikor eléred az 5. (2d8), a 11. (3d8) és a 17. szintet (4d8)."
+    },
+    "Célkereszt": {
+      "name": "Célkereszt",
+      "aliases": [
+        "Hunter's Mark"
+      ],
+      "level": 1,
+      "school": "Divináció",
+      "castTime": "1 bónusz akció",
+      "range": "90 Láb",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Mágikus módon a prédádnak jelölsz egy hatótávon belüli lényt. Amíg a varázslat hat, minden sikeres támadásoddal a célpont ellen további 1d6 Energia sebzést okozol. Emellett Előnnyel dobhatsz minden olyan Bölcsesség (Észlelés vagy Túlélés) próbát, amelyet a célpont felkutatására teszel.\n\nHa a célpont harcerőpontja 0-ra csökken a varázslat letelte előtt, akkor bónusz akció felhasználásával egy új célpontot választhatsz a hatótávon belül.\n\nMagasabb szinteken:\nA koncentrációd hosszabb ideig is fentarthatod magasabb szintű rekeszek felhasználásával,\n2.szintű rekesszel 4 órán át, 3-4. szintű rekesszel 8 órán át,\n5. vagy magasabb szintű rekesszel pedig 24 órán át."
+    },
+    "Csapdák érzékelése": {
+      "name": "Csapdák érzékelése",
+      "aliases": [
+        "Find Traps"
+      ],
+      "level": 2,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Érzékeled a hatótávon és látótereden belüli csapdák jelenlétét. A varázslat szempontjából csapdának számít minden olyan tárgy vagy mechanizmus, amit azért alkottak meg, hogy sérülést vagy más veszélyt jelentő hatást okozzon. Így a varázslat érzékeli a HSPB vagy egy Védő Rúna varázslattal védett területet, vagy egy mechanikus veremcsapdát, de nem fedi fel a padló természetes gyengeségét, az instabil mennyezetet vagy egy rejtett víznyelő aknát.\n\nEz a varázslat megmutatja, hogy van-e csapda, de a helyét nem fedi fel. Az érzékelt csapda jelentette veszély általános jellegét azonban megtudod."
+    },
+    "Csend": {
+      "name": "Csend",
+      "aliases": [
+        "Silence"
+      ],
+      "level": 2,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat ideje alatt semmilyen hang nem jön létre és nem halad át egy 20 láb sugarú gömbön belül, melynek középpontját a hatótávon belül Te jelölheted ki. A teljes terjedelmükben a gömbön belül tartózkodó lények, illetve tárgyak immunissá válnak a Mennydörgés típusú sebzésre, a lények pedig süketnek számítanak. Verbális komponensű varázslatot a gömbön belül varázsolni nem lehet."
+    },
+    "Csillagtűz": {
+      "name": "Csillagtűz",
+      "aliases": [
+        "Starry Wisp"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Csillagfényből szőtt csóvát lősz egy hatótávon belüli lény vagy objektum felé. Dobj távolsági varázstámadást a célpont ellen. Találat esetén 1d8 Ragyogás sebzést okozol és a következő köröd végéig Gyér Fényt áraszt 10 láb sugarú körben valamint nem profitál a Láthatalanságból.\n\nHa 8-ast dobsz a d8-ra, akkor dobhatsz még 1d8-at és hozzáadhatod a sebzéshez. Ily módon legfeljebb a varázslási képességed módosítójának megfelelő számú extra d8-at dobhatsz.\n\nMagasabb szinteken:\nA varázslat sebzése 1d8-cal nő, amikor eléred az 5. (2d8), a 11. (3d8) és a 17. szintet (4d8)."
+    },
+    "Disszonáns suttogás": {
+      "name": "Disszonáns suttogás",
+      "aliases": [
+        "Dissonant Whispers"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy általad választott lény a hatótávon belül, akit látsz gyötrelmes dallamot hall a fejében. A célpontnak sikeres Bölcsesség mentődobást kell dobnia. Kudarc esetén a lény 3d6 Pszichikai sebzést szenved, és ha lehetősége van rá azonnal fel kell használnia a reakcióját, hogy a legbiztonságosabb útan a lehető legmesszebb menjen tőled. Ha a mentődobás sikeres, a lény csak a sebzés felét szenvedi el, és nem kell menekülnie.\n\nMagasabb szinteken:\nA sebzés nagysága 1d6-tal nő minden 1. szint feletti rekesz után."
+    },
+    "Druidacsíny": {
+      "name": "Druidacsíny",
+      "aliases": [
+        "Druidcraft"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A természet szellemeinek suttogva az alábbi hatások egyikét hozhatod létre a hatótávon belül\n\nIdőjárás érzékelő:\nApró, ártalmatlan érzékszervi hatást hozol létre, amely megjósolja, hogy milyen időjárás lesz a következő 24 órában. A hatás manifesztálódhat egy aranyló gömbként derűs időt jelezve, felhőként esőt jelezve, hópelyhekként hóesést jelezve és így tovább. A hatás 1 körig tart. A hatás testet ölthet aranygömbként (tiszta égbolt), felhőként (eső), hópelyhekként (hóesés) stb.\n\nVirágzás:\nHatásodra azonnal kivirágzik egy virág, kinyílik egy mag vagy egy levélrügy.\n\nÉrzékszervi hatás:\nAzonnali, ártalmatlan érzékszervi hatást hozol létre, például lehulló leveleket, szélfúvást, kis állat hangját vagy egy görény enyhe szagát. A hatásnak bele kell férnie egy 5 láb élű kockába.\n\nTűz manipuláció:\nAzonnal lángra gyújtasz vagy eloltasz egy gyertyát, egy fáklyát vagy egy tábortüzet."
+    },
+    "Elemi varázslat": {
+      "name": "Elemi varázslat",
+      "aliases": [
+        "Elementalism"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Irányítást nyersz az elemek felett, a következő hatások egyikét hozva létre a hatótávon belül.\n\nLég idézés:\nSzellőt hozol létre, amely elég erős, hogy meglobogtasson ruhákat, elfújja a port, lehullott leveleket, vagy becsapjon egy nyiott ajtót, ablakot, mindezt egy 5 láb élű kockában. A valaki vagy valami által nyitva tartott ajtóra vagy ablakokra nem hat.\n\nFöld idézés:\nVékony por- vagy homokréteggel borítasz mindent egy 5 láb élű kockában, vagy megyjelenik egy szó a kézírásoddal a porban vagy homokban.\n\nTűz idézés:\nVékony, ártalmatlan parázsfelhőt és színes, illatos füstöt hozol létre egy 5 láb élű kockában. Te választod meg a füst színét és illatát, a parázs pedig meggyújthat gyertyákat, fáklyákat vagy lámpásokat ebben a területen. A füst illata 1 percig megmarad.\n\nVíz idézés:\nHűvös permetet hozol létre, amely nyirkossá teszi a lényeket és tárgyakat egy 5 láb élű kockában. Alternatívaként 1 csésze tiszta vizet hozol létre egy nyitott edényben vagy felületen, amely 1 perc alatt elpárolog.\n\nElem formázása:\nFöldet, homokot, tüzet, füstöt, párát vagy vizet, amely elfér egy 1 láb élű kockában, durva alakzattá (például egy lény formájává) alakítasz 1 órára."
+    },
+    "Ellenállás": {
+      "name": "Ellenállás",
+      "aliases": [
+        "Resistance"
+      ],
+      "level": 0,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy, a varázslatba beleegyező lényt és választasz egy sebzés típust: Sav, Zúzó, Fagy, Tűz, Villám, Nekrotikus, Szúrás, Méreg, Ragyogás, Vágó vagy Mennydörgés. Ha a lény sebzést szenved a választott típusból a varázslat ideje alatt, akkor csökkentheti a sebzés értékét 1d4-gyel. A lény körönként csak egyszer élvezheti ennek a varázslatnak az előnyét. A varázslat ideje alatt a célpont az egyik (általa választott) mentődobásához hozzáadhat 1d4-et."
+    },
+    "Előjelek olvasása": {
+      "name": "Előjelek olvasása",
+      "aliases": [
+        "Augury"
+      ],
+      "level": 2,
+      "school": "Divináció",
+      "castTime": "1 perc",
+      "range": "Önmagad",
+      "duration": "Azonnali",
+      "components": "V, S, M (legalább 25 arany értékű, különlegesen díszített botocskák, csontok vagy hasonlók)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Egy túlvilági lény által küldött előjelet kapsz egy olyan cselekedet eredményéről, amelyet a következő 30 percben tervezel végrehajtani. A DM választja ki az előjelet az Előjelek táblázatból.\n\nElőjelek\nElőjel | A cselekvés ereménye... lesz.\nLáng | jó\nAgyar | rossz\nLáng és Agyar | jó is és rossz is\nEgyik sem | se jó, se rossz\n\nA varázslat nem veszi figyelembe az olyan körülményeket, mint például más varázslatok, amelyek megváltoztathatják az eredményeket.\n\nHa a varázslatot 1-nél többször is elmondod egy Hosszú pihenés befejezése előtt, akkor minden további alkalommal +25% eséllyel nem kapsz választ. (2. varázslat ||Nincs válasz!|Van válasz, 3. varázslat ||Nincs válasz!|Van válasz, 4. varázslat ||Nincs válasz!|Van válasz, 5. vagy több varázslat 100% eséllyel nem ad választ.)"
+    },
+    "Erős szél": {
+      "name": "Erős szél",
+      "aliases": [
+        "Gust of Wind"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (hüvelyes növény magja)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy 60 láb hosszú és 10 láb széles sávban erős széláramlat fúj felőled a varázslat ideje alatt az általad választott irányba. Minden lénynek a területen, sikeres Erő mentődobást kell dobnia, különben a szél 15 lábbal eltolja tőled.\n\nA sávban lévő lényeknek 2 láb mozgást kell elkölteniük minden 1 láb haladásért, amelyet feléd mozogva akarnak megtenni. Egy olyan lény, amely a sávban végzi a körét, ugyanazt a mentődobást kell megismételje.\n\nMinden lénynek, amely a zónában van 2 láb mozgásába kerül minden széllel szemben megtett láb távolság\n\nA szél eloszlatja a gázt vagy permetet, és eloltja a gyertyákat és hasonló, védtelen lángokat a területen. Védett lángok, például lámpáké, vadul lobognak, és ||eloltja!|nincs hatása eséllyel eloltja őket a szél.\n\nBónusz akcióként a későbbi köreidben megváltoztathatod a szél irányát"
+    },
+    "Érzelmek csillapítása": {
+      "name": "Érzelmek csillapítása",
+      "aliases": [
+        "Calm Emotions"
+      ],
+      "level": 2,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Minden humanoid lénynek egy 20 láb sugarú gömbben, amelynek középpontját a hatótávon belül te választod ki, Karizma mentődobást kell dobnia, különben az alábbi hatások egyike alá kerül (lényenként választhatsz):\n\n• A lény Immunissá válik a Elbájolt és Megrémült állapotokra a varázslat időtartama alatt. Ha a lény már Elbájolt vagy Megrémült állapotban van, akkor a varázslat az időtartama alatt elnyomja ezeket.\n• A lény Közönbössé válik az általad választott lényekkel szemben, akikkel egyébként Ellenséges lenne. Ez a közönbösség véget ér, ha a célpontot megsebzik, vagy szemtanúja lesz társai sérülésének. Mikor a varázslat véget ér a lény hozzáállása visszaváltozik az eredetire."
+    },
+    "Étel és ital megtisztítása": {
+      "name": "Étel és ital megtisztítása",
+      "aliases": [
+        "Purify Food and Drink"
+      ],
+      "level": 1,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "10 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Minden nem mágikus ételt és italt megtisztítasz a mérgektől és rothadástól egy 5 láb sugarú gömbön belül, amelynek középpontját te választod meg a hatótávon belül."
+    },
+    "Fagysugár": {
+      "name": "Fagysugár",
+      "aliases": [
+        "Ray of Frost"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Fagyos, kékesfehér sugár csap bele egy hatótávon belüli lénybe. Dobj távolsági varázstámadást, ami ha sikerül, a célpont 1d8 Fagy sebzést szenved, és következő köröd elejéig a sebessége 10 lábbal csökken.\n\nMagasabb szinteken:\nA sebzés további 1d8-cal növekszik, amikor eléred az 5. (2d8), a 11. (3d8) és a 17. szintet (4d8)."
+    },
+    "Familiáris idézése": {
+      "name": "Familiáris idézése",
+      "aliases": [
+        "Find Familiar"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 óra",
+      "range": "10 Láb",
+      "duration": "Azonnali",
+      "components": "V, S, M (legalább 10 arany értékű füstölőt kell elégetni)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Elnyered a szolgálatait egy familiárisnak, egy varázslatos szellemnek, amely egy általad választott állati formát ölthet: denevér, macska, rák, béka (varangy), sólyom, gyík, polip, bagoly, patkány, holló, pók, menyét vagy bármilyen CR0 vadállat. A hatótávon belüli egyik üres mezőn megjelenő familiáris a választott forma statisztikáival rendelkezik, kivéve, hogy a familiáris vadállat helyett égi lény, tündér vagy alvilági lény lesz (tetszésed szerint). A familiáris tőled függetlenül cselekszik, de engedelmeskedik a parancsaidnak.\n\nTelepatikus kapcsolat::\nAmíg a familiárisod legfeljebb 100 lábra van tőled, telepatikusan kommunikálhatsz vele. Ezenkívül Bónusz akció felhasználásával láthatsz a familiárisod szemével, és hallhatod, amit hall a következő köröd kezdetéig; szert tehetsz a familiáris különleges érzékeinek előnyeire is. Végezetül amennyiben egy érintés hatótávú varázslatot mondasz el, a familiárisod úgy közvetítheti a varázslatot, mintha ő mondta volna azt el. Ehhez a familiárisod tőled legfeljebb 100 lábnyira lehet, és a reakciója felhasználásával közvetítheti a varázslatot.\n\nCselekvés a harcban::\nA familiáris a te és társaid szövetségeseként vesz részt a harcban. A harcban a saját kezdeményezését dobja, és a maga körében cselekszik. Nem támadhat, de más akciókat a szokásos módon végezhet.\n\nElküldés és visszahívás::\nAmikor a familiáris harcerőpontja 0-ra csökken, eltűnik. Újra megjelenik, miután ismét elmondod a varázslatot. Varázslat akció felhasználásával a familiárisodat ideiglenesen elküldheted egy zsebdimenzióba vagy örökre elbocsáthatod. Az ideiglenesen elbocsátott familiáris akció felhasználásával ismét megidézhető bármely olyan szabad mezőre, amely tőled legfeljebb 30 láb távolságra van. Valahányszor a familiáris harcerőpontja 0-ra csökken, vagy eltűnik egy zsebdimenzióban, mindent, amit viselt vagy hordott, azon a helyen hagy, ahonnan távozott.\n\nLegfeljebb egy familiáris::\nEgyszerre nem lehet egynél több familiárisod. Ha a varázslatot akkor mondod el, amikor már van egy familiárisod, akkor a familiáris az új formát veszi fel."
+    },
+    "Fém forrósítása": {
+      "name": "Fém forrósítása",
+      "aliases": [
+        "Heat Metal"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (vasdarab és láng)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Válassz egy megmunkált fémtárgyat, például egy fémfegyvert vagy nehéz vagy közepes fémpáncélt, amelyet látsz a hatótávon belül. A varázslattal a tárgyat vörös-izzásig hevíted. Bármely lény, aki fizikailag érintkezik a tárggyal, 2d8 Tűz sebzést szenved, amikor a varázslatot elmondod. Amíg a varázslat véget nem ér, a bónusz akciódat felhasználhatod minden körödben, hogy ismételten sebzést okozz.\n\nHa egy lény kézben tartja vagy viseli a tárgyat, amely a sebzést okozza, akkor Állóképesség mentődobást kell dobnia, különben elejti a tárgyat, ha ez lehetséges. Ha nem ejti el a tárgyat, akkor a támadó dobásokat és a tulajdonásgpróbákat a következő köröd kezdetéig hátránnyal dobja.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA sebzés 2d8 → 1d8-cal nő minden 2. szint feletti rekesz után."
+    },
+    "Fény": {
+      "name": "Fény",
+      "aliases": [
+        "Light"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "1 óra",
+      "components": "V, M (szentjánosbogár vagy foszforeszkáló mohadarab)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy legfeljebb Nagy kiterjedésű tárgyat, amit nem visel vagy hordoz valaki más. A hatóidő alatt a tárgy 20 láb sugarú területen erős, további 20 láb sugarú területen pedig gyér fénnyel világít. A fény színe tetszésed szerinti lehet. A tárgy lefedhető bármilyen nem átlátszó anyaggal, ez a fényt is eltakarja. A varázslat véget ér, ha a varázslatot ismételten elmondod."
+    },
+    "Förtelmes nevetés": {
+      "name": "Förtelmes nevetés",
+      "aliases": [
+        "Tasha's Hideous Laughter"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (egy torta és egy toll)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy általad választott lénynek, amelyet a hatótávon belül látsz Bölcsesség mentődobást kell dobnia. Sikertelen esetben Elterül és Cselekvőképtelenné válik. Ez idő alatt kontrollálhatatlan nevetésben tör ki, és képtelen magától felállni a hatóidő alatt.\n\nA célpont újabb Bölcsesség mentődobást dobhat minden köre végén, és minden alkalommal, amikor sebzést szenved. A célpont a mentődobást Előnnyel dobhatja, ha azt sebzés váltotta ki. Sikeres mentődobás esetén a varázslat véget ér.\n\nMagasabb szinteken:\nEgy további lényt célozhatsz meg minden 1. szint feletti rekesz után."
+    },
+    "Fürge léptek": {
+      "name": "Fürge léptek",
+      "aliases": [
+        "Longstrider"
+      ],
+      "level": 1,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "1 óra",
+      "components": "V, S, M (csipetnyi föld)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy lényt. A lény sebessége 10 lábbal nő a varázslat végéig.\n\nMagasabb szinteken:\nEgy további lényt célozhatsz meg minden 1. szint feletti rekesz után."
+    },
+    "Gondolatolvasás": {
+      "name": "Gondolatolvasás",
+      "aliases": [
+        "Detect Thoughts"
+      ],
+      "level": 2,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (rézdarab)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Az alábbi hatások egyikét aktiválod. Amíg a varázslat véget nem ér, bármelyik hatást aktiválhatod egy Mágia akcióval a későbbi köreiden.\n\nGondolatok észlelése:\nÉrzékeled a 30 lábon belül lévő, nyelveket ismerő vagy telepatikus képességekkel rendelkező lények gondolatait. Nem olvasod a gondolatokat, de tudod, hogy egy gondolkodó lény van jelen.\n\nA varázslatot blokkolja 1 láb kő, föld vagy fa; 1 hüvelyk fém; vagy egy vékony ólomlemez.\n\nGondolatok olvasása:\nVálassz egy látóteredben lévő, 30 lábon belüli lényt, vagy egy 30 lábon belüli lényt, akit a Gondolatok észlelése hatással érzékeltél. Megtudod, hogy most éppen mi jár a célpont fejében. Ha a célpont nem ismer nyelveket és nem telepatikus, akkor semmit sem tudsz meg.\n\nMágia akcióval a követkető körödben megpróbálhastz mélyebbre hatolni a lény elméjében. Ilyenkor a célpontnak Bölcsesség mentődobást kell dobnia. Sikertelen mentés esetén megismered a célpont érzelmeit, gondolkodását és egy olyan dolgot, ami nagy jelentőséggel bír a célpont gondolataiban (például egy aggodalmát, szeretetének vagy gyűlöletének tárgyát). Sikeres mentés esetén a varázslat véget ér. A célpont mindkét esetben megtudja, hogy az elméjét kutatod, és amíg a figyelmedet nem fordítod el az elméjétől, minden körében egy akciót használhat arra, hogy egy Intelligencia (Mágiaismeret) próbát dobjon a varázslat ellen, siker esetén véget vetve a varázslatnak."
+    },
+    "Gyengéd kegyelet": {
+      "name": "Gyengéd kegyelet",
+      "aliases": [
+        "Gentle Repose"
+      ],
+      "level": 2,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "10 nap",
+      "components": "V, S, M (egy csipet só és egy rézdarab a holttest egy-egy szemén, amelyeknek ott kell maradniuk a hatóidő alatt)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy holttestet vagy más maradványt. A hatóidő alatt a célpont védve van a bomlástól, és nem válhat Élőhalottá.\n\nA varázslat hatékonyan hosszabbítja meg a célpont halálból való feltámasztásának határidejét is, mivel a varázslat hatása alatt eltöltött napok nem számítanak bele az olyan varázslatok időkorlátjába, mint például a Holtak feltámasztása varázslat."
+    },
+    "Gyengeség sugara": {
+      "name": "Gyengeség sugara",
+      "aliases": [
+        "Ray of Enfeeblement"
+      ],
+      "level": 2,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Enerváló energia sugarat lősz egy hatótávon belüli lény felé. A célpontnak Állóképesség mentődobást kell dobnia. Sikeres mentés esetén a célpont hátránnyal dobja a következő támadó dobását, a következő köröd kezdetéig.\n\nSikertelen mentődobás esetén a célpont hátránnyal dob minden Erő alapú D20 dobást a varázslat hatóideje alatt, valamint minden sebzés dobásából 1d8 pontot le kell vonjon. A célpont a varázslat hatóideje alatt minden körének végén megismételheti a mentődobást, siker esetén véget vet a varázslatnak."
+    },
+    "Gyógybogyó": {
+      "name": "Gyógybogyó",
+      "aliases": [
+        "Goodberry"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "24 óra",
+      "components": "V, S, M (egy szál fagyöngy)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat hatóidjéig 10 gyógyító bogyó jelenik meg a kezedben, amelyeket mágia itat át. Egy lény egy bónusz akcióval egy bogyót ehet meg. Egy bogyó elfogyásztása egy HP-t gyógyít és a bogyó elég táplálékot ad egy lénynek egy egész napra. A varázslat végeztével a megmaradt bogyók eltűnnek."
+    },
+    "Gyógyítás szava": {
+      "name": "Gyógyítás szava",
+      "aliases": [
+        "Healing Word"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 bónusz akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatótávon belül kiválasztott lény — akit látnod kell — 2d4 + a varázslási tulajdonságod módosítójának megfelelő HP-t gyógyul.\n\nMagasabb szinteken:\nA gyógyítás 2d4-gyel nő minden 1. szint feletti rekesz után."
+    },
+    "Gyógyító ima": {
+      "name": "Gyógyító ima",
+      "aliases": [
+        "Prayer of Healing"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "10 perc",
+      "range": "30 Láb",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Legfeljebb öt lény, akit választasz, és aki a varázslat teljes elmondása alatt a hatótávon belül tartózkodik, a Rövid pihenő előnyeit élvezheti, valamint visszanyer 2d8 Harcerő pontot-t. Az ima egyszer tud hatni egy lényre, amíg az be nem fejez egy Hosszú pihenőt.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA gyógyítás mértéke 2d8 → 1d8-cal nő minden 2. szint feletti varázslaterekesz után."
+    },
+    "Hadar csápjai": {
+      "name": "Hadar csápjai",
+      "aliases": [
+        "Arms of Hadar"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "10 Láb emanáció",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Hadar megidézésével csápok törnek elő belőled. Minden lénynek egy 10 láb sugarú körön belül Erő mentődobást kell dobnia. Sikertelen dobás esetén a lény 2d6 Nekrotikus sebzést szenved, és a a következő köre kezdetéig nem játszhat ki Reakciót. Sikeres dobás esetén a lény csak a sebzés felét szenvedi el, és nem veszti el a reakcióját.\n\nMagasabb szinteken:\nA sebzés nagysága 1d6-tal nő minden 1. szint feletti rekesz után."
+    },
+    "Haldoklók megmentése": {
+      "name": "Haldoklók megmentése",
+      "aliases": [
+        "Spare the Dying"
+      ],
+      "level": 0,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "15 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Válassz egy hatótávon belüli még életben lévő lényt, amelynek 0 harcerőpontja van. A lény állapota stabilizálódik.\n\nMagasabb szinteken:\nA hatótáv duplázódik amikor eléred az 5. (30 láb), 11. (60 láb), 17. (120 láb) szinteket."
+    },
+    "Hamis élet": {
+      "name": "Hamis élet",
+      "aliases": [
+        "False Life"
+      ],
+      "level": 1,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Azonnali",
+      "components": "V, S, M (egy csepp alkohol)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslattól **2d4 + 4** ideiglenes harcerőpontot kapsz.\n\nMagasabb szinteken:\nTovábbi 5 HP-t kapsz minden 1. szint feletti rekesz után."
+    },
+    "Hírvivő állat": {
+      "name": "Hírvivő állat",
+      "aliases": [
+        "Animal Messenger"
+      ],
+      "level": 2,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "24 óra",
+      "components": "V, S, M (egy falat étel)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": true,
+      "desc": "Hatótávon belül kiválaszthatsz egy látható miscellaneous=!swarm, akinek Karizma mentést kell dobnia, különben meg kell próbálnia kézbesíteni egy üzenetedet (ha a célpont XPHB nem 0, akkor a mentés automatikusan sikeresnek számít). Megjelölsz egy helyet, ahol jártál, és egy címzettet, aki megfelel egy általános leírásnak, például \"egy városi őrség egyenruháját viselő személy\" vagy \"egy vörös hajú törp, aki hegyes kalapot visel.\" Emellett elmondasz egy legfeljebb huszonöt szóból álló üzenetet. A vadállat a varázslat időtartama alatt a megjelölt hely felé halad, körülbelül 25 mérföldet tesz meg 24 óra alatt, vagy 50 mérföldet, ha tud repülni.\n\nAmikor a vadállat megérkezik, kézbesíti az üzenetedet a leírásodnak megfelelő lénynek, utánozva a beszédedet. Ha a vadállat nem éri el a célját, mielőtt a varázslat véget érne, az üzenet elveszik, és a vadállat visszatér oda, ahol a varázslatot elmondtad.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nMinden 2. szint feletti varázslaterekesz felhasználásával a varázslat hatóideje 48 órával növekszik."
+    },
+    "Hit pajzsa": {
+      "name": "Hit pajzsa",
+      "aliases": [
+        "Shield of Faith"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 bónusz akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (egy imatekercs)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Csillogó energiamező vesz körbe egy a hatótávon belül lévő, általad választott lényt. A mező a hatőidő végéig +2 bónuszt ad az VF-hez."
+    },
+    "Holdsugár": {
+      "name": "Holdsugár",
+      "aliases": [
+        "Moonbeam"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (holdvirág magjai és opálfényű földpát)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Sápadt fényű, ezüstös fénysugár ragyog le egy 5 láb sugarú, 40 láb magas hegerben, egy a hatótolságon belül általad kijelölt pont körül. Amíg a varázslat véget nem ér, Gyér fény tölti be a hengert és Mágia akció felhasználásával egy későbbi körödben legfeljebb 60 lábat elmozgathatod a hengert.\n\nAmikor a Henger megjelenik, minden benne lévő lénynek Állóképesség mentődobást kell dobnia. Sikertelen mentés esetén egy lény 2d10 Ragyogás sebzést szenved, és ha a lény alakváltó (vagy ilyen varázslat hatása miatt), akkor visszaváltozik az eredeti formájába, és nem tud újra alakot ölteni, amíg el nem hagyja a Henger területét. Sikeres mentés esetén egy lény csak fele annyi sebzést szenved. Akkor is mentődobást kell dobni, amikor a varázslat területe egy lény helyére mozog, vagy amikor egy lény belép a varázslat területére vagy ott fejezi be a körét. Ezt a mentődobást körönként csak egyszer kell dobni.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA sebzés 2d10 → 1d10-zel nő minden 2. szint feletti rekesz felhasználása után."
+    },
+    "Homály": {
+      "name": "Homály",
+      "aliases": [
+        "Blur"
+      ],
+      "level": 2,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A tested elhomályosul, látszólag remegni és vibrálni kezd. A hatóidő alatt mindenki csak hátránnyal támadhat téged, kivéve, ha ehhez nincs szüksége a látás érzékre (például vaklátással or igazlátással érzékel téged)."
+    },
+    "Hősiesség": {
+      "name": "Hősiesség",
+      "aliases": [
+        "Heroism"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy a varázslatba beleegyező lényt, akit elönt a bátorság. Amíg a varázslat véget nem ér, a lény immunissá válik a Rémült állapotra, és minden köre elején a varázsláshoz használt tulajdonságod módosítójának megfelelő ideiglenes harcerőpontot kap.\n\nMagasabb szinteken:\nEgy további lényt célozhatsz meg minden 1. szint feletti rekesz felhasználása után."
+    },
+    "Husáng": {
+      "name": "Husáng",
+      "aliases": [
+        "Shillelagh"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 bónusz akció",
+      "range": "Önmagad",
+      "duration": "1 perc",
+      "components": "V, S, M (fagyöngy)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A kezedben tartott Husáng vagy Bot átitatódik a természet erejével. A hatóidő alatt az Erő módosítód helyett a varázsláshoz használt tulajdonságod módosítóját használhatod az e fegyverrel végrehajtott közelharci támadások és sebzések dobásakor. A fegyver d8-as sebzéskockát használ. Ha a támadás sebezést okoz, akkor a sebzés típus lehet Energia vagy a fegyver eredeti sebzése (te döntesz).\n\nA varázslat véget ér, amikor ismét elvarázsolod vagy amikor elereszted a fegyvert.\n\nMagasabb szinteken:\nA sebzéskocka változik amikor eléred az 5. (d10), 11. (d12), 17. (2d6) szinteket."
+    },
+    "Igaz csapás": {
+      "name": "Igaz csapás",
+      "aliases": [
+        "True Strike"
+      ],
+      "level": 0,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Azonnali",
+      "components": "S, M (legalább 1 réz étékű fegyver, amiben jártassságod van)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A mágikus ösztöneid által vezérelve mérsz egy csapást az idézéshez használt fegyvereddel. Az Erő vagy Ügyesség módosítód helyett a varázsláshoz használt tulajdonságod módosítóját használhatod a fegyverrel végrehajtott támadás és sebzés dobásakor. Ha a támadás sebezést okoz, akkor a sebzés típus lehet Ragyogás vagy a fegyver eredeti sebzése (te döntesz).\n\nMagasabb szinteken:\nAkár Regyogás, akár a fegyver normál sebzését okozod, a támadásod extra ragyogás sebzést okoz amikor eléred az 5. (<b>1d6</b>), 11. (<b>2d6</b>), 17. (<b>3d6</b>) szinteket."
+    },
+    "Igazság köre": {
+      "name": "Igazság köre",
+      "aliases": [
+        "Zone of Truth"
+      ],
+      "level": 2,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "10 perc",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Mágikus zónát hozol létre, amely óv a megtévesztéstől. A zóna egy 15 láb sugarú gömb, amelynek középpontjában egy általad választott pont található a hatótávon belül. Amíg a varázslat véget nem ér, annak a lénynek, aki a körében először lép be a varázslattal érintett területre, vagy ott kezdi meg a körét, Karizma mentődobást kell dobnia. Sikertelen dobás esetén a lény nem beszélhet szándékosan hazugságot, míg a zónában van. Tisztában vagy azzal, hogy az egyes lények mentődobása sikeres volt-e, vagy nem.\n\nAz érintett lény tisztában van a varázslattal, és így elkerülheti, hogy olyan kérdésekre válaszoljon, amelyekre általában hazugsággal válaszolna. Az ilyen teremtmények kitérő válaszokat adhatnak addig, amíg a zóna határain belül maradnak."
+    },
+    "Illúzióírás": {
+      "name": "Illúzióírás",
+      "aliases": [
+        "Illusory Script"
+      ],
+      "level": 1,
+      "school": "Illúzió",
+      "castTime": "1 perc",
+      "range": "Érintés",
+      "duration": "10 nap",
+      "components": "S, M (legalább 10 arany értékű festék, amti elhasznál a varázslat)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Pergamenre, papírra vagy más alkalmas anyagra írsz, és ezt erős illúzióval itatod át, amely a hatóideig tart.\n\nSzámodra és minden lény számára, akit kijelölsz, az írás normálisnak, a Te kézírásoddal írtnak tűnik, és azt a jelentést közvetíti, amelyet a szöveg írásakor akartál. A többiek számára az írás érthetetlennek tűnik, ami mintha ismeretlen vagy mágikus nyelven íródott volna. Alternatív megoldásként azt is elérheted, hogy az írás teljesen más üzenetnek tűnjék, más kézírással és más nyelven írva, bár a nyelvnek számodra ismertnek kell lennie.\n\nHa a varázslatot megtörik, az eredeti írás és az illúzió is eltűnik. Egy Igazlátó lény képes elolvasni a rejtett üzenetet."
+    },
+    "Indakötő csapás": {
+      "name": "Indakötő csapás",
+      "aliases": [
+        "Ensnaring Strike"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 bónusz akció (amit egy lény közelharci fegyverrel történő megütése után tudsz kijátszani)",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Ahogy eltalálod a célpontot, indák törnek elő a földből, és megkísérlik elkapni őt, Erő mentődobást kell dobnia. Ha a célpont egy Nagy vagy nagyobb méretű lény, akkor a mentődobást Előny használatával dobhatja. Sikertelen dobás esetén a célpont Helyhezkötött állapotba kerül a varázslat hatóidejére. Sikeres mentés esetén az indák elszáradnak és a varázslat véget ér.\n\nAmíg a célpont Helyhezkötött állapotban van, minden köre kezdetén 1d6 Szúró sebzést szenved. A célpont vagy egy érintésnyi távolságon belüli lény akció felhasználásával Erő (Atlétika) mentődobást dobhat a varázslat NF értékeddel szemben. Sikeres dobás esetén a varázslat véget ér.\n\nMagasabb szinteken:\nA sebzés nagysága 1d6-tal nő minden 1. szint feletti rekesz után."
+    },
+    "Irányzék": {
+      "name": "Irányzék",
+      "aliases": [
+        "Guiding Bolt"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "1 kör",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Fénysugarat lősz egy hatótávon belüli lényre. Dobj távolsági varázstámadást a célpont ellen! Ha talál, a célpont 4d6 Ragyogás sebzést szenved, és a következő köröd vége előtti első támadást előnnyel lehet vele szemben dobni.\n\nMagasabb szinteken:\nA sebzés nagysága 1d6-tal nő minden 1. szint feletti rekesz után."
+    },
+    "Isteni csapás": {
+      "name": "Isteni csapás",
+      "aliases": [
+        "Divine Smite"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 bónusz akció (amit egy célpont közelharci fegyverrel vagy puszta kézzel történő megütése után tudsz azonnal kijátszani)",
+      "range": "Önmagad",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A célpont további 2d8 Ragyogás sebzést szenved. A sebzés nagysága 1d8-tal nő, ha a célpont Alvilági lény vagy Élőhalott.\n\nMagasabb szinteken:\nA sebzés nagysága 1d8-tal nő minden 1. szint feletti rekesz után, amiből a varázslatot elmondtad."
+    },
+    "Isteni kegy": {
+      "name": "Isteni kegy",
+      "aliases": [
+        "Divine Favor"
+      ],
+      "level": 1,
+      "school": "Transzmutáció",
+      "castTime": "1 bónusz akció",
+      "range": "Önmagad",
+      "duration": "1 perc",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat végéig a fegyveres támadásaid találat esetén plusz 1d4 Ragyogás sebzést okoznak."
+    },
+    "Isteni segítség": {
+      "name": "Isteni segítség",
+      "aliases": [
+        "Aid"
+      ],
+      "level": 2,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "8 óra",
+      "components": "V, S, M (egy kis fehér szövetcsík)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Válassz ki legfeljebb 3 hatótávon belüli lényt. A varázslat végéig mindegyikük maximális és aktuális HP-ja 5 ponttal nő.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA célpontok HP-ja további 5 ponttal nő minden 2. szint feletti rekesz után."
+    },
+    "Javítás": {
+      "name": "Javítás",
+      "aliases": [
+        "Mending"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 perc",
+      "range": "Érintés",
+      "duration": "Azonnali",
+      "components": "V, S, M (két mágnes)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat képes egyetlen törést vagy szakadást megjavítani egy olyan tárgyon, amelyet megérintesz. Például egy eltört láncszemet, egy félbe törött kulcs két felét, szakadt köpenyt vagy szivárgó borostömlőt. Mindaddig, amíg a törés vagy szakadás semmilyen irányban nem nagyobb 1 lábnál, addig a javítás nem hagy nyomot a korábbi sérülésből.\n\nA varázslat képes fizikailag megjavítani egy mágikus tárgyat, de a varázslat nem tudja visszaállítani a mágiát egy ilyen tárgyban."
+    },
+    "Jeges érintés": {
+      "name": "Jeges érintés",
+      "aliases": [
+        "Chill Touch"
+      ],
+      "level": 0,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "A sír hideg lehelete áramlik a kezedből, amellyel közelharci varázstámadást indítasz egy lény ellen, akit megérintesz. Találat esetén a célpont 1d10 nekrotikus sebzést szenved, és nem tud harcerőpontokat visszanyerni a következő köröd végéig.\n\nMagasabb szinteken:\nA varázslat sebzése 1d10-zel nő, amikor eléred az 5.\nszintet (2d10), a 11. szintet (3d10) és a 17. szintet (4d10)."
+    },
+    "Jégkés": {
+      "name": "Jégkés",
+      "aliases": [
+        "Ice Knife"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "S, M (egy csepp víz vagy egy kis jégszilánk)",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": true,
+      "desc": "Egy jégszilánkot hozol létre, amelyet egy hatótávon belüli lény felé hajítasz. Dobj távolsági varázstámadást a célpont ellen! Találat esetén a lény 1d10 Szúró sebzést szenved. Akár eltaláltad a lényt, akár elhibáztad, a jégszilánk felrobban. A célpontnak és minden lénynek tőle 5 lábra sikeres Ügyesség mentődobást kell dobnia, vagy 2d6 pont Fagy sebzést szenved.\n\nMagasabb szinteken:\nA Fagy sebzés 1d6 ponttal növekszik minden 1. szint feletti rekesz után."
+    },
+    "Jó és gonosz észlelése": {
+      "name": "Jó és gonosz észlelése",
+      "aliases": [
+        "Detect Evil and Good"
+      ],
+      "level": 1,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "30 Láb gömb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatóidő alatt érzékeled 30 lábon belül bármely Elfajzott, Égi lény, Elementál, Tündér, Alvilági lény vagy Élőhalott helyzetét, valamint azt is, hogy a lény hol található. Hasonlóképpen tudod, hogy 30 lábon belül van-e aktív _Megszentelés_ varázslat és ha igen hol.\n\nA varázslatot blokkolja 1 láb kő, föld, vagy fa; 1 hüvelyk fém; vagy egy vékony ólomlap."
+    },
+    "Kenés": {
+      "name": "Kenés",
+      "aliases": [
+        "Grease"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "1 perc",
+      "components": "V, S, M (egy kis sertésháj vagy vaj)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Nem gyúlékony zsír borítja a talajt 10 láb élű négyzetben, amelynek középpontjában egy hatótávon belüli pont található. A zsír a terepet nehéz tereppé változtatja. Amikor megjelenik a zsír, minden olyan lénynek, aki a területén áll, sikeres Ügyesség mentődobást kell dobnia, különben Elterül. Annak a lénynek, aki belép a területre, vagy ott fejezi be a körét, szintén sikeres Ügyesség mentődobást kell dobnia, különben elterül."
+    },
+    "Kényszerített párbaj": {
+      "name": "Kényszerített párbaj",
+      "aliases": [
+        "Compelled Duel"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 bónusz akció",
+      "range": "30 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Megpróbálsz párbajra kényszeríteni egy hatótávon belüli lényt, akit látsz. A célpontnak sikeres Bölcsesség mentődobást kell dobnia. Sikertelen dobás esetén a célpont Hátránnyal dobja a tamádásait rajtad kívül minden más lény ellen, és akaratlagosan nem léphet tőled 30 lábnál távolabbra.\n\nA varázslat véget ér, ha támadódobást hajtasz végre a célponton kívül más ellen, ha más ellenséges lényre varázslatot mondasz el, ha egy társad sebzést okoz a célpontnak, vagy ha a körödet a célponttól 30 lábnál távolabb fejezed be."
+    },
+    "Kéregbőr": {
+      "name": "Kéregbőr",
+      "aliases": [
+        "Barkskin"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 bónusz akció",
+      "range": "Érintés",
+      "duration": "1 óra",
+      "components": "V, S, M (egy maroknyi tölgyfakéreg)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy a varázslatba beleegyező lényt. Amíg a varázslat véget nem ér a célpont bőre durvának, kéregszerűnek látszik és a Védettségi foka 17-re nő, ha egyébként alacsonyabb lenne annál."
+    },
+    "Kisebb gyógyítás": {
+      "name": "Kisebb gyógyítás",
+      "aliases": [
+        "Lesser Restoration"
+      ],
+      "level": 2,
+      "school": "Védővarázs",
+      "castTime": "1 bónusz akció",
+      "range": "Érintés",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megszüntetheted egy megérintett lény egy állapotát az alábbiak közül: Megvakult, Megsüketült, Bénult, or Mérgezett."
+    },
+    "Kisebb illúzió": {
+      "name": "Kisebb illúzió",
+      "aliases": [
+        "Minor Illusion"
+      ],
+      "level": 0,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "1 perc",
+      "components": "S, M (egy kis gyapjú)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Hangot vagy egy tárgy képet hozhatsz létre a hatótávon belül, amely a hatóidő alatt fennmarad. Az illúzió akkor is véget ér, ha egy akcióval megszünteted, vagy ismét elmondod a varázslatot. Ha egy lény egy akció felhasználásával megvizsgálja a hangot vagy a képet, akkor megállapíthatja a kép illúzió voltát, ha sikeres Intelligencia (Nyomozás) próbát dob a varázslatod elleni mentő NF értékével szemben. Ha egy lény felismeri, hogy mi az illúzió valójában, akkor az illúzió elhalványul a lény számára.\n\nHang:\nHa hangot hozol létre, annak hangereje a suttogástól a sikolyig terjedhet. Ez lehet a te hangod, valaki más hangja, oroszlán üvöltése, dobverés, vagy bármilyen más hang, amit választasz. A hang változatlanul folytatódik a hatóidő alatt, vagy különálló hangokat adhat ki különböző időpontokban, mielőtt a varázslat véget ér.\n\nKép:\nHa egy tárgyról készítesz képet – például egy székről, sáros lábnyomokról vagy egy kis ládáról –, akkor az nem lehet nagyobb, mint 5 láb élű kocka. A kép nem hozhat létre hangot, fényt, szagot vagy más érzékszervi hatást. A képpel való fizikai interakció felfedi, hogy ez csupán illúzió, mert a dolgok kersztül mennek rajta."
+    },
+    "Kop-kop": {
+      "name": "Kop-kop",
+      "aliases": [
+        "Knock"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Válassz egy tárgyat, amelyet a hatótávon belül látsz! A tárgy lehet egy ajtó, egy doboz, egy láda, egy bilincs, egy lakat vagy más tárgy, amely mágikus, vagy nem mágikus módon zárható.\n\nHa a célpontot hétköznapi zár védi, az kinyílik. Ha reteszelve van, beragadt vagy más módon van zárva, úgy a retesz félrecsúszik, a beragadás megszűnik, a zár kinyílik. Ha a tárgynak több zárja is van, akkor csak az egyik nyílik.\n\nHa olyan célt választasz, amelyet a HSPB varázslat tart zárva, akkor a varázslatot 10 percig elnyomod, ezalatt a célpont normális módon nyitható és zárható.\n\nA varázslás során a célpontból hangos koppanás hallatszik, amely 300 lábnyi távolságból is hallható."
+    },
+    "Kórságok sugara": {
+      "name": "Kórságok sugara",
+      "aliases": [
+        "Ray of Sickness"
+      ],
+      "level": 1,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Zöldes sugarat lősz egy hatótávon belüli lényre. Dobj távolsági varázstámadást a célpont ellen! Találat esetén a célpont 2d8 Méreg sebzést szenved és Mérgezett állapotba kerül a következő köröd végéig.\n\nMagasabb szinteken:\nA sebzés nagysága 1d8-cal nő minden 1. szint feletti rekesz után."
+    },
+    "Ködfelhő": {
+      "name": "Ködfelhő",
+      "aliases": [
+        "Fog Cloud"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatótávon belüli pont 20 láb sugarú gömbben ködfelhőt hozol létre. A terület nem beláthatóvá válik. Ez a hatóideig tart, vagy amíg egy nagyobb erősségű szél el nem oszlatja (pl. _Állandó Széllökés_ varászlat)\n\nMagasabb szinteken:\nA köd sugara 20 lábbal növekszik minden 1. szint feletti rekesz után."
+    },
+    "Kötéltrükk": {
+      "name": "Kötéltrükk",
+      "aliases": [
+        "Rope Trick"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "1 óra",
+      "components": "V, S, M (porított kukoricakivonat és egy megcsavart pergamen)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy kötélet. Ekkor a kötél egyik vége addig emelkedik a levegőbe, amíg a kötél egésze nem áll a talajra merőlegesen vagy el nem éri a mennyezetet. A kötél felső végén egy láthatatlan 3x5 láb nagyságú portál nyílik egy extradimenzionális térbe, amely a varázslat végéig marad fenn. Az extradimenzionális tér a kötél tetejére mászva érhető el és onnan a kötél felhúzható vagy kidobható.\n\nA térben nyolc legfeljebb Közepes termetű lény fér el. A támadások és varázslatok nem juthatnak át a bejáraton az extradimenzionális térbe vagy onnan kifelé, de a bent lévők a protálon keresztül ki látnak belőle. Amikor a varázslat véget ér, az extradimenzionális térben lévő minden dolog kiesik."
+    },
+    "Kromatikus gömb": {
+      "name": "Kromatikus gömb",
+      "aliases": [
+        "Chromatic Orb"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "90 Láb",
+      "duration": "Azonnali",
+      "components": "V, S, M (legalább 50 arany értékű gyémánt)",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Egy színes energia gömböt hajítasz egy hatótávon belüli lény felé. Válaszd ki a gömb típusát a következők közül: Sav, Fagy, Tűz, Villám, Méreg vagy Mennydörgés; majd dobj távolsági varázstámadást a célpont ellen. Találat esetén a célpont 3d8 sebzést szenved a választott típusból.\n\nHa legalább két d8-asod ugyanazt az értéket mutatja, a gömb tovább pattan a célpont 30 lábas környezetében egy másik általad választott lényre. Dobj újabb távolsági varázstámadást és újabb sebzés dobás az új célpont ellen. A gömb többet nem pattan tovább, hacsak nem 2 vagy magasabb varázslat rekeszt használtál.\n\nMagasabb szinteken:\nA varázslat minden 1. szint feletti rekesz után 1d8-cal növeli a sebzést.\nA gömb maximum annyiszor pattan tovább, amennyi varázslat rekeszt használtál a varázslat elmondásához.\nEgy lényt legfeljebb egyszer érhet el a gömb."
+    },
+    "Láng teremtése": {
+      "name": "Láng teremtése",
+      "aliases": [
+        "Produce Flame"
+      ],
+      "level": 0,
+      "school": "Idézés",
+      "castTime": "1 bónusz akció",
+      "range": "Önmagad",
+      "duration": "10 perc",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Egy lobogó láng jelenik meg a kezedben és a hatóidő végéig ott marad. Amíg a kezedben van nem ad le hőt és nem gyújt lángra semmit. A láng erős fényt áraszt 20 láb sugarú körben, és gyér fényt további 20 lábon. A varázslat véget ér, ha ismét elvarázsolod.\n\nAmíg a varázslat tart, a lángot egy varázslat akció felhasználásával eldobhatod egy 60 láb távolságon belüli lényre vagy tárgyra. Dobj távolsági varázstámadást a célpont ellen. Találat esetén a célpont 1d8 tűz sebzést szenved.\n\nMagasabb szinteken:\nA varázslat sebzése 1d8-cal nő, amikor eléred az 5.\nszintet (2d8), a 11. szintet (3d8) és a 17. szintet (4d8)."
+    },
+    "Lángoló gömb": {
+      "name": "Lángoló gömb",
+      "aliases": [
+        "Flaming Sphere"
+      ],
+      "level": 2,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (egy darab faggyú, egy csipetnyi kénkő és pár szem vaspor)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "A hatótávon belül egy 5 láb átmérőjű tűzgömb jelenik meg az általad megadott szabad mezőn. A varázslat hatóidejéig marad meg. Minden olyan lény, amely a gömbtől 5 lábon belül fejezi be a körét, Ügyesség mentődobást kell dobjon. Sikertelen mentés esetén a lény 2d6 tűzsebzést szenved, sikeres mentés esetén csak fele annyi sebzést szenved.\n\nBónusz akcióként a gömböt legfeljebb 30 lábbal arréb guríthatod a földön. Ha a gömböt egy lény helyére mozgatod, akkor az a lény meg kell hogy dobja a gömb elleni mentődobást, és a gömb megáll arra körre.\n\nAmikor mozgatod a gömböt, akkor irányíthatod úgy, hogy legfeljebb 5 láb magas akadályokon vagy legfeljebb 10 láb széles szakadékokon átjusson. A gyúlékony tárgyak, amelyeket nem viselnek vagy cipelnek, Meggyulladnak, ha a gömb megérinti őket. Ezen felül a gömb Erős fényt áraszt 20 láb sugarú körben, valamint Gyenge fényt fényt további 20 láb sugarú körben.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA sebzés 2d6 → 1d6-al nő minden 2. szint feletti rekesz felhasználása után."
+    },
+    "Lángoló kezek": {
+      "name": "Lángoló kezek",
+      "aliases": [
+        "Burning Hands"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "15 Láb kúp",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Vékony lángsugarak törnek elő a kezeidből. Egy 15 láb hosszú kúpban tartózkodó minden lénynek Ügyesség mentődobást kell dobnia, kudarc esetén 3d6 Tűz sebzést szenvednek, vagy fele ennyit sikeres dobásnál. A területen belüli éghető anyagok, melyeket senki nem visel vagy hordoz meggyulladnak.\n\nMagasabb szinteken:\nA sebzés nagysága 1d6-tal nő minden 1. szint feletti rekesz után."
+    },
+    "Lángpenge": {
+      "name": "Lángpenge",
+      "aliases": [
+        "Flame Blade"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "1 bónusz akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (szömörce level)",
+      "concentration": true,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Lángoló kardot idézel a szabad kezedbe. A kard mérete és alakja egy szablyához hasonló, és a varázslat hatóidejéig marad meg. A kard eltűnik, ha elejted, de bónusz akció felhasználásával újra megidézheted.\n\nAz akciód során a lángoló karddal közelharci varázstámadást tehetsz. Találat esetén a célpont 3d6 + a Varázslat módosítód összegének megfelelő Tűz sebzést szenved.\n\nA lángoló penge 10 láb sugarú körben Erős fényt, további 10 láb sugarú körben pedig Gyér fényt ad.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA sebzés 3d6 → 1d6-tal nő minden 2. szint feletti rekesz felhasználása után."
+    },
+    "Láthatatlan szolga": {
+      "name": "Láthatatlan szolga",
+      "aliases": [
+        "Unseen Servant"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "1 óra",
+      "components": "V, S, M (egy kis darab madzag és fa)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat egy Láthatatlan, értelem nélküli, alaktalan, közvetítő erőt hoz létre, amely egyszerű feladatokat hajt végre a parancsaid szerint a varázslat végéig. A szolga a hatótávon belül egy szabad mezőn jön létre. Értékei: VF 10, 1 HP és 2-es Erő. A szolga nem tud támadni. Ha HP-ja 0 pontra csökken, a varázslat véget ér.\n\nBónusz akció felhasználásával minden körödben egyszer mentálisan megparancsolhatod a szolgának, hogy mozogjon legfeljebb 15 lábat, és lépjen kapcsolatba egy tárggyal. A szolga olyan egyszerű feladatokat láthat el, amelyeket egy emberi szolga is elvégezhet, például dolgokat hozhat elő, takaríthat, javíthat, ruhákat hajtogathat, tüzet gyújthat, ételeket szolgálhat fel és bort önthet. Miután megadtad a parancsot, a szolga a legjobb tudása szerint elvégzi a feladatot, amíg be nem fejezi azt, majd várja a következő parancsot.\n\nHa olyan feladatot parancsolsz a szolgának, amely több mint 60 lábra távolítja el őt tőled, a varázslat véget ér."
+    },
+    "Láthatatlanság": {
+      "name": "Láthatatlanság",
+      "aliases": [
+        "Invisibility"
+      ],
+      "level": 2,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V, S, M (egy gumiarábikumba zárt szempilla)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy lényt, aki a hatóidőre Láthatatlanná válik. A varázs megtörik, amint az illető támad, sebez vagy varázsolni kezd.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nTovábbi 1 lényt választhatsz célpontnak minden 2. szint feletti rekesz felhasználása után."
+    },
+    "Láthatatlanság látása": {
+      "name": "Láthatatlanság látása",
+      "aliases": [
+        "See Invisibility"
+      ],
+      "level": 2,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "1 óra",
+      "components": "V, S, M (egy csipet zsírkő egy kis ezüstporral beszórva)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatóidő alatt normálisan láthatod a Láthatatlan lényeket és tárgyakat. Emellett beláthatsz az éteri síkba is. Az éteri lények és tárgyak kísértetiesnek és áttetszőnek tűnnek."
+    },
+    "Lebegés": {
+      "name": "Lebegés",
+      "aliases": [
+        "Levitate"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (vagy egy kis bőrhurok, vagy egy csésze alakúra formázott arany drótdarab egyik végén hosszú szárral)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "A választott lény vagy tárgy, amelyet a hatótávon belül látsz, függőlegesen, legfeljebb 20 láb magasra emelkedik, és ott marad felfüggesztve. A varázslat legfeljebb 500 font súlyú célpontot lebegtethet. A varázslatba bele nem egyező lény Állóképesség mentődobást dobhat. Sikeres dobás esetén a varázslat nem hat.\n\nA célpont csak akkor mozoghat, ha egy elérhető tárgyhoz vagy felülethez (például falhoz vagy mennyezethez) nyomja vagy húzza magát, ami lehetővé teszi, hogy úgy mozogjon, mintha mászna. A körödben 20 lábbal változtathatod a célpont magasságát mindkét irányba. Ha te magad vagy a célpont, akkor a mozgásod részeként mozoghatsz fel vagy le. Egyéb esetben az akciód felhasználásával mozgathatod a célpontot, amelynek a varázslat hatótávján belül kell maradnia. Amikor a varázslat véget ér, a célpont óvatosan leereszkedik a földre, amennyiben még lebegett."
+    },
+    "Lebegő korong": {
+      "name": "Lebegő korong",
+      "aliases": [
+        "Tenser's Floating Disk"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "1 óra",
+      "components": "V, S, M (egy csepp higany)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat egy kör alakú, vízszintes erősíkot hoz létre, amely 3 láb átmérőjű és 1 hüvelyk vastag. 3 méterrel a talaj felett lebeg egy szabadon választott területen, amelyet látsz a hatótávon belül. A korong a hatóidő végéig marad fenn, és legfeljebb 500 fontot bír el. Ha nagyobb súlyt helyeznek rá, a varázslat véget ér, és minden, ami a korongon van, a földre esik.\n\nA korong mozdulatlan, amíg 20 lábnál közelebb vagy hozzá. Ha 20 lábnál távolabbra mész, a lemez követ téged oly módon, hogy 20 lábon belül maradjon. Képes egyenetlen terepen is mozogni, felfelé vagy lefelé vezető lépcsőn, lejtőn és hasonló területeken, de nem képes 10 láb vagy annál nagyobb magasságkülönbséget leküzdeni. A korong például nem tud átkelni egy 10 láb mély gödör fölött, és elhagyni sem képes egy ilyen gödröt, ha az alján hozták létre.\n\nHa 100 lábnál messzebbre mozogsz a korongtól (általában azért, mert a korong nem tud megkerülni egy akadályt, hogy kövessen téged), a varázslat véget ér."
+    },
+    "Mágia érzékelése": {
+      "name": "Mágia érzékelése",
+      "aliases": [
+        "Detect Magic"
+      ],
+      "level": 1,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "30 Láb gömb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatóidő alatt 30 lábnyi körzetedben érzékeled a mágikus hatásokat. Ha ilyen hatás érzékelsz, a Mágia akciód felhasználásával észreveheted a mágiával érintett, a hatóterületen lévő látható tárgyat vagy lényt körbevevő halvány aurát, és amennyiben varázslat okozta a hatást képes vagy megnevezni a mágiaiskolát is.\n\nA varázslatot blokkolja 1 láb vastag kő, föld, vagy fa; 1 hüvelyk vastag fém, vagy egy vékony ólomlemez."
+    },
+    "Mágikus fegyver": {
+      "name": "Mágikus fegyver",
+      "aliases": [
+        "Magic Weapon"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 bónusz akció",
+      "range": "Érintés",
+      "duration": "1 óra",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy nem mágikus fegyvert. Amíg a varázslat véget nem ér, a fegyver mágikus fegyverré válik. A támadásokat és sebzéseket +1 módosítóval lehet dobni.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nHa a varázslatot a 3. vagy magasabb varázslatrekeszből mondod el, a bónusz +2-re nő. Ha 6. vagy magasabb szintű rkeszt használsz, a bónusz +3-ra nő."
+    },
+    "Máguskéz": {
+      "name": "Máguskéz",
+      "aliases": [
+        "Mage Hand"
+      ],
+      "level": 0,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "1 perc",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatótávon belül egy lebegő szellemkéz jelenik meg az általad megadott helyen. A kéz a hatóidő végéig marad meg, de egy akció felhasználásával el is tüntetheted azt. A kéz akkor is eltűnik, ha 30 lábnál jobban eltávolodik tőled, vagy ha ismét elmondod a varázslatot.\n\nAmikor megidézed, a kéz érintkezésbe léphet tárgyakkal, kinyithat egy ajtót vagy egy ládát, betehet vagy kivehet egy tárgyat egy nyitott ládából, vagy kiöntheti egy edény tartalmát. A későbbi köreidben egy Mágia akcióval így irányíthatod a kezet. A kéz minden egyes használatkor legfeljebb 30 lábnyit mozoghat is.\n\nA kéz nem alkalmas támadásra, varázstárgyak aktiválására és 10 fontnál nagyobb súlyú tárgyak felemelésére."
+    },
+    "Máguspáncél": {
+      "name": "Máguspáncél",
+      "aliases": [
+        "Mage Armor"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "8 óra",
+      "components": "V, S, M (egy darab cserzett bőr)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy a varázslatba beleegyező, páncélt nem viselő lényt. Amíg a varázslat hat, a célpont alap Védelmi Foka (VF/AC) 13 + az Ügyesség módosítója lesz. A varázslat véget ér, ha a célpont páncélt ölt."
+    },
+    "Megidézett hátas": {
+      "name": "Megidézett hátas",
+      "aliases": [
+        "Find Steed"
+      ],
+      "level": 2,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megidézel egy másvilági lényt, amely egy hűséges hátasként jelenik meg egy általad választott, hatótávon belüli, szabad helyen. Ez a lény a HMM stat blokkot használja. Ha már van egy hátasod ebből a varázslatból, akkor a hátas helyére az új lény kerül.\n\nA lény egy Nagy termetű, lovaglásra alkalmas állat formáját ölti, lehet például ló, teve, rémfarkas vagy szarvas. Amikor elmondod a varázslatot, kiválasztod a hátas lényének típusát—Égi, Tündér vagy Alvilági—ami meghatározza a stat blokk bizonyos tulajdonságait.\n\nHarc:\nA hátas veled és társaiddal szövetséges. Harcban osztozik a Kezdeményezés értékeden, és irányított hátasként viselkedik, amíg rajta lovagolsz (ahogy azt a Lovas Harc szabályai meghatározzák). Ha Eszméletlen állapotban vagy, a hátas azonnal a te köröd után következik és önállóan cselekszik, arra koncentrálva, hogy megvédjen téged.\n\nA hátas eltűnése:\nA hátas eltűnik, ha a Harcerő pontjai 0-ra csökkennek, vagy ha meghalsz. Amikor eltűnik, maga mögött hagyja mindazt, amit viselt vagy cipelt. Ha újra elmondod ezt a varázslatot, akkor te döntöd el, hogy az a hátas, amelyik eltűnt, vagy egy másik jelenik meg.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nHasználd a varázslat rekesz szintjét a hátas stat blokkjának meghatározásához."
+    },
+    "Megigézés": {
+      "name": "Megigézés",
+      "aliases": [
+        "Enthrall"
+      ],
+      "level": 2,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "1 perc",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "A varázslat hatóidejére zavarba ejtő szavakból álló szöveget szősz, amely miatt a hatótávon belül látható, általad választott lényeknek Bölcsesség mentődobást kell dobniuk. Azok a lények, amelyekkel te vagy a társaid harcoltok, automatikusan sikeresek a mentődobásban. Sikertelen mentődobás esetén a célpont -10 büntetést kap a Bölcsesség (HPHB) dobásokra és Passzív HPHB értékekre, amíg a varázslat véget nem ér."
+    },
+    "Menedék": {
+      "name": "Menedék",
+      "aliases": [
+        "Sanctuary"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 bónusz akció",
+      "range": "30 Láb",
+      "duration": "1 perc",
+      "components": "V, S, M (egy tükör szilánkja)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Megvédesz egy a hatótávon belüli lényt. Amikor valaki a hatóidő alatt támadó dobást dob vagy egy sebzést okozó varázslattal támadja a védett lényt, először sikeres Bölcsesség mentődobást kell dobnia, különben mást kell megtámadnia, vagy a támadást, illetve a varázslatot elveszíti. A varázslat nem védi meg a célpontot a területre ható hatásoktól, mint például egy Tűzgolyó (Fire Ball) varázslat okozta robbanás.\n\nHa a védelem alatt álló lény támadást hajt végre, ellenségre ható varázslatot használ, vagy valakit megsebez, a varázs megtörik."
+    },
+    "Mentális tüske": {
+      "name": "Mentális tüske",
+      "aliases": [
+        "Mind Sliver"
+      ],
+      "level": 0,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Ideiglenesen megpróbálod megzavarni egy a hatótávon belül látott lény elméjét. A célpontnak sikeres Intelligencia mentődobást kell dobnia, különben 1d6 pszichikai sebzést szenved, és a következő mentődobásából 1d4-et le kell vonnia, mielőtt a következő köröd véget ér.\n\nMagasabb szinteken:\nA varázslat sebzése 1d6-tal nő, amikor eléred az 5.\nszintet (2d6), a 11. szintet (3d6) és a 17. szintet (4d6)."
+    },
+    "Mennydörgés": {
+      "name": "Mennydörgés",
+      "aliases": [
+        "Thunderwave"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "15 Láb kocka",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Mennydörgő energia hullámokat engedsz szabadon. Minden lénynek egy körlütted lévő 15 láb élű kockában, Állóképesség mentődobást kell dobnia. Kudarc esetén 2d8 Mennydörgés típusú sebzést szenved, és a mennydörgés ereje 10 lábnyit löki el őket tőled. Sikeres mentődobás esetén a sebzés feleződik, és a lények nem tántorodnak hátra.\n\nAzok a nem rögzített tárgyak, melyek teljes terjedelmükkel a kockában vannak, szintén 10 lábnyit ellökődnek. A varázslat által keltett mennydörgés 300 lábra hallatszik el.\n\nMagasabb szinteken:\nA sebzés nagysága 1d8-cal nő minden 1. szint feletti rekesz után."
+    },
+    "Mennydörgő csapás": {
+      "name": "Mennydörgő csapás",
+      "aliases": [
+        "Thunderous Smite"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 bónusz akció (amit egy célpont közelharci fegyverrel vagy puszta kézzel történő megütése után tudsz azonnal kijátszani)",
+      "range": "Önmagad",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "A csapásod mennydörgő hanggal zeng fel, ami akár 300 láb távolságra is elhallatszik, és a célpont extra 2d6 Mennydörgés típusú sebzést szenved el a támadásod mellett. Ezenkívül ha célpont egy lény, akkor sikeres Erő mentődobást kell dobnia, különben 10 lábnyira repül tőled és Elterül.\n\nMagasabb szinteken:\nMinden sebzés 1d6 minden 1. szint feletti rekesz után."
+    },
+    "Mennydörgő taps": {
+      "name": "Mennydörgő taps",
+      "aliases": [
+        "Thunderclap"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "5 Láb emanáció",
+      "duration": "Azonnali",
+      "components": "S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Minden tőled legfeljebb 5 lábra lévő lénynek Állóképesség mentődobást kell dobnia, különben 1d6 Mennydörgés sebzést szenvednek. A varázslat hangja 100 láb távolságra is elhallatszik.\n\nMagasabb szinteken:\nA varázslat sebzése 1d6-tal nő, amikor eléred az 5.\nszintet (2d6), a 11. szintet (3d6) és a 17. szintet (4d6)."
+    },
+    "Méreg észlelése": {
+      "name": "Méreg észlelése",
+      "aliases": [
+        "Detect Poison and Disease"
+      ],
+      "level": 1,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "30 Láb gömb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (egy szál fagyöngy)",
+      "concentration": true,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat hatóideje alatt 30 láb sugaú körben érzékeled a mérgek, a mérgező vagy méreggel rendelkező lények és a mágikus megbetegedések jelenlétét és helyét. Képes vagy megállapítani a méreg, a lény vagy megbetegedés fajtáját. A varázslatot blokkolja egy lábnyi kő, föld, vagy fa; egy hüvelyk fém, egy vékony ólomlemez."
+    },
+    "Méregpermet": {
+      "name": "Méregpermet",
+      "aliases": [
+        "Poison Spray"
+      ],
+      "level": 0,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Mérgező gázfelhőt bocsátasz ki egy hatótávon belüli lény felé. Dobj távolsági varázstámadást a célpont ellen. Találat esetén a célpont 1d12 Méreg sebzést szenved.\n\nMagasabb szinteken:\nA varázslat sebzése 1d12-vel nő, amikor eléred az 5.\nszintet (2d12), a 11. szintet (3d12) és a 17. szintet (4d12)."
+    },
+    "Misztikus zár": {
+      "name": "Misztikus zár",
+      "aliases": [
+        "Arcane Lock"
+      ],
+      "level": 2,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Állandó (eloszlatásig)",
+      "components": "V, S, M (arany por legalább 25 arany értékben, amely a varázslat során elhasználódik)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy becsukott ajtót, ablakot, kaput, ládát vagy más bejáratot, és varázslattal bezárod. Ez a zár varázslat-mentes módon nem nyitható vagy törhető fel. Te és a varázslat elmondásakor az általad megjelölt lények becsukhatják, kinyithatják a tárgyat a zár ellenére. Meghatározhatsz olyan jelszót is, amelyet ha a tárgytól legfeljebb 5 lábnyira állva kimondanak, a tárgy 1 percig szabadon nyitható."
+    },
+    "Nagyítás/kicsinyítés": {
+      "name": "Nagyítás/kicsinyítés",
+      "aliases": [
+        "Enlarge/Reduce"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (egy csipet vaspor)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "A hatóidőre megnövelheted vagy lekicsinyítheted egy lény vagy tárgy méretét, amelyet a hatótávon belül látsz. A választott tágy csak olyan lehet, amit nem hordanak és nem fognak kézben! Ha lényt választasz és a célpont a varázslatba nem egyezik bele, akkor Állóképesség mentődobást dobhat. Sikeres dobás esetén a varázslatnak nincsen hatása.\n\nHa a célpont egy lény, akkor mindennek, amit visel és hord, arányosan megváltozik a mérete, de bármely tárgy, amelyet az érintett lény elejt, azonnal normál méretűvé válik.\n\nNagyítás:\nA célpont termete egy kategóriával növekszik, például közepesről nagyra. A célpont Előnnyel dobja az Erő próbáit és az Erő mentődobásait. A célpont megnövekedett fegyverei találat esetén 1d4 extra sebzést okoznak.\n\nKicsinyítés:\nA célpont termete egy kategóriával csökken, például közepesről kicsire. Amíg a varázslat véget nem ér, a célpont Hátránnyal dobja az Erő próbákat és az Erő mentődobásokat. A célpont összezsugorodott fegyverei találat esetén 1d4-gyel kevesebb sebzést okoznak, de ez nem csökkentheti a sebzést 1 alá."
+    },
+    "Néma kép": {
+      "name": "Néma kép",
+      "aliases": [
+        "Silent Image"
+      ],
+      "level": 1,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (egy kis gyapjú)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Egy tárgy, lény vagy más látható jelenség képét hozod létre, amely nem nagyobb, mint egy 15 láb élű kocka. A kép a hatótávon belül jelenik meg, és a hatóidőig tart. A kép pusztán vizuális; nem kíséri hang, szag vagy más érzékszervi hatás.\n\nMágia akció felhasználásával a képet a hatótávon belül bármilyen pontra elmozdíthatod. Amint a kép megváltoztatja a helyét, megváltoztathatod annak megjelenését, hogy a mozgás természetesen illeszkedjen a képhez. Például ha létrehozol egy képet egy lényről, és áthelyezed, akkor úgy módosíthatod a képet, hogy az látszólag járjon.\n\nA képpel valózikai érintkezés felfedi, hogy illúzió, mivel a dolgok áthaladhatnak rajta. Egy lény, aki Vizsgálat akciót hajt végre, megállapíthatja, hogy illúzió, ha sikeres Intelligencia (Nyomozás) próbát dob a varázslatod elleni mentő NF értékével szemben. Ha egy lény felismerte az illúziót, akkor attól kezdve átlát a képen."
+    },
+    "Nyelvek megértése": {
+      "name": "Nyelvek megértése",
+      "aliases": [
+        "Comprehend Languages"
+      ],
+      "level": 1,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "1 óra",
+      "components": "V, S, M (csipetnyi korom és só)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatóidő alatt képes vagy megérteni minden nyelv szó szerinti, közvetlen jelentését, amit hallasz vagy látsz jelelve. Minden írott nyelvet is megértesz, amit látsz, de ehhez meg kell érintened a felületet, melyen az írás található. Az olvasás oldalanként egy percig tart. A varázslattal nem lehet megfejteni szimbólumokat, sem titkos üzeneteket."
+    },
+    "Oltalmazó kötelék": {
+      "name": "Oltalmazó kötelék",
+      "aliases": [
+        "Warding Bond"
+      ],
+      "level": 2,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "1 óra",
+      "components": "V, S, M (egy pár, legalább 50 arany értékű platinagyűrű, melyet a hatóidő alatt karakterednek és a társának is viselnie kell)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy a varázslatba beleegyező lényt, amíg a varázslat tart, titokzatos kötelék jön létre kettőtök között. Amíg a célpont legfeljebb 60 lábra tartózkodik tőled, +1-et kap a VF értékéhez és a mentődobásaira, továbbá Ellenállóvá válik minden sebzéstípussal szemben. Amikor azonban megsebzik, Te is ugyanannyi sebzést szenvedsz.\n\nA varázs megtörik ha 0 HP-ra kerülsz, vagy ha a célpont 60 lábnál messzebb kerül tőled, illetve ha valamelyikőtök egy másik Oltalmazó Kötelék hatása alá kerül."
+    },
+    "Önmagad változtatása": {
+      "name": "Önmagad változtatása",
+      "aliases": [
+        "Alter Self"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megváltoztatod a fizikai formádat. Válassz az alábbi lehetőségek közül, amelynek hatása a varázslat teljes hatóideje alatt érvényes. Amíg a varázslat tart, egy Mágia akció felhasználásával megváltoztathatod a döntésedet, és másik opciót is választhatsz.\n\nVízi alkalmazkodás:\nKopoltyúkat növesztesz és úszóhártya nő az ujjaid között. Lélegezhetsz a víz alatt, és úszási sebességed a gyaloglási sebességeddel lesz azonos.\n\nMegjelenés módosítása:\nMegváltoztatod a megjelenésedet. Te döntöd el, hogy nézel ki, beleértve a magasságodat, súlyodat, arcvonásaidat, hangodat, hajad hosszát, színét és más fizikai jellemzőidet. Egy másik faj tagjaként is megjelenhetsz, bár a statisztikáid nem változnak. Nem tűhetsz fel más termezű lényként, és a tested alapvető alakjának is változatlannak kell maradnia: ha kétlábú vagy, akkor ezzel a varázslattal nem lehet négylábúvá válni. A varázslat hatóideje alatt Mágia akció felhasználásával bármikor újra megváltoztathatod a megjelenésedet.\n\nTermészetes fegyverek:\nKarmokat (Vágó), agyarakat (Szúró), szarvakat (Szúró) vagy patákat (Zúzó) növesztesz. Pusztakezes csapással támadva használhatpd ezeket a növesztett testrészeidet.Ilyenkor a Pusztakezes csapás szokásos sebzése helyett a zárójelben megadott típusú 1d6 sebzést okozod, és a támadás és sebzés dobásaidhoz a varázslási képességmódosítódat használod, nem pedig az Erőt."
+    },
+    "Ördögi gúny": {
+      "name": "Ördögi gúny",
+      "aliases": [
+        "Vicious Mockery"
+      ],
+      "level": 0,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Finom, varázslatokkal átszőtt sértések sorozatát vágod egy olyan lény fejéhez, akit a hatótávon belül látsz vagy hallasz. A célpontban sikeres Bölcsesség mentődobást kell dobnia, vagy 1d6 Pszichikai sebzést szenved, és hátránnyal kell dobnia a következő támadását, amelyet a következő körének vége előtt tesz.\n\nMagasabb szinteken:\nA varázslat sebzése 1d6-tal nő, amikor eléred az 5.\nszintet (2d6), a 11. szintet (3d6) és a 17. szintet (4d6)."
+    },
+    "Pajzs": {
+      "name": "Pajzs",
+      "aliases": [
+        "Shield"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 reakció (amit akkor játszhatsz ki, ha egy támadással vagy a Varázslövedék varázslattal eltalálnának)",
+      "range": "Önmagad",
+      "duration": "1 kör",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Egy alig észlelhető mágikus erőtér védelmez téged. A következő köröd elejéig +5-öt kapsz a VF(AC) értékedhez, beleértve azt a támadást is, mellyel szemben a reakciót felhasználtad. A Varázslövedék (Magic Missile) nem sebez téged."
+    },
+    "Parancsvarázs": {
+      "name": "Parancsvarázs",
+      "aliases": [
+        "Command"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Kiadsz egy egyszavas parancsot egy hatótávon belüli lénynek, akit látnod kell. A célpontnak sikeres Bölcsesség mentődobást kell dobnia, különben a következő körében az alábbi listából választott parancsot követ:\n\nGyere!:\nA célpont a lehető legrövidebb és egyenesebb úton hozzá siet, és befejezi a körét, ha 5 lábnyira megközelített téged.\n\nEldobni!:\nA célpont eldobja, akármit is fog a kezében, és befejezi a körét.\n\nMenekülj!:\nA célpont azzal tölti a körét, hogy a lehető leggyorsabban eltávolodjon tőled.\n\nFöldre!:\nA célpont földre veti magát (Elterült állapot), és befejezi a körét.\n\nÁllj!:\nA célpont a körében nem végez mozgást, és nem hajt végre se akciót, se bónusz akciót.\n\nMagasabb szinteken:\nTovábbi +1 lényt választhatsz minden 1. szint feletti rekesz után."
+    },
+    "Perzselő csapás": {
+      "name": "Perzselő csapás",
+      "aliases": [
+        "Searing Smite"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 bónusz akció (amit egy célpont közelharci fegyverrel vagy puszta kézzel történő megütése után tudsz azonnal kijátszani)",
+      "range": "Önmagad",
+      "duration": "1 perc",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Ahogy eltalálod a célpontot az további 1d6 Tűz sebzést szenved el a támadásod mellett. Ezenkívül a célpont minden körének elején további 1d6 Tűz sebzést szenved el, ami után Állóképesség mentődobást kell dobnia. Sikertelen dobás esetén a varázslat folytatódik, sikeres dobás esetén a varázslat véget ér.\n\nMagasabb szinteken:\nMinden sebzés 1d6 minden 1. szint feletti rekesz után."
+    },
+    "Perzselő sugár": {
+      "name": "Perzselő sugár",
+      "aliases": [
+        "Scorching Ray"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Három tűzsugarat hozol létre, és a hatótávon belül egy vagy több célpont felé hajítod őket. Dobj távolsági varázstámadást minden sugár esetében. Találat esetén a célpont 2d6 Tűz sebzést szenved.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nTovábbi 1 sugarat hozhatsz létre minden 2. szint feletti rekesz után."
+    },
+    "Pókháló": {
+      "name": "Pókháló",
+      "aliases": [
+        "Web"
+      ],
+      "level": 2,
+      "school": "Idézés",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V, S, M (egy kis darab pókháló)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy hatótávon belüli ponton sűrű, ragadós pókhálót idézel meg. A háló az adott pontból 20 láb élű kockát tölt ki a hatóidő végéig. A terület nehéz terepnek számít, és rosszul belátható.\n\nAmennyiben a hálót nem feszíted ki kétoldalt valamilyen szilárd tárgyhoz (például falak vagy fatörzsek közé), nem rögzíted a padló, a falak, illetve a mennyezet közé, a háló összeomlik, és a varázslat a következő köröd elején véget ér. A lapos felületekre felragasztott pókháló vastagsága 5 láb.\n\nMinden lénynek, amely a körében belép a hálóba, vagy ott kezdi meg a körét, Ügyesség mentődobást kell dobnia, kudarc esetén beleragad (Helyhez-kötötté válik), amíg csak ki nem sikerül szabadulnia a hálóból.\n\nA hálóba ragadt lények az akciójukat felhasználva Erő (HPHB) próbát dobhatnak varázslatod elleni mentő NF értékével szemben, hogy kiszabaduljanak. Ha a próba sikeres, a lény többé nem helyhezkötött.\n\nA pókháló gyúlékony, 1 forduló alatt 5 láb széles rész ég el belőle, és mindenki, aki a tűzben kezdi meg a körét, 2d4 tűz-sebzést szenved el."
+    },
+    "Pókmászás": {
+      "name": "Pókmászás",
+      "aliases": [
+        "Spider Climb"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V, S, M (egy csepp bitumen és egy pók)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatóidő tartama alatt megérinthetsz egy, a varázslatba beleegyező lényt, aki kéz használata nélkül tud felfelé és lefelé mozogni függőleges falakon, illetve képes a mennyezeten lefelé lógva haladni. Mászási sebessége a normál sebességével lesz egyenlő.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nTovábbi egy lényt érinthetsz meg minden 2. szint feletti rekesz után."
+    },
+    "Pokoli megtorlás": {
+      "name": "Pokoli megtorlás",
+      "aliases": [
+        "Hellish Rebuke"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 reakció (amit akkor játszhatsz ki, amikor egy 60 lábon belül lévő, számodra látható lény sérülést okoz neked)",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "A lényt, amely megsebzett téged pokoli lángok veszik körül. Ügyesség mentődobást kell dobnia, sikertelen mentődobás esetén 2d10 Tűz sebzést szenved el, sikeres mentődobás esetén fele ennyit.\n\nMagasabb szinteken:\nA sebzés 1d10 ponttal növekszik minden 1. szint feletti rekesz felhasználása után."
+    },
+    "Riasztó": {
+      "name": "Riasztó",
+      "aliases": [
+        "Alarm"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 perc",
+      "range": "30 Láb",
+      "duration": "8 óra",
+      "components": "V, S, M (egy csengő és egy ezüsthuzal)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Riasztót állítasz fel behatolók ellen. Válassz egy ajtót, ablakot vagy olyan területet, amely nem nagyobb, mint 20 láb élhosszúság kocka! Amíg a varázslat véget nem ér, egy riasztó gyelmeztet, amikor egy lény megérinti az őrzött területet, vagy belép arra. A varázslás során megjelölhetsz olyan lényeket, akik a riasztást nem váltják ki. Azt is megválaszthatod, hogy a riasztás hallható vagy mentális legyen.\n\nHallható riasztó:\nA risaztó egy házi csengőnek megfelelő hangot hallat 10 másodpercig a védett terület 60 láb sugarú körében.\n\nMentális riasztó:\nAz elmédben hallható füttyel figyelmeztet a riasztó, amennyiben a védett terület 1 mérföldes körzetében vagy. A füttyszó felébreszt, ha alszol."
+    },
+    "Savfröccs": {
+      "name": "Savfröccs",
+      "aliases": [
+        "Acid Splash"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy 5 láb sugarú savgömböt varázsolsz elő a hatótávon belüli tetszőleges pontból. A gömbben tartózkodó lényeknek Ügyesség mentődobást kell dobniuk, vagy 1d6 sav sebzést szenvednek.\n\nMagasabb szinteken:\nA varázslat sebzése 1d6-tal nő, amikor eléred az 5.\nszintet (2d6), a 11. szintet (3d6) és a 17. szintet (4d6)."
+    },
+    "Sebfakasztás": {
+      "name": "Sebfakasztás",
+      "aliases": [
+        "Inflict Wounds"
+      ],
+      "level": 1,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy megérintett lény Állóképesség mentést dob, kudarc esetén a célpont 2d10 Nekrotikus sebzést szenved; siker esetén fele annyit.\n\nMagasabb szinteken:\nA sebzés nagysága 1d10-zel nő minden 1. szint feletti rekesz felhasználása után."
+    },
+    "Sebgyógyítás": {
+      "name": "Sebgyógyítás",
+      "aliases": [
+        "Cure Wounds"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Az általad megérintett lény 2d8 + a varázslási tulajdonságod módosítójával megegyező HP-t gyógyul.\n\nMagasabb szinteken:\nA gyógyítás mértéke 2d8-cal nő minden 1. szint feletti rekesz felhasználása után."
+    },
+    "Sirató harang": {
+      "name": "Sirató harang",
+      "aliases": [
+        "Toll the Dead"
+      ],
+      "level": 0,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Rámutatsz egy hatótávon belüli lényre, akit látsz és egy gyászharang egyetlen kongása hallatszik a célpont körül 10 láb sugarú körben. A célpontnak sikeres Bölcsesség mentődobást kell dobnia, különben 1d8 Nekrotikus sebzést szenved el. Ha a célpont már sérült, akkor a sebzés 1d12-re nő.\n\nMagasabb szinteken:\nA sebzés további 1 kockával növekszik, amikor eléred az 5. (2d8 vagy 2d12), a 11. (3d8 vagy 3d12) és a 17. szintet (4d8 vagy 4d12)."
+    },
+    "Sokkoló érintés": {
+      "name": "Sokkoló érintés",
+      "aliases": [
+        "Shocking Grasp"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "A kezedből villám vágódik abba a lénybe, akit megpróbálsz megérinteni. Dobj közelharci varázstámadást a célpont ellen. Ha sikerül, a célpont 1d8 Villám sebzést szenved el, és a következő köre elejéig nem használhatja az \"Alkalmi támadás\" reakcióját.\n\nMagasabb szinteken:\nA sebzés további 1d8-cal növekszik, amikor eléred az 5. (2d8), a 11. (3d8) és a 17. szintet (4d8)."
+    },
+    "Sötétlátás": {
+      "name": "Sötétlátás",
+      "aliases": [
+        "Darkvision"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "8 óra",
+      "components": "V, S, M (vagy egy csipet szárított sárgarépa, vagy egy achát)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy a varázslatba beleegyező lényt, aki a varázslat hatóideje alatt 150 láb távolságig Sötétlátás képességre tesz szert."
+    },
+    "Sötétségvarázs": {
+      "name": "Sötétségvarázs",
+      "aliases": [
+        "Darkness"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, M (denevérszőr és egy csepp szurok vagy darabka szén)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Mágikus Sötétség árad ki a hatótávon belül megadott pontból, és a hatóidő tartamára megtölt egy 15 láb sugarú gömböt. A sötétség a sarkok mögé is behatol. Még a sötétlátással rendelkező lények sem látnak rajta keresztül, ahogy a nem mágikus fény sem képes bevilágítani.\n\nAlternatívaként a varázslatot egy olyan tárgyra is elmondhatod, amelyet nem viselnek és nem is hordanak, és a Sötétség egy 15 láb sugarú gömböt tölt meg, amely a tárgyból ered. Amenyiben a tárgyat valamilyen átlátszatlan anyaggal – például egy sisakkal vagy egy fazékkal – teljesen letakarják, a Sötétség gátolható.\n\nAmennyiben a varázslat területe átfedésbe kerül egy 2. vagy alacsonyabb varázslatszintű, fényt létrehozó varázslat által keltett Erős fény vagy Gyenge fény területével, akkor az a másik varázslat kioltásra kerül."
+    },
+    "Sugalmazás": {
+      "name": "Sugalmazás",
+      "aliases": [
+        "Suggestion"
+      ],
+      "level": 2,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Koncentráció, legfeljebb 8 óra",
+      "components": "V, M (kígyónyelv, és egy kis darab lépesméz vagy egy csepp édes olaj)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Képes vagy egy a hatótávon belül lévő lényt mágikusan befolyásolni és (legfeljebb 25 szóban megfogalmazható) tevékenység elvégzését sugalmazni számára. A lényt látnod kell, és a lénynek hallania kell téged és meg kell értenie a beszédedet. A sugalmazott tevékenységnek végrehajthatónak kell tűnnie, és nem lehet olyan tett, amely nyilvánvalóan kárt okozna a célpontnak vagy szövetségeseinek. Például javasolhatod, hogy \"Szerezd meg a szekta kincstárának kulcsát, és add oda nekem.\" Vagy azt is mondhatod, hogy \"Hagyd abba a harcot, távozz békésen ebből a könyvtárból, és ne térj vissza.\"\n\nA célpontnak Bölcsesség mentődobást kell dobnia, kudarc esetén Elbájolt állapotba kerül a varázslat idejére, vagy amíg te vagy a szövetségeseid meg nem sebzitek. A célpont a legjobb tudása szerint megpróbálja elvégezni a kapott feladatot, mely tarthat a hatóidő végéig, de amennyiben előbb teljesíthető, akkor a feladat befejeztével a varázslat véget ér."
+    },
+    "Szellemfegyver": {
+      "name": "Szellemfegyver",
+      "aliases": [
+        "Spiritual Weapon"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "1 bónusz akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Egy lebegő, szellemszerű erőt hozol létre, amely egy általad választott fegyverhez hasonlít, és a varázslat idejére megmarad. Az erő a hatótávon belül egy általad választott helyen jelenik meg, és azonnal megtehetsz egy közelharci varázstámadást egy lény ellen, amely az erőtől 5 lábon belül van. Találat esetén a célpont 1d8 + a varázslási képességmódosítód öszegével egyenlő Erő sebzést szenved el.\n\nBónusz akcióként a későbbi köreidben az erőt 20 lábbal elmozgathatod, és megismételheted a támadást egy lény ellen, amely az erőtől 5 lábon belül van.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA sebzés 1d8 → 1d8-cal nő minden 2. szint feletti rekesz után."
+    },
+    "Személy bénítása": {
+      "name": "Személy bénítása",
+      "aliases": [
+        "Hold Person"
+      ],
+      "level": 2,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (egy kicsiny, egyenes vasdrót)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Válassz ki egy hatótávon és látótéren belüli humanoid lényt. A célpontnak Bölcsesség mentődobást kell dobnia, kudarc esetén a hatóideig megbénul. Az áldozat minden körének végén újabb mentődobást tehet, hogy megtörjön számára a varázs.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nTovábbi egy humanoid lényt célozhatsz meg minden 2. szint feletti rekesz után."
+    },
+    "Személy elbájolása": {
+      "name": "Személy elbájolása",
+      "aliases": [
+        "Charm Person"
+      ],
+      "level": 1,
+      "school": "Ráolvasás",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "1 óra",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy humanoid lénynek Bölcsesség mentődobást kell dobni, aki a hatókörön belül van és akit látsz. Ezt Előnnyel teheti, ha Te vagy a társaid harcban álltok vele. Ha a mentődobás sikertelen, Elbájolt állapotba kerül amíg a varázslat véget nem ér, vagy amíg Te, illetve a társaid sebzést okoztok neki. Az Elbájolt lény barátságos lesz veled. A varázslat megszűnése után a célpont tisztában lesz vele, hogy elbájoltad őt.\n\nMagasabb szinteken:\nTovábbi 1 lényt választhatsz célpontnak minden 1. szint feletti rekesz felhasználása után."
+    },
+    "Személyes álca": {
+      "name": "Személyes álca",
+      "aliases": [
+        "Disguise Self"
+      ],
+      "level": 1,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "1 óra",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megváltoztatod magad – beleértve a ruházatodat, a páncélodat, a fegyvereidet és a rajtad lévő egyéb tárgyakat –, hogy másként nézzél ki, amíg a varázslat véget nem ér, vagy amíg egy akcióval nem szünteted meg. Egy lábbal alacsonyabbnak vagy magasabbnak tűnhetsz, vagy akár nehezebbnek vagy könnyebbnek. Olyan alakot kell választanod, amelynek hozzás hasonló végtagelrendezése van. Ezt leszámítva az illúzió mértéke rajtad áll.\n\nA varázslat által végrehajtott változtatásokzikai ellenőrzés során észrevehetőek. Például ha ezzel a varázslattal kalapot adsz hozzá a ruhádhoz, a tárgyak áthaladnak a kalapon, és bárki, aki hozzáér, semmit sem érez, vagy érezni fogja a fejedet és a hajadat. Ha a varázslatot arra használod, hogy vékonyabbnak tűnjél, mint amilyen vagy, akkor annak a keze, aki feléd nyúl, hogy megérintsen, beléd fog ütközni, miközben látszólag még a levegőhöz ér.\n\nAz álcázást egy lény észreveheti, ha Vizsgálat akció felhasználásával megvizsgálja a megjelenésedet, és sikeres Intelligencia (Nyomozás) próbát dob a varázslatod elleni mentő NF értékével szemben."
+    },
+    "Szemfényvesztés": {
+      "name": "Szemfényvesztés",
+      "aliases": [
+        "Prestidigitation"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "10 Láb",
+      "duration": "1 óra",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Egy a kis mágikus hatást hozol létre a hatókörön belül. Válassz az alábbi mágikus hatások közül. A varázslat többszöri alkalmazásával legfeljebb három nem azonnali hatást működtethetsz egyidejűleg.\n\nÉrzékszervi hatás:\nAzonnali, ártalmatlan érzékszervi hatás, mint pl. egy szikraeső, léglöket, halk muzsikaszó vagy valamilyen furcsa szag.\n\nTűz varázs:\nEgy pillanat alatt meggyújthatsz vagy kiolthatsz egy gyertyát, fáklyát vagy egy kis tüzet.\n\nTisztítás vagy Összekoszolás:\nEgy pillanat alatt megtisztíthatsz vagy összekoszolhatsz egy 1 láb élű kockánál nem nagyobb tárgyat.\n\n**_Enyhébb érzés** Felmelegíthetsz, lehűthetsz vagy megízesíthetsz legfeljebb 1 láb élű kocka terjedelmű élettelen anyagot (max. 1 órára).\n\n**_Mágikus jel** Létrehozhatsz valamilyen színt vagy kis jelzést, szimbólumot egy tárgy felületén vagy más felszínen (max. 1 órára).\n\n**_Kisebb teremtés** Létrehozhatsz egy kis, nem mágikus csecsebecsét, vagy egy tárgy illúzióképét, mely elfér a tenyereden, és a következő köröd végéig marad meg. A tárgy nem okozhat sebzést és nincs pénzbeli értéke."
+    },
+    "Szent láng": {
+      "name": "Szent láng",
+      "aliases": [
+        "Sacred Flame"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Lángszerű fénycsóva sújt le egy hatótávon belüli célpontra, aki a látómeződben van. A célpontnak sikeres Ügyesség mentődobást kell dobnia, kudarc esetén 1d8 Ragyogás típusú sebzést szenved el. A mentődobásnál a fél- és háromnegyed-fedezék nem ad bónuszt.\n\nMagasabb szinteken:\nA sebzés további d8-cal növekszik, ha eléred az 5.\n(2d8), a 11. (3d8) és a 17. szintet (4d8)."
+    },
+    "Szétzúzás": {
+      "name": "Szétzúzás",
+      "aliases": [
+        "Shatter"
+      ],
+      "level": 2,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Azonnali",
+      "components": "V, S, M (egy csipet csillámkő)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Hirtelen fájdalmasan erős hang szólal meg egy általad választott, hatótávon belüli pontból. Minden lénynek egy 10 láb sugarú gömbben, amelynek középpontjában az adott pont áll, Állóképesség mentődobást kell dobnia. Sikertelen mentődobás esetén a lény 3d8 Mennydörgés sebzést szenved, sikeres mentődobás esetén fele annyit. A szervetlen anyagból, például kőből, kristályból vagy fémből álló lény hátránnyal dobja a mentődobását.\n\nA nem mágikus tárgyak, amelyeket nem viselnek vagy hordoznak, szintén kárt szenvednek, ha a varázslat által érintett területen vannak.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nA sebzés 3d8 → 1d8-cal nő minden 2. szint feletti rekesz után."
+    },
+    "Színpompás permet": {
+      "name": "Színpompás permet",
+      "aliases": [
+        "Color Spray"
+      ],
+      "level": 1,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "15 Láb kúp",
+      "duration": "Azonnali",
+      "components": "V, S, M (Egy csipetnyi színes homok)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Villogó, színes fényvillanás sorozat indítasz el. Egy 15 láb hosszú kúpban minden lénynek Állóképesség mentést kell dobnia, a sikertelen lények a következő köröd végéig megvakul (Vak állapot)."
+    },
+    "Tajtékzó csapás": {
+      "name": "Tajtékzó csapás",
+      "aliases": [
+        "Wrathful Smite"
+      ],
+      "level": 1,
+      "school": "Nekromancia",
+      "castTime": "1 bónusz akció (amit egy célpont közelharci fegyverrel vagy puszta kézzel történő megütése után tudsz azonnal kijátszani)",
+      "range": "Önmagad",
+      "duration": "1 perc",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Ahogy eltalálod a célpontot az további 1d6 Nekrotikus sebzést szenved el a támadásod mellett. Ezenkívül a célpontnak Bölcsesség mentődobást kell dobnia, különben Rémült állapotba kerül. Minden körének a végén a Rámült célpont megismétli a mentődobást, siker esetén a varázslat véget ér.\n\nMagasabb szinteken:\nA sebzés 1d6-tal növekszik minden 1. szint feletti rekesz után."
+    },
+    "Táncoló fények": {
+      "name": "Táncoló fények",
+      "aliases": [
+        "Dancing Lights"
+      ],
+      "level": 0,
+      "school": "Illúzió",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S, M (egy kevés foszfor)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatótávon belül létrehozhatsz legfeljebb négy fáklyaerősségű fényforrást, melyek lehetnek egy levegőben lebegő fáklyához, lámpáshoz vagy gömbhöz hasonlatosak. Alternatívaként a négy fényforrást egyesítheted egyetlen, fényből szőtt, közepes termetű (M) emberforma alakká. Bármelyik lehetőséget is választod, mindegyik fény 10 láb sugárban gyér fénnyel világít.\n\nEgy bónusz akció felhasználásával a varázslattal létrehozott fényeket a hatótávon belül legfeljebb 60 lábnyit mozgathatod. Mindegyik fényforrásnak 20 lábon belül kell lennie egy másik, ugyanezzel a varázslattal létrehozott fényforrástól. Ha kikerülnek a varázslat hatósugarából, a fények kialszanak."
+    },
+    "Tárgy behatárolása": {
+      "name": "Tárgy behatárolása",
+      "aliases": [
+        "Locate Object"
+      ],
+      "level": 2,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (egy villás gally)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Írj le vagy nevezz meg egy ismert tárgyat! Érzed az irányt a tárgy helyéhez mindaddig, amíg a tárgy legfeljebb 1000 lábra van tőled. Ha a tárgy mozgásban van, ismered a mozgásának irányát.\n\nA varázslat megkeresheti az általad ismert konkrét tárgyat, feltéve, hogy legalább egyszer láttad közelről (30 lábnál közelebbről). Alternatív megoldásként a varázslat megkeresheti számodra egy bizonyos fajtájú tárgyból a legközelebbit, például egy bizonyos fajta ruházatot, ékszert, bútort, szerszámot vagy fegyvert.\n\nEz a varázslat nem képes megtalálni a tárgyat, ha a közted és a tárgy közötti közvetlen utat bármilyen vastagságú ólom, akárcsak egy vékony lap, zárja el."
+    },
+    "Taumaturgia": {
+      "name": "Taumaturgia",
+      "aliases": [
+        "Thaumaturgy"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "1 perc",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A varázslat eredményeképp a természetfeletti erők egy kisebb csodája nyilvánul meg. A következő mágikus hatások valamelyike jön létre a hatótávon belül: Amennyiben a varázslatot többször alkalmazod, egyszerre legfeljebb három 1 perces hatást tarthatsz fenn.\n\nMódosított Szemek:\n1 percre megváltoztathatod a szemed kinézetét.\n\nMennydörgő Hang:\nA hangerőd 1 percre a háromszorosára erősödik. Amíg ez a hatás tart a Karizma (Megfélemlítés) ellenőrzéseket Előnnyel dobhatod.\n\nTűz Varázs:\nLángok megrebbennek, fényesebbé vagy halványabbá válnak, vagy éppen megváltozik a színük egy percig.\n\nLáthatatlan Kéz:\nAzonnali hatásként becsapódik vagy kivágódik egy be nem zárt ajtó vagy ablak.\n\nFantom Hang:\nAzonnali hatásként megszólal egy hang az általad megjelölt helyről, mint például egy dörrenés, egy holló károgása, vagy egy sejtelmes suttogás.\n\nRengés:\nA föld 1 percen keresztül ártalmatlanul remeg."
+    },
+    "Tollesés": {
+      "name": "Tollesés",
+      "aliases": [
+        "Feather Fall"
+      ],
+      "level": 1,
+      "school": "Transzmutáció",
+      "castTime": "1 reakció (amit akkor játszhatsz ki, amikor te vagy egy általad látható lény 60 láb távolságon belül zuhan)",
+      "range": "60 Láb",
+      "duration": "1 perc",
+      "components": "V, M (egy kis toll vagy pehelydarab)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Válassz akár öt zuhanó lényt a hatótávon belül. A zuhanó lények esési sebessége körönként 60 lábra lassul, amíg a varázslat véget nem ér. Ha egy lény a varázslat vége előtt földet ér, a lény nem szenved az esés miatt sebzést. Ezt követően a varázslat véget ér a lény számára."
+    },
+    "Tövis ostor": {
+      "name": "Tövis ostor",
+      "aliases": [
+        "Thorn Whip"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Azonnali",
+      "components": "V, S, M (tövises növényi szár)",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Egy töveses inda-szerű ostort idézel meg, ami a parancsodra egy hatótávon belüli lény felé csap. Dobj közelharci varázstámadást a célpont ellen. Találat esetén a célpont 1d6 Szúró sebzést szenved és ha legfeljebb Nagy méretű lény, akkor 10 lábbal közelebb rántod magadhoz.\n\nMagasabb szinteken:\nA varázslat sebzése 1d6-tal nő, amikor eléred az 5.\nszintet (2d6), a 11. szintet (3d6) és a 17. szintet (4d6)."
+    },
+    "Tövis-zápor": {
+      "name": "Tövis-zápor",
+      "aliases": [
+        "Hail of Thorns"
+      ],
+      "level": 1,
+      "school": "Idézés",
+      "castTime": "1 bónusz akció (amit távolsági fegyverrel való találatod után azonnal játszhatsz ki)",
+      "range": "Önmagad",
+      "duration": "Azonnali",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Ahogy eltatalálod a célpontodat ez a varázslat tövisek záporát idézi meg a fegyveredből vagy lövedékéből. A célpont és minden, a célponttól 5 lábon belül lévő lény Ügyesség mentődobást kell dobjon, 1d10 Szúró sebzést szenvednek el kudarc esetén, vagy fele ennyit sikeres mentődobás esetén.\n\nMagasabb szinteken:\nA sebzés nagysága 1d10-zel nő minden 1. szint feletti rekesz után."
+    },
+    "Tulajdonság erősítése": {
+      "name": "Tulajdonság erősítése",
+      "aliases": [
+        "Enhance Ability"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Koncentráció, legfeljebb 1 óra",
+      "components": "V, S, M (egy vadállat tolla vagy szőre)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy lényt, és kiválasztasz egy tulajdonságot: Erő, Ügyesség, Intelligencia, Bölcsesség vagy Karizma. A varázslat hatóidejének végéig a célpont előnnyel dobhatja a kiválasztott tulajdonság próbáit.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nTovábbi egy lényt célozhatsz meg minden 2. szint feletti rekesz után."
+    },
+    "Tündérfény": {
+      "name": "Tündérfény",
+      "aliases": [
+        "Faerie Fire"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "60 Láb",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "A hatótávon belül egy 20 láb élű kockán belül minden tárgy körvonala kék, zöld vagy ibolya színnel izzik fel (választásod szerint). Minden lénynek sikeres Ügyesség mentődobást kell dobnia, különben az ő körvonaluk is izzani kezd. A hatóidő alatt az izzó tárgyak és lények Gyér fényt árasztanak egy 10 láb sugarú körben és nem részesülhetnek a Láthatatlanság előnyeiben.\n\nAz izzó körvonalú tárgyak, illetve lények ellen Előnnyel lehet támadódobást dobni, ha a támadó látja a célpontját."
+    },
+    "Tündöklés szava": {
+      "name": "Tündöklés szava",
+      "aliases": [
+        "Word of Radiance"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "5 Láb emanáció",
+      "duration": "Azonnali",
+      "components": "V, M (napot dicsőítő jelvény)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy ragyogó fénykitörés árad ki belőled 5 láb sugarú körben. Minden általad választott lénynek, akit látsz a hatótávon belül, Állóképesség mentődobást kell dobnia, különben 1d6 Ragyogás sebzést szenved el.\n\nMagasabb szinteken:\nA varázslat sebzése 1d6-tal nő, amikor eléred az 5.\nszintet (2d6), a 11. szintet (3d6) és a 17. szintet (4d6)."
+    },
+    "Tüskenövesztés": {
+      "name": "Tüskenövesztés",
+      "aliases": [
+        "Spike Growth"
+      ],
+      "level": 2,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "150 Láb",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (hét éles tövis vagy hét kis gally, mindegyik kihegyezve)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "A hatótávon belül általad megjelölt pont 20 láb sugarú körében hegyes tüskék és tövisek hajtanak ki. A terület a varázslat idejére Nehéz tereppé válik. Amikor egy lény belép a területre vagy azon belül mozog, 2d4 Szúró sebzést szenved minden 5 láb megtétele után.\n\nA talaj átalakulása álcázott, hogy természetesnek tűnjön. Minden olyan lénynek, aki a varázslat elmondásának időpontjában nem látja a területet, Bölcsesség (HPHB vagy HPHB) próbát kell dobnia a varázslatelleni mentő NF-ed értékével szemben, hogy felismerje a terep veszélyességét, mielőtt belépne."
+    },
+    "Tűzlövedék": {
+      "name": "Tűzlövedék",
+      "aliases": [
+        "Fire Bolt"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Tüzet dobsz a hatótávon belül lévő lényre vagy tárgyra. Dobj távolsági varázstámadást a célpont ellen. Találat esetén a célpont 1d10 tűz sebzést szenved. A varázslat által eltalált gyúlékony tárgy meggyullad, ha azt nem viselik vagy hordják.\n\nMagasabb szinteken:\nA varázslat sebzése 1d10-zel nő, amikor eléred az 5.\nszintet (2d10), a 11. szintet (3d10) és a 17. szintet (4d10)."
+    },
+    "Ugrás": {
+      "name": "Ugrás",
+      "aliases": [
+        "Jump"
+      ],
+      "level": 1,
+      "school": "Transzmutáció",
+      "castTime": "1 bónusz akció",
+      "range": "Érintés",
+      "duration": "1 perc",
+      "components": "V, S, M (szöcske ugrólába)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy a varázslatba beleegyező lényt. A varázslat hatóidejéig, 10 láb mozgást feláldozhat 30 lábnyi ugrásért.\n\nMagasabb szinteken:\nMinden 1. szint feletti rekesz után egy további lényt célozhatsz."
+    },
+    "Útmutatás": {
+      "name": "Útmutatás",
+      "aliases": [
+        "Guidance"
+      ],
+      "level": 0,
+      "school": "Divináció",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy a varázslatba beleegyező lényt és választasz egy jártasságot. A varázslat lejárta előtt a célpont a választott jártasság valamennyi tulajdonságpróbájához hozzáadhat 1d4-et."
+    },
+    "Üzenet": {
+      "name": "Üzenet",
+      "aliases": [
+        "Message"
+      ],
+      "level": 0,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "1 kör",
+      "components": "S, M (rövid darab rézhuzal)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Egy a hatótávon belüli lény felé mutatsz, és elsuttogsz egy üzenetet. A célpont (és csak a célpont) hallja az üzenetet, és suttogva válaszolhat, amelyet csak Te hallhatsz.\n\nEzt a varázslatot szilárd tárgyakon keresztül is elvarázsolhatod, ha ismered a célpontot, és tudod, hogy az akadályon túl van. Mágikus csend; 1 láb kő, fém, vagy fa; vagy egy vékony ólomlap blokkolja a varázslatot."
+    },
+    "Vakság/süketség": {
+      "name": "Vakság/süketség",
+      "aliases": [
+        "Blindness/Deafness"
+      ],
+      "level": 2,
+      "school": "Nekromancia",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "1 perc",
+      "components": "V",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": true,
+      "desc": "Egy lénynek akit hatótávon belül látsz, egy Állóképesség mentődobást kell dobnia, kudarc esetén Megvakul vagy Megsüketül (a te választásod szerint) a varázslat idejére. Minden körének végén a célpont újabb mentődobást dobhat, amely siker esetén véget vet a varázslatnak.\n\nMagasabb szinteken:\nMagasabb varázslat rekesz használata:\nTovábbi egy lényt célozhatsz meg minden 2. szint feletti rekesz után."
+    },
+    "Varázslövedék": {
+      "name": "Varázslövedék",
+      "aliases": [
+        "Magic Missile"
+      ],
+      "level": 1,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Három izzó mágikus energiatüskét lősz ki az ujjaidból. Mindegyik tüske eltalál egy hatótávon belüli lényt, akit látnod kell. A lövedékek **1d4+1** Energia típusú sebzést okoznak. Egyszerre érnek célt, és becsapódhatnak ugyanabba a lénybe, de választhatsz különböző célpontokat is.\n\nMagasabb szinteken:\nA varázslattal +1 energiatüskét idézhetsz meg minden 1. szint feletti rekesz felhasználása után."
+    },
+    "Varázsszáj": {
+      "name": "Varázsszáj",
+      "aliases": [
+        "Magic Mouth"
+      ],
+      "level": 2,
+      "school": "Illúzió",
+      "castTime": "1 perc",
+      "range": "30 Láb",
+      "duration": "Állandó (eloszlatásig)",
+      "components": "V, S, M (egy kis lépesméz és jáde por legalább 10 arany értékben, ami a varázslat során elhasználódik)",
+      "concentration": false,
+      "ritual": true,
+      "atk": false,
+      "dc": false,
+      "desc": "Üzenetet ültetsz be egy hatótávon belül lévő tárgyba, amely akkor hangzik el, amikor egy kiváltó feltétel teljesül. Válassz egy olyan tárgyat, amelyet látsz, és amelyet nem hord vagy visel egy másik lény. Ezután mondd ki az üzenetet, amely legfeljebb 25 szóból állhat, bár akár 10 percig is tarthat az elmondása. Végül határozd meg azt a körülményt, amely kiváltja, hogy a varázslat révén az üzenet elhangozzon.\n\nAmikor a körülmény bekövetkezik, egy mágikus száj jelenik meg a tárgyon, és elmondja az üzenetet a Te hangodon, ugyanazon a hangerőn, amin beszéltél. Ha a kiválasztott tárgynak van szája vagy valami, ami szájhoz hasonlít (például egy szobor szája), a varázslatos száj ott jelenik meg, így úgy tűnik majd, hogy a szavak a tárgy szájából erednek. Amikor ezt a varázslatot elmondod, választhatsz, hogy a varázslat véget ér, amint az üzenet elhangzott, vagy a száj megmarad, és újra megismétli az üzenetet, amikor a kiváltó feltétel ismét bekövetkezik.\n\nA kiváltó körülmény olyan általános vagy részletes lehet, amennyire csak akarod, bár annak vizuális vagy hallható feltételeken kell alapulnia, amelyek a tárgytól 30 láb távolságon belül fordulnak elő. Például utasíthatod a szájat, hogy akkor beszéljen, ha bármilyen lény a tárgyat 30 lábon belül közelíti meg, vagy ha ezüst csengő csenget 30 lábon belül."
+    },
+    "Védelem a jótól és gonosztól": {
+      "name": "Védelem a jótól és gonosztól",
+      "aliases": [
+        "Protection from Evil and Good"
+      ],
+      "level": 1,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S, M (legalább 25 arany értékű szentelt vizes flaska)",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Amíg a varázslat hat, egy általad megérintett, a varázslatba beleegyező lény védelmet kap az Elfajzottak, Égi lények, Elementálok, Tündérek, Alvilági lények vagy Élőhalottak ellen. A védelem több előnyt biztosít. Az ilyen típusú lények Hátránnyal dobják a támadódobásaikat a célpontra. A célpontot nem lehet megszállni, és nem kerülhet Elbájolt vagy Rémült állapotba általuk. Ha a célpont már megszállt, Elbájolt vagy Rémült ilyen lény által, minden új mentődobásra Előnyt kap az adott hatás ellen."
+    },
+    "Védelem a mérgektől": {
+      "name": "Védelem a mérgektől",
+      "aliases": [
+        "Protection from Poison"
+      ],
+      "level": 2,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "Érintés",
+      "duration": "1 óra",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Megérintesz egy lényt, és véget vetsz a Mérgezett állapotának. A hatóidő alatt a célpont előnnyel dobhatja a mentődobásokat, hogy elkerülje vagy megszüntesse a Mérgezést, és ellenállóvá válik a Méreg sebzéssel szemben."
+    },
+    "Védelmi pengék": {
+      "name": "Védelmi pengék",
+      "aliases": [
+        "Blade Ward"
+      ],
+      "level": 0,
+      "school": "Védővarázs",
+      "castTime": "1 akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 1 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Amikor egy lény támadó dobást hajt végre ellened a varázslat hatóideje alatt, a támadónak a dobott értékből 1d4-et le kell vonnia."
+    },
+    "Vérfagyasztó sugár": {
+      "name": "Vérfagyasztó sugár",
+      "aliases": [
+        "Eldritch Blast"
+      ],
+      "level": 0,
+      "school": "Evokáció",
+      "castTime": "1 akció",
+      "range": "120 Láb",
+      "duration": "Azonnali",
+      "components": "V, S",
+      "concentration": false,
+      "ritual": false,
+      "atk": true,
+      "dc": false,
+      "desc": "Ropogó energiasugat hozol létre. Dobj távolsági varázstámadást egy lény vagy tárgy ellen a hatótávon belül. Találat esetén a célpont 1d10 Energia sebzést szenved.\n\nMagasabb szinteken:\nA varázslat az 5. szinten két sugarat, a 11. szinten három sugarat, a 17. szinten négy sugarat hoz létre.\nA sugarak ugyanarra a célpontra vagy különböző célpontokra is irányíthatóak.\nTámadást külön kell dobni mindegyik sugár esetében."
+    },
+    "Villámgyors visszavonulás": {
+      "name": "Villámgyors visszavonulás",
+      "aliases": [
+        "Expeditious Retreat"
+      ],
+      "level": 1,
+      "school": "Transzmutáció",
+      "castTime": "1 bónusz akció",
+      "range": "Önmagad",
+      "duration": "Koncentráció, legfeljebb 10 perc",
+      "components": "V, S",
+      "concentration": true,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Használod a Rohanás akciót és amíg a varázslat tart, újra használhatod a Rohanás akciót bónusz akcióként minden körödben."
+    },
+    "Víz teremtés vagy pusztítás": {
+      "name": "Víz teremtés vagy pusztítás",
+      "aliases": [
+        "Create or Destroy Water"
+      ],
+      "level": 1,
+      "school": "Transzmutáció",
+      "castTime": "1 akció",
+      "range": "30 Láb",
+      "duration": "Azonnali",
+      "components": "V, S, M (víz és homok keveréke)",
+      "concentration": false,
+      "ritual": false,
+      "atk": false,
+      "dc": false,
+      "desc": "Az alábbiak egyikét választhatod:\n\nVíz teremtése:\nNyitott tartályban legfeljebb 10 gallon (40 liter) tiszta vizet hozhatsz létre a hatótávon belül. Alternatívaként a víz esőként esik egy 30 méter élű kockában, amely eloltja a nyílt lángokat a területen.\n\nVíz elpusztítása:\nLegfeljebb 10 gallon (40 liter) vizet semmisíthetsz meg egy a hatótávon belüli nyitott tartályban. Alternatív megoldásként ködöt is megsemmisíthetsz a egy 30 láb élű kockában a hatótávon belül.\n\nMagasabb szinteken:\nVagy további 10 gallon vizet hozhatsz létre vagy semmisíthetsz meg, vagy pedig a kocka méretét növelheted 5 lábbal minden 1. szint feletti rekesz felhasználása után."
+    }
+  },
+  "lookup": {
+    "agathys vertje": "Agathys vértje",
+    "armor of agathys": "Agathys vértje",
+    "aldas": "Áldás",
+    "bless": "Áldás",
+    "allatok baratsaga": "Állatok barátsága",
+    "animal friendship": "Állatok barátsága",
+    "allatok es novenyek bemerese": "Állatok és növények bemérése",
+    "locate animals or plants": "Állatok és növények bemérése",
+    "altatas": "Altatás",
+    "sleep": "Altatás",
+    "atok": "Átok",
+    "bane": "Átok",
+    "azonositas": "Azonosítás",
+    "identify": "Azonosítás",
+    "barati bajolas": "Baráti bájolás",
+    "friends": "Baráti bájolás",
+    "behalozas": "Behálózás",
+    "entangle": "Behálózás",
+    "beszed az allatokkal": "Beszéd az állatokkal",
+    "speak with animals": "Beszéd az állatokkal",
+    "boszorkany atok": "Boszorkány átok",
+    "hex": "Boszorkány átok",
+    "boszorkany sugar": "Boszorkány sugár",
+    "witch bolt": "Boszorkány sugár",
+    "bubaj robbantas": "Bűbáj robbantás",
+    "sorcerous burst": "Bűbáj robbantás",
+    "celkereszt": "Célkereszt",
+    "hunter s mark": "Célkereszt",
+    "csapdak erzekelese": "Csapdák érzékelése",
+    "find traps": "Csapdák érzékelése",
+    "csend": "Csend",
+    "silence": "Csend",
+    "csillagtuz": "Csillagtűz",
+    "starry wisp": "Csillagtűz",
+    "disszonans suttogas": "Disszonáns suttogás",
+    "dissonant whispers": "Disszonáns suttogás",
+    "druidacsiny": "Druidacsíny",
+    "druidcraft": "Druidacsíny",
+    "elemi varazslat": "Elemi varázslat",
+    "elementalism": "Elemi varázslat",
+    "ellenallas": "Ellenállás",
+    "resistance": "Ellenállás",
+    "elojelek olvasasa": "Előjelek olvasása",
+    "augury": "Előjelek olvasása",
+    "eros szel": "Erős szél",
+    "gust of wind": "Erős szél",
+    "erzelmek csillapitasa": "Érzelmek csillapítása",
+    "calm emotions": "Érzelmek csillapítása",
+    "etel es ital megtisztitasa": "Étel és ital megtisztítása",
+    "purify food and drink": "Étel és ital megtisztítása",
+    "fagysugar": "Fagysugár",
+    "ray of frost": "Fagysugár",
+    "familiaris idezese": "Familiáris idézése",
+    "find familiar": "Familiáris idézése",
+    "fem forrositasa": "Fém forrósítása",
+    "heat metal": "Fém forrósítása",
+    "feny": "Fény",
+    "light": "Fény",
+    "fortelmes nevetes": "Förtelmes nevetés",
+    "tasha s hideous laughter": "Förtelmes nevetés",
+    "furge leptek": "Fürge léptek",
+    "longstrider": "Fürge léptek",
+    "gondolatolvasas": "Gondolatolvasás",
+    "detect thoughts": "Gondolatolvasás",
+    "gyenged kegyelet": "Gyengéd kegyelet",
+    "gentle repose": "Gyengéd kegyelet",
+    "gyengeseg sugara": "Gyengeség sugara",
+    "ray of enfeeblement": "Gyengeség sugara",
+    "gyogybogyo": "Gyógybogyó",
+    "goodberry": "Gyógybogyó",
+    "gyogyitas szava": "Gyógyítás szava",
+    "healing word": "Gyógyítás szava",
+    "gyogyito ima": "Gyógyító ima",
+    "prayer of healing": "Gyógyító ima",
+    "hadar csapjai": "Hadar csápjai",
+    "arms of hadar": "Hadar csápjai",
+    "haldoklok megmentese": "Haldoklók megmentése",
+    "spare the dying": "Haldoklók megmentése",
+    "hamis elet": "Hamis élet",
+    "false life": "Hamis élet",
+    "hirvivo allat": "Hírvivő állat",
+    "animal messenger": "Hírvivő állat",
+    "hit pajzsa": "Hit pajzsa",
+    "shield of faith": "Hit pajzsa",
+    "holdsugar": "Holdsugár",
+    "moonbeam": "Holdsugár",
+    "homaly": "Homály",
+    "blur": "Homály",
+    "hosiesseg": "Hősiesség",
+    "heroism": "Hősiesség",
+    "husang": "Husáng",
+    "shillelagh": "Husáng",
+    "igaz csapas": "Igaz csapás",
+    "true strike": "Igaz csapás",
+    "igazsag kore": "Igazság köre",
+    "zone of truth": "Igazság köre",
+    "illuzioiras": "Illúzióírás",
+    "illusory script": "Illúzióírás",
+    "indakoto csapas": "Indakötő csapás",
+    "ensnaring strike": "Indakötő csapás",
+    "iranyzek": "Irányzék",
+    "guiding bolt": "Irányzék",
+    "isteni csapas": "Isteni csapás",
+    "divine smite": "Isteni csapás",
+    "isteni kegy": "Isteni kegy",
+    "divine favor": "Isteni kegy",
+    "isteni segitseg": "Isteni segítség",
+    "aid": "Isteni segítség",
+    "javitas": "Javítás",
+    "mending": "Javítás",
+    "jeges erintes": "Jeges érintés",
+    "chill touch": "Jeges érintés",
+    "jegkes": "Jégkés",
+    "ice knife": "Jégkés",
+    "jo es gonosz eszlelese": "Jó és gonosz észlelése",
+    "detect evil and good": "Jó és gonosz észlelése",
+    "kenes": "Kenés",
+    "grease": "Kenés",
+    "kenyszeritett parbaj": "Kényszerített párbaj",
+    "compelled duel": "Kényszerített párbaj",
+    "keregbor": "Kéregbőr",
+    "barkskin": "Kéregbőr",
+    "kisebb gyogyitas": "Kisebb gyógyítás",
+    "lesser restoration": "Kisebb gyógyítás",
+    "kisebb illuzio": "Kisebb illúzió",
+    "minor illusion": "Kisebb illúzió",
+    "kop kop": "Kop-kop",
+    "knock": "Kop-kop",
+    "korsagok sugara": "Kórságok sugara",
+    "ray of sickness": "Kórságok sugara",
+    "kodfelho": "Ködfelhő",
+    "fog cloud": "Ködfelhő",
+    "koteltrukk": "Kötéltrükk",
+    "rope trick": "Kötéltrükk",
+    "kromatikus gomb": "Kromatikus gömb",
+    "chromatic orb": "Kromatikus gömb",
+    "lang teremtese": "Láng teremtése",
+    "produce flame": "Láng teremtése",
+    "langolo gomb": "Lángoló gömb",
+    "flaming sphere": "Lángoló gömb",
+    "langolo kezek": "Lángoló kezek",
+    "burning hands": "Lángoló kezek",
+    "langpenge": "Lángpenge",
+    "flame blade": "Lángpenge",
+    "lathatatlan szolga": "Láthatatlan szolga",
+    "unseen servant": "Láthatatlan szolga",
+    "lathatatlansag": "Láthatatlanság",
+    "invisibility": "Láthatatlanság",
+    "lathatatlansag latasa": "Láthatatlanság látása",
+    "see invisibility": "Láthatatlanság látása",
+    "lebeges": "Lebegés",
+    "levitate": "Lebegés",
+    "lebego korong": "Lebegő korong",
+    "tenser s floating disk": "Lebegő korong",
+    "magia erzekelese": "Mágia érzékelése",
+    "detect magic": "Mágia érzékelése",
+    "magikus fegyver": "Mágikus fegyver",
+    "magic weapon": "Mágikus fegyver",
+    "maguskez": "Máguskéz",
+    "mage hand": "Máguskéz",
+    "maguspancel": "Máguspáncél",
+    "mage armor": "Máguspáncél",
+    "megidezett hatas": "Megidézett hátas",
+    "find steed": "Megidézett hátas",
+    "megigezes": "Megigézés",
+    "enthrall": "Megigézés",
+    "menedek": "Menedék",
+    "sanctuary": "Menedék",
+    "mentalis tuske": "Mentális tüske",
+    "mind sliver": "Mentális tüske",
+    "mennydorges": "Mennydörgés",
+    "thunderwave": "Mennydörgés",
+    "mennydorgo csapas": "Mennydörgő csapás",
+    "thunderous smite": "Mennydörgő csapás",
+    "mennydorgo taps": "Mennydörgő taps",
+    "thunderclap": "Mennydörgő taps",
+    "mereg eszlelese": "Méreg észlelése",
+    "detect poison and disease": "Méreg észlelése",
+    "meregpermet": "Méregpermet",
+    "poison spray": "Méregpermet",
+    "misztikus zar": "Misztikus zár",
+    "arcane lock": "Misztikus zár",
+    "nagyitas kicsinyites": "Nagyítás/kicsinyítés",
+    "enlarge reduce": "Nagyítás/kicsinyítés",
+    "nema kep": "Néma kép",
+    "silent image": "Néma kép",
+    "nyelvek megertese": "Nyelvek megértése",
+    "comprehend languages": "Nyelvek megértése",
+    "oltalmazo kotelek": "Oltalmazó kötelék",
+    "warding bond": "Oltalmazó kötelék",
+    "onmagad valtoztatasa": "Önmagad változtatása",
+    "alter self": "Önmagad változtatása",
+    "ordogi guny": "Ördögi gúny",
+    "vicious mockery": "Ördögi gúny",
+    "pajzs": "Pajzs",
+    "shield": "Pajzs",
+    "parancsvarazs": "Parancsvarázs",
+    "command": "Parancsvarázs",
+    "perzselo csapas": "Perzselő csapás",
+    "searing smite": "Perzselő csapás",
+    "perzselo sugar": "Perzselő sugár",
+    "scorching ray": "Perzselő sugár",
+    "pokhalo": "Pókháló",
+    "web": "Pókháló",
+    "pokmaszas": "Pókmászás",
+    "spider climb": "Pókmászás",
+    "pokoli megtorlas": "Pokoli megtorlás",
+    "hellish rebuke": "Pokoli megtorlás",
+    "riaszto": "Riasztó",
+    "alarm": "Riasztó",
+    "savfroccs": "Savfröccs",
+    "acid splash": "Savfröccs",
+    "sebfakasztas": "Sebfakasztás",
+    "inflict wounds": "Sebfakasztás",
+    "sebgyogyitas": "Sebgyógyítás",
+    "cure wounds": "Sebgyógyítás",
+    "sirato harang": "Sirató harang",
+    "toll the dead": "Sirató harang",
+    "sokkolo erintes": "Sokkoló érintés",
+    "shocking grasp": "Sokkoló érintés",
+    "sotetlatas": "Sötétlátás",
+    "darkvision": "Sötétlátás",
+    "sotetsegvarazs": "Sötétségvarázs",
+    "darkness": "Sötétségvarázs",
+    "sugalmazas": "Sugalmazás",
+    "suggestion": "Sugalmazás",
+    "szellemfegyver": "Szellemfegyver",
+    "spiritual weapon": "Szellemfegyver",
+    "szemely benitasa": "Személy bénítása",
+    "hold person": "Személy bénítása",
+    "szemely elbajolasa": "Személy elbájolása",
+    "charm person": "Személy elbájolása",
+    "szemelyes alca": "Személyes álca",
+    "disguise self": "Személyes álca",
+    "szemfenyvesztes": "Szemfényvesztés",
+    "prestidigitation": "Szemfényvesztés",
+    "szent lang": "Szent láng",
+    "sacred flame": "Szent láng",
+    "szetzuzas": "Szétzúzás",
+    "shatter": "Szétzúzás",
+    "szinpompas permet": "Színpompás permet",
+    "color spray": "Színpompás permet",
+    "tajtekzo csapas": "Tajtékzó csapás",
+    "wrathful smite": "Tajtékzó csapás",
+    "tancolo fenyek": "Táncoló fények",
+    "dancing lights": "Táncoló fények",
+    "targy behatarolasa": "Tárgy behatárolása",
+    "locate object": "Tárgy behatárolása",
+    "taumaturgia": "Taumaturgia",
+    "thaumaturgy": "Taumaturgia",
+    "tolleses": "Tollesés",
+    "feather fall": "Tollesés",
+    "tovis ostor": "Tövis ostor",
+    "thorn whip": "Tövis ostor",
+    "tovis zapor": "Tövis-zápor",
+    "hail of thorns": "Tövis-zápor",
+    "tulajdonsag erositese": "Tulajdonság erősítése",
+    "enhance ability": "Tulajdonság erősítése",
+    "tunderfeny": "Tündérfény",
+    "faerie fire": "Tündérfény",
+    "tundokles szava": "Tündöklés szava",
+    "word of radiance": "Tündöklés szava",
+    "tuskenovesztes": "Tüskenövesztés",
+    "spike growth": "Tüskenövesztés",
+    "tuzlovedek": "Tűzlövedék",
+    "fire bolt": "Tűzlövedék",
+    "ugras": "Ugrás",
+    "jump": "Ugrás",
+    "utmutatas": "Útmutatás",
+    "guidance": "Útmutatás",
+    "uzenet": "Üzenet",
+    "message": "Üzenet",
+    "vaksag suketseg": "Vakság/süketség",
+    "blindness deafness": "Vakság/süketség",
+    "varazslovedek": "Varázslövedék",
+    "magic missile": "Varázslövedék",
+    "varazsszaj": "Varázsszáj",
+    "magic mouth": "Varázsszáj",
+    "vedelem a jotol es gonosztol": "Védelem a jótól és gonosztól",
+    "protection from evil and good": "Védelem a jótól és gonosztól",
+    "vedelem a mergektol": "Védelem a mérgektől",
+    "protection from poison": "Védelem a mérgektől",
+    "vedelmi pengek": "Védelmi pengék",
+    "blade ward": "Védelmi pengék",
+    "verfagyaszto sugar": "Vérfagyasztó sugár",
+    "eldritch blast": "Vérfagyasztó sugár",
+    "villamgyors visszavonulas": "Villámgyors visszavonulás",
+    "expeditious retreat": "Villámgyors visszavonulás",
+    "viz teremtes vagy pusztitas": "Víz teremtés vagy pusztítás",
+    "create or destroy water": "Víz teremtés vagy pusztítás"
+  }
+}

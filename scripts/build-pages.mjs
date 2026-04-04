@@ -18,6 +18,25 @@ async function copyFileToDist(sourcePath, targetPath) {
   await fs.copyFile(sourcePath, targetPath);
 }
 
+async function copyDirToDist(sourceDir, targetDir) {
+  await ensureDir(targetDir);
+  const entries = await fs.readdir(sourceDir, { withFileTypes: true });
+
+  for (const entry of entries) {
+    const sourcePath = path.join(sourceDir, entry.name);
+    const targetPath = path.join(targetDir, entry.name);
+
+    if (entry.isDirectory()) {
+      await copyDirToDist(sourcePath, targetPath);
+      continue;
+    }
+
+    if (entry.isFile()) {
+      await copyFileToDist(sourcePath, targetPath);
+    }
+  }
+}
+
 async function loadSheets() {
   const entries = await fs.readdir(dataDir, { withFileTypes: true });
   const jsonFiles = entries
@@ -166,10 +185,7 @@ async function build() {
   await ensureDir(path.join(distDir, 'character-sheet', 'data'));
 
   await copyFileToDist(path.join(sheetDir, 'character-sheet.html'), path.join(distDir, 'character-sheet', 'character-sheet.html'));
-
-  for (const sheet of sheets) {
-    await copyFileToDist(path.join(dataDir, sheet.fileName), path.join(distDir, 'character-sheet', 'data', sheet.fileName));
-  }
+  await copyDirToDist(dataDir, path.join(distDir, 'character-sheet', 'data'));
 
   await fs.writeFile(
     path.join(distDir, 'character-sheet', 'data', 'index.json'),

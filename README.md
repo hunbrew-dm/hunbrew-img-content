@@ -6,6 +6,8 @@ Statikus karakterlap workspace D&D karakterekhez.
 
 - `character-sheet/character-sheet.html` – generikus karakterlap oldal
 - `character-sheet/data/*.json` – karakteradatok külön JSON fájlokban
+- `character-sheet/data/compendium/spells.json` – generált, renderelésbarát spell kompendium
+- `hunbrew-ve-tools/hun-spell.json` – érintetlen forrás spell-adatbázis
 - `scripts/build-pages.mjs` – Pages build: index generálás + statikus artifact előállítás
 - `.github/workflows/pages.yml` – GitHub Pages deploy workflow
 
@@ -13,7 +15,8 @@ Statikus karakterlap workspace D&D karakterekhez.
 
 1. Hozz létre egy új JSON fájlt a `character-sheet/data/` mappában.
 2. Kövesd a meglévő `valerius-v6.json` szerkezetét.
-3. Push után a Pages főoldal automatikusan felveszi az új karakter linkjét.
+3. A `spells` mezőben csak varázslatneveket adj meg listában; a részletes spell-adatok a kompendiumból jönnek.
+4. Push után a Pages főoldal automatikusan felveszi az új karakter linkjét.
 
 ## Lokális build
 
